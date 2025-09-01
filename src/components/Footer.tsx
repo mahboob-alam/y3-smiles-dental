@@ -125,7 +125,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <div className="text-xs text-center">
-            COPYRIGHT © 2024 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.
+            COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.
           </div>
 
           {/* Social Links */}

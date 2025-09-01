@@ -51,7 +51,6 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 bg-neutral-50 fade-in-section">
-      <div className="text-black text-lg">X </div>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

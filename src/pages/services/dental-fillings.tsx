@@ -197,7 +197,7 @@ const DentalFillings = () => {
               {fillingTypes.map((type, index) => {
                 const IconComponent = type.icon;
                 return (
-                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium transition-smooth">
+                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
                         <IconComponent className="w-8 h-8" />
@@ -249,7 +249,7 @@ const DentalFillings = () => {
               {signs.map((sign, index) => {
                 const IconComponent = sign.icon;
                 return (
-                  <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-smooth">
+                  <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mx-auto mb-4">
                         <IconComponent className="w-8 h-8" />
@@ -275,7 +275,7 @@ const DentalFillings = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <Card className="border-0 shadow-soft">
+                <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section">
                   <CardHeader className="text-center">
                     <Heart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle className="text-2xl font-bold text-neutral-800">
@@ -297,7 +297,7 @@ const DentalFillings = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-soft">
+                <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section">
                   <CardHeader className="text-center">
                     <Shield className="w-12 h-12 text-green-600 mx-auto mb-4" />
                     <CardTitle className="text-2xl font-bold text-neutral-800">

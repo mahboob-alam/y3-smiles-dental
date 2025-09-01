@@ -218,7 +218,7 @@ const ServicesPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {serviceCategories.map((category, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white shadow-soft hover:shadow-medium transition-smooth">
+                <div key={index} className="text-center p-6 rounded-2xl bg-white shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                   <div className={`w-12 h-12 rounded-full ${category.color} flex items-center justify-center mx-auto mb-4`}>
                     <div className="w-6 h-6 rounded-full bg-current"></div>
                   </div>
@@ -248,7 +248,7 @@ const ServicesPage = () => {
                 const categoryInfo = serviceCategories.find(cat => cat.name === service.category);
                 
                 return (
-                  <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft h-full">
+                  <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader className="pb-4">
                       <div className="flex items-center justify-between mb-4">
                         <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-smooth">

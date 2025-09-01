@@ -204,7 +204,7 @@ const ExaminationHygiene = () => {
               {examinationComponents.map((component, index) => {
                 const IconComponent = component.icon;
                 return (
-                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium transition-smooth">
+                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
                         <IconComponent className="w-8 h-8" />
@@ -244,7 +244,7 @@ const ExaminationHygiene = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {hygieneServices.map((service, index) => (
-                <Card key={index} className="border-0 shadow-soft hover:shadow-medium transition-smooth">
+                <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                   <CardHeader>
                     <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                       {service.title}
@@ -280,7 +280,7 @@ const ExaminationHygiene = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {frequency.map((freq, index) => (
-                <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-smooth">
+                <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                   <CardHeader>
                     <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">
                       <Clock className="w-8 h-8" />

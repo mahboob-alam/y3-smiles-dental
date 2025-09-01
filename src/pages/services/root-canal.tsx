@@ -177,7 +177,7 @@ const RootCanalTherapy = () => {
               {signs.map((sign, index) => {
                 const IconComponent = sign.icon;
                 return (
-                  <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-smooth">
+                  <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mx-auto mb-4">
                         <IconComponent className="w-8 h-8" />
@@ -213,7 +213,7 @@ const RootCanalTherapy = () => {
 
               <div className="space-y-6">
                 {myths.map((item, index) => (
-                  <Card key={index} className="border-0 shadow-soft">
+                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardContent className="p-6">
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div className="bg-red-50 rounded-lg p-4">

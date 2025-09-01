@@ -206,7 +206,7 @@ const WisdomTeethRemoval = () => {
               {removalReasons.map((reason, index) => {
                 const IconComponent = reason.icon;
                 return (
-                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium transition-smooth">
+                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
                         <IconComponent className="w-8 h-8" />
@@ -247,7 +247,7 @@ const WisdomTeethRemoval = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {recoveryTimeline.map((period, index) => (
-                <Card key={index} className="border-0 shadow-soft hover:shadow-medium transition-smooth">
+                <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                   <CardHeader>
                     <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                       {period.title}

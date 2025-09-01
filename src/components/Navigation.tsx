@@ -36,10 +36,10 @@ const navigationItems = [
       }
     ]
   },
-  {
+  /* {
     title: "Contact",
     path: "/contact"
-  }
+  } */
 ];
 
 const NavItem = ({ item, isSubmenu = false }) => {

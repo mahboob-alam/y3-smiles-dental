@@ -29,10 +29,10 @@ const Hero = () => {
           {/* Tagline */}
           <div className="space-y-2 mb-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <p className="text-xl md:text-2xl font-light">
-              Your comfort is our priority.
+              Healthy teeth, happy life.
             </p>
             <p className="text-xl md:text-2xl font-light italic">
-              Your smile is our <em className="font-medium">passion</em>.
+              Confident smiles, <em className="font-medium">every day</em>
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{ animationDelay: '1s' }}>
+        <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{ animationDelay: '1s' }}>
           <div className="animate-bounce">
             <svg 
               className="w-6 h-6 text-white/70 hover:text-white transition-gentle" 

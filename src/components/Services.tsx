@@ -6,19 +6,19 @@ const Services = () => {
     {
       title: "Children's Dentistry (CDBS)",
       description: "Gentle, specialized care for children of all ages in a fun, comfortable environment.",
-      image: "https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/services/childrens-dentistry"
     },
     {
       title: "Emergency Dentistry",
       description: "24/7 emergency care for urgent dental situations with immediate pain relief.",
-      image: "https://images.pexels.com/photos/6812541/pexels-photo-6812541.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/services/emergency"
     },
     {
       title: "Comprehensive Examination & Hygiene",
       description: "Thorough checkups and professional cleanings to maintain optimal oral health.",
-      image: "https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "https://images.pexels.com/photos/3845746/pexels-photo-3845746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/services/examination-hygiene"
     }
   ];
@@ -27,7 +27,7 @@ const Services = () => {
     <section id="treatments" className="py-24 bg-background fade-in-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+          <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
             Our Services
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">

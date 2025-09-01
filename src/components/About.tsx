@@ -5,7 +5,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
           <div className="mb-16">
-            <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+            <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
               About
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">

@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+            <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
               Why Choose Us
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
@@ -98,11 +98,11 @@ const WhyChooseUs = () => {
               return (
                 <Card key={index} className="group border-0 shadow-soft hover:shadow-hover transition-gentle hover-lift" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader className="text-center pb-4">
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:gradient-primary group-hover:text-primary-foreground transition-gentle">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:gradient-accent group-hover:text-primary-foreground transition-gentle">
                       <IconComponent className="w-8 h-8" />
                     </div>
                     <div className="mb-2">
-                      <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full group-hover:gradient-primary group-hover:text-primary-foreground transition-gentle">
+                      <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full group-hover:gradient-accent group-hover:text-primary-foreground transition-gentle">
                         {reason.stats}
                       </span>
                     </div>

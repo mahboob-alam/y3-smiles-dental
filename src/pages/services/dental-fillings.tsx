@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
   Bluetooth as Tooth, 
   Palette, 
@@ -20,6 +21,8 @@ import {
 } from "lucide-react";
 
 const DentalFillings = () => {
+  useScrollAnimation();
+
   const benefits = [
     "Natural tooth appearance",
     "Mercury-free options",

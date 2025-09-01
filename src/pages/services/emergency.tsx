@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
   AlertTriangle, 
   Phone, 
@@ -20,6 +21,8 @@ import {
 } from "lucide-react";
 
 const EmergencyDentistry = () => {
+  useScrollAnimation();
+
   const benefits = [
     "24/7 emergency line",
     "Same-day appointments",

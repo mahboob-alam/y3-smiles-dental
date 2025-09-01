@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
   Scissors, 
   Shield, 
@@ -20,6 +21,8 @@ import {
 } from "lucide-react";
 
 const WisdomTeethRemoval = () => {
+  useScrollAnimation();
+
   const benefits = [
     "Prevent overcrowding",
     "Avoid future complications",

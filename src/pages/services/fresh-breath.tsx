@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
   Wind, 
   Heart, 
@@ -20,6 +21,8 @@ import {
 } from "lucide-react";
 
 const FreshBreathTreatment = () => {
+  useScrollAnimation();
+
   const benefits = [
     "Identify root causes",
     "Effective treatment plans",

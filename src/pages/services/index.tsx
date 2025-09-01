@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
   Baby, 
   Stethoscope, 
@@ -24,6 +25,8 @@ import {
 } from "lucide-react";
 
 const ServicesPage = () => {
+  useScrollAnimation();
+
   const allServices = [
     {
       title: "Children's Dentistry (CDBS)",

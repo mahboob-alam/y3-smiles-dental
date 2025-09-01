@@ -18,8 +18,11 @@ import {
   Gamepad2,
   ArrowRight
 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ChildrensDentistry = () => {
+  useScrollAnimation();
+  
   const benefits = [
     "Child-friendly environment",
     "Gentle, caring approach",

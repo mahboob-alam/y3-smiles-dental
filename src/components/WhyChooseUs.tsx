@@ -135,7 +135,7 @@ const WhyChooseUs = () => {
               {achievements.map((achievement, index) => {
                 const IconComponent = achievement.icon;
                 return (
-                  <div key={index} className="text-center hover-lift transition-gentle" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div key={index} className="text-center" style={{ animationDelay: `${index * 0.1}s` }}>
                     <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4 hover:gradient-primary hover:text-primary-foreground transition-gentle">
                       <IconComponent className="w-6 h-6" />
                     </div>

@@ -183,11 +183,11 @@ const Testimonials = () => {
                         </div>
                         
                         {/* Rating Stars */}
-                        <div className="flex items-center mb-4">
+                       {/*  <div className="flex items-center mb-4">
                           {[...Array(testimonial.rating)].map((_, starIndex) => (
                             <Star key={starIndex} className="w-5 h-5 text-yellow-400 fill-current hover:scale-110 transition-gentle" />
                           ))}
-                        </div>
+                        </div> */}
 
                         {/* Patient Info */}
                         <div className="flex items-center space-x-4">

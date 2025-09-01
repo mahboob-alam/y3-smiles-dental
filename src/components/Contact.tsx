@@ -1,0 +1,256 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useToast } from "@/hooks/use-toast";
+
+const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const templateParams = {
+        from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+        from_email: formData.get('email'),
+        phone: formData.get('phone'),
+        service: formData.get('service'),
+        message: formData.get('message'),
+        to_name: 'Y3 Smiles Dental',
+      };
+
+      // Replace these with your actual EmailJS credentials
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        templateParams,
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for contacting Y3 Smiles Dental. We'll get back to you soon.",
+      });
+
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      toast({
+        title: "Error Sending Message",
+        description: "Please try again or call us directly at your convenience.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <section id="contact" className="py-24 bg-neutral-50 fade-in-section">
+      <div className="text-black text-lg">X </div>
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+              Contact Us
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+              Ready to Transform Your Smile?
+            </h3>
+            <p className="text-lg text-neutral-600">
+              Book your appointment today and experience the DENTL difference.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <Card className="shadow-medium hover-lift transition-gentle slide-in-left">
+              <CardContent className="p-8">
+                <h4 className="text-2xl font-bold text-neutral-800 mb-6">
+                  Get in Touch
+                </h4>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4 hover-scale transition-gentle">
+                    <div className="w-5 h-5 text-primary mt-1">
+                      <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-neutral-800">PLACEHOLDER</p>
+                      <p className="text-neutral-600">Call us today</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4 hover-scale transition-gentle">
+                    <div className="w-5 h-5 text-primary mt-1">
+                      <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-neutral-800">PLACEHOLDER</p>
+                      <p className="text-neutral-600">Email us anytime</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4 hover-scale transition-gentle">
+                    <div className="w-5 h-5 text-primary mt-1">
+                      <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-neutral-800">1/34 King William St</p>
+                      <p className="text-neutral-600">Broadmeadows, VIC 3047</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-border">
+                  <h5 className="font-semibold text-neutral-800 mb-4">Opening Hours</h5>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
+                      <span className="text-neutral-600">Monday - Friday</span>
+                      <span className="text-neutral-800">9:00 AM - 5:00 PM</span>
+                    </div>
+                    <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
+                      <span className="text-neutral-600">Saturday</span>
+                      <span className="text-neutral-800">By appointment only</span>
+                    </div>
+                    <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
+                      <span className="text-neutral-600">Sunday</span>
+                      <span className="text-neutral-800">Closed</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Booking Form */}
+            <Card className="shadow-medium hover-lift transition-gentle slide-in-right">
+              <CardContent className="p-8">
+                <h4 className="text-2xl font-bold text-neutral-800 mb-6">
+                  Book Your Appointment
+                </h4>
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-neutral-700 mb-2">
+                        First Name
+                      </label>
+                      <input 
+                        name="firstName"
+                        type="text" 
+                        required
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                        placeholder="Your first name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-neutral-700 mb-2">
+                        Last Name
+                      </label>
+                      <input 
+                        name="lastName"
+                        type="text" 
+                        required
+                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                        placeholder="Your last name"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      Email Address
+                    </label>
+                    <input 
+                      name="email"
+                      type="email" 
+                      required
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      Phone Number
+                    </label>
+                    <input 
+                      name="phone"
+                      type="tel" 
+                      required
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                      placeholder="(03) 9000 0000"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      Service Interest
+                    </label>
+                    <select 
+                      name="service"
+                      required
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="Children's Dentistry (CDBS)">Children's Dentistry (CDBS)</option>
+                      <option value="Comprehensive Examination & Dental Hygiene">Comprehensive Examination & Dental Hygiene</option>
+                      <option value="Dental Fillings">Dental Fillings</option>
+                      <option value="Dentures">Dentures</option>
+                      <option value="Emergency Dentistry">Emergency Dentistry</option>
+                      <option value="Fluoride Treatments">Fluoride Treatments</option>
+                      <option value="Fresh Breath Treatment">Fresh Breath Treatment</option>
+                      <option value="Periodontal Care">Periodontal Care</option>
+                      <option value="Pits and Fissure Sealants">Pits and Fissure Sealants</option>
+                      <option value="Root Canal Therapy">Root Canal Therapy</option>
+                      <option value="TMD and Bruxism Treatment">TMD and Bruxism Treatment</option>
+                      <option value="Tooth Extraction">Tooth Extraction</option>
+                      <option value="Wisdom Teeth Removal">Wisdom Teeth Removal</option>
+                      <option value="General Consultation">General Consultation</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      Message
+                    </label>
+                    <textarea 
+                      name="message"
+                      rows={4}
+                      required
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
+                      placeholder="Tell us about your needs or any questions you have..."
+                    ></textarea>
+                  </div>
+
+                  <Button 
+                    variant="cta" 
+                    size="lg" 
+                    className="w-full" 
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "SENDING..." : "BOOK APPOINTMENT"}
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

@@ -7,6 +7,7 @@ import { Suspense, lazy } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
+import LoadingSpinner from "@/components/ui/loading-spinner";
 
 // Lazy load service pages
 const ChildrensDentistry = lazy(() => import("./pages/services/childrens-dentistry"));
@@ -48,107 +49,107 @@ const App = () => {
           
           {/* Service Routes */}
           <Route path="/services/childrens-dentistry" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <ChildrensDentistry />
             </Suspense>
           } />
           <Route path="/services/examination-hygiene" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <ExaminationHygiene />
             </Suspense>
           } />
           <Route path="/services/dental-fillings" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <DentalFillings />
             </Suspense>
           } />
           <Route path="/services/dentures" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <Dentures />
             </Suspense>
           } />
           <Route path="/services/emergency" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <EmergencyDentistry />
             </Suspense>
           } />
           <Route path="/services/fluoride" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <FluorideTreatments />
             </Suspense>
           } />
           <Route path="/services/fresh-breath" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <FreshBreathTreatment />
             </Suspense>
           } />
           <Route path="/services/periodontal" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <PeriodontalCare />
             </Suspense>
           } />
           <Route path="/services/sealants" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <PitsAndFissureSealants />
             </Suspense>
           } />
           <Route path="/services/root-canal" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <RootCanalTherapy />
             </Suspense>
           } />
           <Route path="/services/tmd-bruxism" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <TMDandBruxism />
             </Suspense>
           } />
           <Route path="/services/extraction" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <ToothExtraction />
             </Suspense>
           } />
           <Route path="/services/wisdom-teeth" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <WisdomTeethRemoval />
             </Suspense>
           } />
 
           {/* Other Main Routes */}
           <Route path="/services" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <ServicesPage />
             </Suspense>
           } />
           
           <Route path="/patients" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <PatientsPage />
             </Suspense>
           } />
           <Route path="/patients/smile-gallery" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <SmileGalleryPage />
             </Suspense>
           } />
           <Route path="/patients/case-studies" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <CaseStudiesPage />
             </Suspense>
           } />
 
           <Route path="/prices" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <PricesPage />
             </Suspense>
           } />
 
           <Route path="/specials" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <SpecialsPage />
             </Suspense>
           } />
           <Route path="/blog" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<LoadingSpinner />}>
               <BlogPage />
             </Suspense>
           } />

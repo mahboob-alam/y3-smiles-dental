@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 // Lazy load service pages
 const ChildrensDentistry = lazy(() => import("./pages/services/childrens-dentistry"));
@@ -33,14 +34,18 @@ const BlogPage = lazy(() => import("./pages/blog"));
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
+const App = () => {
+  // Initialize useScrollToHash for handling URL hash navigation
+  useScrollToHash();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
           
           {/* Service Routes */}
           <Route path="/services/childrens-dentistry" element={
@@ -155,6 +160,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;

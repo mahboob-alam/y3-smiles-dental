@@ -28,7 +28,7 @@ const Header = () => {
               (03) 1234 5678
             </a>
             <Button variant="cta" asChild>
-              <Link to="/contact">BOOK NOW</Link>
+              <Link to="/#contact">BOOK NOW</Link>
             </Button>
           </div>
         </div>

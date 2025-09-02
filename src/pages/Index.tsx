@@ -8,9 +8,11 @@ import GoogleMap from "@/components/GoogleMap";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 const Index = () => {
   useScrollAnimation();
+  useScrollToHash();
 
   return (
     <div className="min-h-screen flex flex-col">

@@ -28,8 +28,8 @@ const Footer = () => {
               </p>
               <p>
                 <span className="uppercase text-[#B4957E]">Email:</span>{" "}
-                <a href="mailto:PLACEHOLDER" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">
-                  PLACEHOLDER
+                <a href="mailto:y3smiles@gmail.com" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">
+                  y3smiles@gmail.com
                 </a>
               </p>
               <div>

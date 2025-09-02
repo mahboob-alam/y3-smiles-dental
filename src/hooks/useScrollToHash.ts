@@ -1,29 +1,28 @@
 import { useEffect } from 'react';
 
 export const useScrollToHash = () => {
-  useEffect(() => {
-    // Check if there's a hash in the URL when the component mounts
-    const hash = window.location.hash;
-    if (hash) {
+  const scrollToElement = (hash: string) => {
+    const element = document.querySelector(hash);
+    if (element) {
       // Small delay to ensure the element is rendered
       setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        element.scrollIntoView({ behavior: 'smooth' });
       }, 100);
+    }
+  };
+
+  // Handle initial load
+  useEffect(() => {
+    if (window.location.hash) {
+      scrollToElement(window.location.hash);
     }
   }, []); // Only run on mount
 
-  // Listen for hash changes
+  // Handle hash changes
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (hash) {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+      if (window.location.hash) {
+        scrollToElement(window.location.hash);
       }
     };
 

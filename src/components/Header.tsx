@@ -28,7 +28,21 @@ const Header = () => {
               (03) 1234 5678
             </a>
             <Button variant="cta" asChild>
-              <Link to="/#contact">BOOK NOW</Link>
+              <Link 
+                to="/#contact" 
+                onClick={(e) => {
+                  // If we're already on the homepage, handle the scroll manually
+                  if (window.location.pathname === '/') {
+                    e.preventDefault();
+                    const element = document.querySelector('#contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }
+                }}
+              >
+                BOOK NOW
+              </Link>
             </Button>
           </div>
         </div>

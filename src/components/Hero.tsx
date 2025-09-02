@@ -21,7 +21,7 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Y3 Dental Logo" 
-              className="h-24 md:h-32 w-auto animate-scale-in transition-gentle hover:scale-110 hover:drop-shadow-2xl"
+              className="h-24 md:h-32 w-auto animate-scale-in brightness-0 invert transition-gentle hover:scale-110 hover:drop-shadow-2xl"
               // className="h-24 md:h-32 w-auto drop-shadow-lg filter brightness-0 invert"
             />
           </div>

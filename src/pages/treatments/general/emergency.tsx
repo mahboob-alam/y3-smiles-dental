@@ -193,7 +193,7 @@ const EmergencyDentistryPage = () => {
               <div className="bg-red-50 border border-red-200 rounded-2xl p-6 mb-8">
                 <div className="flex items-center justify-center mb-4">
                   <Phone className="w-8 h-8 text-red-600 mr-3" />
-                  <span className="text-2xl font-bold text-red-800">Emergency Line: (03) 9820 1899</span>
+                  <span className="text-2xl font-bold text-red-800">Emergency Line: (03) 1234 5678</span>
                 </div>
                 <p className="text-red-700">Available 24/7 for dental emergencies</p>
               </div>
@@ -420,8 +420,8 @@ const EmergencyDentistryPage = () => {
               </p>
               <div className="space-y-4">
                 <Button variant="cta" size="xl" className="bg-red-600 hover:bg-red-700" asChild>
-                  <a href="tel:(03) 9820 1899">
-                    CALL EMERGENCY LINE: (03) 9820 1899
+                  <a href="tel:(03) 1234 5678">
+                    CALL EMERGENCY LINE: (03) 1234 5678
                     <Phone className="w-5 h-5 ml-2" />
                   </a>
                 </Button>

@@ -242,13 +242,14 @@ const ServicesPage = () => {
               </p>
             </div>
 
+            {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allServices.map((service, index) => {
                 const IconComponent = service.icon;
                 const categoryInfo = serviceCategories.find(cat => cat.name === service.category);
                 
                 return (
-                  <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
+                  <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section flex flex-col" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader className="pb-4">
                       <div className="flex items-center justify-between mb-4">
                         <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-smooth">
@@ -265,18 +266,16 @@ const ServicesPage = () => {
                         {service.description}
                       </p>
                     </CardHeader>
-                    <CardContent className="pt-0 flex-grow flex flex-col">
-                      <div className="flex-grow mb-6">
-                        <ul className="space-y-2">
-                          {service.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
-                              <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
-                              {feature}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <Button variant="learn" className="w-full mt-auto" asChild>
+                    <CardContent className="pt-0 flex-1 flex flex-col justify-between">
+                      <ul className="space-y-2 mb-6">
+                        {service.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                      <Button variant="learn" className="w-full" asChild>
                         <Link to={service.path}>
                           LEARN MORE
                         </Link>
@@ -361,13 +360,13 @@ const ServicesPage = () => {
               </p>
               <div className="bg-white rounded-2xl p-8 shadow-soft mb-8">
                 <div className="flex items-center justify-center mb-4">
-                  <div className="text-3xl font-bold text-red-600 mr-4">(03) 9820 1899</div>
+                  <div className="text-3xl font-bold text-red-600 mr-4">(03) 1234 5678</div>
                 </div>
                 <p className="text-red-700 font-medium">24/7 Emergency Dental Line</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="cta" size="lg" className="bg-red-600 hover:bg-red-700" asChild>
-                  <a href="tel:(03) 9820 1899">CALL EMERGENCY LINE</a>
+                  <a href="tel:(03) 1234 5678">CALL EMERGENCY LINE</a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/services/emergency">LEARN MORE</Link>

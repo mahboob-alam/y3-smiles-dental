@@ -42,7 +42,7 @@ const Services = () => {
           {featuredServices.map((service, index) => (
             <div 
               key={index}
-              className="group bg-card rounded-2xl shadow-soft hover:shadow-hover transition-gentle overflow-hidden hover-lift"
+              className="group bg-card rounded-2xl shadow-soft hover:shadow-hover transition-gentle overflow-hidden hover-lift flex flex-col"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="aspect-[4/3] overflow-hidden">
@@ -52,13 +52,15 @@ const Services = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
                 />
               </div>
-              <div className="p-8">
-                <h4 className="text-xl font-bold text-neutral-800 mb-4">
-                  {service.title}
-                </h4>
-                <p className="text-neutral-600 mb-6 leading-relaxed">
-                  {service.description}
-                </p>
+              <div className="p-8 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="text-xl font-bold text-neutral-800 mb-4">
+                    {service.title}
+                  </h4>
+                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
                 <Button variant="learn" className="w-full" asChild>
                   <Link to={service.link}>
                     LEARN MORE

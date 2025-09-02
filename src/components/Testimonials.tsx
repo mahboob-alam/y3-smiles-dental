@@ -149,25 +149,24 @@ const Testimonials = () => {
 
           {/* Testimonials Carousel */}
           <div className="relative">
-            {/* Navigation Buttons */}
-            <div className="flex justify-center gap-4 mb-8">
-              <button
-                className="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-neutral-200 hover:border-primary hover:gradient-primary hover:text-primary-foreground transition-gentle disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-110"
-                onClick={scrollPrev}
-                disabled={!prevBtnEnabled}
-              >
-                <ChevronLeft className="w-5 h-5 text-neutral-600" />
-              </button>
-              <button
-                className="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-neutral-200 hover:border-primary hover:gradient-primary hover:text-primary-foreground transition-gentle disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-110"
-                onClick={scrollNext}
-                disabled={!nextBtnEnabled}
-              >
-                <ChevronRight className="w-5 h-5 text-neutral-600" />
-              </button>
-            </div>
-
             {/* Carousel Container */}
+            {/* Navigation Buttons */}
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white border border-neutral-200 hover:border-primary hover:gradient-primary hover:text-primary-foreground transition-gentle disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-110 shadow-soft"
+              onClick={scrollPrev}
+              disabled={!prevBtnEnabled}
+            >
+              <ChevronLeft className="w-5 h-5 hover:text-primary-foreground" />
+            </button>
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white border border-neutral-200 hover:border-primary hover:gradient-primary hover:text-primary-foreground transition-gentle disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-110 shadow-soft"
+              onClick={scrollNext}
+              disabled={!nextBtnEnabled}
+            >
+              <ChevronRight className="w-5 h-5 hover:text-primary-foreground" />
+            </button>
+
+            {/* Carousel Content */}
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {testimonials.map((testimonial, index) => (

@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Smile, 
-  Users, 
-  Award, 
+import {
+  Smile,
+  Users,
+  Award,
   Heart,
   CheckCircle,
   Clock,
@@ -153,7 +153,7 @@ const Dentures = () => {
                 Dentures
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Custom-made dentures that restore your smile, speech, and chewing function. 
+                Custom-made dentures that restore your smile, speech, and chewing function.
                 Modern, comfortable solutions for missing teeth that look and feel natural.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -164,7 +164,7 @@ const Dentures = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CONSULTATION</Link>
               </Button>
             </div>
@@ -263,10 +263,10 @@ const Dentures = () => {
                 Restore Your Smile & Confidence
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Don't let missing teeth hold you back. Modern dentures can restore your 
+                Don't let missing teeth hold you back. Modern dentures can restore your
                 ability to eat, speak, and smile with confidence.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE DENTURE CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />

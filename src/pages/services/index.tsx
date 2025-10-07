@@ -439,7 +439,7 @@ const ServicesPage = () => {
                 Our experienced team is here to help you achieve the healthy, beautiful smile you deserve.
                 Book your consultation today and discover personalized dental care.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CONSULTATION</Link>
               </Button>
             </div>

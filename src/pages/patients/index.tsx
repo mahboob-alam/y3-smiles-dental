@@ -4,10 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { 
-  Users, 
-  Camera, 
-  FileText, 
+import {
+  Users,
+  Camera,
+  FileText,
   Heart,
   CheckCircle,
   Star,
@@ -30,7 +30,7 @@ const PatientsPage = () => {
       title: "Case Studies",
       description: "Detailed treatment journeys showing comprehensive dental care",
       icon: FileText,
-      link: "/patients/case-studies", 
+      link: "/patients/case-studies",
       features: ["Complete treatment plans", "Step-by-step process", "Patient testimonials", "Clinical outcomes"]
     }
   ];
@@ -42,7 +42,7 @@ const PatientsPage = () => {
       icon: Heart,
       details: [
         "Anxiety management techniques",
-        "Sedation options available", 
+        "Sedation options available",
         "Gentle, caring approach",
         "Comfortable treatment rooms"
       ]
@@ -79,7 +79,7 @@ const PatientsPage = () => {
       text: "The team at DENTL transformed my smile beyond my expectations. I finally have the confidence to smile freely!"
     },
     {
-      name: "Michael R.", 
+      name: "Michael R.",
       treatment: "Dental Implants",
       rating: 5,
       text: "Professional, caring, and expert treatment. My implants feel completely natural and the process was surprisingly comfortable."
@@ -112,7 +112,7 @@ const PatientsPage = () => {
                 Patient Resources
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Discover real patient stories, treatment outcomes, and comprehensive case studies. 
+                Discover real patient stories, treatment outcomes, and comprehensive case studies.
                 See how DENTL has transformed smiles and lives for over 40 years.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -138,7 +138,7 @@ const PatientsPage = () => {
                 Real Stories, Real Results
               </h3>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                Explore our patient gallery and case studies to see the life-changing results 
+                Explore our patient gallery and case studies to see the life-changing results
                 we achieve every day.
               </p>
             </div>
@@ -316,10 +316,10 @@ const PatientsPage = () => {
                 Ready to Join Our Family of Happy Patients?
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Experience the same exceptional care and outstanding results that our patients 
+                Experience the same exceptional care and outstanding results that our patients
                 have enjoyed for over 40 years.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK YOUR CONSULTATION</Link>
               </Button>
             </div>

@@ -174,7 +174,7 @@ const DentalFillings = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK APPOINTMENT</Link>
               </Button>
             </div>
@@ -363,7 +363,7 @@ const DentalFillings = () => {
                 Early treatment of cavities prevents more extensive and expensive procedures.
                 Schedule your appointment today for comfortable, effective treatment.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   BOOK FILLING APPOINTMENT
                   <ArrowRight className="w-5 h-5 ml-2" />

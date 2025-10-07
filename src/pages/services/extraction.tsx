@@ -206,7 +206,7 @@ const ToothExtraction = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CONSULTATION</Link>
               </Button>
             </div>
@@ -311,7 +311,7 @@ const ToothExtraction = () => {
                 When tooth extraction is necessary, trust our experienced team to provide
                 comfortable, professional care with comprehensive aftercare support.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />

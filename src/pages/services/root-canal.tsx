@@ -157,7 +157,7 @@ const RootCanalTherapy = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK ROOT CANAL CONSULTATION</Link>
               </Button>
             </div>
@@ -279,7 +279,7 @@ const RootCanalTherapy = () => {
                 Root canal therapy can eliminate your pain and save your natural tooth.
                 Modern techniques make the procedure comfortable and highly successful.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE EMERGENCY CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />

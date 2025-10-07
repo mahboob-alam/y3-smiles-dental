@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Shield, 
-  Baby, 
-  Users, 
+import {
+  Shield,
+  Baby,
+  Users,
   Heart,
   CheckCircle,
   Star,
@@ -161,7 +161,7 @@ const FluorideTreatments = () => {
                 Fluoride Treatments
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Professional fluoride treatments provide superior cavity protection by strengthening 
+                Professional fluoride treatments provide superior cavity protection by strengthening
                 tooth enamel and reversing early stages of tooth decay. Safe, effective prevention for all ages.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -172,7 +172,7 @@ const FluorideTreatments = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK FLUORIDE TREATMENT</Link>
               </Button>
             </div>
@@ -311,10 +311,10 @@ const FluorideTreatments = () => {
                 Protect Your Smile Today
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Give your teeth the extra protection they deserve with professional fluoride treatments. 
+                Give your teeth the extra protection they deserve with professional fluoride treatments.
                 Safe, effective, and proven to prevent cavities.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE FLUORIDE TREATMENT
                   <ArrowRight className="w-5 h-5 ml-2" />

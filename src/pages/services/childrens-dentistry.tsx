@@ -158,7 +158,7 @@ const ChildrensDentistry = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CHILD'S APPOINTMENT</Link>
               </Button>
             </div>
@@ -418,7 +418,7 @@ const ChildrensDentistry = () => {
                 Start your child's journey to lifelong oral health with gentle,
                 professional care in a fun, comfortable environment.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE FIRST VISIT
                   <ArrowRight className="w-5 h-5 ml-2" />

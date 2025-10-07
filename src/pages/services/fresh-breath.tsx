@@ -188,7 +188,7 @@ const FreshBreathTreatment = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CONSULTATION</Link>
               </Button>
             </div>
@@ -312,7 +312,7 @@ const FreshBreathTreatment = () => {
                 Don't let bad breath hold you back from social interactions and professional opportunities.
                 Our comprehensive treatment approach can help you achieve lasting fresh breath.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE FRESH BREATH CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />

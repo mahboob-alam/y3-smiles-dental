@@ -170,7 +170,7 @@ const PitsAndFissureSealants = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK SEALANT APPOINTMENT</Link>
               </Button>
             </div>
@@ -324,7 +324,7 @@ const PitsAndFissureSealants = () => {
                 Give your children (and yourself) the best protection against cavities.
                 Sealants are a simple, effective way to prevent dental problems before they start.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE SEALANT CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />

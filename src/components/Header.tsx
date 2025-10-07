@@ -12,24 +12,24 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <Navigation />
             <Link to="/" className="flex items-center transition-gentle hover:scale-105">
-              <img 
-              src={logo} 
-              alt="Y3 Smiles Logo" 
-              className="h-10 w-auto transition-gentle hover:drop-shadow-lg"
+              <img
+                src={logo}
+                alt="Y3 Smiles Logo"
+                className="h-10 w-auto transition-gentle hover:drop-shadow-lg"
               />
             </Link>
           </div>
 
-          
+
 
           {/* CTA Buttons */}
           <div className="flex items-center space-x-4">
             <a href="tel:(03) 1234 5678" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
               (03) 1234 5678
             </a>
-            <Button variant="cta" asChild>
-              <Link 
-                to="/#contact" 
+            <Button variant="booking" asChild>
+              <Link
+                to="/#contact"
                 onClick={(e) => {
                   // If we're already on the homepage, handle the scroll manually
                   if (window.location.pathname === '/') {

@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Heart, 
-  Shield, 
-  Users, 
+import {
+  Heart,
+  Shield,
+  Users,
   Stethoscope,
   CheckCircle,
   Star,
@@ -147,7 +147,7 @@ const PeriodontalCare = () => {
                 Periodontal Care
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Comprehensive gum disease treatment and prevention to save your teeth and improve your overall health. 
+                Comprehensive gum disease treatment and prevention to save your teeth and improve your overall health.
                 Expert care for all stages of periodontal disease.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -158,7 +158,7 @@ const PeriodontalCare = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK GUM HEALTH ASSESSMENT</Link>
               </Button>
             </div>
@@ -184,15 +184,13 @@ const PeriodontalCare = () => {
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="flex items-center justify-between mb-4">
-                        <div className={`w-16 h-16 rounded-2xl flex items-center justify-center ${
-                          index === 0 ? 'bg-green-50 text-green-600' :
-                          index === 1 ? 'bg-yellow-50 text-yellow-600' : 'bg-red-50 text-red-600'
-                        }`}>
+                        <div className={`w-16 h-16 rounded-2xl flex items-center justify-center ${index === 0 ? 'bg-green-50 text-green-600' :
+                            index === 1 ? 'bg-yellow-50 text-yellow-600' : 'bg-red-50 text-red-600'
+                          }`}>
                           <IconComponent className="w-8 h-8" />
                         </div>
-                        <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          stage.reversible ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
-                        }`}>
+                        <div className={`px-3 py-1 rounded-full text-xs font-medium ${stage.reversible ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                          }`}>
                           {stage.reversible ? 'Reversible' : 'Not Reversible'}
                         </div>
                       </div>
@@ -264,10 +262,10 @@ const PeriodontalCare = () => {
                 Don't Ignore the Warning Signs
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Early treatment of gum disease can save your teeth and improve your overall health. 
+                Early treatment of gum disease can save your teeth and improve your overall health.
                 Schedule a comprehensive periodontal evaluation today.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE PERIODONTAL EVALUATION
                   <ArrowRight className="w-5 h-5 ml-2" />

@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Scissors, 
-  Shield, 
-  Clock, 
+import {
+  Scissors,
+  Shield,
+  Clock,
   Heart,
   CheckCircle,
   Users,
@@ -175,7 +175,7 @@ const WisdomTeethRemoval = () => {
                 Wisdom Teeth Removal
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Expert wisdom tooth extraction to prevent complications and maintain your oral health. 
+                Expert wisdom tooth extraction to prevent complications and maintain your oral health.
                 Comfortable procedures with sedation options for anxious patients.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -186,7 +186,7 @@ const WisdomTeethRemoval = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK WISDOM TOOTH CONSULTATION</Link>
               </Button>
             </div>
@@ -310,10 +310,10 @@ const WisdomTeethRemoval = () => {
                 Don't Wait for Problems to Develop
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Early evaluation and timely removal of wisdom teeth can prevent complications 
+                Early evaluation and timely removal of wisdom teeth can prevent complications
                 and ensure easier recovery. Schedule your consultation today.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE WISDOM TOOTH EVALUATION
                   <ArrowRight className="w-5 h-5 ml-2" />

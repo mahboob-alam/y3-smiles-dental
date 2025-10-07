@@ -23,6 +23,8 @@ const buttonVariants = cva(
         hero: "gradient-accent text-accent-foreground hover:gradient-accent-hover shadow-large hover:shadow-hover font-bold tracking-widest uppercase px-10 py-4 text-sm",
         // NEW Golden CTA Variant
         learn: "bg-primary/10 text-primary hover:gradient-primary hover:text-primary-foreground border-2 border-primary/20 hover:border-transparent font-medium hover:shadow-medium",
+        // Booking Button Variant - Custom color #B5A642
+        booking: "bg-[#B5A642] text-white hover:bg-[#A19237] shadow-medium hover:shadow-hover font-semibold tracking-wide uppercase text-xs px-8 py-3 transition-gentle",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -41,7 +43,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 

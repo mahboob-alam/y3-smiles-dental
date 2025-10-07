@@ -181,7 +181,7 @@ const ExaminationHygiene = () => {
                   </div>
                 ))}
               </div>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">BOOK CHECKUP</Link>
               </Button>
             </div>
@@ -422,7 +422,7 @@ const ExaminationHygiene = () => {
                 Regular examinations and professional cleanings are your best defence against
                 dental problems. Schedule your appointment today for optimal oral health.
               </p>
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="booking" size="xl" asChild>
                 <Link to="/#contact">
                   SCHEDULE EXAMINATION
                   <ArrowRight className="w-5 h-5 ml-2" />

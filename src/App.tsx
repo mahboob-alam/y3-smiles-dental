@@ -33,6 +33,20 @@ const PricesPage = lazy(() => import("./pages/prices"));
 const SpecialsPage = lazy(() => import("./pages/specials"));
 const BlogPage = lazy(() => import("./pages/blog"));
 
+// Lazy load location pages
+const BroadmeadowsPage = lazy(() => import("./pages/locations/broadmeadows"));
+const GlenroyPage = lazy(() => import("./pages/locations/glenroy"));
+const GreenvalePage = lazy(() => import("./pages/locations/greenvale"));
+const CampbellfieldPage = lazy(() => import("./pages/locations/campbellfield"));
+const MeadowHeightsPage = lazy(() => import("./pages/locations/meadow-heights"));
+const RoxburyParkPage = lazy(() => import("./pages/locations/roxbury-park"));
+const CraigieburnPage = lazy(() => import("./pages/locations/craigieburn"));
+const WestmeadowsPage = lazy(() => import("./pages/locations/westmeadows"));
+const MicklehamPage = lazy(() => import("./pages/locations/mickleham"));
+const FawknerPage = lazy(() => import("./pages/locations/fawkner"));
+const GladstoneParkPage = lazy(() => import("./pages/locations/gladstone-park"));
+const HadfieldPage = lazy(() => import("./pages/locations/hadfield"));
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -151,6 +165,68 @@ const App = () => {
           <Route path="/blog" element={
             <Suspense fallback={<LoadingSpinner />}>
               <BlogPage />
+            </Suspense>
+          } />
+
+          {/* Location Routes */}
+          <Route path="/locations/broadmeadows" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BroadmeadowsPage />
+            </Suspense>
+          } />
+          <Route path="/locations/glenroy" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GlenroyPage />
+            </Suspense>
+          } />
+          <Route path="/locations/greenvale" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GreenvalePage />
+            </Suspense>
+          } />
+          <Route path="/locations/campbellfield" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CampbellfieldPage />
+            </Suspense>
+          } />
+          <Route path="/locations/meadow-heights" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MeadowHeightsPage />
+            </Suspense>
+          } />
+          <Route path="/locations/roxbury-park" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <RoxburyParkPage />
+            </Suspense>
+          } />
+          <Route path="/locations/craigieburn" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CraigieburnPage />
+            </Suspense>
+          } />
+          <Route path="/locations/westmeadows" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <WestmeadowsPage />
+            </Suspense>
+          } />
+          <Route path="/locations/mickleham" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <MicklehamPage />
+            </Suspense>
+          } />
+          <Route path="/locations/fawkner" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <FawknerPage />
+            </Suspense>
+          } />
+          <Route path="/locations/gladstone-park" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <GladstoneParkPage />
+            </Suspense>
+          } />
+          <Route path="/locations/hadfield" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <HadfieldPage />
             </Suspense>
           } />
 

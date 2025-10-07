@@ -79,16 +79,18 @@ const Footer = () => {
           <div>
             <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Areas We Service</h3>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">BROADMEADOWS</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GLENROY</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GREENVALE</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CAMPBELLFIELD</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MEADOW HEIGHTS</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">ROXBURY PARK</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CRAIGIEBURN</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">WESTMEADOWS</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MICKLEHAM</Link>
-              <Link to="#" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">FAWKNER</Link>
+              <Link to="/locations/broadmeadows" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">BROADMEADOWS</Link>
+              <Link to="/locations/glenroy" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GLENROY</Link>
+              <Link to="/locations/greenvale" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GREENVALE</Link>
+              <Link to="/locations/campbellfield" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CAMPBELLFIELD</Link>
+              <Link to="/locations/meadow-heights" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MEADOW HEIGHTS</Link>
+              <Link to="/locations/roxbury-park" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">ROXBURY PARK</Link>
+              <Link to="/locations/craigieburn" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CRAIGIEBURN</Link>
+              <Link to="/locations/westmeadows" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">WESTMEADOWS</Link>
+              <Link to="/locations/mickleham" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MICKLEHAM</Link>
+              <Link to="/locations/fawkner" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">FAWKNER</Link>
+              <Link to="/locations/gladstone-park" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GLADSTONE PARK</Link>
+              <Link to="/locations/hadfield" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">HADFIELD</Link>
             </div>
           </div>
 

@@ -63,7 +63,7 @@ const WhyChooseUs = () => {
     },
     {
       number: "13",
-      label: "Specialised Services",
+      label: "Specialised Treatments",
       icon: Stethoscope
     },
     {

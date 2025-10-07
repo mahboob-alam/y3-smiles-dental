@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Services from "@/components/Services";
+import Treatments from "@/components/Treatments";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import GoogleMap from "@/components/GoogleMap";
@@ -20,7 +20,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Services />
+        <Treatments />
         <WhyChooseUs />
         <Testimonials />
         <GoogleMap />

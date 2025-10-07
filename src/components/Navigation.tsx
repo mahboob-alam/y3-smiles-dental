@@ -13,25 +13,25 @@ const navigationItems = [
     path: "/",
   },
   {
-    title: "Services",
-    path: "/services",
+    title: "Treatments",
+    path: "/treatments",
     subItems: [
       {
-        title: "Our Services",
+        title: "Our Treatments",
         items: [
-          { title: "Children's Dentistry (CDBS)", path: "/services/childrens-dentistry" },
-          { title: "Comprehensive Examination & Dental Hygiene", path: "/services/examination-hygiene" },
-          { title: "Dental Fillings", path: "/services/dental-fillings" },
-          { title: "Dentures", path: "/services/dentures" },
-          { title: "Emergency Dentistry", path: "/services/emergency" },
-          { title: "Fluoride Treatments", path: "/services/fluoride" },
-          { title: "Fresh Breath Treatment", path: "/services/fresh-breath" },
-          { title: "Periodontal Care", path: "/services/periodontal" },
-          { title: "Pits and Fissure Sealants", path: "/services/sealants" },
-          { title: "Root Canal Therapy", path: "/services/root-canal" },
-          { title: "TMD and Bruxism Treatment", path: "/services/tmd-bruxism" },
-          { title: "Tooth Extraction", path: "/services/extraction" },
-          { title: "Wisdom Teeth Removal", path: "/services/wisdom-teeth" }
+          { title: "Children's Dentistry (CDBS)", path: "/treatments/childrens-dentistry" },
+          { title: "Comprehensive Examination & Dental Hygiene", path: "/treatments/examination-hygiene" },
+          { title: "Dental Fillings", path: "/treatments/dental-fillings" },
+          { title: "Dentures", path: "/treatments/dentures" },
+          { title: "Emergency Dentistry", path: "/treatments/emergency" },
+          { title: "Fluoride Treatments", path: "/treatments/fluoride" },
+          { title: "Fresh Breath Treatment", path: "/treatments/fresh-breath" },
+          { title: "Periodontal Care", path: "/treatments/periodontal" },
+          { title: "Pits and Fissure Sealants", path: "/treatments/sealants" },
+          { title: "Root Canal Therapy", path: "/treatments/root-canal" },
+          { title: "TMD and Bruxism Treatment", path: "/treatments/tmd-bruxism" },
+          { title: "Tooth Extraction", path: "/treatments/extraction" },
+          { title: "Wisdom Teeth Removal", path: "/treatments/wisdom-teeth" }
         ]
       }
     ]
@@ -132,17 +132,17 @@ export function Navigation({ className }: NavigationProps) {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button 
-          variant="ghost" 
-          size="icon" 
+        <Button
+          variant="ghost"
+          size="icon"
           className="group flex items-center justify-center hover:gradient-accent hover:text-accent-foreground transition-gentle transform hover:scale-110"
         >
           <Menu className="h-5 w-5 transition-gentle group-hover:scale-110 group-hover:rotate-180" />
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent 
-        side="left" 
+      <SheetContent
+        side="left"
         className="w-[300px] sm:w-[400px] lg:w-[500px] overflow-y-auto border-r animate-slide-in-left"
       >
         <div className="mb-8">

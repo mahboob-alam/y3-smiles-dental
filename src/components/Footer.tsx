@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {/* Logo and Contact Info */}
           <div className="space-y-6">
-            <img 
-              src={logo} 
-              alt="Y3 Smiles Dental Logo" 
+            <img
+              src={logo}
+              alt="Y3 Smiles Dental Logo"
               className="h-12 w-auto transition-gentle hover:scale-105 hover:drop-shadow-lg"
             />
             <div className="space-y-2 text-sm">
@@ -94,24 +94,24 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Services</h3>
+            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Treatments</h3>
             <div className="space-y-2 text-sm">
-              <Link to="/services/childrens-dentistry" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/childrens-dentistry" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 CHILDREN'S DENTISTRY
               </Link>
-              <Link to="/services/examination-hygiene" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/examination-hygiene" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 EXAMINATION & HYGIENE
               </Link>
-              <Link to="/services/dental-fillings" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/dental-fillings" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 DENTAL FILLINGS
               </Link>
-              <Link to="/services/dentures" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/dentures" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 DENTURES
               </Link>
-              <Link to="/services/emergency" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/emergency" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 EMERGENCY DENTISTRY
               </Link>
-              <Link to="/services/root-canal" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <Link to="/treatments/root-canal" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
                 ROOT CANAL THERAPY
               </Link>
             </div>

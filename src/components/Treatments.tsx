@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const Services = () => {
-  const featuredServices = [
+const Treatments = () => {
+  const featuredTreatments = [
     {
       title: "Children's Dentistry (CDBS)",
       description: "Gentle, specialised care for children of all ages in a fun, comfortable environment.",
@@ -39,7 +39,7 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {featuredServices.map((service, index) => (
+          {featuredTreatments.map((treatment, index) => (
             <div
               key={index}
               className="group bg-card rounded-2xl shadow-soft hover:shadow-hover transition-gentle overflow-hidden hover-lift flex flex-col"
@@ -47,22 +47,22 @@ const Services = () => {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={service.image}
-                  alt={service.title}
+                  src={treatment.image}
+                  alt={treatment.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col justify-between">
                 <div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">
-                    {service.title}
+                    {treatment.title}
                   </h4>
                   <p className="text-neutral-600 mb-6 leading-relaxed">
-                    {service.description}
+                    {treatment.description}
                   </p>
                 </div>
                 <Button variant="learn" className="w-full" asChild>
-                  <Link to={service.link}>
+                  <Link to={treatment.link}>
                     LEARN MORE
                   </Link>
                 </Button>
@@ -89,4 +89,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Treatments;

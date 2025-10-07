@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Shield, 
-  Baby, 
-  Users, 
+import {
+  Shield,
+  Baby,
+  Users,
   Award,
   CheckCircle,
   Star,
@@ -35,7 +35,7 @@ const PitsAndFissureSealants = () => {
       title: "Resin-Based Sealants",
       description: "Most common type, providing excellent cavity protection",
       icon: Shield,
-      features: ["Excellent adhesion", "Durable protection", "Clear or tooth-colored", "Easy application"],
+      features: ["Excellent adhesion", "Durable protection", "Clear or tooth-coloured", "Easy application"],
       lifespan: "5-10 years",
       suitableFor: "Most patients, especially children"
     },
@@ -159,7 +159,7 @@ const PitsAndFissureSealants = () => {
                 Pits & Fissure Sealants
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Protective coatings for back teeth that prevent 80% of cavities in the most vulnerable areas. 
+                Protective coatings for back teeth that prevent 80% of cavities in the most vulnerable areas.
                 Simple, painless prevention that saves teeth and money.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -190,9 +190,9 @@ const PitsAndFissureSealants = () => {
                     Shield Your Teeth from Cavities
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    Dental sealants are thin, protective coatings that cover the chewing surfaces 
-                    of back teeth. They fill in the deep grooves and pits where food particles 
-                    and bacteria can hide, creating a smooth surface that's much easier to clean 
+                    Dental sealants are thin, protective coatings that cover the chewing surfaces
+                    of back teeth. They fill in the deep grooves and pits where food particles
+                    and bacteria can hide, creating a smooth surface that's much easier to clean
                     and significantly more resistant to decay.
                   </p>
                   <div className="space-y-4">
@@ -220,7 +220,7 @@ const PitsAndFissureSealants = () => {
                   </div>
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                     alt="Dental sealant application showing protective coating on back teeth"
                     className="w-full h-full object-cover"
@@ -321,7 +321,7 @@ const PitsAndFissureSealants = () => {
                 Protect Your Family's Smiles
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Give your children (and yourself) the best protection against cavities. 
+                Give your children (and yourself) the best protection against cavities.
                 Sealants are a simple, effective way to prevent dental problems before they start.
               </p>
               <Button variant="cta" size="xl" asChild>

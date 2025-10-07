@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  AlertTriangle, 
-  Phone, 
-  Clock, 
+import {
+  AlertTriangle,
+  Phone,
+  Clock,
   Heart,
   CheckCircle,
   Users,
@@ -141,7 +141,7 @@ const EmergencyDentistry = () => {
                 Emergency Dentistry
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Immediate dental care when you need it most. Our emergency services provide 
+                Immediate dental care when you need it most. Our emergency services provide
                 rapid pain relief and urgent treatment to save your teeth and restore your comfort.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -171,7 +171,7 @@ const EmergencyDentistry = () => {
                 Common Dental Emergencies
               </h2>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                Recognize emergency situations and know what immediate steps to take.
+                Recognise emergency situations and know what immediate steps to take.
               </p>
             </div>
 
@@ -278,7 +278,7 @@ const EmergencyDentistry = () => {
                 Dental Emergency? We're Here to Help
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Don't suffer in pain. Our emergency dental services are available when you need them most. 
+                Don't suffer in pain. Our emergency dental services are available when you need them most.
                 Call now for immediate assistance and same-day treatment.
               </p>
               <div className="space-y-4">

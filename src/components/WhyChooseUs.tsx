@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Clock, 
-  Heart, 
-  Shield, 
-  Users, 
-  Award, 
+import {
+  Clock,
+  Heart,
+  Shield,
+  Users,
+  Award,
   Stethoscope,
   CheckCircle,
   Star
@@ -63,7 +63,7 @@ const WhyChooseUs = () => {
     },
     {
       number: "13",
-      label: "Specialized Services",
+      label: "Specialised Services",
       icon: Stethoscope
     },
     {
@@ -86,7 +86,7 @@ const WhyChooseUs = () => {
               Experience the Y3 Smiles Difference
             </h3>
             <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-              Formerly located within St. Vincent's Hospital, we now offer a calming, 
+              Formerly located within St. Vincent's Hospital, we now offer a calming,
               sanctuary-like clinic experience with the same trusted expertise you've come to expect.
             </p>
           </div>
@@ -130,7 +130,7 @@ const WhyChooseUs = () => {
                 Our commitment to excellence is reflected in our achievements and patient satisfaction.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {achievements.map((achievement, index) => {
                 const IconComponent = achievement.icon;

@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Stethoscope, 
-  Eye, 
-  Shield, 
+import {
+  Stethoscope,
+  Eye,
+  Shield,
   Heart,
   CheckCircle,
   Users,
@@ -170,7 +170,7 @@ const ExaminationHygiene = () => {
                 Comprehensive Examination & Dental Hygiene
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Thorough dental examinations and professional cleanings to maintain optimal oral health. 
+                Thorough dental examinations and professional cleanings to maintain optimal oral health.
                 Early detection and prevention are the keys to a lifetime of healthy smiles.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -419,7 +419,7 @@ const ExaminationHygiene = () => {
                 Prevention is the Best Medicine
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Regular examinations and professional cleanings are your best defense against 
+                Regular examinations and professional cleanings are your best defence against
                 dental problems. Schedule your appointment today for optimal oral health.
               </p>
               <Button variant="cta" size="xl" asChild>

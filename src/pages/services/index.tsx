@@ -5,17 +5,17 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Baby, 
-  Stethoscope, 
-  Bluetooth as Tooth, 
-  Smile, 
-  AlertTriangle, 
-  Shield, 
-  Wind, 
-  Heart, 
-  Scissors, 
-  Moon, 
+import {
+  Baby,
+  Stethoscope,
+  Bluetooth as Tooth,
+  Smile,
+  AlertTriangle,
+  Shield,
+  Wind,
+  Heart,
+  Scissors,
+  Moon,
   Activity,
   CheckCircle,
   Users,
@@ -30,7 +30,7 @@ const ServicesPage = () => {
   const allServices = [
     {
       title: "Children's Dentistry (CDBS)",
-      description: "Gentle, specialized care for children of all ages in a fun, comfortable environment",
+      description: "Gentle, specialised care for children of all ages in a fun, comfortable environment",
       icon: Baby,
       path: "/services/childrens-dentistry",
       category: "Family Care",
@@ -46,7 +46,7 @@ const ServicesPage = () => {
     },
     {
       title: "Dental Fillings",
-      description: "Modern, tooth-colored fillings that restore function and appearance",
+      description: "Modern, tooth-coloured fillings that restore function and appearance",
       icon: Tooth,
       path: "/services/dental-fillings",
       category: "Restorative Care",
@@ -81,7 +81,7 @@ const ServicesPage = () => {
       description: "Comprehensive treatment to identify and eliminate bad breath causes",
       icon: Wind,
       path: "/services/fresh-breath",
-      category: "Specialized Care",
+      category: "Specialised Care",
       features: ["Root cause identification", "Effective solutions", "Long-lasting results", "Confidence boost"]
     },
     {
@@ -89,7 +89,7 @@ const ServicesPage = () => {
       description: "Expert gum disease treatment and prevention to save your teeth",
       icon: Heart,
       path: "/services/periodontal",
-      category: "Specialized Care",
+      category: "Specialised Care",
       features: ["Gum disease treatment", "Prevent tooth loss", "Improve overall health", "Advanced techniques"]
     },
     {
@@ -105,7 +105,7 @@ const ServicesPage = () => {
       description: "Advanced treatment to save infected teeth and eliminate pain",
       icon: Heart,
       path: "/services/root-canal",
-      category: "Specialized Care",
+      category: "Specialised Care",
       features: ["Save natural teeth", "Pain elimination", "High success rate", "Modern techniques"]
     },
     {
@@ -113,7 +113,7 @@ const ServicesPage = () => {
       description: "Comprehensive care for jaw disorders and teeth grinding",
       icon: Moon,
       path: "/services/tmd-bruxism",
-      category: "Specialized Care",
+      category: "Specialised Care",
       features: ["Jaw pain relief", "Protect teeth", "Custom night guards", "Sleep improvement"]
     },
     {
@@ -141,7 +141,7 @@ const ServicesPage = () => {
       color: "bg-blue-50 text-blue-600"
     },
     {
-      name: "Preventive Care", 
+      name: "Preventive Care",
       description: "Proactive treatments to maintain oral health",
       color: "bg-green-50 text-green-600"
     },
@@ -151,7 +151,7 @@ const ServicesPage = () => {
       color: "bg-purple-50 text-purple-600"
     },
     {
-      name: "Specialized Care",
+      name: "Specialised Care",
       description: "Advanced treatments for specific conditions",
       color: "bg-orange-50 text-orange-600"
     },
@@ -186,8 +186,8 @@ const ServicesPage = () => {
                 Our Dental Services
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Comprehensive dental care for you and your family. From routine checkups 
-                to specialized treatments, we provide gentle, professional care in a comfortable environment.
+                Comprehensive dental care for you and your family. From routine checkups
+                to specialised treatments, we provide gentle, professional care in a comfortable environment.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {benefits.map((benefit, index) => (
@@ -209,7 +209,7 @@ const ServicesPage = () => {
                 Service Categories
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Specialized Care for Every Need
+                Specialised Care for Every Need
               </h3>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
                 Our comprehensive range of dental services covers every aspect of oral health care.
@@ -247,7 +247,7 @@ const ServicesPage = () => {
               {allServices.map((service, index) => {
                 const IconComponent = service.icon;
                 const categoryInfo = serviceCategories.find(cat => cat.name === service.category);
-                
+
                 return (
                   <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section flex flex-col" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader className="pb-4">
@@ -301,9 +301,9 @@ const ServicesPage = () => {
                     Experience You Can Trust
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    With over 40 years of experience, DENTL East Melbourne has been providing 
-                    exceptional dental services to families throughout Melbourne. Our commitment 
-                    to gentle, comprehensive care ensures every patient feels comfortable and 
+                    With over 40 years of experience, DENTL East Melbourne has been providing
+                    exceptional dental services to families throughout Melbourne. Our commitment
+                    to gentle, comprehensive care ensures every patient feels comfortable and
                     confident in their treatment.
                   </p>
                   <div className="space-y-4">
@@ -335,7 +335,7 @@ const ServicesPage = () => {
                     <div className="text-4xl font-bold text-primary mb-2">40+</div>
                     <div className="text-neutral-600 mb-6">Years of Excellence</div>
                     <div className="text-4xl font-bold text-primary mb-2">13</div>
-                    <div className="text-neutral-600 mb-6">Specialized Services</div>
+                    <div className="text-neutral-600 mb-6">Specialised Services</div>
                     <div className="text-4xl font-bold text-primary mb-2">1000+</div>
                     <div className="text-neutral-600 mb-6">Happy Families</div>
                     <div className="text-4xl font-bold text-primary mb-2">5★</div>
@@ -396,7 +396,7 @@ const ServicesPage = () => {
                   description: "Comprehensive examination and discussion of your dental health goals"
                 },
                 {
-                  step: "2", 
+                  step: "2",
                   title: "Treatment Planning",
                   description: "Customized treatment plan tailored to your specific needs and budget"
                 },
@@ -436,7 +436,7 @@ const ServicesPage = () => {
                 Ready to Experience the DENTL Difference?
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Our experienced team is here to help you achieve the healthy, beautiful smile you deserve. 
+                Our experienced team is here to help you achieve the healthy, beautiful smile you deserve.
                 Book your consultation today and discover personalized dental care.
               </p>
               <Button variant="cta" size="xl" asChild>

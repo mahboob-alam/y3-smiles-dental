@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Moon, 
-  Shield, 
-  Activity, 
+import {
+  Moon,
+  Shield,
+  Activity,
   Heart,
   CheckCircle,
   Users,
@@ -67,7 +67,7 @@ const TMDandBruxism = () => {
       title: "Stress Management",
       description: "Techniques and therapies to reduce stress-related grinding",
       icon: Heart,
-      features: ["Relaxation techniques", "Lifestyle counseling", "Stress reduction", "Behavioral therapy"],
+      features: ["Relaxation techniques", "Lifestyle counselling", "Stress reduction", "Behavioural therapy"],
       suitableFor: "Stress-related bruxism, anxiety"
     },
     {
@@ -85,7 +85,7 @@ const TMDandBruxism = () => {
       signs: ["Jaw pain or soreness", "Clicking or popping sounds", "Difficulty opening mouth", "Jaw locking"]
     },
     {
-      category: "Dental Symptoms", 
+      category: "Dental Symptoms",
       signs: ["Worn tooth surfaces", "Chipped or cracked teeth", "Loose teeth", "Tooth sensitivity"]
     },
     {
@@ -174,8 +174,8 @@ const TMDandBruxism = () => {
                 TMD & Bruxism Treatment
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Comprehensive treatment for jaw disorders and teeth grinding. 
-                Relieve pain, protect your teeth, and improve your quality of life with our specialized care.
+                Comprehensive treatment for jaw disorders and teeth grinding.
+                Relieve pain, protect your teeth, and improve your quality of life with our specialised care.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (
@@ -338,7 +338,7 @@ const TMDandBruxism = () => {
                 Stop Suffering from Jaw Pain
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Don't let TMD or bruxism control your life. Our comprehensive treatment approach 
+                Don't let TMD or bruxism control your life. Our comprehensive treatment approach
                 can provide relief and protect your teeth from further damage.
               </p>
               <Button variant="cta" size="xl" asChild>

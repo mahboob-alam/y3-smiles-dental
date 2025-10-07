@@ -5,7 +5,7 @@ const Services = () => {
   const featuredServices = [
     {
       title: "Children's Dentistry (CDBS)",
-      description: "Gentle, specialized care for children of all ages in a fun, comfortable environment.",
+      description: "Gentle, specialised care for children of all ages in a fun, comfortable environment.",
       image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/services/childrens-dentistry"
     },
@@ -40,13 +40,13 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {featuredServices.map((service, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-card rounded-2xl shadow-soft hover:shadow-hover transition-gentle overflow-hidden hover-lift flex flex-col"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img 
+                <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
@@ -70,11 +70,11 @@ const Services = () => {
             </div>
           ))}
         </div>
-        
+
         {/* View All Services Button */}
         <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="lg"
             className="min-w-[200px] text-primary border-primary hover:gradient-primary hover:text-white hover:border-transparent"
             asChild

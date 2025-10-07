@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Heart, 
-  Shield, 
-  Award, 
+import {
+  Heart,
+  Shield,
+  Award,
   Clock,
   CheckCircle,
   Users,
@@ -47,8 +47,8 @@ const RootCanalTherapy = () => {
       icon: Heart
     },
     {
-      title: "Tooth Discoloration",
-      description: "Darkening or discoloration of the affected tooth",
+      title: "Tooth Discolouration",
+      description: "Darkening or discolouration of the affected tooth",
       icon: Stethoscope
     }
   ];
@@ -146,7 +146,7 @@ const RootCanalTherapy = () => {
                 Root Canal Therapy
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Advanced endodontic treatment to save infected or severely damaged teeth. 
+                Advanced endodontic treatment to save infected or severely damaged teeth.
                 Modern, comfortable procedures that eliminate pain and preserve your natural smile.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -276,7 +276,7 @@ const RootCanalTherapy = () => {
                 Don't Let Tooth Pain Control Your Life
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Root canal therapy can eliminate your pain and save your natural tooth. 
+                Root canal therapy can eliminate your pain and save your natural tooth.
                 Modern techniques make the procedure comfortable and highly successful.
               </p>
               <Button variant="cta" size="xl" asChild>

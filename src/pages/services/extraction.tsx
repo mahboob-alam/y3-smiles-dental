@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Scissors, 
-  Shield, 
-  Clock, 
+import {
+  Scissors,
+  Shield,
+  Clock,
   Heart,
   CheckCircle,
   Users,
@@ -44,7 +44,7 @@ const ToothExtraction = () => {
       title: "Surgical Extraction",
       description: "Removal of teeth that require surgical access",
       icon: Shield,
-      features: ["Sedation options", "Surgical access", "Specialized techniques", "Comprehensive care"],
+      features: ["Sedation options", "Surgical access", "Specialised techniques", "Comprehensive care"],
       duration: "30-60 minutes",
       recovery: "7-14 days",
       suitableFor: "Impacted or broken teeth"
@@ -195,7 +195,7 @@ const ToothExtraction = () => {
                 Tooth Extraction
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Gentle, comfortable tooth removal when necessary to preserve your oral health. 
+                Gentle, comfortable tooth removal when necessary to preserve your oral health.
                 Modern techniques and sedation options ensure a pain-free experience.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -308,7 +308,7 @@ const ToothExtraction = () => {
                 Gentle, Professional Extractions
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                When tooth extraction is necessary, trust our experienced team to provide 
+                When tooth extraction is necessary, trust our experienced team to provide
                 comfortable, professional care with comprehensive aftercare support.
               </p>
               <Button variant="cta" size="xl" asChild>

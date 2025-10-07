@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Wind, 
-  Heart, 
-  Users, 
+import {
+  Wind,
+  Heart,
+  Users,
   Stethoscope,
   CheckCircle,
   Star,
@@ -59,7 +59,7 @@ const FreshBreathTreatment = () => {
       title: "Diet & Lifestyle",
       description: "Certain foods, smoking, or medications",
       icon: Users,
-      treatment: "Dietary counseling and lifestyle modifications"
+      treatment: "Dietary counselling and lifestyle modifications"
     },
     {
       title: "Dental Problems",
@@ -101,7 +101,7 @@ const FreshBreathTreatment = () => {
     {
       step: "2",
       title: "Bacterial Testing",
-      description: "Specialized tests to measure bacteria levels and types"
+      description: "Specialised tests to measure bacteria levels and types"
     },
     {
       step: "3",
@@ -177,7 +177,7 @@ const FreshBreathTreatment = () => {
                 Fresh Breath Treatment
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Comprehensive halitosis treatment to identify and eliminate the root causes of bad breath. 
+                Comprehensive halitosis treatment to identify and eliminate the root causes of bad breath.
                 Regain your confidence with professional fresh breath solutions.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -309,7 +309,7 @@ const FreshBreathTreatment = () => {
                 Regain Your Confidence
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Don't let bad breath hold you back from social interactions and professional opportunities. 
+                Don't let bad breath hold you back from social interactions and professional opportunities.
                 Our comprehensive treatment approach can help you achieve lasting fresh breath.
               </p>
               <Button variant="cta" size="xl" asChild>

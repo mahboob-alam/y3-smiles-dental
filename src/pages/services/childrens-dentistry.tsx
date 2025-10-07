@@ -5,10 +5,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { 
-  Baby, 
-  Heart, 
-  Shield, 
+import {
+  Baby,
+  Heart,
+  Shield,
   Smile,
   CheckCircle,
   Users,
@@ -22,7 +22,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ChildrensDentistry = () => {
   useScrollAnimation();
-  
+
   const benefits = [
     "Child-friendly environment",
     "Gentle, caring approach",
@@ -49,7 +49,7 @@ const ChildrensDentistry = () => {
       title: "Cavity Treatment",
       description: "Gentle, effective treatment for childhood cavities using modern techniques",
       icon: Heart,
-      features: ["Pain-free procedures", "Tooth-colored fillings", "Sedation options", "Comfort measures"],
+      features: ["Pain-free procedures", "Tooth-coloured fillings", "Sedation options", "Comfort measures"],
       ageRange: "3+ years"
     },
     {
@@ -70,7 +70,7 @@ const ChildrensDentistry = () => {
     {
       title: "Preschoolers (3-5 years)",
       description: "Building positive dental experiences and preventing cavities",
-      focus: ["Regular cleanings", "Fluoride treatments", "Cavity prevention", "Dietary counseling"]
+      focus: ["Regular cleanings", "Fluoride treatments", "Cavity prevention", "Dietary counselling"]
     },
     {
       title: "School Age (6-12 years)",
@@ -122,7 +122,7 @@ const ChildrensDentistry = () => {
     },
     {
       question: "What if my child has dental anxiety?",
-      answer: "We specialize in helping anxious children feel comfortable. We use gentle techniques, explain procedures in child-friendly terms, and offer sedation options when necessary."
+      answer: "We specialise in helping anxious children feel comfortable. We use gentle techniques, explain procedures in child-friendly terms, and offer sedation options when necessary."
     },
     {
       question: "When do children need dental sealants?",
@@ -147,7 +147,7 @@ const ChildrensDentistry = () => {
                 Children's Dentistry (CDBS)
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Gentle, specialized dental care for children of all ages. 
+                Gentle, specialised dental care for children of all ages.
                 Creating positive dental experiences that last a lifetime in a fun, comfortable environment.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -172,15 +172,15 @@ const ChildrensDentistry = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                    Specialized Pediatric Care
+                    Specialised Pediatric Care
                   </h2>
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     Building Healthy Smiles from the Start
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    Children's dentistry focuses on the unique dental needs of infants, children, 
-                    and adolescents. Our gentle approach creates positive experiences that help 
-                    children develop healthy oral hygiene habits and a positive relationship 
+                    Children's dentistry focuses on the unique dental needs of infants, children,
+                    and adolescents. Our gentle approach creates positive experiences that help
+                    children develop healthy oral hygiene habits and a positive relationship
                     with dental care that lasts a lifetime.
                   </p>
                   <div className="space-y-4">
@@ -208,7 +208,7 @@ const ChildrensDentistry = () => {
                   </div>
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                     alt="Child receiving gentle dental care in a friendly, comfortable environment"
                     className="w-full h-full object-cover"
@@ -415,7 +415,7 @@ const ChildrensDentistry = () => {
                 Give Your Child the Best Start
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Start your child's journey to lifelong oral health with gentle, 
+                Start your child's journey to lifelong oral health with gentle,
                 professional care in a fun, comfortable environment.
               </p>
               <Button variant="cta" size="xl" asChild>

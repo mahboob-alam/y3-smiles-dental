@@ -6,10 +6,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { 
-  Bluetooth as Tooth, 
-  Palette, 
-  Shield, 
+import {
+  Bluetooth as Tooth,
+  Palette,
+  Shield,
   Clock,
   CheckCircle,
   Users,
@@ -32,7 +32,7 @@ const DentalFillings = () => {
 
   const fillingTypes = [
     {
-      title: "Composite (Tooth-Colored) Fillings",
+      title: "Composite (Tooth-Coloured) Fillings",
       description: "Modern, aesthetic fillings that blend seamlessly with natural teeth",
       icon: Palette,
       features: ["Natural appearance", "Mercury-free", "Bonds to tooth", "Immediate use"],
@@ -137,7 +137,7 @@ const DentalFillings = () => {
       answer: "Composite fillings typically last 7-10 years, ceramic fillings 10-15 years, and glass ionomer fillings 5-7 years. Lifespan depends on size, location, and oral hygiene habits."
     },
     {
-      question: "Are tooth-colored fillings as strong as silver fillings?",
+      question: "Are tooth-coloured fillings as strong as silver fillings?",
       answer: "Modern composite fillings are very strong and suitable for most situations. For very large restorations or high-stress areas, we may recommend ceramic fillings or crowns."
     },
     {
@@ -163,7 +163,7 @@ const DentalFillings = () => {
                 Dental Fillings
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Modern, tooth-colored fillings that restore your teeth's function and appearance. 
+                Modern, tooth-coloured fillings that restore your teeth's function and appearance.
                 Mercury-free options that blend seamlessly with your natural smile.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -360,7 +360,7 @@ const DentalFillings = () => {
                 Don't Let Cavities Get Worse
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Early treatment of cavities prevents more extensive and expensive procedures. 
+                Early treatment of cavities prevents more extensive and expensive procedures.
                 Schedule your appointment today for comfortable, effective treatment.
               </p>
               <Button variant="cta" size="xl" asChild>

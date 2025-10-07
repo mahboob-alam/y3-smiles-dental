@@ -22,7 +22,7 @@ const Index = () => {
         <About />
         <Treatments />
         <WhyChooseUs />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <GoogleMap />
         <Contact />
       </main>

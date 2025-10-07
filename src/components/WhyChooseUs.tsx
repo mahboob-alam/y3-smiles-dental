@@ -12,18 +12,18 @@ import {
 
 const WhyChooseUs = () => {
   const reasons = [
-    {
-      title: "40+ Years of Experience",
-      description: "Four decades of trusted dental care serving the Melbourne community with expertise and compassion.",
-      icon: Award,
-      stats: "40+ Years"
-    },
-    {
-      title: "In-House General Anaesthesia",
-      description: "Unique facility offering in-house general anaesthesia for complex treatments and anxious patients.",
-      icon: Shield,
-      stats: "Specialist Care"
-    },
+    // {
+    //   title: "40+ Years of Experience",
+    //   description: "Four decades of trusted dental care serving the Melbourne community with expertise and compassion.",
+    //   icon: Award,
+    //   stats: "40+ Years"
+    // },
+    // {
+    //   title: "In-House General Anaesthesia",
+    //   description: "Unique facility offering in-house general anaesthesia for complex treatments and anxious patients.",
+    //   icon: Shield,
+    //   stats: "Specialist Care"
+    // },
     {
       title: "Comprehensive Family Care",
       description: "Complete dental services for patients of all ages, from children to seniors, all under one roof.",
@@ -86,8 +86,7 @@ const WhyChooseUs = () => {
               Experience the Y3 Smiles Difference
             </h3>
             <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-              Formerly located within St. Vincent's Hospital, we now offer a calming,
-              sanctuary-like clinic experience with the same trusted expertise you've come to expect.
+              Formerly located within St. Vincent's Hospital, we now offer a calming, sanctuary-like clinic experience with the same trusted expertise you've come to expect.
             </p>
           </div>
 
@@ -121,7 +120,7 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Achievements Stats */}
-          <div className="bg-gradient-hero rounded-3xl p-8 md:p-12 hover-scale transition-gentle">
+          {/* <div className="bg-gradient-hero rounded-3xl p-8 md:p-12 hover-scale transition-gentle">
             <div className="text-center mb-12">
               <h4 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
                 Trusted by the Community
@@ -149,7 +148,7 @@ const WhyChooseUs = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

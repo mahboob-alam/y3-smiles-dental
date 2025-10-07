@@ -58,10 +58,10 @@ const Contact = () => {
               Contact Us
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-              Ready to Transform Your Smile?
+              Discover the Smile You Deserve.
             </h3>
             <p className="text-lg text-neutral-600">
-              Book your appointment today and experience the DENTL difference.
+              Book your appointment today and smile brighter with Y3 Smiles Dental.
             </p>
           </div>
 

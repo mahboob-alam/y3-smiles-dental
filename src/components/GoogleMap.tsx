@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  MapPin, 
-  Phone, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Clock,
   Mail,
   Navigation,
   Car,
@@ -22,7 +22,7 @@ const GoogleMap = () => {
     },
     {
       icon: Mail,
-      title: "Email", 
+      title: "Email",
       details: "PLACEHOLDER",
       action: "Send Email",
       link: "mailto:PLACEHOLDER"
@@ -80,8 +80,7 @@ const GoogleMap = () => {
               Conveniently Located in Broadmeadows
             </h3>
             <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-              Our modern, comfortable clinic is easily accessible and designed to provide 
-              a calming, sanctuary-like experience for all our patients.
+              Our modern, comfortable clinic is easily accessible and thoughtfully designed to create a calming and relaxing experience for every patient.
             </p>
           </div>
 
@@ -190,24 +189,23 @@ const GoogleMap = () => {
                         <span className="font-medium text-neutral-800">
                           {schedule.day}
                         </span>
-                        <span className={`text-sm ${
-                          schedule.hours === "Closed" 
-                            ? "text-red-600" 
-                            : schedule.hours.includes("appointment")
+                        <span className={`text-sm ${schedule.hours === "Closed"
+                          ? "text-red-600"
+                          : schedule.hours.includes("appointment")
                             ? "text-amber-600"
                             : "text-green-600"
-                        } font-medium`}>
+                          } font-medium`}>
                           {schedule.hours}
                         </span>
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="mt-6 p-4 bg-green-50 rounded-lg hover-scale transition-gentle">
                     <div className="flex items-center text-green-700">
                       <Clock className="w-5 h-5 mr-2" />
                       <span className="font-medium text-sm">
-                        Emergency appointments available 24/7
+                        Same day emergency appointments available
                       </span>
                     </div>
                   </div>
@@ -223,9 +221,9 @@ const GoogleMap = () => {
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full" asChild>
-                  <a 
-                    href="https://maps.google.com/?q=1/34+King+William+St,+Broadmeadows,+VIC+3047" 
-                    target="_blank" 
+                  <a
+                    href="https://maps.google.com/?q=1/34+King+William+St,+Broadmeadows,+VIC+3047"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Navigation className="w-4 h-4 mr-2" />

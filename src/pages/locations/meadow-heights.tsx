@@ -129,7 +129,7 @@ const MeadowHeightsPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Meadow Heights" className="bg-primary/5" />
 
                 <Contact />
             </main>

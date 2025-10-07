@@ -22,13 +22,13 @@ interface LocationData {
 
 interface GoogleMapProps {
   locationData?: LocationData;
-  showTitle?: boolean;
+  locationName?: string;
   className?: string;
 }
 
 const GoogleMap = ({
   locationData,
-  showTitle = true,
+  locationName,
   className = ""
 }: GoogleMapProps) => {
   // Default location data (Broadmeadows clinic)
@@ -79,19 +79,19 @@ const GoogleMap = ({
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          {showTitle && (
-            <div className="text-center mb-16">
-              <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
-                Visit Our Clinic
-              </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
-                Conveniently Located in Broadmeadows
-              </h3>
-              <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-                Our modern, comfortable clinic is easily accessible and thoughtfully designed to create a calming and relaxing experience for every patient.
-              </p>
-            </div>
-          )}
+          <div className="text-center mb-16">
+            <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
+              Visit Our Clinic
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
+              {locationName
+                ? `Y3 Smiles Dental serves residents of ${locationName}`
+                : "Conveniently Located in Broadmeadows"}
+            </h3>
+            <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
+              Our modern, comfortable clinic is easily accessible and thoughtfully designed to create a calming and relaxing experience for every patient.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Map Section */}

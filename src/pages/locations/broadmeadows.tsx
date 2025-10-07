@@ -188,7 +188,7 @@ const BroadmeadowsPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Broadmeadows" className="bg-primary/5" />
 
                 <Contact />
             </main>

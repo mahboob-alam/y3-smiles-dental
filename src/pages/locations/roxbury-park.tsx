@@ -133,7 +133,7 @@ const RoxburyParkPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Roxbury Park" className="bg-primary/5" />
 
                 <Contact />
             </main>

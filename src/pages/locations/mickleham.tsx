@@ -124,7 +124,7 @@ const MicklehamPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Mickleham" className="bg-primary/5" />
 
                 <Contact />
             </main>

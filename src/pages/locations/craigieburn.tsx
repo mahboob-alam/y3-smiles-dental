@@ -120,7 +120,7 @@ const CraigieburnPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Craigieburn" className="bg-primary/5" />
 
                 <Contact />
             </main>

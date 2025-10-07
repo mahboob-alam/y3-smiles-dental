@@ -184,7 +184,7 @@ import {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Greenvale" className="bg-primary/5" />
 
                 <Contact />
             </main>

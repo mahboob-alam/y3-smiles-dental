@@ -123,7 +123,7 @@ const WestmeadowsPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Westmeadows" className="bg-primary/5" />
 
                 <Contact />
             </main>

@@ -79,7 +79,7 @@ const CampbellfieldPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap showTitle={false} className="bg-primary/5" />
+                <GoogleMap locationName="Campbellfield" className="bg-primary/5" />
 
                 <Contact />
             </main>

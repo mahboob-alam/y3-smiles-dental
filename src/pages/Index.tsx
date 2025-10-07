@@ -23,7 +23,7 @@ const Index = () => {
         <Treatments />
         <WhyChooseUs />
         {/* <Testimonials /> */}
-        <GoogleMap />
+        <GoogleMap locationName="Broadmeadows" />
         <Contact />
       </main>
       <Footer />

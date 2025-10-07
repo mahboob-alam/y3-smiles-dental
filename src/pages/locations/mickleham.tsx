@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     Phone,
@@ -124,7 +125,12 @@ const MicklehamPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Mickleham" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Mickleham"
+                    locationData={locationConfigs.mickleham.locationData}
+                    openingHours={locationConfigs.mickleham.openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

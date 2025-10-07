@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     Phone,
@@ -120,7 +121,12 @@ const CraigieburnPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Craigieburn" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Craigieburn"
+                    locationData={locationConfigs.craigieburn.locationData}
+                    openingHours={locationConfigs.craigieburn.openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

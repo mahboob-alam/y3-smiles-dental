@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     Phone,
@@ -162,7 +163,12 @@ const GladstoneParkPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Gladstone Park" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Gladstone Park"
+                    locationData={locationConfigs['gladstone-park'].locationData}
+                    openingHours={locationConfigs['gladstone-park'].openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

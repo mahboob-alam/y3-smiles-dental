@@ -11,6 +11,11 @@ import {
   Bus
 } from "lucide-react";
 
+interface OpeningHours {
+  day: string;
+  hours: string;
+}
+
 interface LocationData {
   name: string;
   address: string;
@@ -23,12 +28,14 @@ interface LocationData {
 interface GoogleMapProps {
   locationData?: LocationData;
   locationName?: string;
+  openingHours?: OpeningHours[];
   className?: string;
 }
 
 const GoogleMap = ({
   locationData,
   locationName,
+  openingHours,
   className = ""
 }: GoogleMapProps) => {
   // Default location data (Broadmeadows clinic)
@@ -40,8 +47,6 @@ const GoogleMap = ({
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.123456789!2d144.9123456!3d-37.7123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1%2F34+King+William+St%2C+Broadmeadows+VIC+3047!5e0!3m2!1sen!2sau!4v1234567890123",
     directionsUrl: "https://maps.google.com/?q=1/34+King+William+St,+Broadmeadows,+VIC+3047"
   };
-
-  const location = locationData || defaultLocation;
 
   const transportOptions = [
     {
@@ -64,7 +69,7 @@ const GoogleMap = ({
     }
   ];
 
-  const openingHours = [
+  const defaultOpeningHours = [
     { day: "Monday", hours: "9:00 AM - 5:00 PM" },
     { day: "Tuesday", hours: "9:00 AM - 5:00 PM" },
     { day: "Wednesday", hours: "9:00 AM - 5:00 PM" },
@@ -73,6 +78,9 @@ const GoogleMap = ({
     { day: "Saturday", hours: "By appointment only" },
     { day: "Sunday", hours: "Closed" }
   ];
+
+  const location = locationData || defaultLocation;
+  const hours = openingHours || defaultOpeningHours;
 
   return (
     <section className={`py-24 bg-background fade-in-section ${className}`}>
@@ -158,7 +166,7 @@ const GoogleMap = ({
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    {openingHours.map((schedule, index) => (
+                    {hours.map((schedule, index) => (
                       <div key={index} className="flex justify-between items-center py-2 border-b border-neutral-100 last:border-b-0 hover:bg-primary/5 px-2 rounded transition-gentle">
                         <span className="font-medium text-neutral-800">
                           {schedule.day}

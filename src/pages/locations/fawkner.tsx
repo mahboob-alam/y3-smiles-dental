@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     Phone,
@@ -126,7 +127,12 @@ const FawknerPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Fawkner" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Fawkner"
+                    locationData={locationConfigs.fawkner.locationData}
+                    openingHours={locationConfigs.fawkner.openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

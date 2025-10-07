@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     Phone,
@@ -144,7 +145,12 @@ const HadfieldPage = () => {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Hadfield" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Hadfield"
+                    locationData={locationConfigs.hadfield.locationData}
+                    openingHours={locationConfigs.hadfield.openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

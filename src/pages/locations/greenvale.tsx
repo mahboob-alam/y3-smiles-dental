@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { locationConfigs } from "@/data/locationData";
 import {
     MapPin,
     CheckCircle,
@@ -184,7 +185,12 @@ import {
                     </div>
                 </section>
 
-                <GoogleMap locationName="Greenvale" className="bg-primary/5" />
+                <GoogleMap
+                    locationName="Greenvale"
+                    locationData={locationConfigs.greenvale.locationData}
+                    openingHours={locationConfigs.greenvale.openingHours}
+                    className="bg-primary/5"
+                />
 
                 <Contact />
             </main>

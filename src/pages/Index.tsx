@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
+import { locationConfigs } from "@/data/locationData";
 
 const Index = () => {
   useScrollAnimation();
@@ -23,7 +24,11 @@ const Index = () => {
         <Treatments />
         <WhyChooseUs />
         {/* <Testimonials /> */}
-        <GoogleMap locationName="Broadmeadows" />
+        <GoogleMap
+          locationName="Broadmeadows"
+          locationData={locationConfigs.broadmeadows.locationData}
+          openingHours={locationConfigs.broadmeadows.openingHours}
+        />
         <Contact />
       </main>
       <Footer />

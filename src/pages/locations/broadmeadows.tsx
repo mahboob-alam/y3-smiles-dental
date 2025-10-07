@@ -3,11 +3,10 @@ import { Button } from "@/components/ui/button";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import {
     MapPin,
-    Phone,
-    Clock,
     CheckCircle,
     Users,
     Heart,
@@ -189,58 +188,7 @@ const BroadmeadowsPage = () => {
                     </div>
                 </section>
 
-                {/* Location Info */}
-                <section className="py-24 bg-primary/5">
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center">
-                            <h2 className="text-4xl font-bold text-neutral-800 mb-12">
-                                Visit Our Broadmeadows Clinic
-                            </h2>
-
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                                <div className="bg-white p-6 rounded-2xl shadow-soft">
-                                    <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
-                                    <h3 className="font-bold text-neutral-800 mb-2">Address</h3>
-                                    <p className="text-neutral-600 text-sm">
-                                        1/34 King William Street<br />
-                                        Broadmeadows, VIC 3047
-                                    </p>
-                                </div>
-
-                                <div className="bg-white p-6 rounded-2xl shadow-soft">
-                                    <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
-                                    <h3 className="font-bold text-neutral-800 mb-2">Phone</h3>
-                                    <p className="text-neutral-600 text-sm">
-                                        <a href="tel:PLACEHOLDER" className="hover:text-primary transition-gentle">
-                                            PLACEHOLDER
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div className="bg-white p-6 rounded-2xl shadow-soft">
-                                    <Clock className="w-8 h-8 text-primary mx-auto mb-4" />
-                                    <h3 className="font-bold text-neutral-800 mb-2">Hours</h3>
-                                    <p className="text-neutral-600 text-sm">
-                                        Mon-Fri: 9:00AM-5:00PM<br />
-                                        Sat: By appointment
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Embedded Map Placeholder */}
-                            <div className="bg-neutral-100 rounded-2xl p-12 mb-8">
-                                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                                <p className="text-neutral-600">
-                                    Interactive map showing Broadmeadows location would be embedded here
-                                </p>
-                            </div>
-
-                            <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">BOOK YOUR VISIT TODAY</Link>
-                            </Button>
-                        </div>
-                    </div>
-                </section>
+                <GoogleMap showTitle={false} className="bg-primary/5" />
 
                 <Contact />
             </main>

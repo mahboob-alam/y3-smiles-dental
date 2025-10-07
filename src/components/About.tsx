@@ -8,31 +8,18 @@ const About = () => {
             <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
               About
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
+            {/* <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
               Compassionate Care for over 40 Years
-            </h3>
-            <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-              DENTL East Melbourne, formerly located within the esteemed St. Vincent's Hospital as SV Dental Centre, 
-              now offers a calming, sanctuary-like clinic for even the most complex treatments and anxious patients. 
-              With in-house general anaesthesia, we ensure your comfort every step of the way.
+            </h3> */}
+            <p className="text-lg text-neutral-600 leading-relaxed max-w-6xl mx-auto">
+              At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne’s northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: healthy smiles, healthy lives — it begins with you.
+
+              Our services cover all stages of dental care, including routine check-ups, preventative treatments, children’s dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family.
+
+              What makes us different is our patient-centred approach. We take the time to listen, explain, and personalise every treatment plan. Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.
             </p>
           </div>
 
-          {/* Stats or Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="text-center p-6 hover-lift transition-gentle" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">40+</div>
-              <div className="text-neutral-600">Years of Experience</div>
-            </div>
-            <div className="text-center p-6 hover-lift transition-gentle" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">1000+</div>
-              <div className="text-neutral-600">Happy Patients</div>
-            </div>
-            <div className="text-center p-6 hover-lift transition-gentle" style={{ animationDelay: '0.6s' }}>
-              <div className="text-3xl font-bold text-primary mb-2">5★</div>
-              <div className="text-neutral-600">Patient Reviews</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

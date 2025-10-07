@@ -29,10 +29,10 @@ const Hero = () => {
           {/* Tagline */}
           <div className="space-y-2 mb-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <p className="text-xl md:text-2xl font-light">
-              Healthy teeth, happy life.
+              Healthy smiles, Healthy lives
             </p>
-            <p className="text-xl md:text-2xl font-light italic">
-              Confident smiles, <em className="font-medium">every day</em>
+            <p className="text-xl md:text-2xl font-light">
+              — It begins with You
             </p>
           </div>
 

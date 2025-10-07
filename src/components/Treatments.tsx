@@ -4,22 +4,46 @@ import { Link } from "react-router-dom";
 const Treatments = () => {
   const featuredTreatments = [
     {
-      title: "Children's Dentistry (CDBS)",
-      description: "Gentle, specialised care for children of all ages in a fun, comfortable environment.",
-      image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      link: "/treatments/childrens-dentistry"
+      title: "Comprehensive check-ups and hygiene",
+      subheading: "General Dentistry",
+      description: "Regular check ups mean early detection, personalised care, and peace of mind for every patient.",
+      image: "https://images.pexels.com/photos/3845746/pexels-photo-3845746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      link: "/treatments/examination-hygiene"
     },
     {
-      title: "Emergency Dentistry",
-      description: "24/7 emergency care for urgent dental situations with immediate pain relief.",
+      title: "Emergency",
+      subheading: "Immediate Care",
+      description: "We understand emergencies are stressful — we'll endeavour to provide urgent care and comfort quickly.",
       image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/emergency"
     },
     {
-      title: "Comprehensive Examination & Hygiene",
-      description: "Thorough checkups and professional cleanings to maintain optimal oral health.",
-      image: "https://images.pexels.com/photos/3845746/pexels-photo-3845746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      link: "/treatments/examination-hygiene"
+      title: "Aesthetic",
+      subheading: "Where happy, confident smiles begin",
+      description: "Get the smile you love with gentle care, tailored treatments, and lasting confidence.",
+      image: "https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      link: "/treatments/dental-fillings"
+    },
+    {
+      title: "Children Dentistry",
+      subheading: "Early Age Dental Care",
+      description: "At Y3 Smiles, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
+      image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      link: "/treatments/childrens-dentistry"
+    },
+    {
+      title: "Trauma",
+      subheading: "Tooth trauma and repair",
+      description: "Whether from sport, falls, or accidents, we provide immediate repair to protect and restore smiles.",
+      image: "https://images.pexels.com/photos/3779649/pexels-photo-3779649.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      link: "/treatments/emergency"
+    },
+    {
+      title: "Dental restoration",
+      subheading: "Repair. Protect. Restore.",
+      description: "Y3 Smiles offers gentle treatments to repair worn or damaged teeth, along with preventative care that keeps your family's smiles healthy and protected for the future.",
+      image: "https://images.pexels.com/photos/3779715/pexels-photo-3779715.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      link: "/treatments/dentures"
     }
   ];
 
@@ -38,7 +62,7 @@ const Treatments = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {featuredTreatments.map((treatment, index) => (
             <div
               key={index}
@@ -54,9 +78,12 @@ const Treatments = () => {
               </div>
               <div className="p-8 flex-1 flex flex-col justify-between">
                 <div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-4">
+                  <h4 className="text-xl font-bold text-neutral-800 mb-2">
                     {treatment.title}
                   </h4>
+                  <p className="text-sm font-medium text-primary mb-4">
+                    {treatment.subheading}
+                  </p>
                   <p className="text-neutral-600 mb-6 leading-relaxed">
                     {treatment.description}
                   </p>

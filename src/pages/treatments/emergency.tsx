@@ -17,14 +17,14 @@ import {
   Award,
   Shield,
   Zap,
-  ArrowRight
+  ArrowRight,
+  TriangleAlert
 } from "lucide-react";
 
 const EmergencyDentistry = () => {
   useScrollAnimation();
 
   const benefits = [
-    "24/7 emergency line",
     "Same-day appointments",
     "Immediate pain relief",
     "Urgent care protocols"
@@ -140,9 +140,11 @@ const EmergencyDentistry = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Emergency Dentistry
               </h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-6">
+                Here When You Need Us Most
+              </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Immediate dental care when you need it most. Our emergency services provide
-                rapid pain relief and urgent treatment to save your teeth and restore your comfort.
+                Dental emergencies often happen when you least expect them — whether it's a toothache that won't ease, a chipped tooth from sport, or an unexpected injury that leaves your smile vulnerable. At Y3 Smiles, our caring team is here to provide fast, professional support in a calm and welcoming environment. Our focus is on relieving pain, protecting your teeth, and helping you feel at ease.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (
@@ -158,6 +160,60 @@ const EmergencyDentistry = () => {
                   <span className="text-2xl font-bold text-red-800">Emergency Line: (03) 1234 5678</span>
                 </div>
                 <p className="text-red-700">Available 24/7 for dental emergencies</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What is Emergency Dentistry */}
+        <section className="py-24 bg-neutral-50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+                    Urgent Dental Care
+                  </h2>
+                  <h3 className="text-4xl font-bold text-neutral-800 mb-6">
+                    What Is Emergency Dentistry?
+                  </h3>
+                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                    Emergency dentistry provides urgent care when dental problems arise suddenly and require immediate attention. This may include severe pain, dental injuries, or infections that need prompt treatment to protect both your smile and overall health.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <Heart className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Pain Relief</h4>
+                        <p className="text-neutral-600 text-sm">We understand how overwhelming dental pain can be. Our priority is to assess the situation quickly and provide treatment that brings relief.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Shield className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Injury Care</h4>
+                        <p className="text-neutral-600 text-sm">From broken, chipped, or knocked-out teeth, our team acts fast to repair damage and prevent further complications.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Zap className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Infection Management</h4>
+                        <p className="text-neutral-600 text-sm">In cases of abscess or infection, urgent treatment helps stop the spread and safeguards your health.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-lg text-primary mt-8 italic">
+                    In short, emergency dentistry is about giving you the care you need, when you need it most.
+                  </p>
+                </div>
+                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/3845604/pexels-photo-3845604.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                    alt="Emergency dental care and pain relief"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -265,6 +321,23 @@ const EmergencyDentistry = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Disclaimer */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center">
+                  <TriangleAlert className="w-5 h-5 mr-2" />
+                  Disclaimer
+                </h3>
+                <p className="text-yellow-700 text-sm leading-relaxed">
+                  All dental treatments carry potential risks. Please consult with your treating dentist to assess suitability, discuss risks, and understand recovery considerations before proceeding.
+                </p>
+              </div>
             </div>
           </div>
         </section>

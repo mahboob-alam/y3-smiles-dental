@@ -8,7 +8,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-gentle">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Navigation Menu */}
+          {/* Left Section - Hamburger Menu & Logo */}
           <div className="flex items-center space-x-6">
             <Navigation />
             <Link to="/" className="flex items-center transition-gentle hover:scale-105">
@@ -20,30 +20,47 @@ const Header = () => {
             </Link>
           </div>
 
-
-
-          {/* CTA Buttons */}
-          <div className="flex items-center space-x-4">
-            <a href="tel:(03) 1234 5678" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
-              (03) 1234 5678
-            </a>
-            <Button variant="booking" asChild>
+          {/* Right Section - Navigation Links & CTA */}
+          <div className="flex items-center justify-end space-x-6">
+            {/* Desktop Navigation Links */}
+            <nav className="hidden lg:flex items-center space-x-6">
               <Link
-                to="/#contact"
-                onClick={(e) => {
-                  // If we're already on the homepage, handle the scroll manually
-                  if (window.location.pathname === '/') {
-                    e.preventDefault();
-                    const element = document.querySelector('#contact');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }
-                }}
+                to="/about"
+                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105"
               >
-                BOOK NOW
+                About
               </Link>
-            </Button>
+              <Link
+                to="/treatments"
+                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105"
+              >
+                Treatments
+              </Link>
+            </nav>
+
+            {/* Phone & CTA Buttons */}
+            <div className="flex items-center space-x-4">
+              <a href="tel:(03) 1234 5678" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
+                (03) 1234 5678
+              </a>
+              <Button variant="booking" asChild>
+                <Link
+                  to="/#contact"
+                  onClick={(e) => {
+                    // If we're already on the homepage, handle the scroll manually
+                    if (window.location.pathname === '/') {
+                      e.preventDefault();
+                      const element = document.querySelector('#contact');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }
+                  }}
+                >
+                  BOOK NOW
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

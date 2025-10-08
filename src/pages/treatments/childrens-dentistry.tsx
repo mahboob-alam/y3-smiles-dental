@@ -110,7 +110,7 @@ const ChildrensDentistry = () => {
   const faqs = [
     {
       question: "When should my child first visit the dentist?",
-      answer: "The American Academy of Pediatric Dentistry recommends the first visit by age 1 or within 6 months of the first tooth appearing. Early visits help establish good habits and catch problems early."
+      answer: "The experts recommends the first visit by age 1 or within 6 months of the first tooth appearing. Early visits help establish good habits and catch problems early."
     },
     {
       question: "How can I prepare my child for their first dental visit?",
@@ -144,11 +144,10 @@ const ChildrensDentistry = () => {
             <div className="max-w-4xl mx-auto text-center">
               <Baby className="w-20 h-20 text-primary mx-auto mb-6" />
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
-                Children's Dentistry (CDBS)
+                Gentle Care for Growing Smiles
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Gentle, specialised dental care for children of all ages.
-                Creating positive dental experiences that last a lifetime in a fun, comfortable environment.
+                At Y3 Smiles, we understand how important your child's smile is. Our Children's Dentistry services focus on creating a positive and reassuring experience so kids feel safe, supported, and even excited about visiting the dentist. From their very first tooth through to teenage years, we're here to help them develop healthy habits for life.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (
@@ -175,37 +174,52 @@ const ChildrensDentistry = () => {
                     Specialised Pediatric Care
                   </h2>
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
-                    Building Healthy Smiles from the Start
+                    What Is Children's Dentistry?
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    Children's dentistry focuses on the unique dental needs of infants, children,
-                    and adolescents. Our gentle approach creates positive experiences that help
-                    children develop healthy oral hygiene habits and a positive relationship
-                    with dental care that lasts a lifetime.
+                    Children's Dentistry is dental care designed specifically for kids' developing teeth and gums. It's about much more than check-ups — it includes prevention, early diagnosis, and family education to support good oral health from an early age. At Y3 Smiles, we combine gentle treatments with guidance for parents to make dental visits stress-free and beneficial.
                   </p>
+                  <h4 className="text-2xl font-bold text-neutral-800 mb-6">Why Children's Dentistry Matters</h4>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-neutral-800 mb-1">Age-Appropriate Care</h4>
-                        <p className="text-neutral-600 text-sm">Treatments tailored to each developmental stage</p>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Comfort First</h4>
+                        <p className="text-neutral-600 text-sm">We focus on gentle care that builds confidence in young patients.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-neutral-800 mb-1">Preventive Focus</h4>
-                        <p className="text-neutral-600 text-sm">Emphasis on preventing problems before they start</p>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Preventative Focus</h4>
+                        <p className="text-neutral-600 text-sm">Services such as fluoride treatments, dental sealants, and routine cleanings help protect teeth.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-neutral-800 mb-1">Positive Experience</h4>
-                        <p className="text-neutral-600 text-sm">Creating comfort and reducing dental anxiety</p>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Building Habits</h4>
+                        <p className="text-neutral-600 text-sm">We teach kids and families how to care for teeth every day.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Child-Friendly Care</h4>
+                        <p className="text-neutral-600 text-sm">Treatments are tailored to suit children's growth and development stages.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-neutral-800 mb-1">Affordable Access</h4>
+                        <p className="text-neutral-600 text-sm">Eligible families may be able to use the Child Dental Benefits Schedule (CDBS) to cover certain dental costs.</p>
                       </div>
                     </div>
                   </div>
+                  <p className="text-lg text-primary mt-8 italic">
+                    At Y3 Smiles, we're dedicated to helping every child grow up with a strong, healthy smile.
+                  </p>
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
@@ -342,7 +356,7 @@ const ChildrensDentistry = () => {
         </section>
 
         {/* Statistics */}
-        <section className="py-24 bg-primary/5">
+        {/* <section className="py-24 bg-primary/5">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
@@ -375,7 +389,7 @@ const ChildrensDentistry = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FAQ Section */}
         <section className="py-24 bg-background">
@@ -402,6 +416,23 @@ const ChildrensDentistry = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Disclaimer */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center">
+                  <Shield className="w-5 h-5 mr-2" />
+                  Important Information
+                </h3>
+                <p className="text-yellow-700 text-sm leading-relaxed">
+                  All dental treatments carry potential risks. Please consult with your treating dentist to assess suitability, discuss risks, and understand recovery considerations before proceeding.
+                </p>
+              </div>
             </div>
           </div>
         </section>

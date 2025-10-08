@@ -330,19 +330,19 @@ const TreatmentsPage = () => {
         </section>
 
         {/* Why Choose Our Services */}
-        <section className="py-24 bg-background">
+        {/* <section className="py-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                    Why Choose DENTL
+                    Why Choose Y3 Smiles Dental
                   </h2>
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     Experience You Can Trust
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    With over 40 years of experience, DENTL East Melbourne has been providing
+                    With over 40 years of experience, Y3 Smiles Dental East Melbourne has been providing
                     exceptional dental services to families throughout Melbourne. Our commitment
                     to gentle, comprehensive care ensures every patient feels comfortable and
                     confident in their treatment.
@@ -386,7 +386,7 @@ const TreatmentsPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Emergency Services Highlight */}
         <section className="py-24 bg-red-50">
@@ -474,7 +474,7 @@ const TreatmentsPage = () => {
             <div className="max-w-3xl mx-auto">
               <Award className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Ready to Experience the DENTL Difference?
+                Ready to Experience the Y3 Smiles Dental Difference?
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
                 Our experienced team is here to help you achieve the healthy, beautiful smile you deserve.

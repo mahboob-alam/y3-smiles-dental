@@ -35,14 +35,14 @@ const Treatments = () => {
       title: "Trauma",
       subheading: "Tooth trauma and repair",
       description: "Whether from sport, falls, or accidents, we provide immediate repair to protect and restore smiles.",
-      image: "https://images.pexels.com/photos/3779649/pexels-photo-3779649.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "https://images.pexels.com/photos/6627655/pexels-photo-6627655.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/emergency"
     },
     {
       title: "Dental restoration",
       subheading: "Repair. Protect. Restore.",
       description: "Y3 Smiles offers gentle treatments to repair worn or damaged teeth, along with preventative care that keeps your family's smiles healthy and protected for the future.",
-      image: "https://images.pexels.com/photos/3779715/pexels-photo-3779715.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "https://images.pexels.com/photos/6627329/pexels-photo-6627329.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/dentures"
     }
   ];
@@ -88,11 +88,11 @@ const Treatments = () => {
                     {treatment.description}
                   </p>
                 </div>
-                <Button variant="learn" className="w-full" asChild>
+                {/* <Button variant="learn" className="w-full" asChild>
                   <Link to={treatment.link}>
                     LEARN MORE
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

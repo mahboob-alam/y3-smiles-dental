@@ -53,7 +53,7 @@ const config: Config = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom DENTL brand colors
+				// Custom Y3 Smiles Dental brand colors
 				gold: {
 					light: 'hsl(var(--gold-light))',
 					DEFAULT: 'hsl(var(--primary))',

@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // DENTL Custom Variants
+        // Y3 Smiles Dental Custom Variants
         cta: "gradient-accent text-accent-foreground hover:gradient-accent-hover shadow-medium hover:shadow-hover font-semibold tracking-wide uppercase text-xs px-8 py-3",
         hero: "gradient-accent text-accent-foreground hover:gradient-accent-hover shadow-large hover:shadow-hover font-bold tracking-widest uppercase px-10 py-4 text-sm",
         // NEW Golden CTA Variant

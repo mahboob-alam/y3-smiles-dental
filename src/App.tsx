@@ -16,8 +16,12 @@ const DentalFillings = lazy(() => import("./pages/treatments/dental-fillings"));
 const Dentures = lazy(() => import("./pages/treatments/dentures"));
 const EmergencyDentistry = lazy(() => import("./pages/treatments/emergency"));
 const FluorideTreatments = lazy(() => import("./pages/treatments/fluoride"));
-const FreshBreathTreatment = lazy(() => import("./pages/treatments/fresh-breath"));
-const PeriodontalCare = lazy(() => import("./pages/treatments/periodontal"));
+const PeriodontalTherapy = lazy(() => import("./pages/treatments/periodontal"));
+const CrownAndBridge = lazy(() => import("./pages/treatments/crown-bridge"));
+const DentalImplants = lazy(() => import("./pages/treatments/dental-implants"));
+const SedationDentistry = lazy(() => import("./pages/treatments/sedation-dentistry"));
+const Mouthguards = lazy(() => import("./pages/treatments/mouthguards"));
+const TeethWhitening = lazy(() => import("./pages/treatments/teeth-whitening"));
 const PitsAndFissureSealants = lazy(() => import("./pages/treatments/sealants"));
 const RootCanalTherapy = lazy(() => import("./pages/treatments/root-canal"));
 const TMDandBruxism = lazy(() => import("./pages/treatments/tmd-bruxism"));
@@ -100,14 +104,9 @@ const App = () => {
               <FluorideTreatments />
             </Suspense>
           } />
-          <Route path="/treatments/fresh-breath" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FreshBreathTreatment />
-            </Suspense>
-          } />
           <Route path="/treatments/periodontal" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <PeriodontalCare />
+              <PeriodontalTherapy />
             </Suspense>
           } />
           <Route path="/treatments/sealants" element={
@@ -133,6 +132,31 @@ const App = () => {
           <Route path="/treatments/wisdom-teeth" element={
             <Suspense fallback={<LoadingSpinner />}>
               <WisdomTeethRemoval />
+            </Suspense>
+          } />
+          <Route path="/treatments/crown-bridge" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CrownAndBridge />
+            </Suspense>
+          } />
+          <Route path="/treatments/dental-implants" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <DentalImplants />
+            </Suspense>
+          } />
+          <Route path="/treatments/sedation-dentistry" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <SedationDentistry />
+            </Suspense>
+          } />
+          <Route path="/treatments/mouthguards" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Mouthguards />
+            </Suspense>
+          } />
+          <Route path="/treatments/teeth-whitening" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <TeethWhitening />
             </Suspense>
           } />
 

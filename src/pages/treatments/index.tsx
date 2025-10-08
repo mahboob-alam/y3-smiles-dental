@@ -21,7 +21,11 @@ import {
   Users,
   Award,
   Star,
-  Clock
+  Clock,
+  Crown,
+  Zap,
+  ShieldCheck,
+  Sparkles
 } from "lucide-react";
 
 const TreatmentsPage = () => {
@@ -77,15 +81,7 @@ const TreatmentsPage = () => {
       features: ["Strengthens enamel", "Prevents decay", "Safe for all ages", "Quick application"]
     },
     {
-      title: "Fresh Breath Treatment",
-      description: "Comprehensive treatment to identify and eliminate bad breath causes",
-      icon: Wind,
-      path: "/treatments/fresh-breath",
-      category: "Specialised Care",
-      features: ["Root cause identification", "Effective solutions", "Long-lasting results", "Confidence boost"]
-    },
-    {
-      title: "Periodontal Care",
+      title: "Periodontal Therapy",
       description: "Expert gum disease treatment and prevention to save your teeth",
       icon: Heart,
       path: "/treatments/periodontal",
@@ -131,6 +127,46 @@ const TreatmentsPage = () => {
       path: "/treatments/wisdom-teeth",
       category: "Surgical Care",
       features: ["Prevent complications", "Comfortable procedures", "Sedation available", "Expert care"]
+    },
+    {
+      title: "Crown and Bridge",
+      description: "Repair or replace damaged teeth with natural-looking crowns and bridges",
+      icon: Crown,
+      path: "/treatments/crown-bridge",
+      category: "Restorative Care",
+      features: ["Natural appearance", "Strengthens teeth", "Long-lasting", "Custom-made"]
+    },
+    {
+      title: "Dental Implants",
+      description: "Modern titanium implants for secure, permanent tooth replacement",
+      icon: Zap,
+      path: "/treatments/dental-implants",
+      category: "Restorative Care",
+      features: ["Permanent solution", "Natural feel", "Bone preservation", "High success rate"]
+    },
+    {
+      title: "Sedation Dentistry",
+      description: "Comfortable, stress-free dental care for anxious patients",
+      icon: Moon,
+      path: "/treatments/sedation-dentistry",
+      category: "Specialised Care",
+      features: ["Reduce anxiety", "Pain-free procedures", "Various options", "Safe monitoring"]
+    },
+    {
+      title: "Mouthguards",
+      description: "Custom-fitted protection for sports and teeth grinding",
+      icon: ShieldCheck,
+      path: "/treatments/mouthguards",
+      category: "Preventive Care",
+      features: ["Custom fit", "Sports protection", "Bruxism relief", "Comfortable wear"]
+    },
+    {
+      title: "Teeth Whitening",
+      description: "Professional whitening treatments for a brighter, confident smile",
+      icon: Sparkles,
+      path: "/treatments/teeth-whitening",
+      category: "Cosmetic Care",
+      features: ["Professional results", "Safe procedures", "In-office or take-home", "Long-lasting"]
     }
   ];
 
@@ -162,8 +198,13 @@ const TreatmentsPage = () => {
     },
     {
       name: "Surgical Care",
-      description: "Surgical procedures with expert precision",
-      color: "bg-teal-50 text-teal-600"
+      description: "Advanced surgical procedures",
+      color: "bg-gray-50 text-gray-600"
+    },
+    {
+      name: "Cosmetic Care",
+      description: "Enhance your smile's appearance",
+      color: "bg-pink-50 text-pink-600"
     }
   ];
 

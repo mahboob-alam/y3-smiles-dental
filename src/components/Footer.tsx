@@ -98,24 +98,24 @@ const Footer = () => {
           <div>
             <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Treatments</h3>
             <div className="space-y-2 text-sm">
-              <Link to="/treatments/childrens-dentistry" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              <div className="block">
                 CHILDREN'S DENTISTRY
-              </Link>
-              <Link to="/treatments/examination-hygiene" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
-                EXAMINATION & HYGIENE
-              </Link>
-              <Link to="/treatments/dental-fillings" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
-                DENTAL FILLINGS
-              </Link>
-              <Link to="/treatments/dentures" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
-                DENTURES
-              </Link>
-              <Link to="/treatments/emergency" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
+              </div>
+              <div className="block">
+                AESTHETIC DENTISTRY
+              </div>
+              <div className="block">
+                RESTORATIVE DENTISTRY
+              </div>
+              <div className="block">
                 EMERGENCY DENTISTRY
-              </Link>
-              <Link to="/treatments/root-canal" className="block hover:text-[#B4957E] transition-gentle hover:translate-x-2">
-                ROOT CANAL THERAPY
-              </Link>
+              </div>
+              <div className="block">
+                GENERAL DENTISTRY
+              </div>
+              <div className="block">
+                PREVENTATIVE DENTISTRY
+              </div>
             </div>
           </div>
         </div>
@@ -123,22 +123,16 @@ const Footer = () => {
         {/* Divider */}
         <div className="h-px bg-zinc-800 mb-8" />
 
-        {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          {/* Copyright */}
-          <div className="text-xs text-center">
-            COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.
-          </div>
-
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
+        {/* Social Links - Centered */}
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-center gap-8">
             <a
               href="https://www.facebook.com/people/Y3-Smiles-Dental/61579053037448/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-8 w-8" />
             </a>
             <a
               href="https://www.instagram.com/y3_smilesdental/"
@@ -146,24 +140,41 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-8 w-8" />
             </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              viewBox="0 0 24 24"
+              color="white"
+              fill="#a1a1aa"
+            >
+              <path d="M12 0C5.373 0 0 5.373 0 12a12 12 0 0 0 8.437 11.45c-.117-.97-.223-2.46.047-3.523.244-1.004 1.573-6.42 1.573-6.42s-.4-.8-.4-1.98c0-1.85 1.074-3.23 2.41-3.23 1.137 0 1.687.853 1.687 1.875 0 1.14-.726 2.845-1.1 4.427-.312 1.32.66 2.4 1.957 2.4 2.35 0 3.938-2.478 3.938-6.05 0-3.164-2.275-5.382-5.524-5.382-3.766 0-5.977 2.823-5.977 5.74 0 1.14.44 2.363.99 3.028a.4.4 0 0 1 .092.384c-.1.422-.33 1.32-.373 1.5-.06.24-.19.3-.44.18-1.637-.75-2.662-3.097-2.662-4.98 0-4.058 2.953-7.786 8.522-7.786 4.473 0 7.957 3.186 7.957 7.45 0 4.447-2.8 8.04-6.688 8.04-1.308 0-2.54-.678-2.963-1.48l-.806 3.07c-.29 1.12-1.086 2.52-1.62 3.37A11.98 11.98 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+            </svg>
+            {/* <a
+              href="https://pinterest.com/y3smiles"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-100 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
+            >
+              
+            </a> */}
           </div>
-
-          {/* Scroll to Top */}
-          <button
-            onClick={scrollToTop}
-            className="fixed bottom-8 right-8 gradient-accent text-accent-foreground p-2 rounded-full transition-gentle transform hover:scale-110 hover:shadow-hover"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="h-5 w-5" />
-          </button>
         </div>
 
-        {/* Powered By */}
-        <div className="text-center text-xs mt-8">
-          Y3 SMILES DENTAL - YOUR TRUSTED DENTAL CARE PROVIDER
+        {/* Copyright */}
+        <div className="text-center text-xs">
+          COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.
         </div>
+
+        {/* Scroll to Top */}
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 gradient-accent text-accent-foreground p-2 rounded-full transition-gentle transform hover:scale-110 hover:shadow-hover"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="h-5 w-5" />
+        </button>
       </div>
     </footer>
   );

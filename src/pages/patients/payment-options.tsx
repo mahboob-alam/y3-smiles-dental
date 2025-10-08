@@ -2,263 +2,237 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Contact from "@/components/Contact";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
     CreditCard,
-    DollarSign,
-    Shield,
-    Calendar,
-    FileText,
     CheckCircle,
-    AlertCircle
+    Info,
+    Calendar
 } from "lucide-react";
 
 export default function PaymentOptionsPage() {
     useScrollAnimation();
 
-    const paymentMethods = [
-        {
-            icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-            title: "Credit & Debit Cards",
-            description: "We accept all major credit and debit cards including Visa, Mastercard, and AMEX",
-            details: ["Secure payment processing", "Instant confirmation", "Receipt provided"]
-        },
-        {
-            icon: <DollarSign className="h-8 w-8 text-green-600" />,
-            title: "Cash Payments",
-            description: "Traditional cash payments accepted at all our locations",
-            details: ["Immediate payment", "No processing fees", "Receipt provided"]
-        },
-        {
-            icon: <FileText className="h-8 w-8 text-purple-600" />,
-            title: "EFTPOS",
-            description: "Electronic funds transfer at point of sale available",
-            details: ["Direct from bank account", "Secure transactions", "Immediate processing"]
-        }
-    ];
-
-    const financingOptions = [
-        {
-            title: "Payment Plans",
-            description: "Interest-free payment plans available for treatments over $300",
-            features: [
-                "No interest charges",
-                "Flexible payment terms",
-                "Quick approval process",
-                "Minimum deposit required"
-            ],
-            note: "Ask our team about available payment plan options"
-        },
-        {
-            title: "Zip Pay & Afterpay",
-            description: "Buy now, pay later options for your convenience",
-            features: [
-                "Split payments into installments",
-                "Instant approval",
-                "No interest if paid on time",
-                "Easy online application"
-            ],
-            note: "Subject to approval and terms and conditions"
-        }
-    ];
-
-    const insuranceInfo = [
-        {
-            title: "Private Health Insurance",
-            description: "We accept all major private health insurance providers",
-            details: [
-                "Direct claiming available (HICAPS)",
-                "On-the-spot rebates",
-                "No waiting for reimbursement",
-                "Gap payments explained upfront"
-            ]
-        },
-        {
-            title: "Medicare & DVA",
-            description: "Government benefit schemes we participate in",
-            details: [
-                "Child Dental Benefits Schedule (CDBS)",
-                "Department of Veterans' Affairs (DVA)",
-                "Eligible patients receive subsidized care",
-                "Bulk billing available for qualifying treatments"
-            ]
-        }
+    const insuranceProviders = [
+        "HCF", "Bupa", "Medibank", "NIB", "CBHS", "Australian Unity",
+        "HBF", "Teachers Health", "Defence Health", "Peoplecare",
+        "Westfund", "Health Partners", "Phoenix Health", "Navy Health",
+        "Doctors' Health Fund", "GMHBA", "AHM", "UniHealth"
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-            {/* Hero Section */}
-            <section className="pt-24 pb-16 bg-gradient-to-r from-blue-600 to-green-600">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Payment Options
-                    </h1>
-                    <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                        Flexible payment solutions to make quality dental care accessible and affordable for everyone
-                    </p>
-                </div>
-            </section>
+        <div className="min-h-screen flex flex-col">
+            <Header />
 
-            {/* Payment Methods */}
-            <section className="py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Payment Methods</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            We offer various convenient payment methods to suit your preferences
-                        </p>
-                    </div>
+            <main className="flex-grow pt-20">
+                <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-green-50">
+                    <div className="container mx-auto px-4">
+                        <div className="text-center mb-12 fade-in-section">
+                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                                Payment Options
+                            </h1>
+                            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                                Flexible payment solutions to make quality dental care accessible and affordable for everyone
+                            </p>
+                        </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {paymentMethods.map((method, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
+                        <div className="grid md:grid-cols-3 gap-8 mb-16 fade-in-section">
+                            <Card className="hover:shadow-lg transition-all duration-300">
                                 <CardContent className="p-6 text-center">
                                     <div className="flex justify-center mb-4">
-                                        {method.icon}
+                                        <CreditCard className="h-12 w-12 text-blue-600" />
                                     </div>
-                                    <h3 className="text-xl font-semibold mb-3">{method.title}</h3>
-                                    <p className="text-gray-600 mb-4">{method.description}</p>
-                                    <ul className="space-y-2">
-                                        {method.details.map((detail, idx) => (
-                                            <li key={idx} className="flex items-center justify-center text-sm text-gray-500">
-                                                <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                                {detail}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Financing Options */}
-            <section className="py-16 bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Financing Options</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Don't let cost be a barrier to your dental health. We offer flexible financing solutions
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {financingOptions.map((option, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
-                                <CardContent className="p-6">
-                                    <h3 className="text-xl font-semibold mb-3 flex items-center">
-                                        <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                                        {option.title}
-                                    </h3>
-                                    <p className="text-gray-600 mb-4">{option.description}</p>
-                                    <ul className="space-y-2 mb-4">
-                                        {option.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-center text-sm">
-                                                <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                    <div className="bg-blue-50 p-3 rounded-lg">
-                                        <p className="text-sm text-blue-700 flex items-start">
-                                            <AlertCircle className="h-4 w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                                            {option.note}
-                                        </p>
+                                    <h3 className="text-xl font-semibold mb-3">Major Cards</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        We accept all major credit and debit cards including Visa, Mastercard, and American Express
+                                    </p>
+                                    <div className="space-y-2">
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Secure payment processing
+                                        </div>
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Instant confirmation
+                                        </div>
                                     </div>
                                 </CardContent>
                             </Card>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
-            {/* Insurance Information */}
-            <section className="py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Insurance & Benefits</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Maximize your dental benefits with our comprehensive insurance support
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {insuranceInfo.map((info, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
-                                <CardContent className="p-6">
-                                    <h3 className="text-xl font-semibold mb-3 flex items-center">
-                                        <Shield className="h-5 w-5 text-green-600 mr-2" />
-                                        {info.title}
-                                    </h3>
-                                    <p className="text-gray-600 mb-4">{info.description}</p>
-                                    <ul className="space-y-2">
-                                        {info.details.map((detail, idx) => (
-                                            <li key={idx} className="flex items-center text-sm">
-                                                <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                                {detail}
-                                            </li>
-                                        ))}
-                                    </ul>
+                            <Card className="hover:shadow-lg transition-all duration-300">
+                                <CardContent className="p-6 text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <Calendar className="h-12 w-12 text-purple-600" />
+                                    </div>
+                                    <h3 className="text-xl font-semibold mb-3">Afterpay</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Buy now, pay later in 4 interest-free installments
+                                    </p>
+                                    <div className="space-y-2">
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Split into 4 payments
+                                        </div>
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            No interest if paid on time
+                                        </div>
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Instant approval online
+                                        </div>
+                                    </div>
                                 </CardContent>
                             </Card>
-                        ))}
+
+                            <Card className="hover:shadow-lg transition-all duration-300">
+                                <CardContent className="p-6 text-center">
+                                    <div className="flex justify-center mb-4">
+                                        <Calendar className="h-12 w-12 text-orange-600" />
+                                    </div>
+                                    <h3 className="text-xl font-semibold mb-3">Humm</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Flexible payment plans for larger treatments
+                                    </p>
+                                    <div className="space-y-2">
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Up to 60 months to pay
+                                        </div>
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Interest-free options available
+                                        </div>
+                                        <div className="flex items-center justify-center text-sm text-gray-500">
+                                            <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                            Easy online application
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        <div className="mb-16 fade-in-section">
+                            <Card>
+                                <CardContent className="p-8">
+                                    <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                                        Health Insurance Accepted
+                                    </h2>
+                                    <p className="text-gray-600 text-center mb-6">
+                                        We accept all major health insurance funds with HICAPS for instant on-the-spot rebates
+                                    </p>
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                                        {insuranceProviders.map((provider, index) => (
+                                            <div
+                                                key={index}
+                                                className="bg-gray-50 rounded-lg p-4 text-center hover:bg-gray-100 transition-colors"
+                                            >
+                                                <span className="text-sm font-medium text-gray-700">{provider}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-8 mb-16 fade-in-section">
+                            <Card className="hover:shadow-lg transition-all duration-300">
+                                <CardContent className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">About Afterpay</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Afterpay allows you to receive your dental treatment now and pay for it in 4 equal installments,
+                                        due every 2 weeks. There are no interest charges when you pay on time.
+                                    </p>
+                                    <div className="space-y-3">
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Available for treatments up to $2,000</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">First payment due at time of treatment</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Remaining 3 payments deducted automatically</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Late fees apply for missed payments</span>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            <Card className="hover:shadow-lg transition-all duration-300">
+                                <CardContent className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">About Humm</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        Humm offers flexible payment plans that let you spread the cost of your dental treatment
+                                        over a longer period, making expensive procedures more manageable.
+                                    </p>
+                                    <div className="space-y-3">
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Interest-free options for shorter terms</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Competitive interest rates for extended plans</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">No early repayment penalties</span>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                                            <span className="text-sm text-gray-700">Minimum monthly repayments apply</span>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        <div className="fade-in-section">
+                            <Card className="border-blue-200 bg-blue-50">
+                                <CardContent className="p-6">
+                                    <div className="flex items-start space-x-3">
+                                        <Info className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h3 className="font-semibold text-blue-900 mb-2">Important Information</h3>
+                                            <p className="text-blue-800 text-sm leading-relaxed mb-3">
+                                                Payment plans are subject to approval and terms and conditions apply.
+                                                Please ask our friendly team about which payment option would work best for your situation.
+                                            </p>
+                                            <p className="text-blue-800 text-sm leading-relaxed">
+                                                We provide detailed treatment estimates before any work begins, so you'll always
+                                                know the cost upfront with no surprises.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        <div className="mt-12 text-center fade-in-section">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                Questions About Payment Options?
+                            </h3>
+                            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                                Our team is here to help you understand your payment options and find the best solution for your needs
+                            </p>
+                            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
+                                Contact Us Today
+                            </Button>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* Important Information */}
-            <section className="py-16 bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <Card className="max-w-4xl mx-auto">
-                        <CardContent className="p-8">
-                            <h3 className="text-2xl font-semibold mb-6 text-center">Important Payment Information</h3>
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 className="font-semibold mb-3 text-blue-600">Before Your Appointment</h4>
-                                    <ul className="space-y-2 text-sm text-gray-600">
-                                        <li>• Bring your health insurance card and any referrals</li>
-                                        <li>• Treatment estimates provided before procedures</li>
-                                        <li>• Payment options discussed during consultation</li>
-                                        <li>• No surprises - all costs explained upfront</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold mb-3 text-green-600">Financial Assistance</h4>
-                                    <ul className="space-y-2 text-sm text-gray-600">
-                                        <li>• Payment plan consultations available</li>
-                                        <li>• Senior and student discounts may apply</li>
-                                        <li>• Family payment plans for multiple treatments</li>
-                                        <li>• Emergency treatment payment options</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
-            </section>
+                <Contact />
+            </main>
 
-            {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 fade-in-section">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-white mb-4">
-                        Questions About Payment Options?
-                    </h2>
-                    <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                        Our friendly team is here to help you understand your payment options and find the best solution for your needs
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                            Call Us Today
-                        </Button>
-                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                            Book Consultation
-                        </Button>
-                    </div>
-                </div>
-            </section>
-
-            {/* Contact Section */}
-            <Contact />
+            <Footer />
         </div>
     );
 }

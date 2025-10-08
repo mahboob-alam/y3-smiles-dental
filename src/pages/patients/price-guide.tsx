@@ -1,7 +1,11 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import {
     DollarSign,
     FileText,
@@ -9,11 +13,22 @@ import {
     Phone,
     CheckCircle,
     AlertTriangle,
-    Info
+    Info,
+    Shield,
+    Star,
+    Users,
+    ArrowRight
 } from "lucide-react";
 
-export default function PriceGuidePage() {
+const PriceGuidePage = () => {
     useScrollAnimation();
+
+    const benefits = [
+        "Transparent pricing",
+        "No hidden fees",
+        "Payment plans available",
+        "Insurance accepted"
+    ];
 
     const treatmentPrices = [
         {
@@ -95,224 +110,327 @@ export default function PriceGuidePage() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-            {/* Hero Section */}
-            <section className="pt-24 pb-16 bg-gradient-to-r from-blue-600 to-green-600">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Price Guide
-                    </h1>
-                    <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                        Transparent pricing for quality dental care. No hidden fees, no surprises.
-                    </p>
-                </div>
-            </section>
-
-            {/* Important Notice */}
-            <section className="py-8 bg-blue-50">
-                <div className="container mx-auto px-4">
-                    <Card className="max-w-4xl mx-auto border-blue-200">
-                        <CardContent className="p-6">
-                            <div className="flex items-start space-x-3">
-                                <Info className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold text-blue-800 mb-2">Important Pricing Information</h3>
-                                    <p className="text-blue-700 text-sm leading-relaxed">
-                                        Prices listed are starting prices and may vary based on individual treatment needs,
-                                        complexity, and materials used. A comprehensive examination is required to provide
-                                        accurate treatment estimates. All prices include GST and are subject to change without notice.
-                                    </p>
-                                </div>
+        <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-grow">
+                {/* Hero Section */}
+                <section className="bg-gradient-hero py-24">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto text-center">
+                            <DollarSign className="w-20 h-20 text-primary mx-auto mb-6" />
+                            <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
+                                Price Guide
+                            </h1>
+                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                                Transparent pricing for quality dental care. No hidden fees, no surprises. We believe in honest, upfront pricing so you can make informed decisions about your dental health.
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-4 mb-8">
+                                {benefits.map((benefit, index) => (
+                                    <div key={index} className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2">
+                                        <CheckCircle className="w-5 h-5 text-primary mr-2" />
+                                        <span className="text-sm font-medium text-neutral-700">{benefit}</span>
+                                    </div>
+                                ))}
                             </div>
-                        </CardContent>
-                    </Card>
-                </div>
-            </section>
-
-            {/* Treatment Prices */}
-            <section className="py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Treatment Prices</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Our transparent pricing ensures you know what to expect before your treatment
-                        </p>
+                            <Button variant="booking" size="xl" asChild>
+                                <Link to="/#contact">GET PERSONALIZED QUOTE</Link>
+                            </Button>
+                        </div>
                     </div>
+                </section>
 
-                    <div className="grid lg:grid-cols-2 gap-8">
-                        {treatmentPrices.map((category, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
-                                <CardContent className="p-6">
-                                    <div className="flex items-center mb-4">
-                                        {category.icon}
-                                        <h3 className="text-xl font-semibold ml-3">{category.category}</h3>
+                {/* Important Notice */}
+                <section className="py-16 bg-background">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto">
+                            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                <h3 className="text-lg font-semibold text-blue-800 mb-2 flex items-center">
+                                    <Info className="w-5 h-5 mr-2" />
+                                    Important Pricing Information
+                                </h3>
+                                <p className="text-blue-700 text-sm leading-relaxed">
+                                    Prices listed are starting prices and may vary based on individual treatment needs, complexity, and materials used. A comprehensive examination is required to provide accurate treatment estimates. All prices include GST and are subject to change without notice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Treatment Prices */}
+                <section className="py-24 bg-neutral-50">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                                Treatment Prices
+                            </h2>
+                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                Our transparent pricing ensures you know what to expect before your treatment. Browse by category to find the services you need.
+                            </p>
+                        </div>
+
+                        <div className="max-w-6xl mx-auto">
+                            <Tabs defaultValue="general" className="w-full">
+                                <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-8">
+                                    <TabsTrigger value="general">General</TabsTrigger>
+                                    <TabsTrigger value="restorative">Restorative</TabsTrigger>
+                                    <TabsTrigger value="preventive">Preventive</TabsTrigger>
+                                    <TabsTrigger value="surgery">Surgery</TabsTrigger>
+                                    <TabsTrigger value="cosmetic">Cosmetic</TabsTrigger>
+                                    <TabsTrigger value="dentures">Dentures</TabsTrigger>
+                                </TabsList>
+
+                                {treatmentPrices.map((category, index) => (
+                                    <TabsContent key={index} value={category.category.toLowerCase().replace(' dentistry', '').replace(' care', '')}>
+                                        <Card className="border-0 shadow-soft">
+                                            <CardHeader>
+                                                <div className="flex items-center">
+                                                    {category.icon}
+                                                    <CardTitle className="text-2xl font-bold text-neutral-800 ml-3">
+                                                        {category.category}
+                                                    </CardTitle>
+                                                </div>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <div className="grid gap-4">
+                                                    {category.treatments.map((treatment, idx) => (
+                                                        <div key={idx} className="flex items-center justify-between py-3 px-4 bg-white rounded-lg border border-neutral-100 hover:border-primary/20 transition-colors">
+                                                            <span className="text-neutral-700 font-medium">{treatment.name}</span>
+                                                            <span className="font-bold text-primary text-lg">{treatment.price}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </TabsContent>
+                                ))}
+                            </Tabs>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Payment Plans */}
+                <section className="py-24 bg-background">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                                Payment Plans Available
+                            </h2>
+                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                Don't let cost be a barrier to your dental health. We offer flexible payment options to make quality care accessible.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            {paymentPlans.map((plan, index) => (
+                                <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
+                                    <CardHeader className="text-center">
+                                        <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                                            <DollarSign className="w-8 h-8" />
+                                        </div>
+                                        <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
+                                            {plan.title}
+                                        </CardTitle>
+                                        <p className="text-neutral-600 leading-relaxed mb-4">{plan.description}</p>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <ul className="space-y-3">
+                                            {plan.features.map((feature, idx) => (
+                                                <li key={idx} className="flex items-center text-sm text-neutral-600">
+                                                    <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Insurance Information */}
+                <section className="py-24 bg-neutral-50">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                                Insurance & Benefits
+                            </h2>
+                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                Maximize your dental benefits with our comprehensive insurance support and instant rebate processing.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-8">
+                            <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
+                                <CardHeader className="text-center">
+                                    <div className="w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mx-auto mb-4">
+                                        <CheckCircle className="w-8 h-8" />
                                     </div>
-                                    <div className="space-y-3">
-                                        {category.treatments.map((treatment, idx) => (
-                                            <div key={idx} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
-                                                <span className="text-gray-700">{treatment.name}</span>
-                                                <span className="font-semibold text-blue-600">{treatment.price}</span>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
+                                        Private Health Insurance
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent className="text-center">
+                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                        We accept all major private health insurers with HICAPS for instant rebates and seamless claim processing.
+                                    </p>
                                 </CardContent>
                             </Card>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
-            {/* Payment Plans */}
-            <section className="py-16 bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Payment Plans Available</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Don't let cost be a barrier to your dental health. We offer flexible payment options
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {paymentPlans.map((plan, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
-                                <CardContent className="p-6 text-center">
-                                    <DollarSign className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                                    <h3 className="text-xl font-semibold mb-3">{plan.title}</h3>
-                                    <p className="text-gray-600 mb-4">{plan.description}</p>
-                                    <ul className="space-y-2">
-                                        {plan.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-center justify-center text-sm">
-                                                <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
+                            <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
+                                <CardHeader className="text-center">
+                                    <div className="w-16 h-16 rounded-2xl bg-green-50 text-green-600 flex items-center justify-center mx-auto mb-4">
+                                        <FileText className="w-8 h-8" />
+                                    </div>
+                                    <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
+                                        Medicare Benefits
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent className="text-center">
+                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                        Child Dental Benefits Schedule (CDBS) and bulk billing available for eligible patients and children.
+                                    </p>
                                 </CardContent>
                             </Card>
-                        ))}
+
+                            <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
+                                <CardHeader className="text-center">
+                                    <div className="w-16 h-16 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center mx-auto mb-4">
+                                        <Shield className="w-8 h-8" />
+                                    </div>
+                                    <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
+                                        DVA Patients
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent className="text-center">
+                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                        Department of Veterans' Affairs patients welcome with special rates and dedicated support available.
+                                    </p>
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* Insurance Information */}
-            <section className="py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Insurance & Benefits</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Maximize your dental benefits with our insurance support
-                        </p>
+                {/* FAQ Section */}
+                <section className="py-24 bg-background">
+                    <div className="container mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                                Pricing FAQ
+                            </h2>
+                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                Common questions about our pricing and payment options.
+                            </p>
+                        </div>
+
+                        <div className="max-w-4xl mx-auto grid gap-6">
+                            <Card className="border-0 shadow-soft">
+                                <CardHeader>
+                                    <CardTitle className="text-lg font-bold text-neutral-800">
+                                        Why do prices vary?
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-neutral-600 leading-relaxed">
+                                        Treatment complexity, materials used, and individual patient needs affect pricing. We provide detailed estimates after your comprehensive examination to ensure accurate quotes.
+                                    </p>
+                                </CardContent>
+                            </Card>
+
+                            <Card className="border-0 shadow-soft">
+                                <CardHeader>
+                                    <CardTitle className="text-lg font-bold text-neutral-800">
+                                        Are payment plans available for all treatments?
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-neutral-600 leading-relaxed">
+                                        Payment plans are available for treatments over $300. Terms and conditions apply, and approval is subject to assessment. We offer both interest-free and extended payment options.
+                                    </p>
+                                </CardContent>
+                            </Card>
+
+                            <Card className="border-0 shadow-soft">
+                                <CardHeader>
+                                    <CardTitle className="text-lg font-bold text-neutral-800">
+                                        Do you bulk bill?
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-neutral-600 leading-relaxed">
+                                        We offer bulk billing for eligible patients under the Child Dental Benefits Schedule (CDBS) and certain DVA treatments. Contact us to check your eligibility.
+                                    </p>
+                                </CardContent>
+                            </Card>
+
+                            <Card className="border-0 shadow-soft">
+                                <CardHeader>
+                                    <CardTitle className="text-lg font-bold text-neutral-800">
+                                        How do I get an accurate quote?
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-neutral-600 leading-relaxed">
+                                        Book a consultation for a comprehensive examination. We'll provide a detailed treatment plan with accurate pricing before any work begins, so there are no surprises.
+                                    </p>
+                                </CardContent>
+                            </Card>
+                        </div>
                     </div>
+                </section>
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <Card className="text-center hover:shadow-lg transition-shadow">
-                            <CardContent className="p-6">
-                                <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                                <h3 className="text-lg font-semibold mb-3">Private Health Insurance</h3>
-                                <p className="text-gray-600 text-sm">
-                                    We accept all major private health insurers with HICAPS for instant rebates
+                {/* Disclaimer */}
+                <section className="py-16 bg-neutral-50">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto">
+                            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center">
+                                    <AlertTriangle className="w-5 h-5 mr-2" />
+                                    Pricing Disclaimer
+                                </h3>
+                                <p className="text-yellow-700 text-sm leading-relaxed">
+                                    All prices are starting prices and include GST. Final treatment costs may vary based on individual needs, complexity, and materials used. A comprehensive examination is required for accurate pricing. Prices are subject to change without notice.
                                 </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="text-center hover:shadow-lg transition-shadow">
-                            <CardContent className="p-6">
-                                <FileText className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                                <h3 className="text-lg font-semibold mb-3">Medicare Benefits</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Child Dental Benefits Schedule (CDBS) and bulk billing available for eligible patients
-                                </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="text-center hover:shadow-lg transition-shadow">
-                            <CardContent className="p-6">
-                                <Calendar className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                                <h3 className="text-lg font-semibold mb-3">DVA Patients</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Department of Veterans' Affairs patients welcome with special rates available
-                                </p>
-                            </CardContent>
-                        </Card>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* FAQ Section */}
-            <section className="py-16 bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">Pricing FAQ</h2>
+                {/* CTA Section */}
+                <section className="py-24 bg-background">
+                    <div className="container mx-auto px-6 text-center">
+                        <div className="max-w-3xl mx-auto">
+                            <Star className="w-16 h-16 text-primary mx-auto mb-6" />
+                            <h2 className="text-4xl font-bold text-neutral-800 mb-6">
+                                Ready to Get Started?
+                            </h2>
+                            <p className="text-lg text-neutral-600 mb-8">
+                                Book your consultation today for a detailed treatment plan and accurate pricing tailored to your needs.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <Button variant="booking" size="xl" asChild className="group">
+                                    <Link to="/#contact">
+                                        <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
+                                        CALL FOR QUOTE
+                                    </Link>
+                                </Button>
+                                <Button variant="outline" size="xl" asChild>
+                                    <Link to="/patients">
+                                        <ArrowRight className="w-5 h-5 mr-2" />
+                                        Back to Patient Info
+                                    </Link>
+                                </Button>
+                            </div>
+                        </div>
                     </div>
+                </section>
 
-                    <div className="max-w-3xl mx-auto space-y-6">
-                        <Card>
-                            <CardContent className="p-6">
-                                <h3 className="font-semibold mb-2">Why do prices vary?</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Treatment complexity, materials used, and individual patient needs affect pricing.
-                                    We provide detailed estimates after your examination.
-                                </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardContent className="p-6">
-                                <h3 className="font-semibold mb-2">Are payment plans available for all treatments?</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Payment plans are available for treatments over $300. Terms and conditions apply,
-                                    and approval is subject to assessment.
-                                </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardContent className="p-6">
-                                <h3 className="font-semibold mb-2">Do you bulk bill?</h3>
-                                <p className="text-gray-600 text-sm">
-                                    We offer bulk billing for eligible patients under the Child Dental Benefits Schedule
-                                    and certain DVA treatments.
-                                </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardContent className="p-6">
-                                <h3 className="font-semibold mb-2">How do I get an accurate quote?</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Book a consultation for a comprehensive examination. We'll provide a detailed
-                                    treatment plan with accurate pricing before any work begins.
-                                </p>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 fade-in-section">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-white mb-4">
-                        Ready to Get Started?
-                    </h2>
-                    <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                        Book your consultation today for a detailed treatment plan and accurate pricing
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                            <Phone className="mr-2 h-5 w-5" />
-                            Call for Quote
-                        </Button>
-                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                            <Calendar className="mr-2 h-5 w-5" />
-                            Book Consultation
-                        </Button>
-                    </div>
-                </div>
-            </section>
-
-            {/* Contact Section */}
-            <Contact />
+                <Contact />
+            </main>
+            <Footer />
         </div>
     );
-}
+};
+
+export default PriceGuidePage;

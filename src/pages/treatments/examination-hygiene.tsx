@@ -88,7 +88,7 @@ const ExaminationHygiene = () => {
     },
     {
       title: "As Needed",
-      description: "Customized schedule based on individual needs",
+      description: "Customised schedule based on individual needs",
       suitableFor: "Specific conditions or treatment requirements"
     }
   ];
@@ -137,7 +137,7 @@ const ExaminationHygiene = () => {
     },
     {
       question: "Is the cleaning procedure painful?",
-      answer: "Professional cleanings are generally comfortable. Some patients may experience mild sensitivity, especially if it's been a while since their last cleaning. We can use topical anesthetics if needed."
+      answer: "Professional cleanings are generally comfortable. Some patients may experience mild sensitivity, especially if it's been a while since their last cleaning. We can use topical anaesthetics if needed."
     },
     {
       question: "What's included in a comprehensive dental examination?",
@@ -386,7 +386,7 @@ const ExaminationHygiene = () => {
                   },
                   {
                     question: "Is the cleaning procedure painful?",
-                    answer: "Professional cleanings are generally comfortable. Some patients may experience mild sensitivity, especially if it's been a while since their last cleaning. We can use topical anesthetics if needed."
+                    answer: "Professional cleanings are generally comfortable. Some patients may experience mild sensitivity, especially if it's been a while since their last cleaning. We can use topical anaesthetics if needed."
                   },
                   {
                     question: "What's included in a comprehensive dental examination?",

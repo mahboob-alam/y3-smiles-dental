@@ -439,7 +439,7 @@ const TreatmentsPage = () => {
                 {
                   step: "2",
                   title: "Treatment Planning",
-                  description: "Customized treatment plan tailored to your specific needs and budget"
+                  description: "Customised treatment plan tailored to your specific needs and budget"
                 },
                 {
                   step: "3",

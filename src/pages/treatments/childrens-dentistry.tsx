@@ -171,7 +171,7 @@ const ChildrensDentistry = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                    Specialised Pediatric Care
+                    Specialised Paediatric Care
                   </h2>
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     What Is Children's Dentistry?

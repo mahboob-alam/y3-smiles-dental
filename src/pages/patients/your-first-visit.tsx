@@ -48,7 +48,7 @@ const YourFirstVisitPage = () => {
     ];
 
     const whatToBring = [
-        "Valid photo ID (driver's license or passport)",
+        "Valid photo ID (driver's licence or passport)",
         "Health insurance cards (if applicable)",
         "List of current medications",
         "Previous dental records or X-rays (if available)",

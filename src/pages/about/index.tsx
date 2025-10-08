@@ -59,7 +59,7 @@ const AboutPage = () => {
             name: "Emma Thompson",
             role: "Oral Health Therapist",
             image: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-            description: "Emma specializes in preventive care and oral health education, helping patients maintain healthy smiles for life."
+            description: "Emma specialises in preventive care and oral health education, helping patients maintain healthy smiles for life."
         },
         {
             name: "Maria Rodriguez",

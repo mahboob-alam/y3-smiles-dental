@@ -112,7 +112,7 @@ const TMDandBruxism = () => {
     {
       step: "3",
       title: "Treatment Planning",
-      description: "Develop customized treatment plan based on specific diagnosis"
+      description: "Develop customised treatment plan based on specific diagnosis"
     },
     {
       step: "4",

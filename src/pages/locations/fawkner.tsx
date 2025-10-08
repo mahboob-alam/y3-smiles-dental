@@ -21,27 +21,106 @@ import {
 const FawknerPage = () => {
     useScrollAnimation();
 
+    const services = [
+        "Family Dentistry: Fillings, dentures, extractions, root canal treatments",
+        "Children's Dentistry: Fluoride applications, oral hygiene education, fissure sealants",
+        "Cosmetic Dentistry: Veneers, teeth whitening, crowns, reshaping teeth",
+        "Gentle Care Options: Designed for anxious or nervous patients",
+        "Emergency Dentistry: Prompt care for unexpected pain and injuries",
+        "Preventive Care: Regular check-ups and professional cleanings"
+    ];
+
+    const whyChooseUs = [
+        {
+            icon: Users,
+            title: "Personalised Care",
+            description: "Our dentists take time to listen, review your history, and tailor treatment to your needs."
+        },
+        {
+            icon: Heart,
+            title: "Comfortable Environment",
+            description: "A calming clinic and caring team ensure your visits are stress-free."
+        },
+        {
+            icon: Shield,
+            title: "Comprehensive Services",
+            description: "From check-ups and preventative care to cosmetic dentistry and gentle treatment options."
+        },
+        {
+            icon: Award,
+            title: "Experienced Team",
+            description: "Our skilled dentists stay updated with the latest techniques and technology."
+        }
+    ];
+
     return (
         <div className="min-h-screen flex flex-col">
             <Header />
             <main className="flex-grow">
-                {/* Hero Section */}
-                <section className="bg-gradient-hero py-24">
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center">
-                            <div className="flex items-center justify-center mb-6">
-                                <MapPin className="w-8 h-8 text-primary mr-3" />
-                                <h1 className="text-5xl md:text-6xl font-bold text-neutral-800">
-                                    Fawkner Dentists
+                {/* Enhanced Hero Section */}
+                <section className="relative bg-gradient-to-br from-neutral-50 via-primary/5 to-neutral-100 py-32 overflow-hidden">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 opacity-5">
+                        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-primary"></div>
+                        <div className="absolute top-40 right-20 w-20 h-20 rounded-full bg-secondary"></div>
+                        <div className="absolute bottom-20 left-1/4 w-16 h-16 rounded-full bg-primary"></div>
+                        <div className="absolute bottom-32 right-1/3 w-24 h-24 rounded-full bg-secondary"></div>
+                    </div>
+
+                    <div className="container mx-auto px-6 relative z-10">
+                        <div className="max-w-5xl mx-auto">
+                            <div className="text-center mb-12">
+                                <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
+                                    <MapPin className="w-10 h-10 text-primary mr-4" />
+                                    <div className="text-left">
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Premium Dental Care</p>
+                                        <p className="text-lg font-bold text-neutral-800">Fawkner</p>
+                                    </div>
+                                </div>
+
+                                <h1 className="text-6xl md:text-7xl font-bold text-neutral-800 mb-6 leading-tight">
+                                    Your Smile,
+                                    <span className="block text-primary">
+                                        Our Priority
+                                    </span>
                                 </h1>
+
+                                <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                                    Experience exceptional dental care in Fawkner. Our state-of-the-art clinic
+                                    combines advanced technology with gentle, personalised treatment for the whole family.
+                                </p>
                             </div>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                                Trusted dental care for the Fawkner community.
-                                Quality treatments with a personal touch.
-                            </p>
-                            <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">BOOK APPOINTMENT</Link>
-                            </Button>
+
+                            {/* Enhanced Feature Pills */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                                <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
+                                    <CheckCircle className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
+                                    <span className="font-semibold text-neutral-800">Local Fawkner Clinic</span>
+                                </div>
+                                <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
+                                    <Award className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
+                                    <span className="font-semibold text-neutral-800">Expert Dental Team</span>
+                                </div>
+                                <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
+                                    <Heart className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
+                                    <span className="font-semibold text-neutral-800">Family Friendly Care</span>
+                                </div>
+                            </div>
+
+                            {/* CTA Buttons */}
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                                <Button variant="booking" size="xl" asChild className="group">
+                                    <Link to="/#contact">
+                                        <CheckCircle className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
+                                        BOOK APPOINTMENT
+                                    </Link>
+                                </Button>
+                                <Button variant="booking" size="xl" asChild>
+                                    <Link to="/treatments">
+                                        View Our Treatments
+                                    </Link>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </section>

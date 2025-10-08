@@ -103,7 +103,7 @@ const Treatments = () => {
           <Button
             variant="outline"
             size="lg"
-            className="min-w-[200px] text-primary border-primary hover:gradient-primary hover:text-white hover:border-transparent"
+            className="min-w-[200px]"
             asChild
           >
             <Link to="/treatments">

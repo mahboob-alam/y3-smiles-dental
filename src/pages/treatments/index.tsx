@@ -316,7 +316,7 @@ const TreatmentsPage = () => {
                           </li>
                         ))}
                       </ul>
-                      <Button variant="learn" className="w-full" asChild>
+                      <Button variant="outline" className="w-full" asChild>
                         <Link to={treatment.path}>
                           LEARN MORE
                         </Link>
@@ -406,7 +406,7 @@ const TreatmentsPage = () => {
                 <p className="text-red-700 font-medium">24/7 Emergency Dental Line</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="cta" size="lg" className="bg-red-600 hover:bg-red-700" asChild>
+                <Button variant="booking" size="lg" asChild>
                   <a href="tel:(03) 1234 5678">CALL EMERGENCY LINE</a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>

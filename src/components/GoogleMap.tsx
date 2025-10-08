@@ -196,7 +196,7 @@ const GoogleMap = ({
 
               {/* Quick Actions */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Button variant="cta" className="w-full" asChild>
+                <Button variant="booking" className="w-full" asChild>
                   <a href={`tel:${location.phone}`}>
                     <Phone className="w-4 h-4 mr-2" />
                     CALL NOW

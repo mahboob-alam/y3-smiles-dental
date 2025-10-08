@@ -353,4 +353,21 @@
   .hover-glow:hover {
     box-shadow: 0 0 20px hsla(var(--primary), 0.3);
   }
+
+  /* Custom color for booking variant */
+  .bg-booking-gold {
+    background-color: #B5A642;
+  }
+
+  .text-booking-gold {
+    color: #B5A642;
+  }
+
+  .border-booking-gold {
+    border-color: #B5A642;
+  }
+
+  .hover\:bg-booking-gold:hover {
+    background-color: #B5A642;
+  }
 }

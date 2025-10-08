@@ -25,13 +25,21 @@ const ToothExtraction = lazy(() => import("./pages/treatments/extraction"));
 const WisdomTeethRemoval = lazy(() => import("./pages/treatments/wisdom-teeth"));
 
 // Lazy load other pages
-const PatientsPage = lazy(() => import("./pages/patients"));
-const SmileGalleryPage = lazy(() => import("./pages/patients/smile-gallery"));
-const CaseStudiesPage = lazy(() => import("./pages/patients/case-studies"));
 const TreatmentsPage = lazy(() => import("./pages/treatments"));
 const PricesPage = lazy(() => import("./pages/prices"));
 const SpecialsPage = lazy(() => import("./pages/specials"));
-const BlogPage = lazy(() => import("./pages/blog"));
+
+// Lazy load About pages
+const AboutPage = lazy(() => import("./pages/about"));
+const BlogPage = lazy(() => import("./pages/about/blog"));
+
+// Lazy load Patient pages
+const PatientsPage = lazy(() => import("./pages/patients"));
+const YourFirstVisitPage = lazy(() => import("./pages/patients/your-first-visit"));
+const PaymentOptionsPage = lazy(() => import("./pages/patients/payment-options"));
+const PriceGuidePage = lazy(() => import("./pages/patients/price-guide"));
+const SmileGalleryPage = lazy(() => import("./pages/patients/smile-gallery"));
+const CaseStudiesPage = lazy(() => import("./pages/patients/case-studies"));
 
 // Lazy load location pages
 const BroadmeadowsPage = lazy(() => import("./pages/locations/broadmeadows"));
@@ -135,9 +143,37 @@ const App = () => {
             </Suspense>
           } />
 
+          {/* About Routes */}
+          <Route path="/about" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <AboutPage />
+            </Suspense>
+          } />
+          <Route path="/about/blog" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <BlogPage />
+            </Suspense>
+          } />
+
+          {/* Patient Routes */}
           <Route path="/patients" element={
             <Suspense fallback={<LoadingSpinner />}>
               <PatientsPage />
+            </Suspense>
+          } />
+          <Route path="/patients/your-first-visit" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <YourFirstVisitPage />
+            </Suspense>
+          } />
+          <Route path="/patients/payment-options" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PaymentOptionsPage />
+            </Suspense>
+          } />
+          <Route path="/patients/price-guide" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PriceGuidePage />
             </Suspense>
           } />
           <Route path="/patients/smile-gallery" element={
@@ -160,11 +196,6 @@ const App = () => {
           <Route path="/specials" element={
             <Suspense fallback={<LoadingSpinner />}>
               <SpecialsPage />
-            </Suspense>
-          } />
-          <Route path="/blog" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <BlogPage />
             </Suspense>
           } />
 

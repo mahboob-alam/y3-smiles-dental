@@ -1,336 +1,270 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import {
   Users,
-  Camera,
+  CalendarCheck,
+  CreditCard,
   FileText,
-  Heart,
-  CheckCircle,
-  Star,
-  Award,
-  Smile,
+  Camera,
+  FolderOpen,
+  ArrowRight,
   Clock,
+  Heart,
   Shield
 } from "lucide-react";
 
-const PatientsPage = () => {
-  const patientResources = [
+export default function PatientsPage() {
+  useScrollAnimation();
+
+  const patientServices = [
     {
+      icon: <CalendarCheck className="h-8 w-8 text-blue-600" />,
+      title: "Your First Visit",
+      description: "Everything you need to know for your first appointment with us",
+      link: "/patients/your-first-visit",
+      features: [
+        "What to bring and expect",
+        "Comprehensive examination process",
+        "Anxiety management tips",
+        "New patient special offers"
+      ]
+    },
+    {
+      icon: <CreditCard className="h-8 w-8 text-green-600" />,
+      title: "Payment Options",
+      description: "Flexible payment solutions to make dental care affordable",
+      link: "/patients/payment-options",
+      features: [
+        "Interest-free payment plans",
+        "Private health insurance",
+        "Medicare & CDBS support",
+        "Multiple payment methods"
+      ]
+    },
+    {
+      icon: <FileText className="h-8 w-8 text-purple-600" />,
+      title: "Price Guide",
+      description: "Transparent pricing for all our dental treatments and services",
+      link: "/patients/price-guide",
+      features: [
+        "Comprehensive treatment costs",
+        "No hidden fees policy",
+        "Insurance claim estimates",
+        "Payment plan options"
+      ]
+    }
+  ];
+
+  const additionalResources = [
+    {
+      icon: <Camera className="h-6 w-6 text-pink-600" />,
       title: "Smile Gallery",
-      description: "View real patient transformations and see the amazing results we achieve",
-      icon: Camera,
-      link: "/patients/smile-gallery",
-      features: ["Before & after photos", "Real patient stories", "Treatment outcomes", "Inspiration gallery"]
+      description: "See real before and after transformations from our patients",
+      link: "/patients/smile-gallery"
     },
     {
+      icon: <FolderOpen className="h-6 w-6 text-orange-600" />,
       title: "Case Studies",
-      description: "Detailed treatment journeys showing comprehensive dental care",
-      icon: FileText,
-      link: "/patients/case-studies",
-      features: ["Complete treatment plans", "Step-by-step process", "Patient testimonials", "Clinical outcomes"]
+      description: "Detailed treatment journeys and success stories",
+      link: "/patients/case-studies"
     }
   ];
 
-  const patientCare = [
+  const whyChooseUs = [
     {
-      title: "Comfort First",
-      description: "Your comfort and peace of mind are our top priorities",
-      icon: Heart,
-      details: [
-        "Anxiety management techniques",
-        "Sedation options available",
-        "Gentle, caring approach",
-        "Comfortable treatment rooms"
-      ]
+      icon: <Clock className="h-6 w-6 text-blue-500" />,
+      title: "40+ Years Experience",
+      description: "Decades of expertise in comprehensive dental care"
     },
     {
-      title: "Quality Assurance",
-      description: "We maintain the highest standards of dental care",
-      icon: Award,
-      details: [
-        "Latest technology and techniques",
-        "Continuing education",
-        "Quality materials only",
-        "Proven treatment protocols"
-      ]
+      icon: <Heart className="h-6 w-6 text-red-500" />,
+      title: "Patient-Centered Care",
+      description: "Your comfort and satisfaction are our top priorities"
     },
     {
-      title: "Patient Safety",
-      description: "Comprehensive safety protocols for your protection",
-      icon: Shield,
-      details: [
-        "Strict sterilization procedures",
-        "Medical-grade equipment",
-        "Emergency protocols in place",
-        "Qualified, experienced team"
-      ]
+      icon: <Shield className="h-6 w-6 text-green-500" />,
+      title: "Modern Technology",
+      description: "Latest dental equipment and treatment techniques"
     }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah M.",
-      treatment: "Smile Makeover",
-      rating: 5,
-      text: "The team at DENTL transformed my smile beyond my expectations. I finally have the confidence to smile freely!"
-    },
-    {
-      name: "Michael R.",
-      treatment: "Dental Implants",
-      rating: 5,
-      text: "Professional, caring, and expert treatment. My implants feel completely natural and the process was surprisingly comfortable."
-    },
-    {
-      name: "Emma L.",
-      treatment: "General Dentistry",
-      rating: 5,
-      text: "As someone with dental anxiety, I was amazed at how comfortable and relaxed I felt throughout my treatment."
-    }
-  ];
-
-  const benefits = [
-    "40+ years of experience",
-    "Comprehensive patient care",
-    "Latest dental technology",
-    "Comfortable, modern facility"
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-gradient-hero py-24">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <Users className="w-20 h-20 text-primary mx-auto mb-6" />
-              <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
-                Patient Resources
-              </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Discover real patient stories, treatment outcomes, and comprehensive case studies.
-                See how DENTL has transformed smiles and lives for over 40 years.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center bg-white/80 backdrop-blur-sm rounded-full px-4 py-2">
-                    <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                    <span className="text-sm font-medium text-neutral-700">{benefit}</span>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 bg-gradient-to-r from-blue-600 to-green-600">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            For Patients
+          </h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+            Everything you need to know about your dental care journey at Y3 Smiles Dental.
+            From your first visit to ongoing care, we're here to support you every step of the way.
+          </p>
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <CalendarCheck className="mr-2 h-5 w-5" />
+            Book Your Appointment
+          </Button>
+        </div>
+      </section>
+
+      {/* Main Patient Services */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Patient Information</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Essential information to help you navigate your dental care experience with confidence
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {patientServices.map((service, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    {service.icon}
+                    <h3 className="text-xl font-semibold ml-3">{service.title}</h3>
                   </div>
-                ))}
-              </div>
-            </div>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-gray-500">
+                        <ArrowRight className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button asChild className="w-full">
+                    <Link to={service.link}>
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Patient Resources */}
-        <section className="py-24 bg-background">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                Patient Resources
-              </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Real Stories, Real Results
-              </h3>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                Explore our patient gallery and case studies to see the life-changing results
-                we achieve every day.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {patientResources.map((resource, index) => {
-                const IconComponent = resource.icon;
-                return (
-                  <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft h-full">
-                    <CardHeader className="text-center pb-6">
-                      <div className="w-20 h-20 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-smooth">
-                        <IconComponent className="w-10 h-10" />
-                      </div>
-                      <CardTitle className="text-3xl font-bold text-neutral-800 mb-4">
-                        {resource.title}
-                      </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed text-lg">
-                        {resource.description}
-                      </p>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <ul className="space-y-3 mb-8">
-                        {resource.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-neutral-600">
-                            <CheckCircle className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                      <Button variant="learn" className="w-full" asChild>
-                        <Link to={resource.link}>
-                          EXPLORE {resource.title.toUpperCase()}
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
+      {/* Additional Resources */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Patient Resources</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Explore real patient stories and see the amazing results we achieve every day
+            </p>
           </div>
-        </section>
 
-        {/* Patient Care Philosophy */}
-        <section className="py-24 bg-neutral-50">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                Our Commitment
-              </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Exceptional Patient Care
-              </h3>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                Every aspect of your experience is designed around your comfort, safety, and satisfaction.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {patientCare.map((care, index) => {
-                const IconComponent = care.icon;
-                return (
-                  <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-smooth">
-                    <CardHeader>
-                      <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8" />
-                      </div>
-                      <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
-                        {care.title}
-                      </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed">
-                        {care.description}
-                      </p>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2">
-                        {care.details.map((detail, detailIndex) => (
-                          <li key={detailIndex} className="flex items-center text-sm text-neutral-600">
-                            <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {additionalResources.map((resource, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-3">
+                    {resource.icon}
+                    <h3 className="text-lg font-semibold ml-3">{resource.title}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">{resource.description}</p>
+                  <Button variant="outline" asChild className="w-full">
+                    <Link to={resource.link}>
+                      View {resource.title}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Patient Testimonials */}
-        <section className="py-24 bg-background">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <Smile className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                What Our Patients Say
-              </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                Read genuine testimonials from patients who have experienced the DENTL difference.
-              </p>
-            </div>
+      {/* Why Choose Us */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Y3 Smiles?</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover what makes us the trusted choice for families across Melbourne's northern suburbs
+            </p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-0 shadow-soft">
-                  <CardHeader>
-                    <div className="flex items-center mb-4">
-                      {[...Array(testimonial.rating)].map((_, starIndex) => (
-                        <Star key={starIndex} className="w-5 h-5 text-yellow-400 fill-current" />
-                      ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyChooseUs.map((reason, index) => (
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    <div className="p-3 bg-gray-100 rounded-full">
+                      {reason.icon}
                     </div>
-                    <CardTitle className="text-lg font-bold text-neutral-800">
-                      {testimonial.name}
-                    </CardTitle>
-                    <p className="text-sm text-primary font-medium">
-                      {testimonial.treatment}
-                    </p>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-neutral-600 italic leading-relaxed">
-                      "{testimonial.text}"
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{reason.title}</h3>
+                  <p className="text-gray-600 text-sm">{reason.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Trusted by Thousands</h2>
+            <p className="text-blue-100 max-w-2xl mx-auto">
+              Our commitment to excellence is reflected in our patient outcomes and satisfaction
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-3xl font-bold mb-2">40+</div>
+              <div className="text-blue-200 text-sm">Years of Excellence</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">15,000+</div>
+              <div className="text-blue-200 text-sm">Happy Patients</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">4.9/5</div>
+              <div className="text-blue-200 text-sm">Average Rating</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-2">98%</div>
+              <div className="text-blue-200 text-sm">Satisfaction Rate</div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Statistics */}
-        <section className="py-24 bg-primary/5">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                  Trusted by Thousands
-                </h2>
-                <p className="text-lg text-neutral-600">
-                  Our commitment to excellence is reflected in our patient outcomes and satisfaction.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-primary mb-2">40+</div>
-                  <div className="text-neutral-600">Years of Excellence</div>
-                </div>
-                <div className="text-center">
-                  <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-primary mb-2">10,000+</div>
-                  <div className="text-neutral-600">Happy Patients</div>
-                </div>
-                <div className="text-center">
-                  <Star className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-primary mb-2">4.9/5</div>
-                  <div className="text-neutral-600">Average Rating</div>
-                </div>
-                <div className="text-center">
-                  <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                  <div className="text-neutral-600">Satisfaction Rate</div>
-                </div>
-              </div>
-            </div>
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 fade-in-section">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Start Your Dental Journey?
+          </h2>
+          <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+            Join thousands of satisfied patients who trust Y3 Smiles for their dental care
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <CalendarCheck className="mr-2 h-5 w-5" />
+              Book Appointment
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Users className="mr-2 h-5 w-5" />
+              Meet Our Team
+            </Button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="py-24 bg-background">
-          <div className="container mx-auto px-6 text-center">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Ready to Join Our Family of Happy Patients?
-              </h2>
-              <p className="text-lg text-neutral-600 mb-8">
-                Experience the same exceptional care and outstanding results that our patients
-                have enjoyed for over 40 years.
-              </p>
-              <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK YOUR CONSULTATION</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <Contact />
-      </main>
-      <Footer />
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
-};
-
-export default PatientsPage;
+}

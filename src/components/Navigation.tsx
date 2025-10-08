@@ -13,11 +13,24 @@ const navigationItems = [
     path: "/",
   },
   {
+    title: "About",
+    path: "/about",
+    subItems: [
+      {
+        title: "About Y3 Smiles",
+        items: [
+          { title: "About Y3 Smiles", path: "/about" },
+          { title: "Blog", path: "/about/blog" }
+        ]
+      }
+    ]
+  },
+  {
     title: "Treatments",
     path: "/treatments",
     subItems: [
       {
-        title: "Our Treatments",
+        title: "View All Treatments",
         items: [
           { title: "Children's Dentistry (CDBS)", path: "/treatments/childrens-dentistry" },
           { title: "Comprehensive Examination & Dental Hygiene", path: "/treatments/examination-hygiene" },
@@ -36,10 +49,24 @@ const navigationItems = [
       }
     ]
   },
-  /* {
-    title: "Contact",
-    path: "/contact"
-  } */
+  {
+    title: "For Patients",
+    path: "/patients",
+    subItems: [
+      {
+        title: "Patient Resources",
+        items: [
+          { title: "Your First Visit", path: "/patients/your-first-visit" },
+          { title: "Payment Options", path: "/patients/payment-options" },
+          { title: "Price Guide", path: "/patients/price-guide" }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Contact Us",
+    path: "/#contact"
+  }
 ];
 
 const NavItem = ({ item, isSubmenu = false }) => {

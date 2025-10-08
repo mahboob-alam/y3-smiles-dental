@@ -209,7 +209,7 @@ const TreatmentsPage = () => {
                 Service Categories
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Specialised Treatments for Every Need
+                Specialised Care for Every Need
               </h3>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
                 Our comprehensive range of dental treatments covers every aspect of oral health care.

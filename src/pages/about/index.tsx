@@ -407,11 +407,11 @@ const AboutPage = () => {
                                             Send your Expression of Interest to join our team
                                         </p>
                                         <div className="bg-white p-4 rounded-lg border border-primary/20 mb-6">
-                                            <h5 className="font-semibold text-neutral-800 mb-2">careers@y3smiles.com.au</h5>
+                                            <h5 className="font-semibold text-neutral-800 mb-2">smile@y3smilesdental.com.au</h5>
                                             <p className="text-sm text-neutral-600">Include your CV, cover note, and AHPRA details (for clinical roles)</p>
                                         </div>
                                         <Button variant="booking" size="lg" asChild className="group">
-                                            <a href="mailto:careers@y3smiles.com.au?subject=EOI - [Your Role] - [Your Name]">
+                                            <a href="mailto:smile@y3smilesdental.com.au?subject=EOI - [Your Role] - [Your Name]">
                                                 <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                                                 Send Your Application
                                             </a>

@@ -81,7 +81,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-neutral-800">PLACEHOLDER</p>
+                      <p className="font-semibold text-neutral-800">03 9022 4442</p>
                       <p className="text-neutral-600">Call us today</p>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-neutral-800">PLACEHOLDER</p>
+                      <p className="font-semibold text-neutral-800">smile@y3smilesdental.com.au</p>
                       <p className="text-neutral-600">Email us anytime</p>
                     </div>
                   </div>

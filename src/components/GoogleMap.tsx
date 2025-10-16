@@ -43,7 +43,7 @@ const GoogleMap = ({
     name: "Broadmeadows",
     address: "1/34 King William St, Broadmeadows VIC 3047",
     phone: "03 9022 4442",
-    email: "y3smiles@gmail.com",
+    email: "smile@y3smilesdental.com.au",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.123456789!2d144.9123456!3d-37.7123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1%2F34+King+William+St%2C+Broadmeadows+VIC+3047!5e0!3m2!1sen!2sau!4v1234567890123",
     directionsUrl: "https://maps.google.com/?q=1/34+King+William+St,+Broadmeadows,+VIC+3047"
   };

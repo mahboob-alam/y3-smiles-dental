@@ -20,8 +20,8 @@ export const BOOKING_CONFIG = {
 // Contact Information
 export const CONTACT_CONFIG = {
     PHONE: '03 9022 4442',
-    EMAIL: 'info@y3dental.com.au'
-} as const;
+    EMAIL: 'smile@y3smilesdental.com.au'
+};
 
 // Navigation Configuration
 export const NAV_CONFIG = {

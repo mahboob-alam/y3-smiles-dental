@@ -22,14 +22,14 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <p>
                 <span className="uppercase text-[#B59682]">Phone:</span>{" "}
-                <a href="tel:PLACEHOLDER" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
-                  PLACEHOLDER
+                <a href="tel:0390224442" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
+                  03 9022 4442
                 </a>
               </p>
               <p>
                 <span className="uppercase text-[#B59682]">Email:</span>{" "}
-                <a href="mailto:y3smiles@gmail.com" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
-                  y3smiles@gmail.com
+                <a href="mailto:smile@y3smilesdental.com.au" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
+                  smile@y3smilesdental.com.au
                 </a>
               </p>
               <div>

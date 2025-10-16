@@ -34,8 +34,15 @@ const Footer = () => {
               </p>
               <div>
                 <p className="uppercase text-[#B59682] mb-1">Address:</p>
-                <p>1/34 KING WILLIAM ST,</p>
-                <p>BROADMEADOWS, VIC 3047</p>
+                <a
+                  href="https://www.google.com/search?sca_esv=de45a14deaa8af91&rlz=1C1CHBF_enAU1057AU1057&sxsrf=AE3TifMcuyWLUIujqzA7WtMLRs3p-Uus2w%3A1760258388705&q=Y3%20Smiles%20Dental&stick=H4sIAAAAAAAAAONgU1I1qDAxMEpMS0xMMzJNSk41NDe3MqhIM7ZMsTA0MrFIMTJJtDRMWcQqEGmsEJybmZNarOCSmleSmAMAQyVofDwAAAA&mat=CUKdJZUYoj6X&ved=2ahUKEwiT3uK_oZ6QAxXc4zgGHVCbFsUQrMcEegQIQRAC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block cursor-pointer"
+                >
+                  <p>1/34 KING WILLIAM ST,</p>
+                  <p>BROADMEADOWS, VIC 3047</p>
+                </a>
               </div>
             </div>
           </div>
@@ -66,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex justify-between hover:bg-white/5 px-2 py-1 rounded transition-gentle">
                 <span>SATURDAY:</span>
-                <span>By appointment only</span>
+                <span>9:00AM-1:00 PM</span>
               </div>
               <div className="flex justify-between hover:bg-white/5 px-2 py-1 rounded transition-gentle">
                 <span>SUNDAY:</span>

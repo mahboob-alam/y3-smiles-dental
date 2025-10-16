@@ -67,11 +67,11 @@ const TreatmentsPage = () => {
     },
     {
       title: "Emergency Dentistry",
-      description: "24/7 emergency care for urgent dental situations with immediate relief",
+      description: "Same day emergency appointments available",
       icon: AlertTriangle,
       path: "/treatments/emergency",
       category: "Emergency Care",
-      features: ["24/7 availability", "Same-day appointments", "Pain relief", "Urgent protocols"]
+      features: ["Same-day appointments", "Pain relief", "Urgent protocols"]
     },
     {
       title: "Fluoride Treatments",
@@ -210,7 +210,7 @@ const TreatmentsPage = () => {
   ];
 
   const benefits = [
-    "Professional Dental Expertise",
+    // "Professional Dental Expertise",
     "Comprehensive Family Care",
     "Latest Technology & Equipment",
     "Comfortable, Anxiety-Free Environment"
@@ -243,12 +243,12 @@ const TreatmentsPage = () => {
           </div>
         </section>
 
-        {/* Service Categories Overview */}
+        {/* Treatment Categories Overview */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                Service Categories
+                Treatment Categories
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Specialised Care for Every Need
@@ -277,7 +277,7 @@ const TreatmentsPage = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Complete Service Directory
+                Complete Treatment Directory
               </h2>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
                 Explore our full range of dental services, each designed to meet your specific oral health needs.
@@ -394,7 +394,7 @@ const TreatmentsPage = () => {
             <div className="max-w-4xl mx-auto text-center">
               <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Dental Emergency? We're Here 24/7
+                Dental Emergency? Same Day Appointments Available
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
                 Don't suffer in pain. Our emergency dental treatments are available when you need them most.
@@ -403,7 +403,7 @@ const TreatmentsPage = () => {
                 <div className="flex items-center justify-center mb-4">
                   <div className="text-3xl font-bold text-red-600 mr-4">03 9022 4442</div>
                 </div>
-                <p className="text-red-700 font-medium">24/7 Emergency Dental Line</p>
+                <p className="text-red-700 font-medium">Same day emergency appointments available</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="booking" size="lg" asChild>

@@ -11,7 +11,7 @@ const Services = () => {
     },
     {
       title: "Emergency Dentistry",
-      description: "24/7 emergency care for urgent dental situations with immediate pain relief.",
+      description: "Same day emergency appointments available.",
       image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/emergency"
     },

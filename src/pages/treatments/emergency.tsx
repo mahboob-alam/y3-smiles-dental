@@ -160,7 +160,7 @@ const EmergencyDentistry = () => {
                   <Phone className="w-8 h-8 text-red-600 mr-3" />
                   <span className="text-2xl font-bold text-red-800">Emergency Line: 03 9022 4442</span>
                 </div>
-                <p className="text-red-700">Available 24/7 for dental emergencies</p>
+                <p className="text-red-700">Same day emergency appointments available</p>
               </div>
             </div>
           </div>

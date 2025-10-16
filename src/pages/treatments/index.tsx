@@ -210,7 +210,7 @@ const TreatmentsPage = () => {
   ];
 
   const benefits = [
-    "40+ Years of Experience",
+    "Professional Dental Expertise",
     "Comprehensive Family Care",
     "Latest Technology & Equipment",
     "Comfortable, Anxiety-Free Environment"
@@ -343,8 +343,7 @@ const TreatmentsPage = () => {
                     Experience You Can Trust
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    With over 40 years of experience, Y3 Smiles Dental East Melbourne has been providing
-                    exceptional dental services to families throughout Melbourne. Our commitment
+                    Y3 Smiles Dental East Melbourne provides exceptional dental services to families throughout Melbourne. Our commitment
                     to gentle, comprehensive care ensures every patient feels comfortable and
                     confident in their treatment.
                   </p>

@@ -54,7 +54,7 @@ const AboutPage = () => {
             name: "Dr. Sarah Johnson",
             role: "Principal Dentist",
             image: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-            description: "With over 10 years of experience, Dr. Johnson is passionate about providing gentle, comprehensive dental care for the whole family."
+            description: "Dr. Johnson is passionate about providing gentle, comprehensive dental care for the whole family."
         },
         {
             name: "Emma Thompson",

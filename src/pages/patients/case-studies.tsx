@@ -15,9 +15,9 @@ const CaseStudiesPage = () => {
             <FileText className="w-20 h-20 text-primary mb-6" />
             <h1 className="text-4xl font-bold mb-6">Case Studies</h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Detailed case studies showcasing comprehensive treatment journeys are being prepared. 
-              These will include step-by-step treatment processes, patient testimonials, and 
-              clinical outcomes from our 40+ years of experience.
+              Detailed case studies showcasing comprehensive treatment journeys are being prepared.
+              These will include step-by-step treatment processes and clinical outcomes
+              from our professional dental practice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" asChild>
@@ -32,7 +32,7 @@ const CaseStudiesPage = () => {
             </div>
             <div className="mt-12 flex items-center gap-2 text-sm text-muted-foreground">
               <Clock className="w-4 h-4 text-primary" />
-              <span>Over 40 years of successful patient outcomes</span>
+              <span>Dedicated to successful patient outcomes</span>
             </div>
           </div>
         </div>

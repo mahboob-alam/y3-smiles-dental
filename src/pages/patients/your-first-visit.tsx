@@ -15,7 +15,8 @@ import {
     ArrowLeft,
     FileText,
     Smile,
-    Star
+    Star,
+    CreditCard
 } from "lucide-react";
 
 const YourFirstVisitPage = () => {
@@ -82,13 +83,13 @@ const YourFirstVisitPage = () => {
 
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="max-w-4xl mx-auto text-center">
-                            <Button variant="outline" asChild className="mb-8 group">
+                            {/* <Button variant="outline" asChild className="mb-8 group">
                                 <Link to="/patients">
                                     <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                                     Back to For Patients
                                 </Link>
-                            </Button>
-
+                            </Button> */}
+                            <CreditCard className="w-20 h-20 text-primary mx-auto mb-6" />
                             <h1 className="text-6xl md:text-7xl font-bold text-neutral-800 mb-6 leading-tight">
                                 Your First
                                 <span className="block text-primary">Visit</span>

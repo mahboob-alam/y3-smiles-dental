@@ -76,8 +76,8 @@ export default function PatientsPage() {
   const whyChooseUs = [
     {
       icon: <Clock className="h-6 w-6 text-blue-500" />,
-      title: "40+ Years Experience",
-      description: "Decades of expertise in comprehensive dental care"
+      title: "Professional Expertise",
+      description: "Comprehensive dental care with modern techniques"
     },
     {
       icon: <Heart className="h-6 w-6 text-red-500" />,

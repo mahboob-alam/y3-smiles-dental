@@ -340,7 +340,7 @@ const ExaminationHygiene = () => {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div className="text-center">
                   <Users className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">5000+</div>
@@ -361,7 +361,7 @@ const ExaminationHygiene = () => {
                   <div className="text-4xl font-bold text-primary mb-2">40+</div>
                   <div className="text-neutral-600">Years Experience</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

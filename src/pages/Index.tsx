@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Treatments from "@/components/Treatments";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Testimonials from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
 import GoogleMap from "@/components/GoogleMap";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";

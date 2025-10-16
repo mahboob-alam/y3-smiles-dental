@@ -50,28 +50,28 @@ const WhyChooseUs = () => {
     }
   ];
 
-  const achievements = [
-    {
-      number: "40+",
-      label: "Years of Excellence",
-      icon: Award
-    },
-    {
-      number: "10,000+",
-      label: "Happy Patients",
-      icon: Users
-    },
-    {
-      number: "13",
-      label: "Specialised Treatments",
-      icon: Stethoscope
-    },
-    {
-      number: "5★",
-      label: "Patient Reviews",
-      icon: Star
-    }
-  ];
+  // const achievements = [
+  //   {
+  //     number: "40+",
+  //     label: "Years of Excellence",
+  //     icon: Award
+  //   },
+  //   {
+  //     number: "10,000+",
+  //     label: "Happy Patients",
+  //     icon: Users
+  //   },
+  //   {
+  //     number: "13",
+  //     label: "Specialised Treatments",
+  //     icon: Stethoscope
+  //   },
+  //   {
+  //     number: "5★",
+  //     label: "Patient Reviews",
+  //     icon: Star
+  //   }
+  // ];
 
   return (
     <section className="py-24 bg-background fade-in-section">

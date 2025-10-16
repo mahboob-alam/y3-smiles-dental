@@ -195,12 +195,12 @@ const CampbellfieldPage = () => {
                                     </div>
 
                                     {/* Floating Stats */}
-                                    <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-primary/10">
+                                    {/* <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-primary/10">
                                         <div className="text-center">
-                                            <div className="text-3xl font-bold text-primary">500+</div>
+                                            <div className="text-3xl font-bold text-primary">600+</div>
                                             <div className="text-sm text-neutral-600 font-medium">Happy Patients</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

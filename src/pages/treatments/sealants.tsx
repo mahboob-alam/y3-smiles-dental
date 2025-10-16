@@ -139,7 +139,7 @@ const PitsAndFissureSealants = () => {
     },
     {
       question: "Are sealants safe?",
-      answer: "Yes, dental sealants are completely safe. They've been used successfully for over 40 years and are recommended by the American Dental Association for cavity prevention."
+      answer: "Yes, dental sealants are completely safe. They've been used successfully for decades and are recommended by the American Dental Association for cavity prevention."
     },
     {
       question: "How long do sealants last?",

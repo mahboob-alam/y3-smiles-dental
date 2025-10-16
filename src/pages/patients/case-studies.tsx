@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { FileText, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const CaseStudiesPage = () => {
   return (

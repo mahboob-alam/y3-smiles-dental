@@ -29,7 +29,7 @@ const Index = () => {
           locationData={locationConfigs.broadmeadows.locationData}
           openingHours={locationConfigs.broadmeadows.openingHours}
         />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

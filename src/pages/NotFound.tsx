@@ -25,7 +25,7 @@ const NotFound = () => {
             </a>
           </div>
         </div>
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

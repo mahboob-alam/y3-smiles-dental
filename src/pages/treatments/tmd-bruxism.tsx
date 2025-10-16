@@ -352,7 +352,7 @@ const TMDandBruxism = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

@@ -325,7 +325,7 @@ const FluorideTreatments = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

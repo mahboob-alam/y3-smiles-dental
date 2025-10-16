@@ -341,7 +341,7 @@ import {
                     className="bg-primary/5"
                 />
 
-                <Contact />
+                {/* <Contact /> */}
             </main>
             <Footer />
         </div>

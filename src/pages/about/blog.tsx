@@ -151,7 +151,7 @@ const BlogPage = () => {
                     </div>
                 </section>
 
-                <Contact />
+                {/* <Contact /> */}
             </main>
             <Footer />
         </div>

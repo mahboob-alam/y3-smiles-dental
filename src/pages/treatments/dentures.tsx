@@ -277,7 +277,7 @@ const Dentures = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

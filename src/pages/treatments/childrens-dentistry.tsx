@@ -460,7 +460,7 @@ const ChildrensDentistry = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

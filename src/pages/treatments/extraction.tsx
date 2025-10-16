@@ -322,7 +322,7 @@ const ToothExtraction = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

@@ -206,7 +206,7 @@ const PeriodontalTherapy = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

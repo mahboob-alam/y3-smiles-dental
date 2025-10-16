@@ -374,7 +374,7 @@ const DentalFillings = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

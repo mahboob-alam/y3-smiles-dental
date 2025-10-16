@@ -373,7 +373,7 @@ const EmergencyDentistry = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

@@ -214,7 +214,9 @@ const CrownAndBridge = () => {
                             </Button>
                         </div>
                     </div>
-                </section>                <Contact />
+                </section>
+
+                {/* <Contact /> */}
             </main>
             <Footer />
         </div>

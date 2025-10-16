@@ -433,7 +433,7 @@ const ExaminationHygiene = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

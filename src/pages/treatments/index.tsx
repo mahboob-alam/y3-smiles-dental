@@ -487,7 +487,7 @@ const TreatmentsPage = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

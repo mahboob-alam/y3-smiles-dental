@@ -324,7 +324,7 @@ const WisdomTeethRemoval = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

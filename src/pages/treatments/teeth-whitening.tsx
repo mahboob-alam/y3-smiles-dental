@@ -285,7 +285,7 @@ const TeethWhitening = () => {
                     </div>
                 </section>
 
-                <Contact />
+                {/* <Contact /> */}
             </main>
             <Footer />
         </div>

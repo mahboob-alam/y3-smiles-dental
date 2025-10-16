@@ -335,7 +335,7 @@ const PitsAndFissureSealants = () => {
           </div>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

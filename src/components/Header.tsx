@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Navigation } from "./Navigation";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.svg";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const Header = () => {
   return (
@@ -44,21 +45,9 @@ const Header = () => {
                 (03) 1234 5678
               </a>
               <Button variant="booking" asChild>
-                <Link
-                  to="/#contact"
-                  onClick={(e) => {
-                    // If we're already on the homepage, handle the scroll manually
-                    if (window.location.pathname === '/') {
-                      e.preventDefault();
-                      const element = document.querySelector('#contact');
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }
-                  }}
-                >
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   BOOK NOW
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

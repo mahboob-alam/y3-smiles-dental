@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
     Crown,
     CheckCircle,
@@ -87,7 +88,7 @@ const CrownAndBridge = () => {
                                 ))}
                             </div>
                             <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">BOOK CONSULTATION</Link>
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CONSULTATION</a>
                             </Button>
                         </div>
                     </div>
@@ -206,10 +207,10 @@ const CrownAndBridge = () => {
                                 Let our experienced team help you regain confidence with custom crowns and bridges that look and feel natural.
                             </p>
                             <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                     SCHEDULE CONSULTATION
                                     <ArrowRight className="w-5 h-5 ml-2" />
-                                </Link>
+                                </a>
                             </Button>
                         </div>
                     </div>

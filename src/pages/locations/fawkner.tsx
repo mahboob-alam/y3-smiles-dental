@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { locationConfigs } from "@/data/locationData";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
     MapPin,
     Phone,
@@ -110,10 +111,10 @@ const FawknerPage = () => {
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                 <Button variant="booking" size="xl" asChild className="group">
-                                    <Link to="/#contact">
+                                    <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                         <CheckCircle className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                         BOOK APPOINTMENT
-                                    </Link>
+                                    </a>
                                 </Button>
                                 <Button variant="booking" size="xl" asChild>
                                     <Link to="/treatments">
@@ -145,7 +146,7 @@ const FawknerPage = () => {
                                         treatments in a comfortable environment.
                                     </p>
                                     <Button variant="booking" size="lg" asChild>
-                                        <Link to="/#contact">SCHEDULE CONSULTATION</Link>
+                                        <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>SCHEDULE CONSULTATION</a>
                                     </Button>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">

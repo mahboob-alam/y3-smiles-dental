@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
     Zap,
     FileText,
@@ -81,7 +82,7 @@ import {
                                 ))}
                             </div>
                             <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">BOOK CONSULTATION</Link>
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CONSULTATION</a>
                             </Button>
                         </div>
                     </div>
@@ -200,10 +201,10 @@ import {
                                 Schedule a consultation to discuss whether dental implants are the right solution for your individual needs.
                             </p>
                             <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                     SCHEDULE CONSULTATION
                                     <ArrowRight className="w-5 h-5 ml-2" />
-                                </Link>
+                                </a>
                             </Button>
                         </div>
                     </div>

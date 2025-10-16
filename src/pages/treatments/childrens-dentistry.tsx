@@ -19,6 +19,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const ChildrensDentistry = () => {
   useScrollAnimation();
@@ -158,7 +159,7 @@ const ChildrensDentistry = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK CHILD'S APPOINTMENT</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CHILD'S APPOINTMENT</a>
               </Button>
             </div>
           </div>
@@ -450,10 +451,10 @@ const ChildrensDentistry = () => {
                 professional care in a fun, comfortable environment.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   SCHEDULE FIRST VISIT
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Moon,
   Shield,
@@ -186,7 +187,7 @@ const TMDandBruxism = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK TMD CONSULTATION</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK TMD CONSULTATION</a>
               </Button>
             </div>
           </div>
@@ -342,10 +343,10 @@ const TMDandBruxism = () => {
                 can provide relief and protect your teeth from further damage.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   SCHEDULE TMD EVALUATION
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

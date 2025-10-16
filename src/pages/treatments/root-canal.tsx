@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Heart,
   Shield,
@@ -158,7 +159,7 @@ const RootCanalTherapy = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK ROOT CANAL CONSULTATION</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK ROOT CANAL CONSULTATION</a>
               </Button>
             </div>
           </div>
@@ -280,10 +281,10 @@ const RootCanalTherapy = () => {
                 Modern techniques make the procedure comfortable and highly successful.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   SCHEDULE EMERGENCY CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

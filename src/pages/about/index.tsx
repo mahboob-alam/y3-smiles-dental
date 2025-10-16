@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
     Users,
     Heart,
@@ -150,10 +151,10 @@ const AboutPage = () => {
                                 Where healthy smiles are the foundation of confidence, wellbeing, and quality of life.
                             </p>
                             <Button variant="booking" size="xl" asChild className="group">
-                                <Link to="/#contact">
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                     <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                     BOOK APPOINTMENT
-                                </Link>
+                                </a>
                             </Button>
                         </div>
                     </div>
@@ -192,10 +193,10 @@ const AboutPage = () => {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <Button variant="booking" size="lg" asChild className="group">
-                                            <Link to="/#contact">
+                                            <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                                 <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                                 Call Us Today
-                                            </Link>
+                                            </a>
                                         </Button>
                                         <Button variant="booking" size="lg" asChild>
                                             <Link to="/treatments">

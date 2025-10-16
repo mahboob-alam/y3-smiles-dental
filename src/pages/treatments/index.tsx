@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Baby,
   Stethoscope,
@@ -481,7 +482,7 @@ const TreatmentsPage = () => {
                 Book your consultation today and discover personalized dental treatments.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK CONSULTATION</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CONSULTATION</a>
               </Button>
             </div>
           </div>

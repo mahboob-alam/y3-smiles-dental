@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Stethoscope,
   Eye,
@@ -182,7 +183,7 @@ const ExaminationHygiene = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK CHECKUP</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CHECKUP</a>
               </Button>
             </div>
           </div>
@@ -423,10 +424,10 @@ const ExaminationHygiene = () => {
                 dental problems. Schedule your appointment today for optimal oral health.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   SCHEDULE EXAMINATION
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

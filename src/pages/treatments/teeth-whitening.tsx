@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
     Sparkles,
     Star,
@@ -78,7 +79,7 @@ const TeethWhitening = () => {
                                 ))}
                             </div>
                             <Button variant="booking" size="xl" asChild>
-                                <Link to="/#contact">BOOK CONSULTATION</Link>
+                                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK CONSULTATION</a>
                             </Button>
                         </div>
                     </div>
@@ -271,10 +272,10 @@ const TeethWhitening = () => {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button variant="booking" size="xl" asChild className="group">
-                                    <Link to="/#contact">
+                                    <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                         <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                         BOOK CONSULTATION
-                                    </Link>
+                                    </a>
                                 </Button>
                                 <Button variant="outline" size="xl" asChild>
                                     <Link to="/treatments">View All Treatments</Link>

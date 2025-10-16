@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { BookOpen, Calendar, ArrowRight, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const BlogPage = () => {
   return (
@@ -15,16 +16,16 @@ const BlogPage = () => {
             <BookOpen className="w-20 h-20 text-primary mb-6" />
             <h1 className="text-4xl font-bold mb-6">Dental Health Blog</h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Our comprehensive dental health blog is coming soon. We'll be sharing expert advice, 
-              treatment insights, oral health tips, and the latest developments in dental care 
+              Our comprehensive dental health blog is coming soon. We'll be sharing expert advice,
+              treatment insights, oral health tips, and the latest developments in dental care
               from our experienced team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   Ask Our Experts
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" asChild>
                 <Link to="/treatments">Explore Treatments</Link>

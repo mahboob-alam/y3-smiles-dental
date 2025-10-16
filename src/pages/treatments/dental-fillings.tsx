@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Bluetooth as Tooth,
   Palette,
@@ -175,7 +176,7 @@ const DentalFillings = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK APPOINTMENT</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK APPOINTMENT</a>
               </Button>
             </div>
           </div>
@@ -364,10 +365,10 @@ const DentalFillings = () => {
                 Schedule your appointment today for comfortable, effective treatment.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   BOOK FILLING APPOINTMENT
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

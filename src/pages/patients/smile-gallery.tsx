@@ -21,10 +21,10 @@ const SmileGalleryPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   Book Consultation
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" asChild>
                 <Link to="/patients/case-studies">View Case Studies</Link>

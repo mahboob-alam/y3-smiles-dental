@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
   Shield,
   Baby,
@@ -171,7 +172,7 @@ const PitsAndFissureSealants = () => {
                 ))}
               </div>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">BOOK SEALANT APPOINTMENT</Link>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>BOOK SEALANT APPOINTMENT</a>
               </Button>
             </div>
           </div>
@@ -325,10 +326,10 @@ const PitsAndFissureSealants = () => {
                 Sealants are a simple, effective way to prevent dental problems before they start.
               </p>
               <Button variant="booking" size="xl" asChild>
-                <Link to="/#contact">
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   SCHEDULE SEALANT CONSULTATION
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

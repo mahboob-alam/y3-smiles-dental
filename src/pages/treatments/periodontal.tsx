@@ -56,7 +56,7 @@ const PeriodontalTherapy = () => {
                 Periodontal Therapy
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                At Y3 Smiles, we know healthy gums are the foundation of a confident, lasting smile. Periodontal care is not only about treating problems when they appear — it's about preventing them before they start. Our focus is on keeping your gums healthy, your teeth strong, and your smile at its best.
+                At Y3 Smiles Dental, we know healthy gums are the foundation of a confident, lasting smile. Periodontal care is not only about treating problems when they appear — it's about preventing them before they start. Our focus is on keeping your gums healthy, your teeth strong, and your smile at its best.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (

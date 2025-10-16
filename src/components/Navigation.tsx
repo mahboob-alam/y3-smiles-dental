@@ -17,9 +17,9 @@ const navigationItems = [
     path: "/about",
     subItems: [
       {
-        title: "About Y3 Smiles",
+        title: "About Y3 Smiles Dental",
         items: [
-          { title: "About Y3 Smiles", path: "/about" },
+          { title: "About Y3 Smiles Dental", path: "/about" },
           { title: "Blog", path: "/about/blog" }
         ]
       }

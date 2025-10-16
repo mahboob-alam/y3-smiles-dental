@@ -6,7 +6,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const Testimonials = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
+    {
       loop: true,
       align: 'start',
       slidesToScroll: 1,
@@ -51,10 +51,10 @@ const Testimonials = () => {
     },
     {
       name: "Michael Chen",
-      location: "Glenroy", 
+      location: "Glenroy",
       service: "Emergency Dentistry",
       rating: 5,
-      text: "I had a dental emergency on a weekend and Y3 Smiles was there for me. The emergency service was prompt, professional, and they completely eliminated my pain. I can't thank them enough.",
+      text: "I had a dental emergency on a weekend and Y3 Smiles Dental was there for me. The emergency service was prompt, professional, and they completely eliminated my pain. I can't thank them enough.",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     },
     {
@@ -62,7 +62,7 @@ const Testimonials = () => {
       location: "Craigieburn",
       service: "Comprehensive Examination",
       rating: 5,
-      text: "The thorough examination and cleaning at Y3 Smiles caught several issues early. Their preventive approach has saved me from major dental problems. The team is incredibly professional and caring.",
+      text: "The thorough examination and cleaning at Y3 Smiles Dental caught several issues early. Their preventive approach has saved me from major dental problems. The team is incredibly professional and caring.",
       image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     },
     {
@@ -70,7 +70,7 @@ const Testimonials = () => {
       location: "Campbellfield",
       service: "Root Canal Therapy",
       rating: 5,
-      text: "I was terrified about getting a root canal, but the team at Y3 Smiles made it completely painless. The sedation options and gentle approach made all the difference. Highly recommended!",
+      text: "I was terrified about getting a root canal, but the team at Y3 Smiles Dental made it completely painless. The sedation options and gentle approach made all the difference. Highly recommended!",
       image: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     },
     {
@@ -86,7 +86,7 @@ const Testimonials = () => {
       location: "Meadow Heights",
       service: "Dentures",
       rating: 5,
-      text: "My new dentures from Y3 Smiles fit perfectly and look so natural. The team took great care to ensure comfort and function. I can eat all my favorite foods again with confidence.",
+      text: "My new dentures from Y3 Smiles Dental fit perfectly and look so natural. The team took great care to ensure comfort and function. I can eat all my favorite foods again with confidence.",
       image: "https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     }
   ];
@@ -99,7 +99,7 @@ const Testimonials = () => {
     },
     {
       number: "98%",
-      label: "Satisfaction Rate", 
+      label: "Satisfaction Rate",
       icon: Heart
     },
     {
@@ -122,7 +122,7 @@ const Testimonials = () => {
               What Our Patients Say About Us
             </h3>
             <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
-              Real stories from real patients who have experienced the exceptional care 
+              Real stories from real patients who have experienced the exceptional care
               and outstanding results at Y3 Smiles Dental.
             </p>
           </div>
@@ -180,9 +180,9 @@ const Testimonials = () => {
                         <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:gradient-primary group-hover:text-primary-foreground transition-gentle">
                           <Quote className="w-5 h-5" />
                         </div>
-                        
+
                         {/* Rating Stars */}
-                       {/*  <div className="flex items-center mb-4">
+                        {/*  <div className="flex items-center mb-4">
                           {[...Array(testimonial.rating)].map((_, starIndex) => (
                             <Star key={starIndex} className="w-5 h-5 text-yellow-400 fill-current hover:scale-110 transition-gentle" />
                           ))}
@@ -191,7 +191,7 @@ const Testimonials = () => {
                         {/* Patient Info */}
                         <div className="flex items-center space-x-4">
                           <div className="w-12 h-12 rounded-full overflow-hidden">
-                            <img 
+                            <img
                               src={testimonial.image}
                               alt={`${testimonial.name} - Happy patient`}
                               className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
@@ -204,7 +204,7 @@ const Testimonials = () => {
                           </div>
                         </div>
                       </CardHeader>
-                      
+
                       <CardContent className="pt-0">
                         <p className="text-neutral-600 italic leading-relaxed">
                           "{testimonial.text}"
@@ -235,8 +235,8 @@ const Testimonials = () => {
                 Join Our Family of Happy Patients
               </h4>
               <p className="text-neutral-600 mb-6">
-                Experience the same exceptional care that our patients rave about. 
-                Book your appointment today and discover the Y3 Smiles difference.
+                Experience the same exceptional care that our patients rave about.
+                Book your appointment today and discover the Y3 Smiles Dental difference.
               </p>
               <div className="flex items-center justify-center space-x-2 text-sm text-neutral-500">
                 <CheckCircle className="w-4 h-4 text-primary animate-pulse" />

@@ -144,7 +144,7 @@ const AboutPage = () => {
                         <div className="max-w-4xl mx-auto text-center">
                             <h1 className="text-6xl md:text-7xl font-bold text-neutral-800 mb-6 leading-tight">
                                 About
-                                <span className="block text-primary">Y3 Smiles</span>
+                                <span className="block text-primary">Y3 Smiles Dental</span>
                             </h1>
                             <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
                                 Where healthy smiles are the foundation of confidence, wellbeing, and quality of life.
@@ -165,7 +165,7 @@ const AboutPage = () => {
                         <div className="max-w-4xl mx-auto">
                             <div className="space-y-8 text-lg leading-relaxed">
                                 <p className="text-neutral-700">
-                                    At Y3 Smiles, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life.
+                                    At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life.
                                     Our modern, comfortable clinic in Melbourne's northern suburbs is designed to be welcoming, accessible,
                                     and relaxing for every patient — whether it's your child's first visit or your own regular check-up.
                                 </p>
@@ -178,7 +178,7 @@ const AboutPage = () => {
                                 </p>
 
                                 <p className="text-neutral-700">
-                                    At Y3 Smiles, your comfort is our priority. Our team takes the time to listen, explain, and
+                                    At Y3 Smiles Dental, your comfort is our priority. Our team takes the time to listen, explain, and
                                     personalise care so every treatment feels clear and stress-free. Whether repairing damage,
                                     protecting against future problems, or helping you achieve the smile you've always wanted,
                                     we are committed to delivering high-quality dentistry with a compassionate approach.
@@ -187,7 +187,7 @@ const AboutPage = () => {
                                 <div className="bg-gradient-to-r from-primary/10 via-white to-secondary/10 p-8 rounded-2xl border border-primary/20">
                                     <p className="text-lg text-neutral-700 mb-4">
                                         <strong>Booking your appointment is easy</strong> — simply call our friendly team, book online
-                                        through our website, or visit us in person. At Y3 Smiles, every smile matters, and we look
+                                        through our website, or visit us in person. At Y3 Smiles Dental, every smile matters, and we look
                                         forward to welcoming you soon.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
@@ -218,7 +218,7 @@ const AboutPage = () => {
                                     Our Values
                                 </h2>
                                 <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                                    What Makes Y3 Smiles Different
+                                    What Makes Y3 Smiles Dental Different
                                 </h3>
                                 <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
                                     Our commitment to exceptional care is built on these core principles
@@ -430,7 +430,7 @@ const AboutPage = () => {
                                 <CardContent className="p-8">
                                     <Star className="w-16 h-16 text-primary mb-6 mx-auto group-hover:scale-110 transition-transform" />
                                     <h3 className="text-2xl font-bold text-neutral-800 mb-4 group-hover:text-primary transition-colors">
-                                        Y3 Smiles Blog
+                                        Y3 Smiles Dental Blog
                                     </h3>
                                     <p className="text-neutral-600 mb-6 text-lg">
                                         Stay informed with dental care tips, news, and patient stories

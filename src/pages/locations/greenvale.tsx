@@ -136,7 +136,7 @@ import {
                                 <div className="order-2 lg:order-1">
                                     <div className="mb-8">
                                         <h3 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
-                                            About Y3 Smiles
+                                            About Y3 Smiles Dental
                                         </h3>
                                         <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 leading-tight">
                                             Your Trusted Dental Care in
@@ -146,7 +146,7 @@ import {
 
                                     <div className="space-y-6 mb-8">
                                         <p className="text-lg text-neutral-600 leading-relaxed">
-                                            At Y3 Smiles, we understand that good oral health is essential for your overall wellbeing.
+                                            At Y3 Smiles Dental, we understand that good oral health is essential for your overall wellbeing.
                                             Our experienced team provides comprehensive dental care for Greenvale families, focusing on
                                             prevention, comfort, and personalised treatment plans.
                                         </p>
@@ -217,12 +217,12 @@ import {
                     </div>
                 </section>
 
-                {/* Why Choose Y3 Smiles */}
+                {/* Why Choose Y3 Smiles Dental */}
                 <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                                Why Greenvale Residents Choose Y3 Smiles
+                                Why Greenvale Residents Choose Y3 Smiles Dental
                             </h2>
                             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
                                 We're committed to providing exceptional dental care with a personalised approach.

@@ -145,7 +145,7 @@ const HadfieldPage = () => {
                                     <div className="space-y-6">
                                         <div className="bg-white p-6 rounded-2xl shadow-soft border-l-4 border-primary">
                                             <p className="text-lg text-neutral-700 leading-relaxed">
-                                                At Y3 Smiles in Hadfield, we believe good dental care is more than just brushing
+                                                At Y3 Smiles Dental in Hadfield, we believe good dental care is more than just brushing
                                                 and flossing. Regular check-ups are essential for maintaining healthy teeth and gums.
                                             </p>
                                         </div>
@@ -228,7 +228,7 @@ const HadfieldPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 leading-tight">
                                     Why Choose
                                     <span className="block text-primary">
-                                        Y3 Smiles?
+                                        Y3 Smiles Dental?
                                     </span>
                                 </h2>
 

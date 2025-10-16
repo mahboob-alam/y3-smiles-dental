@@ -138,7 +138,7 @@ const GlenroyPage = () => {
                                     <div className="space-y-6">
                                         <div className="bg-white p-6 rounded-2xl shadow-soft border-l-4 border-primary">
                                             <p className="text-lg text-neutral-700 leading-relaxed">
-                                                At Y3 Smiles, we are committed to making every visit comfortable, caring, and professional.
+                                                At Y3 Smiles Dental, we are committed to making every visit comfortable, caring, and professional.
                                                 Our values, patient-first approach, and dedication to quality are reflected in everything we do.
                                             </p>
                                         </div>

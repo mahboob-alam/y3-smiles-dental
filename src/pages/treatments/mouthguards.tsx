@@ -55,7 +55,7 @@ const Mouthguards = () => {
                                 Custom Mouthguards
                             </h1>
                             <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                                Whether you're active on the field or grind your teeth while you sleep, a custom mouthguard can make all the difference in protecting your teeth. At Y3 Smiles, we design mouthguards that fit comfortably and provide maximum protection, tailored to your unique dental structure.
+                                Whether you're active on the field or grind your teeth while you sleep, a custom mouthguard can make all the difference in protecting your teeth. At Y3 Smiles Dental, we design mouthguards that fit comfortably and provide maximum protection, tailored to your unique dental structure.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
                                 {benefits.map((benefit, index) => (

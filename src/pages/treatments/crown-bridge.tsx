@@ -150,7 +150,7 @@ const CrownAndBridge = () => {
                                 How the Process Usually Works
                             </h2>
                             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                                At Y3 Smiles, we make the process gentle, clear, and comfortable — helping you regain confidence in your smile.
+                                At Y3 Smiles Dental, we make the process gentle, clear, and comfortable — helping you regain confidence in your smile.
                             </p>
                         </div>
 

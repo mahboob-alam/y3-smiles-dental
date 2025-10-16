@@ -42,7 +42,7 @@ const BlogPage = () => {
                             </Button>
 
                             <h1 className="text-6xl md:text-7xl font-bold text-neutral-800 mb-6 leading-tight">
-                                Y3 Smiles
+                                Y3 Smiles Dental
                                 <span className="block text-primary">Blog</span>
                             </h1>
                             <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
@@ -81,7 +81,7 @@ const BlogPage = () => {
                                             <Heart className="w-12 h-12 text-primary mb-4" />
                                             <h3 className="font-semibold text-neutral-800 mb-2">Patient Stories</h3>
                                             <p className="text-sm text-neutral-600 text-center">
-                                                Real experiences from our Y3 Smiles family
+                                                Real experiences from our Y3 Smiles Dental family
                                             </p>
                                         </div>
 

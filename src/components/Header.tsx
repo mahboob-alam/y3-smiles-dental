@@ -14,7 +14,7 @@ const Header = () => {
             <Link to="/" className="flex items-center transition-gentle hover:scale-105">
               <img
                 src={logo}
-                alt="Y3 Smiles Logo"
+                alt="Y3 Smiles Dental Logo"
                 className="h-10 w-auto transition-gentle hover:drop-shadow-lg"
               />
             </Link>

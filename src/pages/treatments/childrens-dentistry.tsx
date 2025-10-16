@@ -147,7 +147,7 @@ const ChildrensDentistry = () => {
                 Gentle Care for Growing Smiles
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                At Y3 Smiles, we understand how important your child's smile is. Our Children's Dentistry services focus on creating a positive and reassuring experience so kids feel safe, supported, and even excited about visiting the dentist. From their very first tooth through to teenage years, we're here to help them develop healthy habits for life.
+                At Y3 Smiles Dental, we understand how important your child's smile is. Our Children's Dentistry services focus on creating a positive and reassuring experience so kids feel safe, supported, and even excited about visiting the dentist. From their very first tooth through to teenage years, we're here to help them develop healthy habits for life.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (
@@ -177,7 +177,7 @@ const ChildrensDentistry = () => {
                     What Is Children's Dentistry?
                   </h3>
                   <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                    Children's Dentistry is dental care designed specifically for kids' developing teeth and gums. It's about much more than check-ups — it includes prevention, early diagnosis, and family education to support good oral health from an early age. At Y3 Smiles, we combine gentle treatments with guidance for parents to make dental visits stress-free and beneficial.
+                    Children's Dentistry is dental care designed specifically for kids' developing teeth and gums. It's about much more than check-ups — it includes prevention, early diagnosis, and family education to support good oral health from an early age. At Y3 Smiles Dental, we combine gentle treatments with guidance for parents to make dental visits stress-free and beneficial.
                   </p>
                   <h4 className="text-2xl font-bold text-neutral-800 mb-6">Why Children's Dentistry Matters</h4>
                   <div className="space-y-4">
@@ -218,7 +218,7 @@ const ChildrensDentistry = () => {
                     </div>
                   </div>
                   <p className="text-lg text-primary mt-8 italic">
-                    At Y3 Smiles, we're dedicated to helping every child grow up with a strong, healthy smile.
+                    At Y3 Smiles Dental, we're dedicated to helping every child grow up with a strong, healthy smile.
                   </p>
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">

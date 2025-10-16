@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
               Why Choose Us
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
-              Experience the Y3 Smiles Difference
+              Experience the Y3 Smiles Dental Difference
             </h3>
             <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
               Formerly located within St. Vincent's Hospital, we now offer a calming, sanctuary-like clinic experience with the same trusted expertise you've come to expect.

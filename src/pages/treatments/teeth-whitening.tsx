@@ -67,7 +67,7 @@ const TeethWhitening = () => {
                                 Teeth Whitening
                             </h1>
                             <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                                At Y3 Smiles, we believe every smile deserves to shine. Over time, coffee, tea, and natural ageing can leave your smile looking dull, dark, and discoloured. Professional teeth whitening is a safe way to refresh your smile and restore brightness.
+                                At Y3 Smiles Dental, we believe every smile deserves to shine. Over time, coffee, tea, and natural ageing can leave your smile looking dull, dark, and discoloured. Professional teeth whitening is a safe way to refresh your smile and restore brightness.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
                                 {heroBenefits.map((benefit, index) => (
@@ -97,7 +97,7 @@ const TeethWhitening = () => {
                                         What Is Teeth Whitening?
                                     </h3>
                                     <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                                        Teeth whitening is a cosmetic dental treatment that lightens tooth colour by reducing stains and discolouration. At Y3 Smiles, we use regulated, high-grade materials and techniques that differ from over-the-counter kits, providing professional care tailored to your needs.
+                                        Teeth whitening is a cosmetic dental treatment that lightens tooth colour by reducing stains and discolouration. At Y3 Smiles Dental, we use regulated, high-grade materials and techniques that differ from over-the-counter kits, providing professional care tailored to your needs.
                                     </p>
                                     <div className="space-y-4">
                                         <div className="flex items-start">

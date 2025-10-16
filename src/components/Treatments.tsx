@@ -27,7 +27,7 @@ const Treatments = () => {
     {
       title: "Children Dentistry",
       subheading: "Early Age Dental Care",
-      description: "At Y3 Smiles, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
+      description: "At Y3 Smiles Dental, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
       image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/childrens-dentistry"
     },
@@ -41,7 +41,7 @@ const Treatments = () => {
     {
       title: "Dental restoration",
       subheading: "Repair. Protect. Restore.",
-      description: "Y3 Smiles offers gentle treatments to repair worn or damaged teeth, along with preventative care that keeps your family's smiles healthy and protected for the future.",
+      description: "Y3 Smiles Dental offers gentle treatments to repair worn or damaged teeth, along with preventative care that keeps your family's smiles healthy and protected for the future.",
       image: "https://images.pexels.com/photos/6627329/pexels-photo-6627329.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/dentures"
     }

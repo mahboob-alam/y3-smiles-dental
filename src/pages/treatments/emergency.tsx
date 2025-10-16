@@ -144,7 +144,7 @@ const EmergencyDentistry = () => {
                 Here When You Need Us Most
               </h1>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Dental emergencies often happen when you least expect them — whether it's a toothache that won't ease, a chipped tooth from sport, or an unexpected injury that leaves your smile vulnerable. At Y3 Smiles, our caring team is here to provide fast, professional support in a calm and welcoming environment. Our focus is on relieving pain, protecting your teeth, and helping you feel at ease.
+                Dental emergencies often happen when you least expect them — whether it's a toothache that won't ease, a chipped tooth from sport, or an unexpected injury that leaves your smile vulnerable. At Y3 Smiles Dental, our caring team is here to provide fast, professional support in a calm and welcoming environment. Our focus is on relieving pain, protecting your teeth, and helping you feel at ease.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {benefits.map((benefit, index) => (

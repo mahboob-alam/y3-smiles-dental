@@ -274,7 +274,7 @@ const TeethWhitening = () => {
                                 <Button variant="booking" size="xl" asChild className="group">
                                     <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                         <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                                        BOOK CONSULTATION
+                                        BOOK ONLINE
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="xl" asChild>

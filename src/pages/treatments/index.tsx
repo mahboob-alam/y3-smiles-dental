@@ -394,16 +394,16 @@ const TreatmentsPage = () => {
             <div className="max-w-4xl mx-auto text-center">
               <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Dental Emergency? Same Day Appointments Available
+                Dental Emergency?
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
-                Don't suffer in pain. Our emergency dental treatments are available when you need them most.
+                Don't suffer in pain. Our emergency dental treatments are available when you need them most. Call us ASAP, we will try to accommodate a same day appointment.
               </p>
               <div className="bg-white rounded-2xl p-8 shadow-soft mb-8">
                 <div className="flex items-center justify-center mb-4">
                   <div className="text-3xl font-bold text-red-600 mr-4">03 9022 4442</div>
                 </div>
-                <p className="text-red-700 font-medium">Same day emergency appointments available</p>
+                <p className="text-red-700 font-medium">Please contact the emergency department at your nearest hospital for afterhours and emergencies requiring attention to non-dental areas.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="booking" size="lg" asChild>
@@ -472,10 +472,10 @@ const TreatmentsPage = () => {
         <section className="py-24 bg-primary/5">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <Award className="w-16 h-16 text-primary mx-auto mb-6" />
+              {/* <Award className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Ready to Experience the Y3 Smiles Dental Difference?
-              </h2>
+              </h2> */}
               <p className="text-lg text-neutral-600 mb-8">
                 Our experienced team is here to help you achieve the healthy, beautiful smile you deserve.
                 Book your consultation today and discover personalized dental treatments.

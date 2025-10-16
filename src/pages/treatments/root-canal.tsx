@@ -282,7 +282,7 @@ const RootCanalTherapy = () => {
               </p>
               <Button variant="booking" size="xl" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                  SCHEDULE EMERGENCY CONSULTATION
+                  BOOK NOW
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>

@@ -331,7 +331,7 @@ const ExaminationHygiene = () => {
         </section>
 
         {/* Statistics */}
-        <section className="py-24 bg-primary/5">
+        {/* <section className="py-24 bg-primary/5">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
@@ -340,7 +340,7 @@ const ExaminationHygiene = () => {
                 </h2>
               </div>
 
-              {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div className="text-center">
                   <Users className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">5000+</div>
@@ -361,10 +361,10 @@ const ExaminationHygiene = () => {
                   <div className="text-4xl font-bold text-primary mb-2">40+</div>
                   <div className="text-neutral-600">Years Experience</div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FAQ Section */}
         <section className="py-24 bg-background">

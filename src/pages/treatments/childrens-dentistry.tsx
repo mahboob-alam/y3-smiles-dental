@@ -64,7 +64,7 @@ const ChildrensDentistry = () => {
 
   const ageGroups = [
     {
-      title: "Infants & Toddlers (6 months - 3 years)",
+      title: "Infants & Toddlers (12 months - 3 years)",
       description: "First dental visits and establishing healthy habits",
       focus: ["First tooth care", "Teething guidance", "Bottle/sippy cup advice", "Thumb sucking prevention"]
     },
@@ -111,7 +111,7 @@ const ChildrensDentistry = () => {
   const faqs = [
     {
       question: "When should my child first visit the dentist?",
-      answer: "The experts recommends the first visit by age 1 or within 6 months of the first tooth appearing. Early visits help establish good habits and catch problems early."
+      answer: "We recommend the first visit by age 1 or within 6 months of the first tooth appearing. Early visits help establish good habits and catch problems early."
     },
     {
       question: "How can I prepare my child for their first dental visit?",
@@ -119,7 +119,7 @@ const ChildrensDentistry = () => {
     },
     {
       question: "Are dental X-rays safe for children?",
-      answer: "Yes, dental X-rays are very safe for children. We use digital X-rays with minimal radiation and only take them when necessary for diagnosis. Lead aprons provide additional protection."
+      answer: "Yes, dental X-rays are very safe for children. We use digital X-rays with minimal radiation and only take them when necessary for diagnosis."
     },
     {
       question: "What if my child has dental anxiety?",
@@ -235,7 +235,7 @@ const ChildrensDentistry = () => {
         </section>
 
         {/* Services */}
-        <section className="py-24 bg-neutral-50">
+        {/* <section className="py-24 bg-neutral-50">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
@@ -281,7 +281,7 @@ const ChildrensDentistry = () => {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Age Groups */}
         <section className="py-24 bg-background">

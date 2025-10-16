@@ -125,7 +125,7 @@ const EmergencyDentistry = () => {
     },
     {
       question: "What if I have a dental emergency after hours?",
-      answer: "Call our emergency line for guidance. We provide after-hours emergency care for urgent situations and can direct you to appropriate immediate care if needed."
+      answer: "Please contact the emergency department at your nearest hospital or an after-hours emergency clinic  for afterhours and emergencies requiring attention to non-dental areas."
     }
   ];
 
@@ -349,7 +349,7 @@ const EmergencyDentistry = () => {
             <div className="max-w-3xl mx-auto">
               <Phone className="w-16 h-16 text-red-600 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Dental Emergency? We're Here to Help
+                Call emergency line: 03 9022 4442
               </h2>
               <p className="text-lg text-neutral-600 mb-8">
                 Don't suffer in pain. Our emergency dental services are available when you need them most.

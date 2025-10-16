@@ -41,8 +41,8 @@ const Header = () => {
 
             {/* Phone & CTA Buttons */}
             <div className="flex items-center space-x-4">
-              <a href="tel:(03) 1234 5678" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
-                (03) 1234 5678
+              <a href="tel:03 9022 4442" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
+                03 9022 4442
               </a>
               <Button variant="booking" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>

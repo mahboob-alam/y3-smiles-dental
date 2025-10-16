@@ -401,13 +401,13 @@ const TreatmentsPage = () => {
               </p>
               <div className="bg-white rounded-2xl p-8 shadow-soft mb-8">
                 <div className="flex items-center justify-center mb-4">
-                  <div className="text-3xl font-bold text-red-600 mr-4">(03) 1234 5678</div>
+                  <div className="text-3xl font-bold text-red-600 mr-4">03 9022 4442</div>
                 </div>
                 <p className="text-red-700 font-medium">24/7 Emergency Dental Line</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="booking" size="lg" asChild>
-                  <a href="tel:(03) 1234 5678">CALL EMERGENCY LINE</a>
+                  <a href="tel:0390224442">CALL EMERGENCY LINE</a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/treatments/emergency">LEARN MORE</Link>

@@ -39,10 +39,10 @@ const GoogleMap = ({
   className = ""
 }: GoogleMapProps) => {
   // Default location data (Broadmeadows clinic)
-  const defaultLocation: LocationData = {
-    name: "Y3 Smiles Dental",
-    address: "1/34 King William St, Broadmeadows, VIC 3047",
-    phone: "PLACEHOLDER",
+  const defaultLocation = {
+    name: "Broadmeadows",
+    address: "1/34 King William St, Broadmeadows VIC 3047",
+    phone: "03 9022 4442",
     email: "y3smiles@gmail.com",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.123456789!2d144.9123456!3d-37.7123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1%2F34+King+William+St%2C+Broadmeadows+VIC+3047!5e0!3m2!1sen!2sau!4v1234567890123",
     directionsUrl: "https://maps.google.com/?q=1/34+King+William+St,+Broadmeadows,+VIC+3047"
@@ -91,12 +91,12 @@ const GoogleMap = ({
             <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
               Visit Our Clinic
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
+            {/* <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
               {locationName
                 ? `Y3 Smiles Dental serves residents of ${locationName}`
                 : "Conveniently Located in Broadmeadows"}
-            </h3>
-            <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
+            </h3> */}
+            <p className="text-xl text-neutral-600 leading-relaxed max-w-3xl mx-auto">
               Our modern, comfortable clinic is easily accessible and thoughtfully designed to create a calming and relaxing experience for every patient.
             </p>
           </div>

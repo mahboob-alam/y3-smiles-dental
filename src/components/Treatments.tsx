@@ -17,13 +17,13 @@ const Treatments = () => {
       image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/emergency"
     },
-    {
+    /* {
       title: "Aesthetic",
       subheading: "Where happy, confident smiles begin",
       description: "Get the smile you love with gentle care, tailored treatments, and lasting confidence.",
       image: "https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/dental-fillings"
-    },
+    }, */
     {
       title: "Children Dentistry",
       subheading: "Early Age Dental Care",
@@ -31,7 +31,7 @@ const Treatments = () => {
       image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/childrens-dentistry"
     },
-    {
+    /* {
       title: "Trauma",
       subheading: "Tooth trauma and repair",
       description: "Whether from sport, falls, or accidents, we provide immediate repair to protect and restore smiles.",
@@ -44,7 +44,7 @@ const Treatments = () => {
       description: "Y3 Smiles Dental offers gentle treatments to repair worn or damaged teeth, along with preventative care that keeps your family's smiles healthy and protected for the future.",
       image: "https://images.pexels.com/photos/6627329/pexels-photo-6627329.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/dentures"
-    }
+    } */
   ];
 
   return (
@@ -88,11 +88,11 @@ const Treatments = () => {
                     {treatment.description}
                   </p>
                 </div>
-                {/* <Button variant="learn" className="w-full" asChild>
+                <Button variant="learn" className="w-full" asChild>
                   <Link to={treatment.link}>
                     LEARN MORE
                   </Link>
-                </Button> */}
+                </Button>
               </div>
             </div>
           ))}

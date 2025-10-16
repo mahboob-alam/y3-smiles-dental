@@ -22,14 +22,14 @@ const Index = () => {
         <Hero />
         <About />
         <Treatments />
-        <WhyChooseUs />
+        {/* <WhyChooseUs /> */}
         {/* <Testimonials /> */}
         <GoogleMap
           locationName="Broadmeadows"
           locationData={locationConfigs.broadmeadows.locationData}
           openingHours={locationConfigs.broadmeadows.openingHours}
         />
-        {/* <Contact /> */}
+        <Contact />
       </main>
       <Footer />
     </div>

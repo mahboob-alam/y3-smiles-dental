@@ -13,7 +13,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-primary text-primary bg-background hover:bg-booking-gold hover:text-white hover:border-transparent",
+          "border border-[#B59682] text-[#B59682] bg-background hover:bg-booking-gold hover:text-white hover:border-transparent",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -23,8 +23,8 @@ const buttonVariants = cva(
         hero: "gradient-accent text-accent-foreground hover:gradient-accent-hover shadow-large hover:shadow-hover font-bold tracking-widest uppercase px-10 py-4 text-sm",
         // NEW Golden CTA Variant
         learn: "bg-primary/10 text-primary hover:gradient-primary hover:text-primary-foreground border-2 border-primary/20 hover:border-transparent font-medium hover:shadow-medium",
-        // Booking Button Variant - Custom color #B5A642
-        booking: "bg-booking-gold text-white hover:bg-[#A19237] shadow-medium hover:shadow-hover font-semibold tracking-wide uppercase text-xs px-8 py-3 transition-gentle",
+        // Booking Button Variant - Custom color #B59682
+        booking: "bg-booking-gold text-white hover:bg-[#A4846F] shadow-medium hover:shadow-hover font-semibold tracking-wide uppercase text-xs px-8 py-3 transition-gentle",
       },
       size: {
         default: "h-10 px-4 py-2",

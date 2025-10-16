@@ -21,19 +21,19 @@ const Footer = () => {
             />
             <div className="space-y-2 text-sm">
               <p>
-                <span className="uppercase text-[#B4957E]">Phone:</span>{" "}
-                <a href="tel:PLACEHOLDER" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">
+                <span className="uppercase text-[#B59682]">Phone:</span>{" "}
+                <a href="tel:PLACEHOLDER" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
                   PLACEHOLDER
                 </a>
               </p>
               <p>
-                <span className="uppercase text-[#B4957E]">Email:</span>{" "}
-                <a href="mailto:y3smiles@gmail.com" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">
+                <span className="uppercase text-[#B59682]">Email:</span>{" "}
+                <a href="mailto:y3smiles@gmail.com" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
                   y3smiles@gmail.com
                 </a>
               </p>
               <div>
-                <p className="uppercase text-[#B4957E] mb-1">Address:</p>
+                <p className="uppercase text-[#B59682] mb-1">Address:</p>
                 <p>1/34 KING WILLIAM ST,</p>
                 <p>BROADMEADOWS, VIC 3047</p>
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Opening Hours */}
           <div>
-            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Opening Hours</h3>
+            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B59682]">Opening Hours</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between hover:bg-white/5 px-2 py-1 rounded transition-gentle">
                 <span>MONDAY:</span>
@@ -77,26 +77,26 @@ const Footer = () => {
 
           {/* Areas We Service */}
           <div>
-            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Areas We Service</h3>
+            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B59682]">Areas We Service</h3>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              <Link to="/locations/broadmeadows" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">BROADMEADOWS</Link>
-              <Link to="/locations/glenroy" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GLENROY</Link>
-              <Link to="/locations/greenvale" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GREENVALE</Link>
-              <Link to="/locations/campbellfield" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CAMPBELLFIELD</Link>
-              <Link to="/locations/meadow-heights" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MEADOW HEIGHTS</Link>
-              <Link to="/locations/roxbury-park" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">ROXBURY PARK</Link>
-              <Link to="/locations/craigieburn" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">CRAIGIEBURN</Link>
-              <Link to="/locations/westmeadows" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">WESTMEADOWS</Link>
-              <Link to="/locations/mickleham" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">MICKLEHAM</Link>
-              <Link to="/locations/fawkner" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">FAWKNER</Link>
-              <Link to="/locations/gladstone-park" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">GLADSTONE PARK</Link>
-              <Link to="/locations/hadfield" className="hover:text-[#B4957E] transition-gentle hover:scale-105 inline-block">HADFIELD</Link>
+              <Link to="/locations/broadmeadows" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">BROADMEADOWS</Link>
+              <Link to="/locations/glenroy" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">GLENROY</Link>
+              <Link to="/locations/greenvale" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">GREENVALE</Link>
+              <Link to="/locations/campbellfield" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">CAMPBELLFIELD</Link>
+              <Link to="/locations/meadow-heights" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">MEADOW HEIGHTS</Link>
+              <Link to="/locations/roxbury-park" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">ROXBURY PARK</Link>
+              <Link to="/locations/craigieburn" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">CRAIGIEBURN</Link>
+              <Link to="/locations/westmeadows" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">WESTMEADOWS</Link>
+              <Link to="/locations/mickleham" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">MICKLEHAM</Link>
+              <Link to="/locations/fawkner" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">FAWKNER</Link>
+              <Link to="/locations/gladstone-park" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">GLADSTONE PARK</Link>
+              <Link to="/locations/hadfield" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">HADFIELD</Link>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B4957E]">Treatments</h3>
+            <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B59682]">Treatments</h3>
             <div className="space-y-2 text-sm">
               <div className="block">
                 CHILDREN'S DENTISTRY
@@ -130,7 +130,7 @@ const Footer = () => {
               href="https://www.facebook.com/people/Y3-Smiles-Dental/61579053037448/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
+              className="text-zinc-400 hover:text-[#B59682] transition-gentle transform hover:scale-125 hover:-translate-y-1"
             >
               <Facebook className="h-8 w-8" />
             </a>
@@ -138,7 +138,7 @@ const Footer = () => {
               href="https://www.instagram.com/y3_smilesdental/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
+              className="text-zinc-400 hover:text-[#B59682] transition-gentle transform hover:scale-125 hover:-translate-y-1"
             >
               <Instagram className="h-8 w-8" />
             </a>
@@ -155,7 +155,7 @@ const Footer = () => {
               href="https://pinterest.com/y3smiles"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-100 hover:text-[#B4957E] transition-gentle transform hover:scale-125 hover:-translate-y-1"
+              className="text-zinc-100 hover:text-[#B59682] transition-gentle transform hover:scale-125 hover:-translate-y-1"
             >
               
             </a> */}

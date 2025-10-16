@@ -17,10 +17,10 @@
     --popover-foreground: 220 13% 18%;
 
     /* Gold primary brand color */
-    --primary: 45 85% 55%;
+    --primary: 34 21% 61%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 45 75% 45%;
-    --primary-darker: 45 65% 35%;
+    --primary-dark: 34 25% 51%;
+    --primary-darker: 34 29% 41%;
 
     /* Soft neutral secondary */
     --secondary: 210 20% 96%;
@@ -30,22 +30,22 @@
     --muted-foreground: 215 25% 45%;
 
     /* Warm gold accent for CTAs */
-    --accent: 45 70% 60%;
+    --accent: 34 21% 61%;
     --accent-foreground: 0 0% 100%;
-    --accent-dark: 45 60% 50%;
+    --accent-dark: 34 25% 51%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 45 85% 55%;
+    --ring: 34 21% 61%;
 
     --radius: 0.75rem;
 
     /* Custom Design Tokens */
-    --gold-light: 45 90% 65%;
-    --gold-dark: 45 75% 45%;
+    --gold-light: 34 25% 71%;
+    --gold-dark: 34 29% 41%;
     --teal-light: 174 70% 65%;
     --teal-dark: 174 55% 45%;
     --neutral-50: 210 20% 98%;
@@ -108,10 +108,10 @@
     --popover: 220 15% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 45 85% 55%;
+    --primary: 34 21% 61%;
     --primary-foreground: 220 18% 12%;
-    --primary-dark: 45 75% 45%;
-    --primary-darker: 45 65% 35%;
+    --primary-dark: 34 25% 51%;
+    --primary-darker: 34 29% 41%;
 
     --secondary: 220 15% 20%;
     --secondary-foreground: 0 0% 95%;
@@ -119,16 +119,16 @@
     --muted: 220 15% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 45 70% 50%;
+    --accent: 34 21% 61%;
     --accent-foreground: 220 18% 12%;
-    --accent-dark: 45 60% 40%;
+    --accent-dark: 34 25% 51%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 95%;
 
     --border: 220 15% 25%;
     --input: 220 15% 25%;
-    --ring: 45 85% 55%;
+    --ring: 34 21% 61%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -356,18 +356,18 @@
 
   /* Custom color for booking variant */
   .bg-booking-gold {
-    background-color: #B5A642;
+    background-color: #B59682;
   }
 
   .text-booking-gold {
-    color: #B5A642;
+    color: #B59682;
   }
 
   .border-booking-gold {
-    border-color: #B5A642;
+    border-color: #B59682;
   }
 
   .hover\:bg-booking-gold:hover {
-    background-color: #B5A642;
+    background-color: #B59682;
   }
 }

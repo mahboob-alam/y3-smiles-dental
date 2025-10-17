@@ -45,6 +45,9 @@ const PriceGuidePage = lazy(() => import("./pages/patients/price-guide"));
 const SmileGalleryPage = lazy(() => import("./pages/patients/smile-gallery"));
 const CaseStudiesPage = lazy(() => import("./pages/patients/case-studies"));
 
+// Contact Us page
+const ContactUsPage = lazy(() => import("./pages/ContactUs"));
+
 // Lazy load location pages
 const BroadmeadowsPage = lazy(() => import("./pages/locations/broadmeadows"));
 const GlenroyPage = lazy(() => import("./pages/locations/glenroy"));
@@ -208,6 +211,13 @@ const App = () => {
           <Route path="/patients/case-studies" element={
             <Suspense fallback={<LoadingSpinner />}>
               <CaseStudiesPage />
+            </Suspense>
+          } />
+
+          {/* Contact Us Route */}
+          <Route path="/contact" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ContactUsPage />
             </Suspense>
           } />
 

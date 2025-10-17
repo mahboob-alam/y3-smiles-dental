@@ -69,7 +69,7 @@ const navigationItems = [
   },
   {
     title: "Contact Us",
-    path: "/#contact"
+    path: "/contact"
   }
 ];
 

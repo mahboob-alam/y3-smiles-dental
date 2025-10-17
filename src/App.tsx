@@ -35,6 +35,9 @@ const SpecialsPage = lazy(() => import("./pages/specials"));
 
 // Lazy load About pages
 const AboutPage = lazy(() => import("./pages/about"));
+const Y3SmilesDentalPage = lazy(() => import("./pages/about/y3-smiles-dental"));
+const OurTeamPage = lazy(() => import("./pages/about/our-team"));
+const JoinOurTeamPage = lazy(() => import("./pages/about/join-our-team"));
 const BlogPage = lazy(() => import("./pages/about/blog"));
 
 // Lazy load Patient pages
@@ -174,6 +177,21 @@ const App = () => {
           <Route path="/about" element={
             <Suspense fallback={<LoadingSpinner />}>
               <AboutPage />
+            </Suspense>
+          } />
+          <Route path="/about/y3-smiles-dental" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Y3SmilesDentalPage />
+            </Suspense>
+          } />
+          <Route path="/about/our-team" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <OurTeamPage />
+            </Suspense>
+          } />
+          <Route path="/about/join-our-team" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <JoinOurTeamPage />
             </Suspense>
           } />
           <Route path="/about/blog" element={

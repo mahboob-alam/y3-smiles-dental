@@ -176,7 +176,7 @@ const App = () => {
           {/* About Routes */}
           <Route path="/about" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <AboutPage />
+              <Y3SmilesDentalPage />
             </Suspense>
           } />
           <Route path="/about/y3-smiles-dental" element={

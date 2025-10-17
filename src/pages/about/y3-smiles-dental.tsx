@@ -16,8 +16,12 @@ import {
     CheckCircle,
     Award,
     Clock,
-    MapPin
+    MapPin,
+    Briefcase,
+    BookOpen,
+    Navigation
 } from "lucide-react";
+import { locationConfigs } from "@/data/locationData";
 
 const Y3SmilesDentalPage = () => {
     useScrollAnimation();
@@ -99,9 +103,9 @@ const Y3SmilesDentalPage = () => {
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="xl" asChild>
-                                    <Link to="/about">
+                                    <Link to="/treatments">
                                         <ArrowRight className="w-5 h-5 mr-2" />
-                                        Back to About
+                                        View Our Treatments
                                     </Link>
                                 </Button>
                             </div>
@@ -143,26 +147,91 @@ const Y3SmilesDentalPage = () => {
                                     we are committed to delivering high-quality dentistry with a compassionate approach.
                                 </p>
 
-                                <div className="bg-gradient-to-r from-primary/10 via-white to-secondary/10 p-8 rounded-2xl border border-primary/20">
-                                    <p className="text-lg text-neutral-700 mb-4">
-                                        <strong>Booking your appointment is easy</strong> — simply call our friendly team, book online
-                                        through our website, or visit us in person. At Y3 Smiles Dental, every smile matters, and we look
-                                        forward to welcoming you soon.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4">
-                                        <Button variant="booking" size="lg" asChild className="group">
-                                            <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                                                <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                                                Call Us Today
-                                            </a>
-                                        </Button>
-                                        <Button variant="outline" size="lg" asChild>
-                                            <Link to="/treatments">
-                                                View Our Treatments
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Learn More About Us */}
+                <section className="py-24 bg-neutral-50">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="text-center mb-16">
+                                <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                                    Learn More About Us
+                                </h2>
+                                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                                    Discover more about our team, career opportunities, and helpful dental information
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                {/* Our Team Card */}
+                                <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '0ms' }}>
+                                    <CardContent className="p-8 text-center flex flex-col h-full">
+                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                            <Users className="w-8 h-8 text-primary" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
+                                            Our Team
+                                        </h3>
+                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                            Meet our dedicated dental professionals who are committed to providing compassionate,
+                                            high-quality care with years of experience and ongoing professional development.
+                                        </p>
+                                        <Button variant="outline" asChild className="group/btn mt-auto">
+                                            <Link to="/about/our-team">
+                                                Meet Our Team
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                             </Link>
                                         </Button>
-                                    </div>
-                                </div>
+                                    </CardContent>
+                                </Card>
+
+                                {/* Join Our Team Card */}
+                                <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '150ms' }}>
+                                    <CardContent className="p-8 text-center flex flex-col h-full">
+                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                            <Briefcase className="w-8 h-8 text-primary" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
+                                            Join Our Team
+                                        </h3>
+                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                            Explore career opportunities and discover why Y3 Smiles Dental is a great place to build
+                                            your dental career with competitive benefits and a supportive work environment.
+                                        </p>
+                                        <Button variant="outline" asChild className="group/btn mt-auto">
+                                            <Link to="/about/join-our-team">
+                                                View Careers
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                            </Link>
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+
+                                {/* Blog Card */}
+                                <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '300ms' }}>
+                                    <CardContent className="p-8 text-center flex flex-col h-full">
+                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                            <BookOpen className="w-8 h-8 text-primary" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
+                                            Blog & Resources
+                                        </h3>
+                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                            Stay informed with dental care tips, oral health advice, patient stories, and the latest news
+                                            from Y3 Smiles Dental to help maintain your family's oral health.
+                                        </p>
+                                        <Button variant="outline" asChild className="group/btn mt-auto">
+                                            <Link to="/about/blog">
+                                                Read Our Blog
+                                                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                            </Link>
+                                        </Button>
+                                    </CardContent>
+                                </Card>
                             </div>
                         </div>
                     </div>
@@ -316,10 +385,14 @@ const Y3SmilesDentalPage = () => {
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="lg" asChild>
-                                    <Link to="/contact">
-                                        Get Directions
-                                        <ArrowRight className="w-5 h-5 ml-2" />
-                                    </Link>
+                                    <a
+                                        href={locationConfigs.broadmeadows.locationData.directionsUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Navigation className="w-4 h-4 mr-2" />
+                                        GET DIRECTIONS
+                                    </a>
                                 </Button>
                             </div>
                         </div>

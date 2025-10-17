@@ -19,8 +19,7 @@ const navigationItems = [
       {
         title: "About Y3 Smiles Dental",
         items: [
-          { title: "About Overview", path: "/about" },
-          { title: "Y3 Smiles Dental", path: "/about/y3-smiles-dental" },
+          { title: "Y3 Smiles Dental", path: "/about" },
           { title: "Our Team", path: "/about/our-team" },
           { title: "Join Our Team", path: "/about/join-our-team" },
           { title: "Blog", path: "/about/blog" }

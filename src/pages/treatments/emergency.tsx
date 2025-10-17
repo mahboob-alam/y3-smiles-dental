@@ -137,7 +137,7 @@ const EmergencyDentistry = () => {
         <section className="bg-gradient-hero py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <AlertTriangle className="w-20 h-20 text-primary mx-auto mb-6" />
+              <img src="/emergency.png" alt="Emergency Dentistry" className="w-20 h-20 mx-auto mb-6" />
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Emergency Dentistry
               </h1>
@@ -347,7 +347,7 @@ const EmergencyDentistry = () => {
         <section className="py-24 bg-red-50">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <Phone className="w-16 h-16 text-red-600 mx-auto mb-6" />
+              <img src="/emergency.png" alt="Emergency Dentistry" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Call emergency line: 03 9022 4442
               </h2>

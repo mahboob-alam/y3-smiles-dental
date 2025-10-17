@@ -54,7 +54,7 @@ const PaymentOptions = () => {
             title: "Humm",
             description: "Longer payment terms with Humm for larger treatments",
             icon: DollarSign,
-            features: ["Up to 60 months", "Low interest rates", "Quick approval", "Flexible terms"],
+            features: ["Up to 72 months", "Interest-free", "Quick approval", "Flexible terms"],
             color: "bg-orange-50 text-orange-600"
         }
     ];
@@ -267,7 +267,7 @@ const PaymentOptions = () => {
                                             <Users className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Competitive Rates</h4>
-                                                <p className="text-neutral-600 text-sm">Low interest rates with transparent fee structure</p>
+                                                <p className="text-neutral-600 text-sm">Interest Free</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">

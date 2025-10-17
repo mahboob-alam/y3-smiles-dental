@@ -22,6 +22,7 @@ import {
     Navigation
 } from "lucide-react";
 import { locationConfigs } from "@/data/locationData";
+import GoogleMap from "@/components/GoogleMap";
 
 const Y3SmilesDentalPage = () => {
     useScrollAnimation();
@@ -49,11 +50,11 @@ const Y3SmilesDentalPage = () => {
         }
     ];
 
-    const services = [
+    const treatments = [
         "Comprehensive dental examinations",
         "Preventive care and hygiene treatments",
         "Restorative dentistry and fillings",
-        "Emergency dental services",
+        "Emergency dental treatments",
         "Children's dentistry (CDBS eligible)",
         "Cosmetic dental treatments",
         "Oral surgery and extractions",
@@ -117,34 +118,25 @@ const Y3SmilesDentalPage = () => {
                 <section className="py-24 bg-background">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto">
-                            <div className="text-center mb-16">
+                            {/* <div className="text-center mb-16">
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Our Story
                                 </h2>
                                 <p className="text-lg text-neutral-600">
                                     Building a practice focused on quality care, patient comfort, and community health
                                 </p>
-                            </div>
+                            </div> */}
 
-                            <div className="space-y-8 text-lg leading-relaxed">
-                                <p className="text-neutral-700">
-                                    At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life.
-                                    Our modern, comfortable clinic in Melbourne's northern suburbs is designed to be welcoming, accessible,
-                                    and relaxing for every patient — whether it's your child's first visit or your own regular check-up.
-                                </p>
+                            <div className="space-y-8 text-lg leading-relaxed text-center">
+                                <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
+                                    About
+                                </h2>
+                                <p className="text-lg text-neutral-600 leading-relaxed max-w-6xl mx-auto">
+                                    At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne’s northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: healthy smiles, healthy lives — it begins with you.
 
-                                <p className="text-neutral-700">
-                                    We provide a complete range of dental services tailored to families, from gentle early-age care and
-                                    preventative treatments to restorative solutions, cosmetic enhancements, and emergency dentistry.
-                                    Our focus goes beyond treating teeth; we create positive experiences that build trust, reduce anxiety,
-                                    and encourage lifelong oral health habits.
-                                </p>
+                                    Our services cover all stages of dental care, including routine check-ups, preventative treatments, children’s dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family.
 
-                                <p className="text-neutral-700">
-                                    At Y3 Smiles Dental, your comfort is our priority. Our team takes the time to listen, explain, and
-                                    personalise care so every treatment feels clear and stress-free. Whether repairing damage,
-                                    protecting against future problems, or helping you achieve the smile you've always wanted,
-                                    we are committed to delivering high-quality dentistry with a compassionate approach.
+                                    What makes us different is our patient-centred approach. We take the time to listen, explain, and personalise every treatment plan. Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.
                                 </p>
 
 
@@ -284,7 +276,7 @@ const Y3SmilesDentalPage = () => {
                         <div className="max-w-4xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                                    Comprehensive Dental Services
+                                    Comprehensive Dental Treatments
                                 </h2>
                                 <p className="text-lg text-neutral-600">
                                     We offer a full range of dental treatments to meet all your family's oral health needs
@@ -292,7 +284,7 @@ const Y3SmilesDentalPage = () => {
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-                                {services.map((service, index) => (
+                                {treatments.map((service, index) => (
                                     <div key={index} className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-soft hover:shadow-medium transition-smooth">
                                         <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
                                         <span className="text-neutral-700 font-medium">{service}</span>
@@ -347,57 +339,11 @@ const Y3SmilesDentalPage = () => {
                 </section>
 
                 {/* Location Info */}
-                <section className="py-24 bg-background">
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center">
-                            <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                                Visit Our Clinic
-                            </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
-                                Conveniently located in Broadmeadows with easy access and parking
-                            </p>
-
-                            <div className="bg-white p-8 rounded-2xl shadow-soft border border-primary/10 mb-8">
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <div className="text-center">
-                                        <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />
-                                        <h3 className="font-semibold text-neutral-800 mb-2">Address</h3>
-                                        <p className="text-neutral-600">1/34 King William St<br />Broadmeadows, VIC 3047</p>
-                                    </div>
-                                    <div className="text-center">
-                                        <Phone className="w-10 h-10 text-primary mx-auto mb-3" />
-                                        <h3 className="font-semibold text-neutral-800 mb-2">Phone</h3>
-                                        <p className="text-neutral-600">03 9022 4442</p>
-                                    </div>
-                                    <div className="text-center">
-                                        <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
-                                        <h3 className="font-semibold text-neutral-800 mb-2">Hours</h3>
-                                        <p className="text-neutral-600">Mon-Fri: 9AM-5PM<br />Sat: 9AM-1PM</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="booking" size="lg" asChild className="group">
-                                    <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                                        <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                                        Book Appointment
-                                    </a>
-                                </Button>
-                                <Button variant="outline" size="lg" asChild>
-                                    <a
-                                        href={locationConfigs.broadmeadows.locationData.directionsUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Navigation className="w-4 h-4 mr-2" />
-                                        GET DIRECTIONS
-                                    </a>
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <GoogleMap
+                    locationName="Broadmeadows"
+                    locationData={locationConfigs.broadmeadows.locationData}
+                    openingHours={locationConfigs.broadmeadows.openingHours}
+                />
             </main>
             <Footer />
         </div>

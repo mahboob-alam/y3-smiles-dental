@@ -15,7 +15,10 @@ import {
     Users,
     Star,
     ArrowRight,
-    Phone
+    Phone,
+    Heart,
+    Banknote,
+    AlertTriangle
 } from "lucide-react";
 
 const PaymentOptions = () => {
@@ -56,6 +59,20 @@ const PaymentOptions = () => {
             icon: DollarSign,
             features: ["Up to 72 months", "Interest-free", "Quick approval", "Flexible terms"],
             color: "bg-orange-50 text-orange-600"
+        },
+        {
+            title: "Child Dental Benefits Schedule",
+            description: "Australian Government program covering dental care for eligible children",
+            icon: Heart,
+            features: ["Ages 0-17 years", "Medicare eligible", "Government funded", "Basic dental services"],
+            color: "bg-pink-50 text-pink-600"
+        },
+        {
+            title: "Superannuation - Early Release",
+            description: "Access your super early on compassionate grounds for medical expenses",
+            icon: Banknote,
+            features: ["Medical treatment", "Compassionate grounds", "ATO approved", "Government regulated"],
+            color: "bg-indigo-50 text-indigo-600"
         }
     ];
 
@@ -293,17 +310,151 @@ const PaymentOptions = () => {
                     </div>
                 </section>
 
+                {/* CDBS Details */}
+                <section className="py-24 bg-background">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                <div className="aspect-video bg-pink-50 rounded-2xl overflow-hidden">
+                                    <div className="w-full h-full flex items-center justify-center">
+                                        <div className="text-center">
+                                            <Heart className="w-16 h-16 text-pink-600 mx-auto mb-4" />
+                                            <p className="text-pink-700 font-medium">Australian Government</p>
+                                            <p className="text-sm text-pink-600 mt-2">Child Dental Benefits Schedule</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+                                        Australian Government Program
+                                    </h2>
+                                    <h3 className="text-4xl font-bold text-neutral-800 mb-6">
+                                        Child Dental Benefits Schedule
+                                    </h3>
+                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                        The Child Dental Benefits Schedule (CDBS) is an Australian Government initiative that covers part or the full cost of basic dental services for eligible children aged 0-17 years.
+                                    </p>
+                                    <div className="space-y-4">
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Age Eligibility</h4>
+                                                <p className="text-neutral-600 text-sm">Children aged 0-17 years for at least one day in the calendar year</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Medicare Eligible</h4>
+                                                <p className="text-neutral-600 text-sm">Child must be eligible for Medicare benefits</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Government Payments</h4>
+                                                <p className="text-neutral-600 text-sm">Child or guardian receives eligible government payments</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Basic Dental Services</h4>
+                                                <p className="text-neutral-600 text-sm">Covers examinations, cleaning, fillings, and extractions</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Eligibility Criteria Applies</h4>
+                                                <p className="text-neutral-600 text-sm">Call us to confirm if you are eligible for CDBS benefits</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Superannuation Details */}
+                <section className="py-24 bg-neutral-50">
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
+                                        Australian Taxation Office
+                                    </h2>
+                                    <h3 className="text-4xl font-bold text-neutral-800 mb-6">
+                                        Superannuation Early Release
+                                    </h3>
+                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                        Access your superannuation early on compassionate grounds to pay for essential medical treatment and related expenses when facing financial hardship.
+                                    </p>
+                                    <div className="space-y-4">
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Medical Treatment</h4>
+                                                <p className="text-neutral-600 text-sm">Dental, medical, or surgical treatment for you or your dependant</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Medical Transport</h4>
+                                                <p className="text-neutral-600 text-sm">Transport costs for essential medical treatment</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Home Modifications</h4>
+                                                <p className="text-neutral-600 text-sm">Modifications to accommodate severe disability</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Palliative Care</h4>
+                                                <p className="text-neutral-600 text-sm">Care for terminal illness and related expenses</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-start">
+                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
+                                            <div>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Preventing Foreclosure</h4>
+                                                <p className="text-neutral-600 text-sm">Prevent forced sale of your primary residence</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="aspect-video bg-indigo-50 rounded-2xl overflow-hidden">
+                                    <div className="w-full h-full flex items-center justify-center">
+                                        <div className="text-center">
+                                            <Banknote className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
+                                            <p className="text-indigo-700 font-medium">Australian Taxation Office</p>
+                                            <p className="text-sm text-indigo-600 mt-2">Compassionate Release Program</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Disclaimer */}
                 <section className="py-16 bg-background">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto">
                             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-                                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center">
-                                    <Shield className="w-5 h-5 mr-2" />
-                                    Important Information
+                                <h3 className="text-lg font-semibold text-yellow-800 mb-4 flex items-center">
+                                    <AlertTriangle className="w-5 h-5 mr-2" />
+                                    Disclaimer
                                 </h3>
                                 <p className="text-yellow-700 text-sm leading-relaxed">
-                                    Payment plan eligibility is subject to approval. Terms and conditions apply for all payment options. Interest rates and fees may apply for extended payment plans. Please speak to our team for detailed information about payment options suitable for your treatment.
+                                    This page is for informational purposes only and is not intended to provide legal or financial advice or recommendations. Please consult a financial or superannuation professional or the ATO before making any decisions to withdraw from superannuation. The information provided is based on the ATO's guidelines on early access to superannuation as published on its website as of 20 August 2025. For the most up-to-date and comprehensive details, please refer to the ATO website. Y3 Smiles Dental will not be liable for any errors, omissions, or inaccuracies in this page.
                                 </p>
                             </div>
                         </div>

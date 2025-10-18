@@ -35,7 +35,7 @@ const PitsAndFissureSealants = () => {
     {
       title: "Resin-Based Sealants",
       description: "Most common type, providing excellent cavity protection",
-      icon: Shield,
+      imageSrc: "/sealant.png",
       features: ["Excellent adhesion", "Durable protection", "Clear or tooth-coloured", "Easy application"],
       lifespan: "5-10 years",
       suitableFor: "Most patients, especially children"
@@ -43,7 +43,7 @@ const PitsAndFissureSealants = () => {
     {
       title: "Glass Ionomer Sealants",
       description: "Fluoride-releasing sealants for additional protection",
-      icon: Star,
+      imageSrc: "/sealant.png",
       features: ["Releases fluoride", "Good for high-risk patients", "Chemical bond", "Remineralizing effect"],
       lifespan: "3-5 years",
       suitableFor: "High cavity risk, younger children"
@@ -155,7 +155,7 @@ const PitsAndFissureSealants = () => {
         <section className="bg-gradient-hero py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <img src="/dental-care.png" alt="Pits & Fissure Sealants" className="w-20 h-20 mx-auto mb-6" />
+              <img src="/sealant.png" alt="Pits & Fissure Sealants" className="w-20 h-20 mx-auto mb-6" />
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Pits & Fissure Sealants
               </h1>
@@ -243,12 +243,11 @@ const PitsAndFissureSealants = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {sealantTypes.map((type, index) => {
-                const IconComponent = type.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={type.imageSrc} alt={type.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {type.title}
@@ -317,7 +316,7 @@ const PitsAndFissureSealants = () => {
         <section className="py-24 bg-neutral-50">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <Target className="w-16 h-16 text-primary mx-auto mb-6" />
+              <img src="/dental-care.png" alt="Pits & Fissure Sealants" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Protect Your Family's Smiles
               </h2>

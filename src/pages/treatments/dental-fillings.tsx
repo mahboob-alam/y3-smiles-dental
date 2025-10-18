@@ -35,7 +35,7 @@ const DentalFillings = () => {
     {
       title: "Composite (Tooth-Coloured) Fillings",
       description: "Modern, aesthetic fillings that blend seamlessly with natural teeth",
-      icon: Palette,
+      imageSrc: "/composite-filling.png",
       features: ["Natural appearance", "Mercury-free", "Bonds to tooth", "Immediate use"],
       lifespan: "7-10 years",
       suitableFor: "Front and back teeth, visible areas"
@@ -43,7 +43,7 @@ const DentalFillings = () => {
     {
       title: "Ceramic Fillings",
       description: "Premium porcelain fillings for superior aesthetics and durability",
-      icon: Award,
+      imageSrc: "/ceramic-filling.png",
       features: ["Excellent aesthetics", "Highly durable", "Stain resistant", "Biocompatible"],
       lifespan: "10-15 years",
       suitableFor: "Large restorations, high-stress areas"
@@ -51,7 +51,7 @@ const DentalFillings = () => {
     {
       title: "Glass Ionomer Fillings",
       description: "Fluoride-releasing fillings ideal for specific situations",
-      icon: Shield,
+      imageSrc: "/composite-filling.png",
       features: ["Releases fluoride", "Good for root surfaces", "Chemical bond", "Gentle on teeth"],
       lifespan: "5-7 years",
       suitableFor: "Root cavities, children's teeth"
@@ -95,22 +95,22 @@ const DentalFillings = () => {
     {
       title: "Tooth Pain",
       description: "Persistent or sharp pain when biting or chewing",
-      icon: Heart
+      imageSrc: "/toothache.png",
     },
     {
       title: "Sensitivity",
       description: "Sensitivity to hot, cold, or sweet foods and drinks",
-      icon: Zap
+      imageSrc: "/sensitivity.png",
     },
     {
       title: "Visible Holes",
       description: "Dark spots or visible holes in teeth",
-      icon: Tooth
+      imageSrc: "/teeth-hole.png",
     },
     {
       title: "Food Trapping",
       description: "Food consistently getting stuck in the same spot",
-      icon: Clock
+      imageSrc: "/teeth-brushing.png",
     }
   ];
 
@@ -196,12 +196,11 @@ const DentalFillings = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {fillingTypes.map((type, index) => {
-                const IconComponent = type.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
-                      <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                      <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
+                        <img src={type.imageSrc} alt={type.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}
@@ -248,12 +247,11 @@ const DentalFillings = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {signs.map((sign, index) => {
-                const IconComponent = sign.icon;
                 return (
                   <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={sign.imageSrc} alt={sign.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {sign.title}

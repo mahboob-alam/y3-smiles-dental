@@ -31,27 +31,27 @@ const TeethWhitening = () => {
         {
             title: "Brighter Appearance",
             description: "A lighter smile can enhance your overall look and confidence.",
-            icon: Sparkles
+            imageSrc: "/teeth-whitening.png"
         },
         {
             title: "Convenient Options",
             description: "Choose in-clinic treatments for faster results or take-home kits for flexibility.",
-            icon: Clock
+            imageSrc: "/options.png"
         },
         {
             title: "Personalised Care",
             description: "Treatments are customised to your preferences, from subtle brightening to more noticeable whitening.",
-            icon: Star
+            imageSrc: "/dental-care.png"
         },
         {
             title: "Safe & Monitored",
             description: "Professional supervision helps manage sensitivity and ensure comfort.",
-            icon: Shield
+            imageSrc: "/healthcare.png"
         },
         {
             title: "Lasting Results",
             description: "Longevity varies between individuals as diet, lifestyle, and oral hygiene all play a role. With proper care and aftercare, results can often last for several months.",
-            icon: CheckCircle
+            imageSrc: "/white-teeth.png"
         }
     ];
 
@@ -150,12 +150,11 @@ const TeethWhitening = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {benefits.map((benefit, index) => {
-                                const IconComponent = benefit.icon;
                                 return (
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                                                <IconComponent className="w-8 h-8" />
+                                                <img src={benefit.imageSrc} alt={benefit.title} className="w-8 h-8" />
                                             </div>
                                             <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                                                 {benefit.title}
@@ -187,7 +186,7 @@ const TeethWhitening = () => {
                             <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
                                 <CardHeader className="text-center">
                                     <div className="w-20 h-20 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 mx-auto">
-                                        <Sparkles className="w-10 h-10" />
+                                        <img src="/dental-clinic.png" alt="In-Clinic Treatment" className="w-10 h-10" />
                                     </div>
                                     <CardTitle className="text-2xl font-bold text-neutral-800 mb-4">
                                         In-Clinic Treatment
@@ -215,7 +214,7 @@ const TeethWhitening = () => {
                             <Card className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth">
                                 <CardHeader className="text-center">
                                     <div className="w-20 h-20 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 mx-auto">
-                                        <Star className="w-10 h-10" />
+                                        <img src="/dental-home.png" alt="Take-Home Kit" className="w-10 h-10" />
                                     </div>
                                     <CardTitle className="text-2xl font-bold text-neutral-800 mb-4">
                                         Take-Home Kit

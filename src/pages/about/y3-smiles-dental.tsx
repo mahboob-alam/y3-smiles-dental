@@ -88,7 +88,7 @@ const Y3SmilesDentalPage = () => {
                 <section className="bg-gradient-hero py-24">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto text-center">
-                            <Building2 className="w-20 h-20 text-primary mx-auto mb-6" />
+                            <img src="/dental-care.png" alt="Dental Care" className="w-20 h-20 mx-auto mb-6" />
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Y3 Smiles Dental
                             </h1>

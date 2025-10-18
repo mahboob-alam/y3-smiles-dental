@@ -35,7 +35,7 @@ const Dentures = () => {
     {
       title: "Complete Dentures",
       description: "Full replacement of all upper or lower teeth",
-      icon: Smile,
+      imageSrc: "/dentures.png",
       features: ["Replace all teeth", "Custom fit", "Natural appearance", "Functional restoration"],
       suitableFor: "Complete tooth loss in upper or lower arch",
       timeline: "4-6 weeks"
@@ -43,7 +43,7 @@ const Dentures = () => {
     {
       title: "Partial Dentures",
       description: "Replace multiple missing teeth while preserving remaining natural teeth",
-      icon: Target,
+      imageSrc: "/dentures.png",
       features: ["Preserve natural teeth", "Removable option", "Cost-effective", "Prevents shifting"],
       suitableFor: "Multiple missing teeth with healthy remaining teeth",
       timeline: "3-4 weeks"
@@ -51,7 +51,7 @@ const Dentures = () => {
     {
       title: "Implant-Supported Dentures",
       description: "Dentures secured by dental implants for superior stability",
-      icon: Award,
+      imageSrc: "/dentures.png",
       features: ["Superior stability", "Better chewing", "Prevents bone loss", "More comfortable"],
       suitableFor: "Patients wanting maximum stability and function",
       timeline: "3-6 months"
@@ -186,12 +186,11 @@ const Dentures = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {dentureTypes.map((type, index) => {
-                const IconComponent = type.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={type.imageSrc} alt={type.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}

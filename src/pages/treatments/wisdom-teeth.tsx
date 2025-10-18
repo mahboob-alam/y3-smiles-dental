@@ -35,25 +35,25 @@ const WisdomTeethRemoval = () => {
     {
       title: "Impaction",
       description: "Insufficient space for teeth to erupt properly",
-      icon: Shield,
+      imageSrc: "/wisdom-tooth-removal.png",
       complications: ["Pain and swelling", "Damage to adjacent teeth", "Cyst formation", "Difficult cleaning"]
     },
     {
       title: "Overcrowding",
       description: "Risk of shifting other teeth out of alignment",
-      icon: Users,
+      imageSrc: "/wisdom-tooth-removal.png",
       complications: ["Crooked teeth", "Bite problems", "Orthodontic relapse", "Aesthetic concerns"]
     },
     {
       title: "Decay & Gum Disease",
       description: "Difficulty cleaning leads to dental problems",
-      icon: Heart,
+      imageSrc: "/wisdom-tooth-removal.png",
       complications: ["Cavities", "Gum inflammation", "Bad breath", "Infection spread"]
     },
     {
       title: "Cysts & Tumors",
       description: "Rare but serious complications from impacted teeth",
-      icon: AlertTriangle,
+      imageSrc: "/wisdom-tooth-removal.png",
       complications: ["Jaw damage", "Nerve damage", "Tooth loss", "Facial deformity"]
     }
   ];
@@ -205,12 +205,11 @@ const WisdomTeethRemoval = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {removalReasons.map((reason, index) => {
-                const IconComponent = reason.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={reason.imageSrc} alt={reason.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {reason.title}
@@ -306,7 +305,7 @@ const WisdomTeethRemoval = () => {
         <section className="py-24 bg-neutral-50">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <Activity className="w-16 h-16 text-primary mx-auto mb-6" />
+              <img src="/wisdom-tooth-removal.png" alt="Wisdom Teeth Removal" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Don't Wait for Problems to Develop
               </h2>

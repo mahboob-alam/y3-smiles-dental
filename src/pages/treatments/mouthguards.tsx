@@ -32,13 +32,13 @@ const Mouthguards = () => {
         {
             title: "Sports Mouthguards",
             description: "Ideal for athletes in contact sports such as football, basketball, or rugby. They help absorb impact, reducing the risk of chipped or broken teeth and injuries to the lips, tongue, or jaw.",
-            icon: Activity,
+            imageSrc: "/mouthguard.png",
             features: ["Impact protection", "Custom fit", "Comfortable wear", "Injury prevention"]
         },
         {
             title: "Nightguards",
             description: "For patients who grind their teeth during sleep, a custom nightguard helps reduce wear, protect enamel, and ease jaw discomfort.",
-            icon: Moon,
+            imageSrc: "/mouthguard.png",
             features: ["Prevents teeth grinding", "Protects enamel", "Reduces jaw pain", "Improves sleep quality"]
         }
     ];
@@ -138,12 +138,11 @@ const Mouthguards = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {mouthguardTypes.map((type, index) => {
-                                const IconComponent = type.icon;
                                 return (
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                                                <IconComponent className="w-8 h-8" />
+                                                <img src={type.imageSrc} alt={type.title} className="w-8 h-8" />
                                             </div>
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {type.title}

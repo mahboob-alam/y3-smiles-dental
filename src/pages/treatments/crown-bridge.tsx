@@ -199,7 +199,7 @@ const CrownAndBridge = () => {
                 <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6 text-center">
                         <div className="max-w-3xl mx-auto">
-                            <Crown className="w-16 h-16 text-primary mx-auto mb-6" />
+                            <img src="/crown-and-bridge.png" alt="Crown and Bridge" className="w-16 h-16 mx-auto mb-6" />
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Restore Your Smile?
                             </h2>

@@ -35,42 +35,42 @@ const EmergencyDentistry = () => {
     {
       title: "Severe Tooth Pain",
       description: "Intense, persistent pain that interferes with daily activities",
-      icon: Heart,
+      imageSrc: "/toothache.png",
       immediateSteps: ["Take over-the-counter pain medication", "Apply cold compress", "Rinse with warm salt water", "Call our emergency line"],
       urgency: "Immediate"
     },
     {
       title: "Knocked-Out Tooth",
       description: "Tooth completely displaced from its socket due to trauma",
-      icon: AlertTriangle,
+      imageSrc: "/broken-teeth.png",
       immediateSteps: ["Handle tooth by crown only", "Rinse gently if dirty", "Try to reinsert or store in milk", "Seek immediate care"],
       urgency: "Within 30 minutes"
     },
     {
       title: "Broken or Chipped Tooth",
       description: "Fractured tooth causing pain or sharp edges",
-      icon: Shield,
+      imageSrc: "/broken-teeth.png",
       immediateSteps: ["Save any broken pieces", "Rinse mouth with warm water", "Apply cold compress for swelling", "Cover sharp edges with wax"],
       urgency: "Same day"
     },
     {
       title: "Lost Filling or Crown",
       description: "Restoration has fallen out, exposing sensitive tooth structure",
-      icon: Award,
+      imageSrc: "/dental-fillings.png",
       immediateSteps: ["Keep the restoration if possible", "Clean the area gently", "Use temporary dental cement", "Avoid chewing on that side"],
       urgency: "Within 24-48 hours"
     },
     {
       title: "Dental Abscess",
       description: "Serious infection that can spread if left untreated",
-      icon: Zap,
+      imageSrc: "/dental-abscess.png",
       immediateSteps: ["Rinse with salt water", "Take pain medication", "Apply cold compress", "Seek immediate treatment"],
       urgency: "Immediate"
     },
     {
       title: "Soft Tissue Injury",
       description: "Cuts or injuries to lips, gums, tongue, or cheeks",
-      icon: Users,
+      imageSrc: "/toothache.png",
       immediateSteps: ["Clean area with warm water", "Apply pressure to stop bleeding", "Use cold compress for swelling", "Seek care if severe"],
       urgency: "Depends on severity"
     }
@@ -210,7 +210,7 @@ const EmergencyDentistry = () => {
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3845604/pexels-photo-3845604.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                    src="https://images.pexels.com/photos/11999476/pexels-photo-11999476.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                     alt="Emergency dental care and pain relief"
                     className="w-full h-full object-cover"
                   />
@@ -234,12 +234,11 @@ const EmergencyDentistry = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {emergencyTypes.map((emergency, index) => {
-                const IconComponent = emergency.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={emergency.imageSrc} alt={emergency.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {emergency.title}

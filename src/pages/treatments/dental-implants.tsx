@@ -34,27 +34,27 @@ import {
         {
             title: "Consultation, Medical History & X-Rays",
             description: "At your consultation, we review your medical history, take X-rays, and assess suitability for treatment.",
-            icon: FileText
+            imageSrc: "/dental-consultation.png",
         },
         {
             title: "Placement",
             description: "The implant is gently positioned into the jawbone under local anaesthetic.",
-            icon: Settings
+            imageSrc: "/dental-checkup.png"
         },
         {
             title: "Healing",
             description: "Over several weeks or months, the bone bonds with the implant through a process called osseointegration, creating a strong foundation.",
-            icon: Heart
+            imageSrc: "/dental-care.png"
         },
         {
             title: "Restoration",
             description: "Once healing is complete, a custom crown, bridge, or denture is attached, designed to match your natural teeth.",
-            icon: Zap
+            imageSrc: "/dental-fillings.png"
         },
         {
             title: "Care",
             description: "Daily brushing, flossing, and regular dental visits help maintain the implant long term.",
-            icon: Shield
+            imageSrc: "/dental-care.png"
         }
     ];
 
@@ -151,12 +151,11 @@ import {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {implantProcess.map((step, index) => {
-                                const IconComponent = step.icon;
                                 return (
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                                                <IconComponent className="w-8 h-8" />
+                                                <img src={step.imageSrc} alt={step.title} className="w-8 h-8" />
                                             </div>
                                             <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                                                 {step.title}
@@ -193,7 +192,7 @@ import {
                 <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6 text-center">
                         <div className="max-w-3xl mx-auto">
-                            <Zap className="w-16 h-16 text-primary mx-auto mb-6" />
+                            <img src="/dental-implants.png" alt="Dental Implants" className="w-16 h-16 mx-auto mb-6" />
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Interested in Dental Implants?
                             </h2>

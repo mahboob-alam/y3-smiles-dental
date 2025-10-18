@@ -35,42 +35,42 @@ const PaymentOptions = () => {
         {
             title: "Major Credit & Debit Cards",
             description: "We accept all major credit and debit cards for your convenience",
-            icon: CreditCard,
+            imageSrc: "/atm-card.png",
             features: ["Visa", "Mastercard", "American Express", "EFTPOS"],
             color: "bg-blue-50 text-blue-600"
         },
         {
             title: "Private Health Insurance",
             description: "Maximize your benefits with HICAPS instant rebates",
-            icon: Shield,
+            imageSrc: "/health-insurance.png",
             features: ["Instant rebates", "All major funds", "Gap payments", "Claim processing"],
             color: "bg-green-50 text-green-600"
         },
         {
             title: "Afterpay",
             description: "Buy now, pay later with Afterpay's flexible payment solution",
-            icon: Clock,
+            imageSrc: "/atm-card.png",
             features: ["4 interest-free payments", "Instant approval", "No hidden fees", "Easy setup"],
             color: "bg-purple-50 text-purple-600"
         },
         {
             title: "Humm",
             description: "Longer payment terms with Humm for larger treatments",
-            icon: DollarSign,
+            imageSrc: "/atm-card.png",
             features: ["Up to 72 months", "Interest-free", "Quick approval", "Flexible terms"],
             color: "bg-orange-50 text-orange-600"
         },
         {
             title: "Child Dental Benefits Schedule",
             description: "Australian Government program covering dental care for eligible children",
-            icon: Heart,
+            imageSrc: "/health-insurance.png",
             features: ["Ages 0-17 years", "Medicare eligible", "Government funded", "Basic dental services"],
             color: "bg-pink-50 text-pink-600"
         },
         {
             title: "Superannuation - Early Release",
             description: "Access your super early on compassionate grounds for medical expenses",
-            icon: Banknote,
+            imageSrc: "/health-insurance.png",
             features: ["Medical treatment", "Compassionate grounds", "ATO approved", "Government regulated"],
             color: "bg-indigo-50 text-indigo-600"
         }
@@ -84,7 +84,7 @@ const PaymentOptions = () => {
                 <section className="bg-gradient-hero py-24">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto text-center">
-                            <CreditCard className="w-20 h-20 text-primary mx-auto mb-6" />
+                            <img src="/atm-card.png" alt="Payment Options" className="w-24 h-24 mx-auto mb-10" />
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Payment Options
                             </h1>
@@ -120,12 +120,11 @@ const PaymentOptions = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {paymentMethods.map((method, index) => {
-                                const IconComponent = method.icon;
                                 return (
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className={`w-16 h-16 rounded-2xl ${method.color} flex items-center justify-center mb-4`}>
-                                                <IconComponent className="w-8 h-8" />
+                                                <img src={method.imageSrc} alt={method.title} className="w-8 h-8" />
                                             </div>
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {method.title}
@@ -465,7 +464,7 @@ const PaymentOptions = () => {
                 <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6 text-center">
                         <div className="max-w-3xl mx-auto">
-                            <CreditCard className="w-16 h-16 text-primary mx-auto mb-6" />
+                            <img src="/atm-card.png" alt="Ready to Get Started?" className="w-24 h-24 mx-auto mb-6" />
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Get Started?
                             </h2>

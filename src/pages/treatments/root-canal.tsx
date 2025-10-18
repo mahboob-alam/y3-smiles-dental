@@ -35,22 +35,22 @@ const RootCanalTherapy = () => {
     {
       title: "Severe Tooth Pain",
       description: "Intense pain when biting down or applying pressure",
-      icon: AlertTriangle
+      imageSrc: "/toothache.png"
     },
     {
       title: "Temperature Sensitivity",
       description: "Prolonged sensitivity to hot or cold temperatures",
-      icon: Zap
+      imageSrc: "/sensitivity.png"
     },
     {
       title: "Swelling & Tenderness",
       description: "Swelling in nearby gums or facial areas",
-      icon: Heart
+      imageSrc: "/toothache.png"
     },
     {
       title: "Tooth Discolouration",
       description: "Darkening or discolouration of the affected tooth",
-      icon: Stethoscope
+      imageSrc: "/sensitivity.png"
     }
   ];
 
@@ -176,12 +176,11 @@ const RootCanalTherapy = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {signs.map((sign, index) => {
-                const IconComponent = sign.icon;
                 return (
                   <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={sign.imageSrc} alt={sign.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {sign.title}

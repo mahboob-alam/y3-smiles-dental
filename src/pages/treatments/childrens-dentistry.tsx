@@ -9,14 +9,14 @@ import {
   Baby,
   Heart,
   Shield,
-  Smile,
   CheckCircle,
   Users,
   Star,
   Award,
   Clock,
   Gamepad2,
-  ArrowRight
+  ArrowRight,
+  Smile
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
@@ -442,7 +442,7 @@ const ChildrensDentistry = () => {
         <section className="py-24 bg-neutral-50">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <Gamepad2 className="w-16 h-16 text-primary mx-auto mb-6" />
+              <img src="/cdbs.png" alt="Gentle Care for Growing Smiles" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Give Your Child the Best Start
               </h2>

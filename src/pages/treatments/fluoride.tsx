@@ -35,7 +35,7 @@ const FluorideTreatments = () => {
     {
       title: "Professional Fluoride Varnish",
       description: "High-concentration fluoride applied directly to teeth",
-      icon: Shield,
+      imageSrc: "/fluoride-treatments.png",
       features: ["Long-lasting protection", "Easy application", "Pleasant taste", "Immediate effect"],
       duration: "5 minutes",
       frequency: "Every 3-6 months",
@@ -44,7 +44,7 @@ const FluorideTreatments = () => {
     {
       title: "Fluoride Foam Treatment",
       description: "Foam application using custom trays for complete coverage",
-      icon: Droplets,
+      imageSrc: "/fluoride-treatments.png",
       features: ["Complete tooth coverage", "Comfortable application", "Various flavors", "Professional strength"],
       duration: "4 minutes",
       frequency: "Every 6 months",
@@ -53,7 +53,7 @@ const FluorideTreatments = () => {
     {
       title: "Prescription Fluoride",
       description: "High-strength fluoride for home use in severe cases",
-      icon: Heart,
+      imageSrc: "/fluoride-treatments.png",
       features: ["Daily home use", "Maximum protection", "Prescription strength", "Targeted treatment"],
       duration: "Daily use",
       frequency: "As prescribed",
@@ -65,22 +65,22 @@ const FluorideTreatments = () => {
     {
       title: "Children & Teens",
       description: "Developing teeth benefit most from fluoride protection",
-      icon: Baby
+      imageSrc: "/cdbs.png"
     },
     {
       title: "High Cavity Risk",
       description: "Patients with frequent cavities or poor oral hygiene",
-      icon: Zap
+      imageSrc: "/cavities.png"
     },
     {
       title: "Dry Mouth Patients",
       description: "Reduced saliva increases cavity risk",
-      icon: Droplets
+      imageSrc: "/dry-mouth.png"
     },
     {
       title: "Orthodontic Patients",
       description: "Braces make cleaning difficult, increasing decay risk",
-      icon: Users
+      imageSrc: "/orthodontics.png"
     }
   ];
 
@@ -194,12 +194,11 @@ const FluorideTreatments = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {fluorideTypes.map((type, index) => {
-                const IconComponent = type.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={type.imageSrc} alt={type.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}
@@ -252,12 +251,11 @@ const FluorideTreatments = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {whoNeedsFluoride.map((group, index) => {
-                const IconComponent = group.icon;
                 return (
                   <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={group.imageSrc} alt={group.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {group.title}

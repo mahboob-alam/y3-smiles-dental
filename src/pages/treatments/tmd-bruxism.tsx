@@ -36,14 +36,14 @@ const TMDandBruxism = () => {
     {
       title: "TMD (Temporomandibular Disorder)",
       description: "Dysfunction of the jaw joint and surrounding muscles",
-      icon: Activity,
+      imageSrc: "/bruxism.png",
       symptoms: ["Jaw pain or tenderness", "Clicking or popping sounds", "Difficulty opening mouth", "Locking jaw"],
       causes: ["Jaw injury", "Arthritis", "Stress", "Teeth grinding"]
     },
     {
       title: "Bruxism (Teeth Grinding)",
       description: "Involuntary grinding or clenching of teeth, often during sleep",
-      icon: Moon,
+      imageSrc: "/bruxism.png",
       symptoms: ["Worn tooth surfaces", "Tooth sensitivity", "Jaw muscle pain", "Morning headaches"],
       causes: ["Stress and anxiety", "Sleep disorders", "Medications", "Lifestyle factors"]
     }
@@ -53,28 +53,28 @@ const TMDandBruxism = () => {
     {
       title: "Custom Night Guards",
       description: "Protective appliances worn during sleep to prevent grinding damage",
-      icon: Shield,
+      imageSrc: "/protection.png",
       features: ["Custom fit", "Comfortable wear", "Durable materials", "Easy maintenance"],
       suitableFor: "Nighttime grinding, tooth protection"
     },
     {
       title: "Bite Adjustment",
       description: "Precise adjustment of tooth contacts to improve jaw function",
-      icon: Activity,
+      imageSrc: "/bite-adjustment.png",
       features: ["Improved bite balance", "Reduced muscle strain", "Better jaw function", "Pain relief"],
       suitableFor: "Bite problems, TMJ dysfunction"
     },
     {
       title: "Stress Management",
       description: "Techniques and therapies to reduce stress-related grinding",
-      icon: Heart,
+      imageSrc: "/toothache.png",
       features: ["Relaxation techniques", "Lifestyle counselling", "Stress reduction", "Behavioural therapy"],
       suitableFor: "Stress-related bruxism, anxiety"
     },
     {
       title: "Physical Therapy",
       description: "Exercises and treatments to improve jaw muscle function",
-      icon: Stethoscope,
+      imageSrc: "/dental-care.png",
       features: ["Muscle exercises", "Pain relief", "Improved mobility", "Strengthening"],
       suitableFor: "TMJ pain, muscle dysfunction"
     }
@@ -207,12 +207,11 @@ const TMDandBruxism = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {conditions.map((condition, index) => {
-                const IconComponent = condition.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={condition.imageSrc} alt={condition.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {condition.title}
@@ -265,12 +264,11 @@ const TMDandBruxism = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {treatmentOptions.map((treatment, index) => {
-                const IconComponent = treatment.icon;
                 return (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                     <CardHeader>
                       <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                        <IconComponent className="w-8 h-8" />
+                        <img src={treatment.imageSrc} alt={treatment.title} className="w-8 h-8" />
                       </div>
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {treatment.title}

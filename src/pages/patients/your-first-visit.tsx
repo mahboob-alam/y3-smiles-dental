@@ -89,7 +89,7 @@ const YourFirstVisitPage = () => {
                                     Back to For Patients
                                 </Link>
                             </Button> */}
-                            <CreditCard className="w-20 h-20 text-primary mx-auto mb-6" />
+                            <img src="/dental-clinic.png" alt="Your First Visit" className="w-20 h-20 mx-auto mb-10" />
                             <h1 className="text-6xl md:text-7xl font-bold text-neutral-800 mb-6 leading-tight">
                                 Your First
                                 <span className="block text-primary">Visit</span>
@@ -202,7 +202,7 @@ const YourFirstVisitPage = () => {
                                     <div className="space-y-4">
                                         {preparation.map((item, index) => (
                                             <div key={index} className="flex items-start space-x-3">
-                                                <Star className="w-6 h-6 text-secondary mt-0.5 flex-shrink-0" />
+                                                <Star className="w-6 h-6 text-primary mt-0.5 flex-shrink-0" />
                                                 <span className="text-neutral-700">{item}</span>
                                             </div>
                                         ))}
@@ -229,17 +229,17 @@ const YourFirstVisitPage = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                                 <div className="flex flex-col items-center p-4">
-                                    <Clock className="w-10 h-10 text-secondary mb-3" />
+                                    <Clock className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Take Your Time</h4>
                                     <p className="text-sm text-neutral-600 text-center">No rushing - we'll go at your pace</p>
                                 </div>
                                 <div className="flex flex-col items-center p-4">
-                                    <Users className="w-10 h-10 text-secondary mb-3" />
+                                    <Users className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Gentle Team</h4>
                                     <p className="text-sm text-neutral-600 text-center">Caring professionals who understand</p>
                                 </div>
                                 <div className="flex flex-col items-center p-4">
-                                    <Heart className="w-10 h-10 text-secondary mb-3" />
+                                    <Heart className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Comfort First</h4>
                                     <p className="text-sm text-neutral-600 text-center">Your comfort is our priority</p>
                                 </div>

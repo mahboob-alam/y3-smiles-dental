@@ -34,22 +34,22 @@ import {
         {
             title: "Consultation & Medical History",
             description: "Your dentist will review your medical history and discuss whether sedation is suitable for you. They will explain the options, risks, and recovery considerations.",
-            icon: FileText
+            imageSrc: "/dental-consultation.png"
         },
         {
             title: "Choosing the Sedation Type",
             description: "Options may include oral medication, inhalation sedation (nitrous oxide/laughing gas), or IV sedation. The choice depends on your needs and suitability.",
-            icon: Settings
+            imageSrc: "/sedation.png"
         },
         {
             title: "During the Procedure",
             description: "You remain conscious but deeply relaxed. Your dentist monitors you closely throughout treatment to ensure safety and comfort.",
-            icon: Shield
+            imageSrc: "/sedation.png"
         },
         {
             title: "Recovery",
             description: "Recovery times vary depending on the type of sedation used. Some patients feel alert quickly, while others may need a little longer before going home.",
-            icon: Clock
+            imageSrc: "/dental-care.png"
         }
     ];
 
@@ -146,12 +146,11 @@ import {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {sedationProcess.map((step, index) => {
-                                const IconComponent = step.icon;
                                 return (
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-                                                <IconComponent className="w-8 h-8" />
+                                                <img src={step.imageSrc} alt={step.title} className="w-8 h-8" />
                                             </div>
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {step.title}

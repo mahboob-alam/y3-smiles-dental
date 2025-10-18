@@ -155,7 +155,7 @@ const FawknerPage = () => {
                                     <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
-                                                src="/glenroy.png"
+                                                src="/fawkner.png"
                                                 alt="Happy family at dental clinic near Glenroy"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />

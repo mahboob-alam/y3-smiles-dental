@@ -199,18 +199,6 @@ import {
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
-                                        {/* Floating Card */}
-                                        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl border border-secondary/10">
-                                            <div className="flex items-center space-x-3">
-                                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                                                    <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
-                                                </div>
-                                                <div>
-                                                    <p className="text-sm font-medium text-neutral-600">Serving</p>
-                                                    <p className="text-lg font-bold text-neutral-800">Greenvale</p>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

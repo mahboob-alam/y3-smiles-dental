@@ -197,7 +197,7 @@ import {
                                         <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                             <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                                 <img
-                                                    src="/westmeadows.png"
+                                                    src="/greenvale.png"
                                                     alt="Professional dental care for Greenvale residents"
                                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                                 />

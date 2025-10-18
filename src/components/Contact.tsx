@@ -25,10 +25,10 @@ const Contact = () => {
 
       // Replace these with your actual EmailJS credentials
       await emailjs.send(
-        'service_xbm50e4', // YOUR_SERVICE_ID  Replace with your EmailJS service ID
-        'template_nfwl5um', // YOUR_TEMPLATE_ID Replace with your EmailJS template ID
+        'service_x3bjiqh', // YOUR_SERVICE_ID  Replace with your EmailJS service ID
+        'template_mp48lhw', // YOUR_TEMPLATE_ID Replace with your EmailJS template ID
         templateParams,
-        '69eRgUdIdFe9Hq-4C' // YOUR_PUBLIC_KEY Replace with your EmailJS public key
+        'y-pjxJyECduLtqR5O' // YOUR_PUBLIC_KEY Replace with your EmailJS public key
       );
 
       toast({
@@ -39,6 +39,7 @@ const Contact = () => {
       // Reset form
       (e.target as HTMLFormElement).reset();
     } catch (error) {
+      console.error("Error sending email:", error);
       toast({
         title: "Error Sending Message",
         description: "Please try again or call us directly at your convenience.",

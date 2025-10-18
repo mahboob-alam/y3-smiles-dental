@@ -104,25 +104,24 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-sm uppercase mb-4 tracking-wider text-[#B59682]">Treatments</h3>
-            <div className="space-y-2 text-sm">
-              <div className="block">
-                CHILDREN'S DENTISTRY
-              </div>
-              <div className="block">
-                AESTHETIC DENTISTRY
-              </div>
-              <div className="block">
-                RESTORATIVE DENTISTRY
-              </div>
-              <div className="block">
-                EMERGENCY DENTISTRY
-              </div>
-              <div className="block">
-                GENERAL DENTISTRY
-              </div>
-              <div className="block">
-                PREVENTATIVE DENTISTRY
-              </div>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <Link to="/treatments/childrens-dentistry" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Children's Dentistry (CDBS)</Link>
+              <Link to="/treatments/examination-hygiene" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Comprehensive Examination</Link>
+              <Link to="/treatments/crown-bridge" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Crown and Bridge</Link>
+              <Link to="/treatments/dental-fillings" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Dental Fillings</Link>
+              <Link to="/treatments/dental-implants" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Dental Implants</Link>
+              <Link to="/treatments/dentures" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Dentures</Link>
+              <Link to="/treatments/emergency" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Emergency Dentistry</Link>
+              <Link to="/treatments/fluoride" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Fluoride Treatments</Link>
+              <Link to="/treatments/mouthguards" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Mouthguards</Link>
+              <Link to="/treatments/periodontal" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Periodontal Therapy</Link>
+              <Link to="/treatments/sealants" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Pits and Fissure Sealants</Link>
+              <Link to="/treatments/root-canal" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Root Canal Therapy</Link>
+              <Link to="/treatments/sedation-dentistry" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Sedation Dentistry</Link>
+              <Link to="/treatments/teeth-whitening" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Teeth Whitening</Link>
+              <Link to="/treatments/tmd-bruxism" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">TMD and Bruxism</Link>
+              <Link to="/treatments/extraction" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Tooth Extraction</Link>
+              <Link to="/treatments/wisdom-teeth" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">Wisdom Teeth Removal</Link>
             </div>
           </div>
         </div>

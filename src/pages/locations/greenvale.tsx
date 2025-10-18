@@ -192,12 +192,16 @@ import {
 
                                 <div className="order-1 lg:order-2">
                                     <div className="relative">
-                                        <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-secondary/10 rounded-3xl overflow-hidden shadow-2xl">
-                                            <img
-                                                src="/greenvale.png"
-                                                alt="Professional dental care for Greenvale residents"
-                                                className="w-full h-full object-cover"
-                                            />
+                                        {/* Decorative Frame */}
+                                        <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl"></div>
+                                        <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
+                                            <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
+                                                <img
+                                                    src="/westmeadows.png"
+                                                    alt="Professional dental care for Greenvale residents"
+                                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

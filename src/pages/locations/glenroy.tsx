@@ -63,9 +63,9 @@ const GlenroyPage = () => {
                         <div className="max-w-5xl mx-auto">
                             <div className="text-center mb-12">
                                 <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
-                                    <MapPin className="w-10 h-10 text-primary mr-4" />
+                                    <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                     <div className="text-left">
-                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Family Dental Care</p>
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Glenroy Dentists</p>
                                         <p className="text-lg font-bold text-neutral-800">Glenroy</p>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ const GlenroyPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience family-focused dental care in Glenroy where everyone feels welcome.
+                                    Experience family-focused dental care at Glenroy Dental Clinic where everyone feels welcome.
                                     Our comprehensive approach ensures comfortable visits for all ages.
                                 </p>
                             </div>

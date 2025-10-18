@@ -68,9 +68,9 @@ import {
                         <div className="max-w-5xl mx-auto">
                             <div className="text-center mb-12">
                                 <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
-                                    <MapPin className="w-10 h-10 text-primary mr-4" />
+                                    <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                     <div className="text-left">
-                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Premium Dental Care</p>
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Greenvale Dentists</p>
                                         <p className="text-lg font-bold text-neutral-800">Greenvale</p>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ import {
                                 </h1>
 
                                 <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Discover exceptional dental care in Greenvale focused on your family's oral health
+                                    Discover exceptional dental care at Greenvale Dental Clinic focused on your family's oral health
                                     and wellbeing. Modern technology meets compassionate treatment.
                                 </p>
                             </div>
@@ -203,7 +203,7 @@ import {
                                         <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl border border-secondary/10">
                                             <div className="flex items-center space-x-3">
                                                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                                                    <MapPin className="w-6 h-6 text-white" />
+                                                    <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                                 </div>
                                                 <div>
                                                     <p className="text-sm font-medium text-neutral-600">Serving</p>

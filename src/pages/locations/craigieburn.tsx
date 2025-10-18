@@ -72,9 +72,9 @@ const CraigieburnPage = () => {
                         <div className="max-w-5xl mx-auto">
                             <div className="text-center mb-12">
                                 <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
-                                    <MapPin className="w-10 h-10 text-primary mr-4" />
+                                    <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                     <div className="text-left">
-                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Premium Dental Care</p>
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Craigieburn Dentists</p>
                                         <p className="text-lg font-bold text-neutral-800">Craigieburn</p>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ const CraigieburnPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience exceptional dental care in Craigieburn. Our state-of-the-art clinic
+                                    Experience exceptional dental care at Craigieburn Dental Clinic. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
                             </div>

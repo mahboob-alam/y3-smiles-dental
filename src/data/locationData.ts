@@ -131,7 +131,7 @@ export const locationConfigs: Record<string, LocationConfig> = {
             address: "Serving Westmeadows and surrounding areas",
             phone: "03 9022 4442",
             email: "smile@y3smilesdental.com.au",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.123456789!2d144.877!3d-37.687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWestmeadows+VIC+3049!5e0!3m2!1sen!2sau!4v1234567890130",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18336.223348730622!2d144.885498604856!3d-37.683744163677076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65a72c8370449%3A0x5045675218cd0d0!2sWestmeadows%20VIC%203049%2C%20Australia!5e0!3m2!1sen!2sus!4v1760808794556!5m2!1sen!2sus",
             directionsUrl: "https://maps.google.com/?q=Westmeadows,+VIC+3049"
         },
         openingHours: standardOpeningHours

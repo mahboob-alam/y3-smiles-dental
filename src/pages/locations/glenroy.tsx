@@ -177,21 +177,14 @@ const GlenroyPage = () => {
                                     <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
-                                                src="https://images.pexels.com/photos/3779649/pexels-photo-3779649.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                                src="/glenroy.png"
                                                 alt="Happy family at dental clinic near Glenroy"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
                                     </div>
-
-                                    {/* Floating Stats */}
-                                    <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-primary/10">
-                                        <div className="text-center">
-                                            <div className="text-3xl font-bold text-primary">Family Care</div>
-                                            <div className="text-sm text-neutral-600 font-medium">All Ages Welcome</div>
-                                        </div>
-                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

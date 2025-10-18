@@ -185,7 +185,7 @@ const RoxburyParkPage = () => {
                                     <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
-                                                src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                                src="/roxburgh.png"
                                                 alt="Modern dental office in Roxbury Park"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />

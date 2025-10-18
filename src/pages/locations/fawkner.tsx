@@ -149,12 +149,18 @@ const FawknerPage = () => {
                                         <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>SCHEDULE CONSULTATION</a>
                                     </Button>
                                 </div>
-                                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                                        alt="Multicultural dental care for Fawkner residents"
-                                        className="w-full h-full object-cover"
-                                    />
+                                <div className="relative">
+                                    {/* Decorative Frame */}
+                                    <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl"></div>
+                                    <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
+                                        <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
+                                            <img
+                                                src="/glenroy.png"
+                                                alt="Happy family at dental clinic near Glenroy"
+                                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

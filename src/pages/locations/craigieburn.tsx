@@ -187,7 +187,7 @@ const CraigieburnPage = () => {
                                     <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
-                                                src="https://images.pexels.com/photos/3845623/pexels-photo-3845623.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                                src="/craigieburn.png"
                                                 alt="Modern dental office in Craigieburn"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />

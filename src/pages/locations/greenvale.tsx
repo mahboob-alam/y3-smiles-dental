@@ -194,7 +194,7 @@ import {
                                     <div className="relative">
                                         <div className="aspect-[4/3] bg-gradient-to-br from-neutral-100 to-secondary/10 rounded-3xl overflow-hidden shadow-2xl">
                                             <img
-                                                src="https://images.pexels.com/photos/3779715/pexels-photo-3779715.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                                                src="/greenvale.png"
                                                 alt="Professional dental care for Greenvale residents"
                                                 className="w-full h-full object-cover"
                                             />

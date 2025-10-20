@@ -20,9 +20,10 @@ const navigationItems = [
         title: "About Y3 Smiles Dental",
         items: [
           { title: "Y3 Smiles Dental", path: "/about" },
-          { title: "Our Team", path: "/about/our-team" },
-          { title: "Join Our Team", path: "/about/join-our-team" },
-          { title: "Blog", path: "/about/blog" }
+          // Commented for future use. [Under development]
+          // { title: "Our Team", path: "/about/our-team" },
+          // { title: "Join Our Team", path: "/about/join-our-team" },
+          // { title: "Blog", path: "/about/blog" }
         ]
       }
     ]
@@ -62,9 +63,9 @@ const navigationItems = [
       {
         title: "Patient Resources",
         items: [
-          { title: "Your First Visit", path: "/patients/your-first-visit" },
+          // { title: "Your First Visit", path: "/patients/your-first-visit" },
           { title: "Payment Options", path: "/patients/payment-options" },
-          { title: "Price Guide", path: "/patients/price-guide" }
+          // { title: "Price Guide", path: "/patients/price-guide" }
         ]
       }
     ]

@@ -146,7 +146,8 @@ const Y3SmilesDentalPage = () => {
                 </section>
 
                 {/* Learn More About Us */}
-                <section className="py-24 bg-neutral-50">
+                {/* commented for FUTURE implementation */}
+                {/* <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
@@ -159,7 +160,7 @@ const Y3SmilesDentalPage = () => {
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                {/* Our Team Card */}
+
                                 <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '0ms' }}>
                                     <CardContent className="p-8 text-center flex flex-col h-full">
                                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
@@ -181,7 +182,7 @@ const Y3SmilesDentalPage = () => {
                                     </CardContent>
                                 </Card>
 
-                                {/* Join Our Team Card */}
+
                                 <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '150ms' }}>
                                     <CardContent className="p-8 text-center flex flex-col h-full">
                                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
@@ -203,7 +204,7 @@ const Y3SmilesDentalPage = () => {
                                     </CardContent>
                                 </Card>
 
-                                {/* Blog Card */}
+
                                 <Card className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section h-full flex flex-col" style={{ transitionDelay: '300ms' }}>
                                     <CardContent className="p-8 text-center flex flex-col h-full">
                                         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
@@ -227,7 +228,7 @@ const Y3SmilesDentalPage = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Our Values */}
                 <section className="py-24 bg-neutral-50">

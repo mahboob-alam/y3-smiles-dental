@@ -46,7 +46,7 @@ const FAQ = () => {
             },
             {
                 question: "What counts as a dental emergency?",
-                answer: "Dental emergencies include severe tooth pain, knocked-out or loose teeth, broken teeth with sharp edges, facial swelling, bleeding that won't stop, dental abscesses, and any trauma to teeth or mouth. If you're experiencing severe pain or injury, call our emergency line at 03 9022 4442 immediately."
+                answer: "Dental emergencies include severe tooth pain, knocked-out or loose teeth, broken teeth with sharp edges, facial swelling, bleeding that won't stop, dental abscesses, and any trauma to teeth or mouth. If you're experiencing severe pain or injury, call at 03 9022 4442"
             }
         ]
     };

@@ -9,6 +9,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 // import Testimonials from "@/components/Testimonials";
 import GoogleMap from "@/components/GoogleMap";
 import Contact from "@/components/Contact";
+import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
@@ -36,6 +37,7 @@ const Index = () => {
           openingHours={locationConfigs.broadmeadows.openingHours}
         />
         <Contact />
+        <Disclaimer />
       </main>
       <Footer />
     </div>

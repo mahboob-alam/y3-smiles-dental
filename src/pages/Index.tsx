@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Treatments from "@/components/Treatments";
+import OfferBanner from "@/components/OfferBanner";
 import ServiceProcess from "@/components/ServiceProcess";
 import FAQ from "@/components/FAQ";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -24,6 +25,7 @@ const Index = () => {
         <Hero />
         <About />
         <Treatments />
+        <OfferBanner />
         <ServiceProcess />
         <FAQ />
         {/* <WhyChooseUs /> */}

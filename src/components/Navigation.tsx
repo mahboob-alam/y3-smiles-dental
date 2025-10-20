@@ -183,11 +183,11 @@ export function Navigation({ className }: NavigationProps) {
         side="left"
         className="w-[300px] sm:w-[400px] lg:w-[500px] overflow-y-auto border-r animate-slide-in-left"
       >
-        <div className="mb-8">
-          <h2 className="text-lg font-semibold mb-2">Menu</h2>
+        <div className="mb-4">
+          {/* <h2 className="text-lg font-semibold mb-2">Menu</h2>
           <p className="text-sm text-muted-foreground">
             Explore our services and treatments
-          </p>
+          </p> */}
         </div>
         <nav className={cn("flex flex-col space-y-6", className)}>
           {navigationItems.map((item, index) => (

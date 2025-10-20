@@ -175,7 +175,7 @@ const WisdomTeethRemoval = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Wisdom Teeth Removal
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Expert wisdom tooth extraction to prevent complications and maintain your oral health.
                 Comfortable procedures with sedation options for anxious patients.
               </p>
@@ -214,7 +214,7 @@ const WisdomTeethRemoval = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {reason.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {reason.description}
                       </p>
                     </CardHeader>
@@ -222,7 +222,7 @@ const WisdomTeethRemoval = () => {
                       <h4 className="font-semibold text-neutral-800 mb-3 text-sm">Potential Complications:</h4>
                       <ul className="space-y-2">
                         {reason.complications.map((complication, complicationIndex) => (
-                          <li key={complicationIndex} className="flex items-center text-sm text-neutral-600">
+                          <li key={complicationIndex} className="flex items-center text-sm text-neutral-800">
                             <AlertTriangle className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                             {complication}
                           </li>
@@ -252,14 +252,14 @@ const WisdomTeethRemoval = () => {
                     <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                       {period.title}
                     </CardTitle>
-                    <p className="text-neutral-600 leading-relaxed mb-4">
+                    <p className="text-neutral-800 leading-relaxed mb-4">
                       {period.description}
                     </p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
                       {period.care.map((instruction, instructionIndex) => (
-                        <li key={instructionIndex} className="flex items-center text-sm text-neutral-600">
+                        <li key={instructionIndex} className="flex items-center text-sm text-neutral-800">
                           <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                           {instruction}
                         </li>
@@ -280,7 +280,7 @@ const WisdomTeethRemoval = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about wisdom tooth removal.
                 </p>
               </div>
@@ -292,7 +292,7 @@ const WisdomTeethRemoval = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -309,7 +309,7 @@ const WisdomTeethRemoval = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Don't Wait for Problems to Develop
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Early evaluation and timely removal of wisdom teeth can prevent complications
                 and ensure easier recovery. Schedule your consultation today.
               </p>

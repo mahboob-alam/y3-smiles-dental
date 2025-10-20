@@ -88,7 +88,7 @@ const PaymentOptions = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Payment Options
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 We believe quality dental care should be accessible to everyone. That's why we offer a variety of convenient payment options to suit your budget and financial needs.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -113,7 +113,7 @@ const PaymentOptions = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 How You Can Pay
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Choose from our range of convenient payment options designed to make your dental care affordable and accessible.
                             </p>
                         </div>
@@ -129,14 +129,14 @@ const PaymentOptions = () => {
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {method.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed mb-4">
+                                            <p className="text-neutral-800 leading-relaxed mb-4">
                                                 {method.description}
                                             </p>
                                         </CardHeader>
                                         <CardContent>
                                             <ul className="space-y-2">
                                                 {method.features.map((feature, featureIndex) => (
-                                                    <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                                                    <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                                                         <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                                                         {feature}
                                                     </li>
@@ -162,7 +162,7 @@ const PaymentOptions = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         We Accept All Major Cards and Insurance
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Maximize your dental benefits with our comprehensive insurance support. We work with all major health funds and provide instant HICAPS claims processing for immediate rebates.
                                     </p>
                                     <div className="space-y-4">
@@ -170,21 +170,21 @@ const PaymentOptions = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">HICAPS Available</h4>
-                                                <p className="text-neutral-600 text-sm">Instant rebates and claim processing on the spot</p>
+                                                <p className="text-neutral-800 text-sm">Instant rebates and claim processing on the spot</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">All Major Health Funds</h4>
-                                                <p className="text-neutral-600 text-sm">We work with Bupa, Medibank, HCF, and many more</p>
+                                                <p className="text-neutral-800 text-sm">We work with Bupa, Medibank, HCF, and many more</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Gap Payment Options</h4>
-                                                <p className="text-neutral-600 text-sm">Flexible payment plans for any remaining gap amounts</p>
+                                                <p className="text-neutral-800 text-sm">Flexible payment plans for any remaining gap amounts</p>
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +193,7 @@ const PaymentOptions = () => {
                                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
                                         <div className="text-center">
                                             <Shield className="w-16 h-16 text-primary mx-auto mb-4" />
-                                            <p className="text-neutral-600 font-medium">Insurance Provider Logos</p>
+                                            <p className="text-neutral-800 font-medium">Insurance Provider Logos</p>
                                             <p className="text-sm text-neutral-500 mt-2">Image of insurer list to be added</p>
                                         </div>
                                     </div>
@@ -224,7 +224,7 @@ const PaymentOptions = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Afterpay Available
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Split your dental treatment cost into 4 equal, interest-free payments with Afterpay. Perfect for treatments up to $2,000 with instant approval and no hidden fees.
                                     </p>
                                     <div className="space-y-4">
@@ -232,21 +232,21 @@ const PaymentOptions = () => {
                                             <Star className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">4 Interest-Free Payments</h4>
-                                                <p className="text-neutral-600 text-sm">Pay 25% today, then every 2 weeks for 6 weeks</p>
+                                                <p className="text-neutral-800 text-sm">Pay 25% today, then every 2 weeks for 6 weeks</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <Star className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Instant Approval</h4>
-                                                <p className="text-neutral-600 text-sm">Quick and easy approval process, start treatment today</p>
+                                                <p className="text-neutral-800 text-sm">Quick and easy approval process, start treatment today</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <Star className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">No Hidden Fees</h4>
-                                                <p className="text-neutral-600 text-sm">Transparent pricing with no establishment or monthly fees</p>
+                                                <p className="text-neutral-800 text-sm">Transparent pricing with no establishment or monthly fees</p>
                                             </div>
                                         </div>
                                     </div>
@@ -268,7 +268,7 @@ const PaymentOptions = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Humm Payment Plans
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         For larger treatments, Humm offers extended payment plans up to 60 months with competitive interest rates. Perfect for comprehensive dental work and major treatments.
                                     </p>
                                     <div className="space-y-4">
@@ -276,21 +276,21 @@ const PaymentOptions = () => {
                                             <Users className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Flexible Terms</h4>
-                                                <p className="text-neutral-600 text-sm">Choose from 6 to 60 months to suit your budget</p>
+                                                <p className="text-neutral-800 text-sm">Choose from 6 to 60 months to suit your budget</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <Users className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Competitive Rates</h4>
-                                                <p className="text-neutral-600 text-sm">Interest Free</p>
+                                                <p className="text-neutral-800 text-sm">Interest Free</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <Users className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Quick Application</h4>
-                                                <p className="text-neutral-600 text-sm">Simple online application with fast approval decisions</p>
+                                                <p className="text-neutral-800 text-sm">Simple online application with fast approval decisions</p>
                                             </div>
                                         </div>
                                     </div>
@@ -330,7 +330,7 @@ const PaymentOptions = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Child Dental Benefits Schedule
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         The Child Dental Benefits Schedule (CDBS) is an Australian Government initiative that covers part or the full cost of basic dental services for eligible children aged 0-17 years.
                                     </p>
                                     <div className="space-y-4">
@@ -338,35 +338,35 @@ const PaymentOptions = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Age Eligibility</h4>
-                                                <p className="text-neutral-600 text-sm">Children aged 0-17 years for at least one day in the calendar year</p>
+                                                <p className="text-neutral-800 text-sm">Children aged 0-17 years for at least one day in the calendar year</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Medicare Eligible</h4>
-                                                <p className="text-neutral-600 text-sm">Child must be eligible for Medicare benefits</p>
+                                                <p className="text-neutral-800 text-sm">Child must be eligible for Medicare benefits</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Government Payments</h4>
-                                                <p className="text-neutral-600 text-sm">Child or guardian receives eligible government payments</p>
+                                                <p className="text-neutral-800 text-sm">Child or guardian receives eligible government payments</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Basic Dental Services</h4>
-                                                <p className="text-neutral-600 text-sm">Covers examinations, cleaning, fillings, and extractions</p>
+                                                <p className="text-neutral-800 text-sm">Covers examinations, cleaning, fillings, and extractions</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Eligibility Criteria Applies</h4>
-                                                <p className="text-neutral-600 text-sm">Call us to confirm if you are eligible for CDBS benefits</p>
+                                                <p className="text-neutral-800 text-sm">Call us to confirm if you are eligible for CDBS benefits</p>
                                             </div>
                                         </div>
                                     </div>
@@ -388,7 +388,7 @@ const PaymentOptions = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Superannuation Early Release
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Access your superannuation early on compassionate grounds to pay for essential medical treatment and related expenses when facing financial hardship.
                                     </p>
                                     <div className="space-y-4">
@@ -396,35 +396,35 @@ const PaymentOptions = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Medical Treatment</h4>
-                                                <p className="text-neutral-600 text-sm">Dental, medical, or surgical treatment for you or your dependant</p>
+                                                <p className="text-neutral-800 text-sm">Dental, medical, or surgical treatment for you or your dependant</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Medical Transport</h4>
-                                                <p className="text-neutral-600 text-sm">Transport costs for essential medical treatment</p>
+                                                <p className="text-neutral-800 text-sm">Transport costs for essential medical treatment</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Home Modifications</h4>
-                                                <p className="text-neutral-600 text-sm">Modifications to accommodate severe disability</p>
+                                                <p className="text-neutral-800 text-sm">Modifications to accommodate severe disability</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Palliative Care</h4>
-                                                <p className="text-neutral-600 text-sm">Care for terminal illness and related expenses</p>
+                                                <p className="text-neutral-800 text-sm">Care for terminal illness and related expenses</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Preventing Foreclosure</h4>
-                                                <p className="text-neutral-600 text-sm">Prevent forced sale of your primary residence</p>
+                                                <p className="text-neutral-800 text-sm">Prevent forced sale of your primary residence</p>
                                             </div>
                                         </div>
                                     </div>
@@ -468,7 +468,7 @@ const PaymentOptions = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Get Started?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Don't let cost be a barrier to your dental health. Contact us to discuss the best payment option for your needs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

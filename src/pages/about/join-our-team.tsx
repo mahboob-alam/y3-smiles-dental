@@ -115,7 +115,7 @@ const JoinOurTeamPage = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Join Our Team
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 At Y3 Smiles Dental, we put patients—and people—at the heart of every smile.
                                 If you're compassionate, curious, and committed to great care, we'd love to hear from you.
                             </p>
@@ -145,7 +145,7 @@ const JoinOurTeamPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Why Y3 Smiles Dental?
                                 </h2>
-                                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                     Join a practice that values both exceptional patient care and a supportive, growth-oriented work environment
                                 </p>
                             </div>
@@ -162,7 +162,7 @@ const JoinOurTeamPage = () => {
                                                 <h3 className="text-xl font-bold text-neutral-800 mb-4 group-hover:text-primary transition-colors">
                                                     {benefit.title}
                                                 </h3>
-                                                <p className="text-neutral-600 leading-relaxed">
+                                                <p className="text-neutral-800 leading-relaxed">
                                                     {benefit.description}
                                                 </p>
                                             </CardContent>
@@ -182,7 +182,7 @@ const JoinOurTeamPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Current Opportunities
                                 </h2>
-                                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                     Explore our open positions and find the perfect role to advance your dental career
                                 </p>
                             </div>
@@ -210,7 +210,7 @@ const JoinOurTeamPage = () => {
                                                         </div>
                                                     </div>
 
-                                                    <p className="text-neutral-600 leading-relaxed mb-6">
+                                                    <p className="text-neutral-800 leading-relaxed mb-6">
                                                         {role.description}
                                                     </p>
                                                 </div>
@@ -224,7 +224,7 @@ const JoinOurTeamPage = () => {
                                                         </h4>
                                                         <ul className="space-y-2">
                                                             {role.requirements.map((req, reqIndex) => (
-                                                                <li key={reqIndex} className="text-sm text-neutral-600 flex items-center">
+                                                                <li key={reqIndex} className="text-sm text-neutral-800 flex items-center">
                                                                     <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                                                                     {req}
                                                                 </li>
@@ -239,7 +239,7 @@ const JoinOurTeamPage = () => {
                                                         </h4>
                                                         <ul className="space-y-2">
                                                             {role.benefits.map((benefit, benIndex) => (
-                                                                <li key={benIndex} className="text-sm text-neutral-600 flex items-center">
+                                                                <li key={benIndex} className="text-sm text-neutral-800 flex items-center">
                                                                     <div className="w-1.5 h-1.5 bg-secondary rounded-full mr-3 flex-shrink-0"></div>
                                                                     {benefit}
                                                                 </li>
@@ -264,7 +264,7 @@ const JoinOurTeamPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     How to Apply
                                 </h2>
-                                <p className="text-lg text-neutral-600">
+                                <p className="text-lg text-neutral-800">
                                     Our straightforward application process makes it easy to join our team
                                 </p>
                             </div>
@@ -279,7 +279,7 @@ const JoinOurTeamPage = () => {
                                             <h3 className="text-lg font-bold text-neutral-800 mb-3">
                                                 {process.title}
                                             </h3>
-                                            <p className="text-neutral-600 text-sm leading-relaxed">
+                                            <p className="text-neutral-800 text-sm leading-relaxed">
                                                 {process.description}
                                             </p>
                                         </CardContent>
@@ -300,7 +300,7 @@ const JoinOurTeamPage = () => {
                                     <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Ready to Apply?
                                     </h2>
-                                    <p className="text-lg text-neutral-600 mb-8">
+                                    <p className="text-lg text-neutral-800 mb-8">
                                         Send your Expression of Interest and let's start a conversation about your future with Y3 Smiles Dental
                                     </p>
 
@@ -318,14 +318,14 @@ const JoinOurTeamPage = () => {
                                                     <GraduationCap className="w-4 h-4 text-primary" />
                                                 </div>
                                                 <p className="font-medium text-neutral-800">AHPRA Details</p>
-                                                <p className="text-neutral-600">(Clinical roles)</p>
+                                                <p className="text-neutral-800">(Clinical roles)</p>
                                             </div>
                                             <div className="text-center">
                                                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
                                                     <CheckCircle className="w-4 h-4 text-primary" />
                                                 </div>
                                                 <p className="font-medium text-neutral-800">References</p>
-                                                <p className="text-neutral-600">(If available)</p>
+                                                <p className="text-neutral-800">(If available)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +333,7 @@ const JoinOurTeamPage = () => {
                                     <div className="bg-primary/5 p-4 rounded-lg mb-8 max-w-md mx-auto">
                                         <h4 className="font-semibold text-neutral-800 mb-2">Email Address</h4>
                                         <p className="text-primary font-semibold">smile@y3smilesdental.com.au</p>
-                                        <p className="text-sm text-neutral-600 mt-2">Subject: EOI - [Your Role] - [Your Name]</p>
+                                        <p className="text-sm text-neutral-800 mt-2">Subject: EOI - [Your Role] - [Your Name]</p>
                                     </div>
 
                                     <Button variant="booking" size="xl" asChild className="group">
@@ -356,7 +356,7 @@ const JoinOurTeamPage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Questions About Working With Us?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 We'd love to hear from you! Contact us to learn more about career opportunities
                                 or to discuss how you can contribute to our team.
                             </p>

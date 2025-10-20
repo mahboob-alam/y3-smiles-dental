@@ -146,7 +146,7 @@ const RootCanalTherapy = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Root Canal Therapy
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Advanced endodontic treatment to save infected or severely damaged teeth.
                 Modern, comfortable procedures that eliminate pain and preserve your natural smile.
               </p>
@@ -187,7 +187,7 @@ const RootCanalTherapy = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-neutral-600 text-sm leading-relaxed">
+                      <p className="text-neutral-800 text-sm leading-relaxed">
                         {sign.description}
                       </p>
                     </CardContent>
@@ -206,7 +206,7 @@ const RootCanalTherapy = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Root Canal Myths vs Reality
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Let's dispel common misconceptions about root canal treatment.
                 </p>
               </div>
@@ -247,7 +247,7 @@ const RootCanalTherapy = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about root canal therapy.
                 </p>
               </div>
@@ -259,7 +259,7 @@ const RootCanalTherapy = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -275,7 +275,7 @@ const RootCanalTherapy = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Don't Let Tooth Pain Control Your Life
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Root canal therapy can eliminate your pain and save your natural tooth.
                 Modern techniques make the procedure comfortable and highly successful.
               </p>

@@ -147,7 +147,7 @@ const ChildrensDentistry = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Gentle Care for Growing Smiles
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 At Y3 Smiles Dental, we understand how important your child's smile is. Our Children's Dentistry services focus on creating a positive and reassuring experience so kids feel safe, supported, and even excited about visiting the dentist. From their very first tooth through to teenage years, we're here to help them develop healthy habits for life.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -177,7 +177,7 @@ const ChildrensDentistry = () => {
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     What Is Children's Dentistry?
                   </h3>
-                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                     Children's Dentistry is dental care designed specifically for kids' developing teeth and gums. It's about much more than check-ups — it includes prevention, early diagnosis, and family education to support good oral health from an early age. At Y3 Smiles Dental, we combine gentle treatments with guidance for parents to make dental visits stress-free and beneficial.
                   </p>
                   <h4 className="text-2xl font-bold text-neutral-800 mb-6">Why Children's Dentistry Matters</h4>
@@ -186,35 +186,35 @@ const ChildrensDentistry = () => {
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Comfort First</h4>
-                        <p className="text-neutral-600 text-sm">We focus on gentle care that builds confidence in young patients.</p>
+                        <p className="text-neutral-800 text-sm">We focus on gentle care that builds confidence in young patients.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Preventative Focus</h4>
-                        <p className="text-neutral-600 text-sm">Services such as fluoride treatments, dental sealants, and routine cleanings help protect teeth.</p>
+                        <p className="text-neutral-800 text-sm">Services such as fluoride treatments, dental sealants, and routine cleanings help protect teeth.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Building Habits</h4>
-                        <p className="text-neutral-600 text-sm">We teach kids and families how to care for teeth every day.</p>
+                        <p className="text-neutral-800 text-sm">We teach kids and families how to care for teeth every day.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Child-Friendly Care</h4>
-                        <p className="text-neutral-600 text-sm">Treatments are tailored to suit children's growth and development stages.</p>
+                        <p className="text-neutral-800 text-sm">Treatments are tailored to suit children's growth and development stages.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Affordable Access</h4>
-                        <p className="text-neutral-600 text-sm">Eligible families may be able to use the Child Dental Benefits Schedule (CDBS) to cover certain dental costs.</p>
+                        <p className="text-neutral-800 text-sm">Eligible families may be able to use the Child Dental Benefits Schedule (CDBS) to cover certain dental costs.</p>
                       </div>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ const ChildrensDentistry = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Children's Dental Services
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Comprehensive dental care designed specifically for children's unique needs.
               </p>
             </div>
@@ -258,7 +258,7 @@ const ChildrensDentistry = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {service.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {service.description}
                       </p>
                       <div className="flex items-center text-sm text-primary font-medium">
@@ -269,7 +269,7 @@ const ChildrensDentistry = () => {
                     <CardContent>
                       <ul className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                          <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                             <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                             {feature}
                           </li>
@@ -290,7 +290,7 @@ const ChildrensDentistry = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Care by Age Group
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Dental care tailored to each stage of your child's development.
               </p>
             </div>
@@ -302,14 +302,14 @@ const ChildrensDentistry = () => {
                     <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                       {group.title}
                     </CardTitle>
-                    <p className="text-neutral-600 leading-relaxed mb-4">
+                    <p className="text-neutral-800 leading-relaxed mb-4">
                       {group.description}
                     </p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
                       {group.focus.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-center text-sm text-neutral-600">
+                        <li key={itemIndex} className="flex items-center text-sm text-neutral-800">
                           <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                           {item}
                         </li>
@@ -345,7 +345,7 @@ const ChildrensDentistry = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-neutral-600 text-sm leading-relaxed">
+                      <p className="text-neutral-800 text-sm leading-relaxed">
                         {tip.description}
                       </p>
                     </CardContent>
@@ -370,22 +370,22 @@ const ChildrensDentistry = () => {
                 <div className="text-center">
                   <Baby className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                  <div className="text-neutral-600">Children Treated</div>
+                  <div className="text-neutral-800">Children Treated</div>
                 </div>
                 <div className="text-center">
                   <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">20+</div>
-                  <div className="text-neutral-600">Years Experience</div>
+                  <div className="text-neutral-800">Years Experience</div>
                 </div>
                 <div className="text-center">
                   <Star className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">99%</div>
-                  <div className="text-neutral-600">Happy Kids</div>
+                  <div className="text-neutral-800">Happy Kids</div>
                 </div>
                 <div className="text-center">
                   <Award className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                  <div className="text-neutral-600">Cavity Prevention</div>
+                  <div className="text-neutral-800">Cavity Prevention</div>
                 </div>
               </div>
             </div>
@@ -400,7 +400,7 @@ const ChildrensDentistry = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about children's dental care.
                 </p>
               </div>
@@ -412,7 +412,7 @@ const ChildrensDentistry = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -446,7 +446,7 @@ const ChildrensDentistry = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Give Your Child the Best Start
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Start your child's journey to lifelong oral health with gentle,
                 professional care in a fun, comfortable environment.
               </p>

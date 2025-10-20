@@ -76,7 +76,7 @@ const CrownAndBridge = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Crown and Bridge
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Crowns and bridges are common treatments used to repair or replace teeth that are damaged, worn, or missing. They not only restore your smile's appearance but also improve chewing, speaking, and overall dental health.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -104,7 +104,7 @@ const CrownAndBridge = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Repair and Replace with Confidence
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         A crown is like a protective "cap" that covers a weakened tooth. It strengthens the tooth and makes it look natural again. A bridge replaces one or more missing teeth by anchoring artificial teeth securely to the neighbouring natural teeth or dental implants.
                                     </p>
                                     <div className="space-y-4">
@@ -112,21 +112,21 @@ const CrownAndBridge = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Natural Appearance</h4>
-                                                <p className="text-neutral-600 text-sm">Custom-made to match your natural teeth perfectly</p>
+                                                <p className="text-neutral-800 text-sm">Custom-made to match your natural teeth perfectly</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Strengthens Teeth</h4>
-                                                <p className="text-neutral-600 text-sm">Protects and reinforces damaged or weakened teeth</p>
+                                                <p className="text-neutral-800 text-sm">Protects and reinforces damaged or weakened teeth</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Long-lasting Solution</h4>
-                                                <p className="text-neutral-600 text-sm">Durable restoration that can last many years with proper care</p>
+                                                <p className="text-neutral-800 text-sm">Durable restoration that can last many years with proper care</p>
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ const CrownAndBridge = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 How the Process Usually Works
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 At Y3 Smiles Dental, we make the process gentle, clear, and comfortable — helping you regain confidence in your smile.
                             </p>
                         </div>
@@ -167,7 +167,7 @@ const CrownAndBridge = () => {
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {step.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed">
+                                            <p className="text-neutral-800 leading-relaxed">
                                                 {step.description}
                                             </p>
                                         </CardHeader>
@@ -203,7 +203,7 @@ const CrownAndBridge = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Restore Your Smile?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Let our experienced team help you regain confidence with custom crowns and bridges that look and feel natural.
                             </p>
                             <Button variant="booking" size="xl" asChild>

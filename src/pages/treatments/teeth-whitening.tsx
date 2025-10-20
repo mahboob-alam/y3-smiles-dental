@@ -67,7 +67,7 @@ const TeethWhitening = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Teeth Whitening
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 At Y3 Smiles Dental, we believe every smile deserves to shine. Over time, coffee, tea, and natural ageing can leave your smile looking dull, dark, and discoloured. Professional teeth whitening is a safe way to refresh your smile and restore brightness.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -97,7 +97,7 @@ const TeethWhitening = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         What Is Teeth Whitening?
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Teeth whitening is a cosmetic dental treatment that lightens tooth colour by reducing stains and discolouration. At Y3 Smiles Dental, we use regulated, high-grade materials and techniques that differ from over-the-counter kits, providing professional care tailored to your needs.
                                     </p>
                                     <div className="space-y-4">
@@ -105,21 +105,21 @@ const TeethWhitening = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Professional Materials</h4>
-                                                <p className="text-neutral-600 text-sm">Regulated, high-grade whitening materials for safe and effective results</p>
+                                                <p className="text-neutral-800 text-sm">Regulated, high-grade whitening materials for safe and effective results</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Tailored Treatment</h4>
-                                                <p className="text-neutral-600 text-sm">Customised approach based on your individual needs and preferences</p>
+                                                <p className="text-neutral-800 text-sm">Customised approach based on your individual needs and preferences</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Multiple Options</h4>
-                                                <p className="text-neutral-600 text-sm">Choose between in-clinic treatment or custom take-home options</p>
+                                                <p className="text-neutral-800 text-sm">Choose between in-clinic treatment or custom take-home options</p>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@ const TeethWhitening = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Benefits of Teeth Whitening
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Discover how professional teeth whitening can enhance your smile and confidence.
                             </p>
                         </div>
@@ -159,7 +159,7 @@ const TeethWhitening = () => {
                                             <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                                                 {benefit.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed text-sm">
+                                            <p className="text-neutral-800 leading-relaxed text-sm">
                                                 {benefit.description}
                                             </p>
                                         </CardHeader>
@@ -177,7 +177,7 @@ const TeethWhitening = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Treatment Options
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Choose the teeth whitening option that best fits your lifestyle and preferences.
                             </p>
                         </div>
@@ -191,21 +191,21 @@ const TeethWhitening = () => {
                                     <CardTitle className="text-2xl font-bold text-neutral-800 mb-4">
                                         In-Clinic Treatment
                                     </CardTitle>
-                                    <p className="text-neutral-600 leading-relaxed mb-6">
+                                    <p className="text-neutral-800 leading-relaxed mb-6">
                                         Professional whitening treatment performed in our clinic for faster, more dramatic results in a single visit.
                                     </p>
                                     <div className="space-y-3">
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Immediate results</span>
+                                            <span className="text-sm text-neutral-800">Immediate results</span>
                                         </div>
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Professional supervision</span>
+                                            <span className="text-sm text-neutral-800">Professional supervision</span>
                                         </div>
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Single appointment</span>
+                                            <span className="text-sm text-neutral-800">Single appointment</span>
                                         </div>
                                     </div>
                                 </CardHeader>
@@ -219,21 +219,21 @@ const TeethWhitening = () => {
                                     <CardTitle className="text-2xl font-bold text-neutral-800 mb-4">
                                         Take-Home Kit
                                     </CardTitle>
-                                    <p className="text-neutral-600 leading-relaxed mb-6">
+                                    <p className="text-neutral-800 leading-relaxed mb-6">
                                         Custom-fitted trays and professional-grade whitening gel for convenient whitening at your own pace.
                                     </p>
                                     <div className="space-y-3">
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Flexible timing</span>
+                                            <span className="text-sm text-neutral-800">Flexible timing</span>
                                         </div>
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Custom-fitted trays</span>
+                                            <span className="text-sm text-neutral-800">Custom-fitted trays</span>
                                         </div>
                                         <div className="flex items-center justify-center">
                                             <CheckCircle className="w-5 h-5 text-primary mr-2" />
-                                            <span className="text-sm text-neutral-600">Gradual whitening</span>
+                                            <span className="text-sm text-neutral-800">Gradual whitening</span>
                                         </div>
                                     </div>
                                 </CardHeader>
@@ -266,7 +266,7 @@ const TeethWhitening = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Brighten Your Smile?
                             </h2>
-                            <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+                            <p className="text-xl text-neutral-800 mb-8 max-w-2xl mx-auto">
                                 Discover the difference professional teeth whitening can make for your confidence and smile.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

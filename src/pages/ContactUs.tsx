@@ -122,7 +122,7 @@ const ContactUs = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Contact Us
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 We're here to help you achieve the smile you deserve. Get in touch with our friendly team today to book your appointment or ask any questions about our dental services.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -158,7 +158,7 @@ const ContactUs = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Get in Touch
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Choose the most convenient way to reach us. We're committed to providing prompt, friendly service.
                             </p>
                         </div>
@@ -178,7 +178,7 @@ const ContactUs = () => {
                                             <p className="font-semibold text-neutral-700 mb-1">
                                                 {method.value}
                                             </p>
-                                            <p className="text-sm text-neutral-600 mb-4">
+                                            <p className="text-sm text-neutral-800 mb-4">
                                                 {method.description}
                                             </p>
                                             <Button variant="outline" size="sm" asChild className="w-full">

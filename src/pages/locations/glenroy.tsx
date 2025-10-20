@@ -77,7 +77,7 @@ const GlenroyPage = () => {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
                                     Experience family-focused dental care at Glenroy Dental Clinic where everyone feels welcome.
                                     Our comprehensive approach ensures comfortable visits for all ages.
                                 </p>
@@ -204,7 +204,7 @@ const GlenroyPage = () => {
                                     <span className="block text-primary">Glenroy Families</span>
                                 </h2>
 
-                                <p className="text-xl text-neutral-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+                                <p className="text-xl text-neutral-800 mb-8 max-w-4xl mx-auto leading-relaxed">
                                     We provide a full range of dental services under one roof. From maintaining healthy teeth
                                     and gums to enhancing smiles with cosmetic treatments, our care is tailored for every
                                     stage of life — children, adults, and seniors.
@@ -237,7 +237,7 @@ const GlenroyPage = () => {
                                                 {service.items.map((item, itemIndex) => (
                                                     <li key={itemIndex} className="flex items-start">
                                                         <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                                                        <span className="text-neutral-600 leading-relaxed">{item}</span>
+                                                        <span className="text-neutral-800 leading-relaxed">{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -254,7 +254,7 @@ const GlenroyPage = () => {
                                 <h3 className="text-3xl font-bold text-neutral-800 mb-4">
                                     Ready for Family-Focused Dental Care?
                                 </h3>
-                                <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+                                <p className="text-lg text-neutral-800 mb-8 max-w-2xl mx-auto">
                                     Experience comprehensive dental services designed for every member of your family
                                     in a welcoming, comfortable environment.
                                 </p>

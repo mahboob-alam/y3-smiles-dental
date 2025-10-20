@@ -56,7 +56,7 @@ const PeriodontalTherapy = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Periodontal Therapy
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 At Y3 Smiles Dental, we know healthy gums are the foundation of a confident, lasting smile. Periodontal care is not only about treating problems when they appear — it's about preventing them before they start. Our focus is on keeping your gums healthy, your teeth strong, and your smile at its best.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -86,7 +86,7 @@ const PeriodontalTherapy = () => {
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     What Is Periodontal Treatment?
                   </h3>
-                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                     Periodontal treatment supports the health of your gums and the bone around your teeth. Gum disease begins with plaque build-up that can cause inflammation and infection if left untreated, potentially leading to tooth loss.
                   </p>
                   <div className="space-y-4">
@@ -94,21 +94,21 @@ const PeriodontalTherapy = () => {
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Deep Cleaning</h4>
-                        <p className="text-neutral-600 text-sm">Professional deep cleaning removes plaque and tartar buildup</p>
+                        <p className="text-neutral-800 text-sm">Professional deep cleaning removes plaque and tartar buildup</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Scaling & Root Planing</h4>
-                        <p className="text-neutral-600 text-sm">Advanced techniques to clean below the gumline and smooth root surfaces</p>
+                        <p className="text-neutral-800 text-sm">Advanced techniques to clean below the gumline and smooth root surfaces</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Ongoing Maintenance</h4>
-                        <p className="text-neutral-600 text-sm">Regular care to protect your gums and overall oral health</p>
+                        <p className="text-neutral-800 text-sm">Regular care to protect your gums and overall oral health</p>
                       </div>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ const PeriodontalTherapy = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Types of Periodontal Care
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 From prevention to advanced treatment, we provide comprehensive periodontal care tailored to your needs.
               </p>
             </div>
@@ -148,7 +148,7 @@ const PeriodontalTherapy = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {treatment.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed">
+                      <p className="text-neutral-800 leading-relaxed">
                         {treatment.description}
                       </p>
                     </CardHeader>
@@ -187,7 +187,7 @@ const PeriodontalTherapy = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Ready to Protect Your Gum Health?
               </h2>
-              <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-neutral-800 mb-8 max-w-2xl mx-auto">
                 Early intervention is key to maintaining healthy gums and preventing tooth loss. Let our experienced team help you achieve optimal oral health.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

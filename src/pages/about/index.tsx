@@ -169,7 +169,7 @@ const AboutPage = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 About Y3 Smiles Dental
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Where healthy smiles are the foundation of confidence, wellbeing, and quality of life.
                                 Discover our practice, meet our team, and learn about our commitment to exceptional dental care.
                             </p>
@@ -198,7 +198,7 @@ const AboutPage = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Explore Our Story
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Learn more about Y3 Smiles Dental through our comprehensive sections covering our practice,
                                 team, career opportunities, and helpful dental information.
                             </p>
@@ -216,12 +216,12 @@ const AboutPage = () => {
                                             <h3 className="text-2xl font-bold text-neutral-800 mb-4 group-hover:text-primary transition-colors">
                                                 {section.title}
                                             </h3>
-                                            <p className="text-neutral-600 leading-relaxed mb-6">
+                                            <p className="text-neutral-800 leading-relaxed mb-6">
                                                 {section.description}
                                             </p>
                                             <div className="space-y-2 mb-6">
                                                 {section.features.map((feature, featureIndex) => (
-                                                    <div key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                                                    <div key={featureIndex} className="flex items-center text-sm text-neutral-800">
                                                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
                                                         {feature}
                                                     </div>
@@ -248,7 +248,7 @@ const AboutPage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Your Trusted Dental Care Partners
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                 At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life.
                                 Our modern, comfortable clinic in Melbourne's northern suburbs provides comprehensive dental care for the whole family.
                             </p>
@@ -260,17 +260,17 @@ const AboutPage = () => {
                                     <div className="text-center">
                                         <Heart className="w-10 h-10 text-primary mx-auto mb-3" />
                                         <h4 className="font-semibold text-neutral-800 mb-2">Patient-Centered Care</h4>
-                                        <p className="text-neutral-600">Your comfort and wellbeing are our top priorities</p>
+                                        <p className="text-neutral-800">Your comfort and wellbeing are our top priorities</p>
                                     </div>
                                     <div className="text-center">
                                         <Users className="w-10 h-10 text-primary mx-auto mb-3" />
                                         <h4 className="font-semibold text-neutral-800 mb-2">Experienced Team</h4>
-                                        <p className="text-neutral-600">Skilled professionals dedicated to excellence</p>
+                                        <p className="text-neutral-800">Skilled professionals dedicated to excellence</p>
                                     </div>
                                     <div className="text-center">
                                         <Smile className="w-10 h-10 text-primary mx-auto mb-3" />
                                         <h4 className="font-semibold text-neutral-800 mb-2">Modern Facilities</h4>
-                                        <p className="text-neutral-600">Latest technology in a comfortable environment</p>
+                                        <p className="text-neutral-800">Latest technology in a comfortable environment</p>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ const AboutPage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Experience Quality Dental Care?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Book your appointment today and discover why families throughout Melbourne's northern suburbs trust Y3 Smiles Dental.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

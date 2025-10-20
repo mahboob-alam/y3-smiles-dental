@@ -121,7 +121,7 @@ const Testimonials = () => {
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
               What Our Patients Say About Us
             </h3>
-            <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-neutral-800 leading-relaxed max-w-3xl mx-auto">
               Real stories from real patients who have experienced the exceptional care
               and outstanding results at Y3 Smiles Dental.
             </p>
@@ -139,7 +139,7 @@ const Testimonials = () => {
                   <div className="text-3xl font-bold text-primary mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-neutral-600 font-medium">
+                  <div className="text-neutral-800 font-medium">
                     {stat.label}
                   </div>
                 </div>
@@ -206,7 +206,7 @@ const Testimonials = () => {
                       </CardHeader>
 
                       <CardContent className="pt-0">
-                        <p className="text-neutral-600 italic leading-relaxed">
+                        <p className="text-neutral-800 italic leading-relaxed">
                           "{testimonial.text}"
                         </p>
                       </CardContent>
@@ -234,7 +234,7 @@ const Testimonials = () => {
               <h4 className="text-2xl font-bold text-neutral-800 mb-4">
                 Join Our Family of Happy Patients
               </h4>
-              <p className="text-neutral-600 mb-6">
+              <p className="text-neutral-800 mb-6">
                 Experience the same exceptional care that our patients rave about.
                 Book your appointment today and discover the Y3 Smiles Dental difference.
               </p>

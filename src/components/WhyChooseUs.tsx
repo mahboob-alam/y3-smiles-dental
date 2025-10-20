@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
               Experience the Y3 Smiles Dental Difference
             </h3>
-            <p className="text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-neutral-800 leading-relaxed max-w-3xl mx-auto">
               Formerly located within St. Vincent's Hospital, we now offer a calming, sanctuary-like clinic experience with the same trusted expertise you've come to expect.
             </p>
           </div>
@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pt-0 text-center">
-                    <p className="text-neutral-600 leading-relaxed">
+                    <p className="text-neutral-800 leading-relaxed">
                       {reason.description}
                     </p>
                   </CardContent>
@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
               <h4 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
                 Trusted by the Community
               </h4>
-              <p className="text-lg text-neutral-600">
+              <p className="text-lg text-neutral-800">
                 Our commitment to excellence is reflected in our achievements and patient satisfaction.
               </p>
             </div>
@@ -141,7 +141,7 @@ const WhyChooseUs = () => {
                     <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                       {achievement.number}
                     </div>
-                    <div className="text-neutral-600 font-medium">
+                    <div className="text-neutral-800 font-medium">
                       {achievement.label}
                     </div>
                   </div>

@@ -170,7 +170,7 @@ const ExaminationHygiene = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Comprehensive Examination & Dental Hygiene
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Thorough dental examinations and professional cleanings to maintain optimal oral health.
                 Early detection and prevention are the keys to a lifetime of healthy smiles.
               </p>
@@ -196,7 +196,7 @@ const ExaminationHygiene = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Comprehensive Examination Components
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Our thorough examination covers every aspect of your oral health.
               </p>
             </div>
@@ -213,14 +213,14 @@ const ExaminationHygiene = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {component.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {component.description}
                       </p>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
                         {component.includes.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-center text-sm text-neutral-600">
+                          <li key={itemIndex} className="flex items-center text-sm text-neutral-800">
                             <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                             {item}
                           </li>
@@ -250,14 +250,14 @@ const ExaminationHygiene = () => {
                     <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                       {service.title}
                     </CardTitle>
-                    <p className="text-neutral-600 leading-relaxed mb-4">
+                    <p className="text-neutral-800 leading-relaxed mb-4">
                       {service.description}
                     </p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                        <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                           <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                           {feature}
                         </li>
@@ -289,14 +289,14 @@ const ExaminationHygiene = () => {
                     <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                       {freq.title}
                     </CardTitle>
-                    <p className="text-neutral-600 leading-relaxed mb-4">
+                    <p className="text-neutral-800 leading-relaxed mb-4">
                       {freq.description}
                     </p>
                   </CardHeader>
                   <CardContent>
                     <div className="bg-neutral-50 rounded-lg p-4">
                       <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                      <p className="text-sm text-neutral-600">{freq.suitableFor}</p>
+                      <p className="text-sm text-neutral-800">{freq.suitableFor}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -313,7 +313,7 @@ const ExaminationHygiene = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Warning Signs to Watch For
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Contact us if you experience any of these symptoms between visits.
                 </p>
               </div>
@@ -344,22 +344,22 @@ const ExaminationHygiene = () => {
                 <div className="text-center">
                   <Users className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">5000+</div>
-                  <div className="text-neutral-600">Annual Checkups</div>
+                  <div className="text-neutral-800">Annual Checkups</div>
                 </div>
                 <div className="text-center">
                   <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">85%</div>
-                  <div className="text-neutral-600">Problems Prevented</div>
+                  <div className="text-neutral-800">Problems Prevented</div>
                 </div>
                 <div className="text-center">
                   <Star className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                  <div className="text-neutral-600">Patient Satisfaction</div>
+                  <div className="text-neutral-800">Patient Satisfaction</div>
                 </div>
                 <div className="text-center">
                   <Award className="w-12 h-12 text-primary mx-auto mb-4" />
                   <div className="text-4xl font-bold text-primary mb-2">40+</div>
-                  <div className="text-neutral-600">Years Experience</div>
+                  <div className="text-neutral-800">Years Experience</div>
                 </div>
               </div>
             </div>
@@ -374,7 +374,7 @@ const ExaminationHygiene = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about dental examinations and hygiene.
                 </p>
               </div>
@@ -403,7 +403,7 @@ const ExaminationHygiene = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -419,7 +419,7 @@ const ExaminationHygiene = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Prevention is the Best Medicine
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Regular examinations and professional cleanings are your best defence against
                 dental problems. Schedule your appointment today for optimal oral health.
               </p>

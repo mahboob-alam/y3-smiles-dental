@@ -153,7 +153,7 @@ const Dentures = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Dentures
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Custom-made dentures that restore your smile, speech, and chewing function.
                 Modern, comfortable solutions for missing teeth that look and feel natural.
               </p>
@@ -179,7 +179,7 @@ const Dentures = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Types of Dentures
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 We offer various denture options to meet your specific needs and preferences.
               </p>
             </div>
@@ -195,7 +195,7 @@ const Dentures = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {type.description}
                       </p>
                       <div className="flex items-center text-sm text-primary font-medium mb-4">
@@ -207,7 +207,7 @@ const Dentures = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -216,7 +216,7 @@ const Dentures = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{type.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{type.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -234,7 +234,7 @@ const Dentures = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about dentures.
                 </p>
               </div>
@@ -246,7 +246,7 @@ const Dentures = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -262,7 +262,7 @@ const Dentures = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Restore Your Smile & Confidence
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Don't let missing teeth hold you back. Modern dentures can restore your
                 ability to eat, speak, and smile with confidence.
               </p>

@@ -19,7 +19,7 @@ const About = () => {
             {/* <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
               Compassionate Care for over 40 Years
             </h3> */}
-            <div className="text-lg text-neutral-600 leading-relaxed max-w-6xl mx-auto">
+            <div className="text-lg text-neutral-800 leading-relaxed max-w-6xl mx-auto">
               <div className="relative overflow-hidden">
                 <p className="whitespace-pre-line transition-all duration-700 ease-in-out">
                   <span className="inline">
@@ -32,7 +32,7 @@ const About = () => {
                         onClick={() => setIsExpanded(true)}
                         className="text-primary hover:text-primary/80 font-medium underline transition-all duration-300 hover:scale-105 transform"
                       >
-                        see more
+                        Read more
                       </button>
                     </span>
                   )}

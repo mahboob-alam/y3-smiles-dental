@@ -16,7 +16,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Y3 Smiles Dental Logo"
-                className="h-10 w-auto transition-gentle hover:drop-shadow-lg"
+                className="h-12 w-auto transition-gentle hover:drop-shadow-lg"
               />
             </Link>
           </div>
@@ -27,13 +27,13 @@ const Header = () => {
             <nav className="hidden lg:flex items-center space-x-6">
               <Link
                 to="/about"
-                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105"
+                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg"
               >
                 About
               </Link>
               <Link
                 to="/treatments"
-                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105"
+                className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg"
               >
                 Treatments
               </Link>
@@ -41,10 +41,10 @@ const Header = () => {
 
             {/* Phone & CTA Buttons */}
             <div className="flex items-center space-x-4">
-              <a href="tel:03 9022 4442" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105">
+              <a href="tel:03 9022 4442" className="hidden md:block text-neutral-600 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg">
                 03 9022 4442
               </a>
-              <Button variant="booking" asChild>
+              <Button variant="booking" size="lg" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                   BOOK NOW
                 </a>

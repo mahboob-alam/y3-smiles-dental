@@ -170,7 +170,7 @@ export function Navigation({ className }: NavigationProps) {
           size="icon"
           className="group flex items-center justify-center hover:gradient-accent hover:text-accent-foreground transition-gentle transform hover:scale-110"
         >
-          <Menu className="h-5 w-5 transition-gentle group-hover:scale-110 group-hover:rotate-180" />
+          <Menu className="h-6 w-6 transition-gentle group-hover:scale-110 group-hover:rotate-180" />
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>

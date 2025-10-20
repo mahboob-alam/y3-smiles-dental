@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Treatments from "@/components/Treatments";
 import ServiceProcess from "@/components/ServiceProcess";
+import FAQ from "@/components/FAQ";
 import WhyChooseUs from "@/components/WhyChooseUs";
 // import Testimonials from "@/components/Testimonials";
 import GoogleMap from "@/components/GoogleMap";
@@ -24,6 +25,7 @@ const Index = () => {
         <About />
         <Treatments />
         <ServiceProcess />
+        <FAQ />
         {/* <WhyChooseUs /> */}
         {/* <Testimonials /> */}
         <GoogleMap

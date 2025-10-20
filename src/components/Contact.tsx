@@ -76,7 +76,7 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   <a
-                    href="tel:0390224442"
+                    href="tel:03 9022 4442"
                     className="flex items-start space-x-4 hover-scale transition-gentle group cursor-pointer"
                   >
                     <div className="w-5 h-5 text-primary mt-1 group-hover:text-primary/80">

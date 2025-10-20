@@ -36,7 +36,7 @@ const EmergencyDentistry = () => {
       title: "Severe Tooth Pain",
       description: "Intense, persistent pain that interferes with daily activities",
       imageSrc: "/toothache.png",
-      immediateSteps: ["Take over-the-counter pain medication", "Apply cold compress", "Rinse with warm salt water", "Call our emergency line"],
+      immediateSteps: ["Take over-the-counter pain medication", "Apply cold compress", "Rinse with warm salt water", "Call Us Immediately"],
       urgency: "Immediate"
     },
     {
@@ -158,7 +158,7 @@ const EmergencyDentistry = () => {
               <div className="bg-red-50 border border-red-200 rounded-2xl p-6 mb-8">
                 <div className="flex items-center justify-center mb-4">
                   <Phone className="w-8 h-8 text-red-600 mr-3" />
-                  <span className="text-2xl font-bold text-red-800">Emergency Line: 03 9022 4442</span>
+                  <a href="tel:03 9022 4442" className="text-2xl font-bold text-red-800 hover:text-red-900 transition-colors">03 9022 4442</a>
                 </div>
                 <p className="text-red-700">Same day emergency appointments available</p>
               </div>
@@ -348,19 +348,21 @@ const EmergencyDentistry = () => {
             <div className="max-w-3xl mx-auto">
               <img src="/emergency.png" alt="Emergency Dentistry" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
-                Call emergency line: 03 9022 4442
+                <a href="tel:03 9022 4442" className="hover:text-primary transition-colors">03 9022 4442</a>
               </h2>
               <p className="text-lg text-neutral-800 mb-8">
                 Don't suffer in pain. Our emergency dental services are available when you need them most.
                 Call now for immediate assistance and same-day treatment.
               </p>
               <div className="space-y-4">
-                <Button variant="cta" size="xl" className="bg-red-600 hover:bg-red-700" asChild>
-                  <a href="tel:0390224442">
-                    CALL EMERGENCY LINE: 03 9022 4442
-                    <Phone className="w-5 h-5 ml-2" />
-                  </a>
-                </Button>
+                <div>
+                  <Button variant="cta" size="xl" className="bg-red-600 hover:bg-red-700" asChild>
+                    <a href="tel:03 9022 4442">
+                      CALL US: 03 9022 4442
+                      <Phone className="w-5 h-5 ml-2" />
+                    </a>
+                  </Button>
+                </div>
                 <Button variant="outline" size="lg" asChild>
                   <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                     SCHEDULE NON-URGENT APPOINTMENT

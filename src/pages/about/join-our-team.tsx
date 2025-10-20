@@ -362,7 +362,7 @@ const JoinOurTeamPage = () => {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button variant="booking" size="xl" asChild className="group">
-                                    <a href="tel:0390224442">
+                                    <a href="tel:03 9022 4442">
                                         <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                         CALL US
                                     </a>

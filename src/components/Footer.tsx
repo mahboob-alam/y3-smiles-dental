@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <p>
                 <span className="uppercase text-[#B59682]">Phone:</span>{" "}
-                <a href="tel:0390224442" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
+                <a href="tel:03 9022 4442" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
                   03 9022 4442
                 </a>
               </p>

@@ -74,7 +74,7 @@ const ContactUs = () => {
             title: "Call Us",
             value: "03 9022 4442",
             description: "Available during business hours",
-            action: "tel:0390224442",
+            action: "tel:03 9022 4442",
             color: "bg-blue-50 text-blue-600"
         },
         {
@@ -141,7 +141,7 @@ const ContactUs = () => {
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="xl" asChild>
-                                    <a href="tel:0390224442">
+                                    <a href="tel:03 9022 4442">
                                         <Phone className="w-5 h-5 mr-2" />
                                         CALL NOW
                                     </a>

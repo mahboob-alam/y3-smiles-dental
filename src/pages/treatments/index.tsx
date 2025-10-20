@@ -27,7 +27,8 @@ import {
   Crown,
   Zap,
   ShieldCheck,
-  Sparkles
+  Sparkles,
+  PhoneCall
 } from "lucide-react";
 
 const TreatmentsPage = () => {
@@ -403,13 +404,14 @@ const TreatmentsPage = () => {
               </p>
               <div className="bg-white rounded-2xl p-8 shadow-soft mb-8">
                 <div className="flex items-center justify-center mb-4">
-                  <div className="text-3xl font-bold text-red-600 mr-4">03 9022 4442</div>
+                  <PhoneCall className="w-8 h-8 text-red-600 mr-3" />
+                  <a href="tel:03 9022 4442" className="text-3xl font-bold text-red-600 mr-4 hover:text-red-700 transition-colors">03 9022 4442</a>
                 </div>
-                <p className="text-red-700 font-medium">Please contact the emergency department at your nearest hospital for afterhours and emergencies requiring attention to non-dental areas.</p>
+                <p className="text-red-500 font-medium">Please contact the emergency department at your nearest hospital for afterhours and emergencies requiring attention to non-dental areas.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="booking" size="lg" asChild>
-                  <a href="tel:0390224442">CALL EMERGENCY LINE</a>
+                  <a href="tel:03 9022 4442">CALL US</a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/treatments/emergency">LEARN MORE</Link>

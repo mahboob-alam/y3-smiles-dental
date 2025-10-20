@@ -235,24 +235,28 @@ const EmergencyDentistry = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {emergencyTypes.map((emergency, index) => {
                 return (
-                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
-                    <CardHeader>
+                  <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section flex flex-col h-full" style={{ transitionDelay: `${index * 150}ms` }}>
+                    <CardHeader className="flex-grow">
                       <div className="w-16 h-16 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mb-4">
                         <img src={emergency.imageSrc} alt={emergency.title} className="w-8 h-8" />
                       </div>
-                      <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
-                        {emergency.title}
-                      </CardTitle>
-                      <p className="text-neutral-800 leading-relaxed mb-4">
-                        {emergency.description}
-                      </p>
+                      <div className="h-14 flex items-center mb-2">
+                        <CardTitle className="text-xl font-bold text-neutral-800">
+                          {emergency.title}
+                        </CardTitle>
+                      </div>
+                      <div className="h-20 flex items-start mb-4">
+                        <p className="text-neutral-800 leading-relaxed text-sm">
+                          {emergency.description}
+                        </p>
+                      </div>
                       <div className="bg-red-50 rounded-lg px-3 py-2 mb-4">
                         <span className="text-sm font-semibold text-red-700">
                           Urgency: {emergency.urgency}
                         </span>
                       </div>
                     </CardHeader>
-                    <CardContent>
+                    {/* <CardContent className="mt-auto">
                       <h4 className="font-semibold text-neutral-800 mb-3 text-sm">Immediate Steps:</h4>
                       <ul className="space-y-2">
                         {emergency.immediateSteps.map((step, stepIndex) => (
@@ -262,7 +266,7 @@ const EmergencyDentistry = () => {
                           </li>
                         ))}
                       </ul>
-                    </CardContent>
+                    </CardContent> */}
                   </Card>
                 );
               })}

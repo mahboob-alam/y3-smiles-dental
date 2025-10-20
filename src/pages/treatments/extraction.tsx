@@ -313,7 +313,7 @@ const ToothExtraction = () => {
               </p>
               <Button variant="booking" size="xl" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                  BOOK NOW
+                  BOOK ONLINE
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>

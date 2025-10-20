@@ -46,7 +46,7 @@ const Header = () => {
               </a>
               <Button variant="booking" size="lg" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                  BOOK NOW
+                  BOOK ONLINE
                 </a>
               </Button>
             </div>

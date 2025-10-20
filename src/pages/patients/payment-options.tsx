@@ -49,21 +49,21 @@ const PaymentOptions = () => {
         {
             title: "Afterpay",
             description: "Buy now, pay later with Afterpay's flexible payment solution",
-            imageSrc: "/atm-card.png",
+            imageSrc: "/afterpay-logo.png",
             features: ["4 interest-free payments", "Instant approval", "No hidden fees", "Easy setup"],
             color: "bg-purple-50 text-purple-600"
         },
         {
             title: "Humm",
             description: "Longer payment terms with Humm for larger treatments",
-            imageSrc: "/atm-card.png",
+            imageSrc: "/humm-logo.svg",
             features: ["Up to 72 months", "Interest-free", "Quick approval", "Flexible terms"],
             color: "bg-orange-50 text-orange-600"
         },
         {
             title: "Child Dental Benefits Schedule",
             description: "Australian Government program covering dental care for eligible children",
-            imageSrc: "/health-insurance.png",
+            imageSrc: "/medicare-logo.svg",
             features: ["Ages 0-17 years", "Medicare eligible", "Government funded", "Basic dental services"],
             color: "bg-pink-50 text-pink-600"
         },

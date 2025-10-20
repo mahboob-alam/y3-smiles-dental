@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
+import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ServiceProcess from "@/components/ServiceProcess";
@@ -293,7 +294,7 @@ const TreatmentsPage = () => {
                 const categoryInfo = treatmentCategories.find(cat => cat.name === treatment.category);
 
                 return (
-                  <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section flex flex-col" style={{ transitionDelay: `${index * 150}ms` }}>
+                  <Card key={index} className="group hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth border-0 shadow-soft h-full fade-in-section flex flex-col" style={{ transitionDelay: `${index * 50}ms` }}>
                     <CardHeader className="pb-4">
                       <div className="flex items-center justify-between mb-4">
                         <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-smooth">
@@ -443,6 +444,7 @@ const TreatmentsPage = () => {
           </div>
         </section>
 
+        <Disclaimer />
         {/* <Contact /> */}
       </main>
       <Footer />

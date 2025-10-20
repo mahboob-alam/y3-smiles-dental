@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ServiceProcess from "@/components/ServiceProcess";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
@@ -36,7 +37,7 @@ const TreatmentsPage = () => {
     {
       title: "Children's Dentistry (CDBS)",
       description: "Gentle, specialised care for children of all ages in a fun, comfortable environment",
-      icon: Baby,
+      imageSrc: "/cdbs.png",
       path: "/treatments/childrens-dentistry",
       category: "Family Care",
       features: ["Child-friendly approach", "Preventive focus", "Early intervention", "Parent education"]
@@ -44,7 +45,7 @@ const TreatmentsPage = () => {
     {
       title: "Comprehensive Examination & Dental Hygiene",
       description: "Thorough checkups and professional cleanings to maintain optimal oral health",
-      icon: Stethoscope,
+      imageSrc: "/dental-care.png",
       path: "/treatments/examination-hygiene",
       category: "Preventive Care",
       features: ["Complete oral examination", "Professional cleaning", "Oral cancer screening", "Personalized care plan"]
@@ -52,7 +53,7 @@ const TreatmentsPage = () => {
     {
       title: "Dental Fillings",
       description: "Modern, tooth-coloured fillings that restore function and appearance",
-      icon: Tooth,
+      imageSrc: "/dental-fillings.png",
       path: "/treatments/dental-fillings",
       category: "Restorative Care",
       features: ["Natural appearance", "Mercury-free options", "Durable materials", "Same-day treatment"]
@@ -60,7 +61,7 @@ const TreatmentsPage = () => {
     {
       title: "Dentures",
       description: "Custom-made dentures that restore your smile and chewing function",
-      icon: Smile,
+      imageSrc: "/dentures.png",
       path: "/treatments/dentures",
       category: "Restorative Care",
       features: ["Complete or partial", "Natural appearance", "Comfortable fit", "Improved function"]
@@ -68,7 +69,7 @@ const TreatmentsPage = () => {
     {
       title: "Emergency Dentistry",
       description: "Same day emergency appointments available",
-      icon: AlertTriangle,
+      imageSrc: "/emergency.png",
       path: "/treatments/emergency",
       category: "Emergency Care",
       features: ["Same-day appointments", "Pain relief", "Urgent protocols"]
@@ -76,7 +77,7 @@ const TreatmentsPage = () => {
     {
       title: "Fluoride Treatments",
       description: "Professional fluoride applications for superior cavity protection",
-      icon: Shield,
+      imageSrc: "/fluoride-treatments.png",
       path: "/treatments/fluoride",
       category: "Preventive Care",
       features: ["Strengthens enamel", "Prevents decay", "Safe for all ages", "Quick application"]
@@ -84,7 +85,7 @@ const TreatmentsPage = () => {
     {
       title: "Periodontal Therapy",
       description: "Expert gum disease treatment and prevention to save your teeth",
-      icon: Heart,
+      imageSrc: "/periodontal-therapy.png",
       path: "/treatments/periodontal",
       category: "Specialised Care",
       features: ["Gum disease treatment", "Prevent tooth loss", "Improve overall health", "Advanced techniques"]
@@ -92,7 +93,7 @@ const TreatmentsPage = () => {
     {
       title: "Pits & Fissure Sealants",
       description: "Protective coatings that prevent 80% of cavities in back teeth",
-      icon: Shield,
+      imageSrc: "/sealant.png",
       path: "/treatments/sealants",
       category: "Preventive Care",
       features: ["80% cavity prevention", "Painless application", "Long-lasting protection", "Cost-effective"]
@@ -100,7 +101,7 @@ const TreatmentsPage = () => {
     {
       title: "Root Canal Therapy",
       description: "Advanced treatment to save infected teeth and eliminate pain",
-      icon: Heart,
+      imageSrc: "/root-canal.png",
       path: "/treatments/root-canal",
       category: "Specialised Care",
       features: ["Save natural teeth", "Pain elimination", "High success rate", "Modern techniques"]
@@ -108,7 +109,7 @@ const TreatmentsPage = () => {
     {
       title: "TMD & Bruxism Treatment",
       description: "Comprehensive care for jaw disorders and teeth grinding",
-      icon: Moon,
+      imageSrc: "/bruxism.png",
       path: "/treatments/tmd-bruxism",
       category: "Specialised Care",
       features: ["Jaw pain relief", "Protect teeth", "Custom night guards", "Sleep improvement"]
@@ -116,7 +117,7 @@ const TreatmentsPage = () => {
     {
       title: "Tooth Extraction",
       description: "Gentle tooth removal when necessary with comprehensive aftercare",
-      icon: Scissors,
+      imageSrc: "/tooth-extraction.png",
       path: "/treatments/extraction",
       category: "Surgical Care",
       features: ["Gentle techniques", "Pain management", "Sedation options", "Replacement planning"]
@@ -124,7 +125,7 @@ const TreatmentsPage = () => {
     {
       title: "Wisdom Teeth Removal",
       description: "Expert wisdom tooth extraction to prevent complications",
-      icon: Activity,
+      imageSrc: "/wisdom-tooth-removal.png",
       path: "/treatments/wisdom-teeth",
       category: "Surgical Care",
       features: ["Prevent complications", "Comfortable procedures", "Sedation available", "Expert care"]
@@ -132,7 +133,7 @@ const TreatmentsPage = () => {
     {
       title: "Crown and Bridge",
       description: "Repair or replace damaged teeth with natural-looking crowns and bridges",
-      icon: Crown,
+      imageSrc: "/crown-and-bridge.png",
       path: "/treatments/crown-bridge",
       category: "Restorative Care",
       features: ["Natural appearance", "Strengthens teeth", "Long-lasting", "Custom-made"]
@@ -140,7 +141,7 @@ const TreatmentsPage = () => {
     {
       title: "Dental Implants",
       description: "Modern titanium implants for secure, permanent tooth replacement",
-      icon: Zap,
+      imageSrc: "/dental-implants.png",
       path: "/treatments/dental-implants",
       category: "Restorative Care",
       features: ["Permanent solution", "Natural feel", "Bone preservation", "High success rate"]
@@ -148,7 +149,7 @@ const TreatmentsPage = () => {
     {
       title: "Sedation Dentistry",
       description: "Comfortable, stress-free dental care for anxious patients",
-      icon: Moon,
+      imageSrc: "/sedation.png",
       path: "/treatments/sedation-dentistry",
       category: "Specialised Care",
       features: ["Reduce anxiety", "Pain-free procedures", "Various options", "Safe monitoring"]
@@ -156,7 +157,7 @@ const TreatmentsPage = () => {
     {
       title: "Mouthguards",
       description: "Custom-fitted protection for sports and teeth grinding",
-      icon: ShieldCheck,
+      imageSrc: "/mouthguard.png",
       path: "/treatments/mouthguards",
       category: "Preventive Care",
       features: ["Custom fit", "Sports protection", "Bruxism relief", "Comfortable wear"]
@@ -164,7 +165,7 @@ const TreatmentsPage = () => {
     {
       title: "Teeth Whitening",
       description: "Professional whitening treatments for a brighter, confident smile",
-      icon: Sparkles,
+      imageSrc: "/teeth-whitening.png",
       path: "/treatments/teeth-whitening",
       category: "Cosmetic Care",
       features: ["Professional results", "Safe procedures", "In-office or take-home", "Long-lasting"]
@@ -224,7 +225,7 @@ const TreatmentsPage = () => {
         <section className="bg-gradient-hero py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6 mt-6">
                 Our Dental Treatments
               </h1>
               <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
@@ -258,9 +259,9 @@ const TreatmentsPage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-16">
               {treatmentCategories.map((category, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
+                <div key={index} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] text-center p-6 rounded-2xl bg-white shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                   <div className={`w-12 h-12 rounded-full ${category.color} flex items-center justify-center mx-auto mb-4`}>
                     <div className="w-6 h-6 rounded-full bg-current"></div>
                   </div>
@@ -287,7 +288,7 @@ const TreatmentsPage = () => {
             {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allTreatments.map((treatment, index) => {
-                const IconComponent = treatment.icon;
+                // const IconComponent = treatment.icon;
                 const categoryInfo = treatmentCategories.find(cat => cat.name === treatment.category);
 
                 return (
@@ -295,7 +296,7 @@ const TreatmentsPage = () => {
                     <CardHeader className="pb-4">
                       <div className="flex items-center justify-between mb-4">
                         <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 transition-smooth">
-                          <IconComponent className="w-8 h-8" />
+                          <img src={treatment.imageSrc} alt={treatment.title} className="w-8 h-8" />
                         </div>
                         <div className={`px-3 py-1 rounded-full text-xs font-medium ${categoryInfo?.color || 'bg-gray-50 text-gray-600'}`}>
                           {treatment.category}
@@ -392,7 +393,8 @@ const TreatmentsPage = () => {
         <section className="py-24 bg-red-50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-6" />
+              {/* <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-6" /> */}
+              <img src="/emergency.png" alt="Emergency Dental Care" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Dental Emergency?
               </h2>
@@ -418,55 +420,7 @@ const TreatmentsPage = () => {
         </section>
 
         {/* Service Process */}
-        <section className="py-24 bg-background">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
-                Our Process
-              </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
-                Your Journey to Better Oral Health
-              </h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                {
-                  step: "1",
-                  title: "Initial Consultation",
-                  description: "Comprehensive examination and discussion of your dental health goals"
-                },
-                {
-                  step: "2",
-                  title: "Treatment Planning",
-                  description: "Customised treatment plan tailored to your specific needs and budget"
-                },
-                {
-                  step: "3",
-                  title: "Professional Treatment",
-                  description: "Gentle, expert care using the latest techniques and technology"
-                },
-                {
-                  step: "4",
-                  title: "Ongoing Care",
-                  description: "Regular maintenance and preventive care to keep your smile healthy"
-                }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                    {item.step}
-                  </div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-3">
-                    {item.title}
-                  </h4>
-                  <p className="text-neutral-800 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ServiceProcess />
 
         {/* CTA Section */}
         <section className="py-24 bg-primary/5">

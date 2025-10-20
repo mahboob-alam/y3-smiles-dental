@@ -122,7 +122,7 @@ const PriceGuidePage = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Price Guide
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Transparent pricing for quality dental care. No hidden fees, no surprises. We believe in honest, upfront pricing so you can make informed decisions about your dental health.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -164,7 +164,7 @@ const PriceGuidePage = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Treatment Prices
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Our transparent pricing ensures you know what to expect before your treatment. Browse by category to find the services you need.
                             </p>
                         </div>
@@ -216,7 +216,7 @@ const PriceGuidePage = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Payment Plans Available
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Don't let cost be a barrier to your dental health. We offer flexible payment options to make quality care accessible.
                             </p>
                         </div>
@@ -231,12 +231,12 @@ const PriceGuidePage = () => {
                                         <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                             {plan.title}
                                         </CardTitle>
-                                        <p className="text-neutral-600 leading-relaxed mb-4">{plan.description}</p>
+                                        <p className="text-neutral-800 leading-relaxed mb-4">{plan.description}</p>
                                     </CardHeader>
                                     <CardContent>
                                         <ul className="space-y-3">
                                             {plan.features.map((feature, idx) => (
-                                                <li key={idx} className="flex items-center text-sm text-neutral-600">
+                                                <li key={idx} className="flex items-center text-sm text-neutral-800">
                                                     <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                                                     {feature}
                                                 </li>
@@ -256,7 +256,7 @@ const PriceGuidePage = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Insurance & Benefits
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Maximize your dental benefits with our comprehensive insurance support and instant rebate processing.
                             </p>
                         </div>
@@ -272,7 +272,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                    <p className="text-neutral-800 text-sm leading-relaxed">
                                         We accept all major private health insurers with HICAPS for instant rebates and seamless claim processing.
                                     </p>
                                 </CardContent>
@@ -288,7 +288,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                    <p className="text-neutral-800 text-sm leading-relaxed">
                                         Child Dental Benefits Schedule (CDBS) and bulk billing available for eligible patients and children.
                                     </p>
                                 </CardContent>
@@ -304,7 +304,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="text-center">
-                                    <p className="text-neutral-600 text-sm leading-relaxed">
+                                    <p className="text-neutral-800 text-sm leading-relaxed">
                                         Department of Veterans' Affairs patients welcome with special rates and dedicated support available.
                                     </p>
                                 </CardContent>
@@ -320,7 +320,7 @@ const PriceGuidePage = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Pricing FAQ
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 Common questions about our pricing and payment options.
                             </p>
                         </div>
@@ -333,7 +333,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-neutral-600 leading-relaxed">
+                                    <p className="text-neutral-800 leading-relaxed">
                                         Treatment complexity, materials used, and individual patient needs affect pricing. We provide detailed estimates after your comprehensive examination to ensure accurate quotes.
                                     </p>
                                 </CardContent>
@@ -346,7 +346,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-neutral-600 leading-relaxed">
+                                    <p className="text-neutral-800 leading-relaxed">
                                         Payment plans are available for treatments over $300. Terms and conditions apply, and approval is subject to assessment. We offer both interest-free and extended payment options.
                                     </p>
                                 </CardContent>
@@ -359,7 +359,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-neutral-600 leading-relaxed">
+                                    <p className="text-neutral-800 leading-relaxed">
                                         We offer bulk billing for eligible patients under the Child Dental Benefits Schedule (CDBS) and certain DVA treatments. Contact us to check your eligibility.
                                     </p>
                                 </CardContent>
@@ -372,7 +372,7 @@ const PriceGuidePage = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-neutral-600 leading-relaxed">
+                                    <p className="text-neutral-800 leading-relaxed">
                                         Book a consultation for a comprehensive examination. We'll provide a detailed treatment plan with accurate pricing before any work begins, so there are no surprises.
                                     </p>
                                 </CardContent>
@@ -406,7 +406,7 @@ const PriceGuidePage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Get Started?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Book your consultation today for a detailed treatment plan and accurate pricing tailored to your needs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -65,7 +65,7 @@ import {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Sedation Dentistry
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Sedation dentistry is designed to help patients feel calm and comfortable during dental treatment. It can be helpful for those who experience dental anxiety, have a strong gag reflex, or require longer procedures. Sedation does not replace local anaesthetic (which numbs the treatment area) but works alongside it to reduce stress and create a more relaxed experience.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -93,7 +93,7 @@ import {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Anxiety-Free Dental Treatment
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Sedation dentistry may help patients receive the care they need in a more comfortable, stress-free way.
                                     </p>
                                     <div className="space-y-4">
@@ -101,21 +101,21 @@ import {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Reduce Anxiety</h4>
-                                                <p className="text-neutral-600 text-sm">Helps nervous patients feel calm and relaxed during treatment</p>
+                                                <p className="text-neutral-800 text-sm">Helps nervous patients feel calm and relaxed during treatment</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Pain-Free Procedures</h4>
-                                                <p className="text-neutral-600 text-sm">Works alongside local anaesthetic for maximum comfort</p>
+                                                <p className="text-neutral-800 text-sm">Works alongside local anaesthetic for maximum comfort</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Safe Monitoring</h4>
-                                                <p className="text-neutral-600 text-sm">Continuous professional monitoring ensures your safety throughout</p>
+                                                <p className="text-neutral-800 text-sm">Continuous professional monitoring ensures your safety throughout</p>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +139,7 @@ import {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 The Sedation Process (Simplified)
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 A step-by-step approach to ensure your comfort and safety throughout your dental treatment.
                             </p>
                         </div>
@@ -155,7 +155,7 @@ import {
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {step.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed">
+                                            <p className="text-neutral-800 leading-relaxed">
                                                 {step.description}
                                             </p>
                                         </CardHeader>
@@ -190,7 +190,7 @@ import {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready for Comfortable Dental Care?
                             </h2>
-                            <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+                            <p className="text-xl text-neutral-800 mb-8 max-w-2xl mx-auto">
                                 Don't let anxiety prevent you from getting the dental care you need. Explore our sedation options for a more relaxed experience.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

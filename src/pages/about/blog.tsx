@@ -46,7 +46,7 @@ const BlogPage = () => {
                                 Y3 Smiles Dental
                                 <span className="block text-primary">Blog</span>
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-12 leading-relaxed">
                                 Stay informed with dental care tips, patient stories, and oral health insights.
                             </p>
                         </div>
@@ -65,7 +65,7 @@ const BlogPage = () => {
                                         We're working on something special!
                                     </h2>
 
-                                    <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                         Stay tuned for our blog launch filled with patient-focused dental care information.
                                     </p>
 
@@ -73,7 +73,7 @@ const BlogPage = () => {
                                         <div className="flex flex-col items-center p-4">
                                             <Smile className="w-12 h-12 text-primary mb-4" />
                                             <h3 className="font-semibold text-neutral-800 mb-2">Oral Health Tips</h3>
-                                            <p className="text-sm text-neutral-600 text-center">
+                                            <p className="text-sm text-neutral-800 text-center">
                                                 Expert advice for maintaining healthy teeth and gums
                                             </p>
                                         </div>
@@ -81,7 +81,7 @@ const BlogPage = () => {
                                         <div className="flex flex-col items-center p-4">
                                             <Heart className="w-12 h-12 text-primary mb-4" />
                                             <h3 className="font-semibold text-neutral-800 mb-2">Patient Stories</h3>
-                                            <p className="text-sm text-neutral-600 text-center">
+                                            <p className="text-sm text-neutral-800 text-center">
                                                 Real experiences from our Y3 Smiles Dental family
                                             </p>
                                         </div>
@@ -89,7 +89,7 @@ const BlogPage = () => {
                                         <div className="flex flex-col items-center p-4">
                                             <Users className="w-12 h-12 text-primary mb-4" />
                                             <h3 className="font-semibold text-neutral-800 mb-2">Family Care</h3>
-                                            <p className="text-sm text-neutral-600 text-center">
+                                            <p className="text-sm text-neutral-800 text-center">
                                                 Dental care guidance for every family member
                                             </p>
                                         </div>
@@ -100,7 +100,7 @@ const BlogPage = () => {
                                         <h3 className="text-lg font-semibold text-neutral-800 mb-2">
                                             Coming Soon
                                         </h3>
-                                        <p className="text-neutral-600">
+                                        <p className="text-neutral-800">
                                             Our team is preparing comprehensive, patient-focused content to help you make informed decisions about your oral health.
                                         </p>
                                     </div>
@@ -131,12 +131,12 @@ const BlogPage = () => {
                             <h2 className="text-3xl font-bold text-neutral-800 mb-4">
                                 Stay in the Loop
                             </h2>
-                            <p className="text-neutral-600 mb-8">
+                            <p className="text-neutral-800 mb-8">
                                 Be the first to know when our blog launches and receive updates on dental health tips and clinic news.
                             </p>
 
                             <div className="bg-white p-6 rounded-xl shadow-soft border border-primary/10">
-                                <p className="text-neutral-600 mb-4">
+                                <p className="text-neutral-800 mb-4">
                                     Newsletter signup coming soon! In the meantime, follow us on social media or
                                     contact our clinic directly for any dental health questions.
                                 </p>

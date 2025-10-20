@@ -144,7 +144,7 @@ const EmergencyDentistry = () => {
               <h1 className="text-3xl md:text-4xl font-bold text-neutral-700 mb-6">
                 Here When You Need Us Most
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Dental emergencies often happen when you least expect them — whether it's a toothache that won't ease, a chipped tooth from sport, or an unexpected injury that leaves your smile vulnerable. At Y3 Smiles Dental, our caring team is here to provide fast, professional support in a calm and welcoming environment. Our focus is on relieving pain, protecting your teeth, and helping you feel at ease.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -178,7 +178,7 @@ const EmergencyDentistry = () => {
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     What Is Emergency Dentistry?
                   </h3>
-                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                     Emergency dentistry provides urgent care when dental problems arise suddenly and require immediate attention. This may include severe pain, dental injuries, or infections that need prompt treatment to protect both your smile and overall health.
                   </p>
                   <div className="space-y-4">
@@ -186,21 +186,21 @@ const EmergencyDentistry = () => {
                       <Heart className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Pain Relief</h4>
-                        <p className="text-neutral-600 text-sm">We understand how overwhelming dental pain can be. Our priority is to assess the situation quickly and provide treatment that brings relief.</p>
+                        <p className="text-neutral-800 text-sm">We understand how overwhelming dental pain can be. Our priority is to assess the situation quickly and provide treatment that brings relief.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Shield className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Injury Care</h4>
-                        <p className="text-neutral-600 text-sm">From broken, chipped, or knocked-out teeth, our team acts fast to repair damage and prevent further complications.</p>
+                        <p className="text-neutral-800 text-sm">From broken, chipped, or knocked-out teeth, our team acts fast to repair damage and prevent further complications.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Zap className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Infection Management</h4>
-                        <p className="text-neutral-600 text-sm">In cases of abscess or infection, urgent treatment helps stop the spread and safeguards your health.</p>
+                        <p className="text-neutral-800 text-sm">In cases of abscess or infection, urgent treatment helps stop the spread and safeguards your health.</p>
                       </div>
                     </div>
                   </div>
@@ -227,7 +227,7 @@ const EmergencyDentistry = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Common Dental Emergencies
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Recognise emergency situations and know what immediate steps to take.
               </p>
             </div>
@@ -243,7 +243,7 @@ const EmergencyDentistry = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {emergency.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {emergency.description}
                       </p>
                       <div className="bg-red-50 rounded-lg px-3 py-2 mb-4">
@@ -256,7 +256,7 @@ const EmergencyDentistry = () => {
                       <h4 className="font-semibold text-neutral-800 mb-3 text-sm">Immediate Steps:</h4>
                       <ul className="space-y-2">
                         {emergency.immediateSteps.map((step, stepIndex) => (
-                          <li key={stepIndex} className="flex items-start text-sm text-neutral-600">
+                          <li key={stepIndex} className="flex items-start text-sm text-neutral-800">
                             <div className="w-2 h-2 rounded-full bg-red-500 mr-3 mt-2 flex-shrink-0"></div>
                             {step}
                           </li>
@@ -279,7 +279,7 @@ const EmergencyDentistry = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   When to Call for Emergency Care
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Don't hesitate to call if you experience any of these emergency situations.
                 </p>
               </div>
@@ -304,7 +304,7 @@ const EmergencyDentistry = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about dental emergencies.
                 </p>
               </div>
@@ -316,7 +316,7 @@ const EmergencyDentistry = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -350,7 +350,7 @@ const EmergencyDentistry = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Call emergency line: 03 9022 4442
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Don't suffer in pain. Our emergency dental services are available when you need them most.
                 Call now for immediate assistance and same-day treatment.
               </p>

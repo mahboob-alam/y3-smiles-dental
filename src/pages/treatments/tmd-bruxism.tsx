@@ -174,7 +174,7 @@ const TMDandBruxism = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 TMD & Bruxism Treatment
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Comprehensive treatment for jaw disorders and teeth grinding.
                 Relieve pain, protect your teeth, and improve your quality of life with our specialised care.
               </p>
@@ -200,7 +200,7 @@ const TMDandBruxism = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Understanding TMD & Bruxism
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 These related conditions can significantly impact your daily life and oral health.
               </p>
             </div>
@@ -216,7 +216,7 @@ const TMDandBruxism = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {condition.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-6">
+                      <p className="text-neutral-800 leading-relaxed mb-6">
                         {condition.description}
                       </p>
                     </CardHeader>
@@ -226,7 +226,7 @@ const TMDandBruxism = () => {
                           <h4 className="font-semibold text-neutral-800 mb-3 text-sm">Symptoms:</h4>
                           <ul className="space-y-2">
                             {condition.symptoms.map((symptom, symptomIndex) => (
-                              <li key={symptomIndex} className="flex items-center text-sm text-neutral-600">
+                              <li key={symptomIndex} className="flex items-center text-sm text-neutral-800">
                                 <AlertTriangle className="w-4 h-4 text-red-500 mr-2 flex-shrink-0" />
                                 {symptom}
                               </li>
@@ -237,7 +237,7 @@ const TMDandBruxism = () => {
                           <h4 className="font-semibold text-neutral-800 mb-3 text-sm">Common Causes:</h4>
                           <ul className="space-y-2">
                             {condition.causes.map((cause, causeIndex) => (
-                              <li key={causeIndex} className="flex items-center text-sm text-neutral-600">
+                              <li key={causeIndex} className="flex items-center text-sm text-neutral-800">
                                 <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                                 {cause}
                               </li>
@@ -273,7 +273,7 @@ const TMDandBruxism = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {treatment.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {treatment.description}
                       </p>
                     </CardHeader>
@@ -281,7 +281,7 @@ const TMDandBruxism = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {treatment.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -290,7 +290,7 @@ const TMDandBruxism = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{treatment.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{treatment.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -308,7 +308,7 @@ const TMDandBruxism = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about TMD and bruxism treatment.
                 </p>
               </div>
@@ -320,7 +320,7 @@ const TMDandBruxism = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -336,7 +336,7 @@ const TMDandBruxism = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Stop Suffering from Jaw Pain
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Don't let TMD or bruxism control your life. Our comprehensive treatment approach
                 can provide relief and protect your teeth from further damage.
               </p>

@@ -92,7 +92,7 @@ const Y3SmilesDentalPage = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Y3 Smiles Dental
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Your trusted dental care partner in Melbourne's northern suburbs. We're committed to creating healthy smiles
                                 and positive dental experiences for every member of your family.
                             </p>
@@ -122,7 +122,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Our Story
                                 </h2>
-                                <p className="text-lg text-neutral-600">
+                                <p className="text-lg text-neutral-800">
                                     Building a practice focused on quality care, patient comfort, and community health
                                 </p>
                             </div> */}
@@ -131,7 +131,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
                                     About
                                 </h2>
-                                <p className="text-lg text-neutral-600 leading-relaxed max-w-6xl mx-auto">
+                                <p className="text-lg text-neutral-800 leading-relaxed max-w-6xl mx-auto">
                                     At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne’s northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: healthy smiles, healthy lives — it begins with you.
 
                                     Our services cover all stages of dental care, including routine check-ups, preventative treatments, children’s dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family.
@@ -153,7 +153,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Learn More About Us
                                 </h2>
-                                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 max-w-3xl mx-auto">
                                     Discover more about our team, career opportunities, and helpful dental information
                                 </p>
                             </div>
@@ -168,7 +168,7 @@ const Y3SmilesDentalPage = () => {
                                         <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                             Our Team
                                         </h3>
-                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                        <p className="text-neutral-800 leading-relaxed mb-6 flex-grow">
                                             Meet our dedicated dental professionals who are committed to providing compassionate,
                                             high-quality care with years of experience and ongoing professional development.
                                         </p>
@@ -190,7 +190,7 @@ const Y3SmilesDentalPage = () => {
                                         <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                             Join Our Team
                                         </h3>
-                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                        <p className="text-neutral-800 leading-relaxed mb-6 flex-grow">
                                             Explore career opportunities and discover why Y3 Smiles Dental is a great place to build
                                             your dental career with competitive benefits and a supportive work environment.
                                         </p>
@@ -212,7 +212,7 @@ const Y3SmilesDentalPage = () => {
                                         <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                             Blog & Resources
                                         </h3>
-                                        <p className="text-neutral-600 leading-relaxed mb-6 flex-grow">
+                                        <p className="text-neutral-800 leading-relaxed mb-6 flex-grow">
                                             Stay informed with dental care tips, oral health advice, patient stories, and the latest news
                                             from Y3 Smiles Dental to help maintain your family's oral health.
                                         </p>
@@ -237,7 +237,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Our Core Values
                                 </h2>
-                                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 max-w-3xl mx-auto">
                                     Our commitment to exceptional care is built on these fundamental principles that guide everything we do
                                 </p>
                             </div>
@@ -256,7 +256,7 @@ const Y3SmilesDentalPage = () => {
                                                         <h4 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                                             {value.title}
                                                         </h4>
-                                                        <p className="text-neutral-600 leading-relaxed">
+                                                        <p className="text-neutral-800 leading-relaxed">
                                                             {value.description}
                                                         </p>
                                                     </div>
@@ -278,7 +278,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Comprehensive Dental Treatments
                                 </h2>
-                                <p className="text-lg text-neutral-600">
+                                <p className="text-lg text-neutral-800">
                                     We offer a full range of dental treatments to meet all your family's oral health needs
                                 </p>
                             </div>
@@ -312,7 +312,7 @@ const Y3SmilesDentalPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Modern Facilities
                                 </h2>
-                                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                     Our clinic is designed with patient comfort and cutting-edge dental care in mind
                                 </p>
                             </div>
@@ -327,7 +327,7 @@ const Y3SmilesDentalPage = () => {
                                             <h3 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                                 {facility.title}
                                             </h3>
-                                            <p className="text-neutral-600 leading-relaxed">
+                                            <p className="text-neutral-800 leading-relaxed">
                                                 {facility.description}
                                             </p>
                                         </CardContent>

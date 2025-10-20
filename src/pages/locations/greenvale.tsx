@@ -82,7 +82,7 @@ import {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
                                     Discover exceptional dental care at Greenvale Dental Clinic focused on your family's oral health
                                     and wellbeing. Modern technology meets compassionate treatment.
                                 </p>
@@ -146,12 +146,12 @@ import {
                                     </div>
 
                                     <div className="space-y-6 mb-8">
-                                        <p className="text-lg text-neutral-600 leading-relaxed">
+                                        <p className="text-lg text-neutral-800 leading-relaxed">
                                             At Y3 Smiles Dental, we understand that good oral health is essential for your overall wellbeing.
                                             Our experienced team provides comprehensive dental care for Greenvale families, focusing on
                                             prevention, comfort, and personalised treatment plans.
                                         </p>
-                                        <p className="text-lg text-neutral-600 leading-relaxed">
+                                        <p className="text-lg text-neutral-800 leading-relaxed">
                                             From routine check-ups to advanced treatments, we're committed to helping you achieve and
                                             maintain a healthy, confident smile. Our modern clinic and caring approach ensure every
                                             visit is comfortable and stress-free.
@@ -164,14 +164,14 @@ import {
                                                 <Star className="w-6 h-6 text-white" />
                                             </div>
                                             <h4 className="text-lg font-bold text-neutral-800 mb-2">5-Star Care</h4>
-                                            <p className="text-neutral-600 text-sm">Excellence in every treatment</p>
+                                            <p className="text-neutral-800 text-sm">Excellence in every treatment</p>
                                         </div>
                                         <div className="bg-gradient-to-br from-white to-secondary/5 p-6 rounded-2xl shadow-soft border border-secondary/10">
                                             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
                                                 <Heart className="w-6 h-6 text-white" />
                                             </div>
                                             <h4 className="text-lg font-bold text-neutral-800 mb-2">Family Focus</h4>
-                                            <p className="text-neutral-600 text-sm">Care for all ages</p>
+                                            <p className="text-neutral-800 text-sm">Care for all ages</p>
                                         </div>
                                     </div>
 
@@ -217,7 +217,7 @@ import {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Why Greenvale Residents Choose Y3 Smiles Dental
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 We're committed to providing exceptional dental care with a personalised approach.
                             </p>
                         </div>
@@ -233,7 +233,7 @@ import {
                                         <h3 className="text-xl font-bold text-neutral-800 mb-4">
                                             {item.title}
                                         </h3>
-                                        <p className="text-neutral-600 leading-relaxed">
+                                        <p className="text-neutral-800 leading-relaxed">
                                             {item.description}
                                         </p>
                                     </div>
@@ -262,7 +262,7 @@ import {
                                     Comprehensive Dental Care for
                                     <span className="text-primary"> Greenvale</span>
                                 </h2>
-                                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                     Complete oral health solutions for your entire family with modern techniques and compassionate care.
                                 </p>
                             </div>
@@ -286,7 +286,7 @@ import {
                                                 {service.split(' ').slice(0, 2).join(' ')}
                                             </h3>
 
-                                            <p className="text-neutral-600 leading-relaxed">
+                                            <p className="text-neutral-800 leading-relaxed">
                                                 {service}
                                             </p>
                                         </div>
@@ -302,7 +302,7 @@ import {
                                 <h3 className="text-3xl font-bold text-neutral-800 mb-4">
                                     Ready to Transform Your Smile?
                                 </h3>
-                                <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+                                <p className="text-lg text-neutral-800 mb-8 max-w-2xl mx-auto">
                                     Discover our complete range of dental treatments designed to give you
                                     the healthy, beautiful smile you deserve.
                                 </p>

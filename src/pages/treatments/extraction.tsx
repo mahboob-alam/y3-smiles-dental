@@ -195,7 +195,7 @@ const ToothExtraction = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Tooth Extraction
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Gentle, comfortable tooth removal when necessary to preserve your oral health.
                 Modern techniques and sedation options ensure a pain-free experience.
               </p>
@@ -234,7 +234,7 @@ const ToothExtraction = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {type.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {type.description}
                       </p>
                       <div className="grid grid-cols-2 gap-4 text-sm mb-4">
@@ -252,7 +252,7 @@ const ToothExtraction = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -261,7 +261,7 @@ const ToothExtraction = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{type.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{type.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -279,7 +279,7 @@ const ToothExtraction = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about tooth extraction.
                 </p>
               </div>
@@ -291,7 +291,7 @@ const ToothExtraction = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -307,7 +307,7 @@ const ToothExtraction = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Gentle, Professional Extractions
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 When tooth extraction is necessary, trust our experienced team to provide
                 comfortable, professional care with comprehensive aftercare support.
               </p>

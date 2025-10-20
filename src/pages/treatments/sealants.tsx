@@ -159,7 +159,7 @@ const PitsAndFissureSealants = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Pits & Fissure Sealants
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Protective coatings for back teeth that prevent 80% of cavities in the most vulnerable areas.
                 Simple, painless prevention that saves teeth and money.
               </p>
@@ -190,7 +190,7 @@ const PitsAndFissureSealants = () => {
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     Shield Your Teeth from Cavities
                   </h3>
-                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                     Dental sealants are thin, protective coatings that cover the chewing surfaces
                     of back teeth. They fill in the deep grooves and pits where food particles
                     and bacteria can hide, creating a smooth surface that's much easier to clean
@@ -201,21 +201,21 @@ const PitsAndFissureSealants = () => {
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Proven Prevention</h4>
-                        <p className="text-neutral-600 text-sm">Reduces cavities by up to 80% in sealed teeth</p>
+                        <p className="text-neutral-800 text-sm">Reduces cavities by up to 80% in sealed teeth</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Quick Application</h4>
-                        <p className="text-neutral-600 text-sm">Painless procedure takes just minutes per tooth</p>
+                        <p className="text-neutral-800 text-sm">Painless procedure takes just minutes per tooth</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Cost Effective</h4>
-                        <p className="text-neutral-600 text-sm">Prevents expensive restorative treatments</p>
+                        <p className="text-neutral-800 text-sm">Prevents expensive restorative treatments</p>
                       </div>
                     </div>
                   </div>
@@ -252,7 +252,7 @@ const PitsAndFissureSealants = () => {
                       <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                         {type.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {type.description}
                       </p>
                       <div className="flex items-center text-sm text-primary font-medium mb-4">
@@ -264,7 +264,7 @@ const PitsAndFissureSealants = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -273,7 +273,7 @@ const PitsAndFissureSealants = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{type.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{type.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -291,7 +291,7 @@ const PitsAndFissureSealants = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about dental sealants.
                 </p>
               </div>
@@ -303,7 +303,7 @@ const PitsAndFissureSealants = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -320,7 +320,7 @@ const PitsAndFissureSealants = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Protect Your Family's Smiles
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Give your children (and yourself) the best protection against cavities.
                 Sealants are a simple, effective way to prevent dental problems before they start.
               </p>

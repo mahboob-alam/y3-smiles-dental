@@ -70,7 +70,7 @@ import {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Dental Implants
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Dental implants are a modern option for replacing missing teeth. They are small titanium posts placed into the jawbone, acting like the root of a natural tooth. Once healed, a custom crown, bridge, or denture is attached, creating a secure, natural-looking replacement that blends with your smile.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -98,7 +98,7 @@ import {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Restoring Smiles with Confidence
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Dental implants may help restore chewing, speech, and confidence. However, suitability depends on medical history, bone density, gum health, and overall wellbeing.
                                     </p>
                                     <div className="space-y-4">
@@ -106,21 +106,21 @@ import {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Permanent Solution</h4>
-                                                <p className="text-neutral-600 text-sm">Long-lasting tooth replacement that can last a lifetime</p>
+                                                <p className="text-neutral-800 text-sm">Long-lasting tooth replacement that can last a lifetime</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Natural Feel</h4>
-                                                <p className="text-neutral-600 text-sm">Functions and feels like your natural teeth</p>
+                                                <p className="text-neutral-800 text-sm">Functions and feels like your natural teeth</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Bone Preservation</h4>
-                                                <p className="text-neutral-600 text-sm">Helps maintain jawbone structure and facial support</p>
+                                                <p className="text-neutral-800 text-sm">Helps maintain jawbone structure and facial support</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +144,7 @@ import {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 The Implant Process (Simplified)
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 A comprehensive approach to ensure the best possible outcome for your dental implant treatment.
                             </p>
                         </div>
@@ -160,7 +160,7 @@ import {
                                             <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                                                 {step.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed text-sm">
+                                            <p className="text-neutral-800 leading-relaxed text-sm">
                                                 {step.description}
                                             </p>
                                         </CardHeader>
@@ -196,7 +196,7 @@ import {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Interested in Dental Implants?
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Schedule a consultation to discuss whether dental implants are the right solution for your individual needs.
                             </p>
                             <Button variant="booking" size="xl" asChild>

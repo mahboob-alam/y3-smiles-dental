@@ -57,7 +57,7 @@ const Treatments = () => {
           <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 text-balance">
             Comprehensive Dental Care Treatments
           </h3>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-lg text-neutral-800 max-w-2xl mx-auto">
             Professional dental services designed to give you a beautiful, healthy smile that lasts.
           </p>
         </div>
@@ -84,7 +84,7 @@ const Treatments = () => {
                   <p className="text-sm font-medium text-primary mb-4">
                     {treatment.subheading}
                   </p>
-                  <p className="text-neutral-600 mb-6 leading-relaxed">
+                  <p className="text-neutral-800 mb-6 leading-relaxed">
                     {treatment.description}
                   </p>
                 </div>

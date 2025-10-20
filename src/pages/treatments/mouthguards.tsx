@@ -55,7 +55,7 @@ const Mouthguards = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Custom Mouthguards
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Whether you're active on the field or grind your teeth while you sleep, a custom mouthguard can make all the difference in protecting your teeth. At Y3 Smiles Dental, we design mouthguards that fit comfortably and provide maximum protection, tailored to your unique dental structure.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -85,7 +85,7 @@ const Mouthguards = () => {
                                     <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                                         What Are Mouthguards?
                                     </h3>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         Mouthguards are protective devices that shield your teeth and gums from injury. They are especially helpful during sports or if you suffer from teeth grinding (bruxism). Unlike over-the-counter options, our custom-fitted mouthguards are designed for comfort, durability, and effectiveness.
                                     </p>
                                     <div className="space-y-4">
@@ -93,21 +93,21 @@ const Mouthguards = () => {
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Superior Protection</h4>
-                                                <p className="text-neutral-600 text-sm">Custom fit provides better protection than over-the-counter options</p>
+                                                <p className="text-neutral-800 text-sm">Custom fit provides better protection than over-the-counter options</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Maximum Comfort</h4>
-                                                <p className="text-neutral-600 text-sm">Designed specifically for your mouth for comfortable wear</p>
+                                                <p className="text-neutral-800 text-sm">Designed specifically for your mouth for comfortable wear</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
                                                 <h4 className="font-semibold text-neutral-800 mb-1">Durable Materials</h4>
-                                                <p className="text-neutral-600 text-sm">High-quality materials ensure long-lasting protection</p>
+                                                <p className="text-neutral-800 text-sm">High-quality materials ensure long-lasting protection</p>
                                             </div>
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@ const Mouthguards = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                 Types of Mouthguards
                             </h2>
-                            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                            <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                 We offer custom mouthguards designed for different needs and activities.
                             </p>
                         </div>
@@ -147,12 +147,12 @@ const Mouthguards = () => {
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {type.title}
                                             </CardTitle>
-                                            <p className="text-neutral-600 leading-relaxed mb-4">
+                                            <p className="text-neutral-800 leading-relaxed mb-4">
                                                 {type.description}
                                             </p>
                                             <div className="space-y-2">
                                                 {type.features.map((feature, idx) => (
-                                                    <div key={idx} className="flex items-center text-sm text-neutral-600">
+                                                    <div key={idx} className="flex items-center text-sm text-neutral-800">
                                                         <Star className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                                                         {feature}
                                                     </div>
@@ -190,7 +190,7 @@ const Mouthguards = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Protect Your Smile Today
                             </h2>
-                            <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+                            <p className="text-xl text-neutral-800 mb-8 max-w-2xl mx-auto">
                                 Don't wait for an injury or damage to occur. Get a custom mouthguard designed specifically for your needs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

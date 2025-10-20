@@ -227,7 +227,7 @@ const TreatmentsPage = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Our Dental Treatments
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Comprehensive dental care for you and your family. From routine checkups
                 to specialised treatments, we provide gentle, professional care in a comfortable environment.
               </p>
@@ -253,7 +253,7 @@ const TreatmentsPage = () => {
               <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Specialised Care for Every Need
               </h3>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Our comprehensive range of dental treatments covers every aspect of oral health care.
               </p>
             </div>
@@ -265,7 +265,7 @@ const TreatmentsPage = () => {
                     <div className="w-6 h-6 rounded-full bg-current"></div>
                   </div>
                   <h4 className="text-lg font-bold text-neutral-800 mb-2">{category.name}</h4>
-                  <p className="text-sm text-neutral-600">{category.description}</p>
+                  <p className="text-sm text-neutral-800">{category.description}</p>
                 </div>
               ))}
             </div>
@@ -279,7 +279,7 @@ const TreatmentsPage = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Complete Treatment Directory
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 Explore our full range of dental services, each designed to meet your specific oral health needs.
               </p>
             </div>
@@ -304,14 +304,14 @@ const TreatmentsPage = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-3">
                         {treatment.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed text-sm">
+                      <p className="text-neutral-800 leading-relaxed text-sm">
                         {treatment.description}
                       </p>
                     </CardHeader>
                     <CardContent className="pt-0 flex-1 flex flex-col justify-between">
                       <ul className="space-y-2 mb-6">
                         {treatment.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                          <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                             <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                             {feature}
                           </li>
@@ -342,7 +342,7 @@ const TreatmentsPage = () => {
                   <h3 className="text-4xl font-bold text-neutral-800 mb-6">
                     Experience You Can Trust
                   </h3>
-                  <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                     Y3 Smiles Dental East Melbourne provides exceptional dental services to families throughout Melbourne. Our commitment
                     to gentle, comprehensive care ensures every patient feels comfortable and
                     confident in their treatment.
@@ -352,21 +352,21 @@ const TreatmentsPage = () => {
                       <Users className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Comprehensive Care</h4>
-                        <p className="text-neutral-600 text-sm">Full range of services for all your dental needs</p>
+                        <p className="text-neutral-800 text-sm">Full range of services for all your dental needs</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Clock className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Convenient Scheduling</h4>
-                        <p className="text-neutral-600 text-sm">Flexible appointment times to fit your busy lifestyle</p>
+                        <p className="text-neutral-800 text-sm">Flexible appointment times to fit your busy lifestyle</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Heart className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-neutral-800 mb-1">Comfort-First Approach</h4>
-                        <p className="text-neutral-600 text-sm">Gentle techniques and anxiety management for all patients</p>
+                        <p className="text-neutral-800 text-sm">Gentle techniques and anxiety management for all patients</p>
                       </div>
                     </div>
                   </div>
@@ -374,13 +374,13 @@ const TreatmentsPage = () => {
                 <div className="bg-primary/5 rounded-2xl p-8">
                   <div className="text-center">
                     <div className="text-4xl font-bold text-primary mb-2">40+</div>
-                    <div className="text-neutral-600 mb-6">Years of Excellence</div>
+                    <div className="text-neutral-800 mb-6">Years of Excellence</div>
                     <div className="text-4xl font-bold text-primary mb-2">13</div>
-                    <div className="text-neutral-600 mb-6">Specialised Treatments</div>
+                    <div className="text-neutral-800 mb-6">Specialised Treatments</div>
                     <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                    <div className="text-neutral-600 mb-6">Happy Families</div>
+                    <div className="text-neutral-800 mb-6">Happy Families</div>
                     <div className="text-4xl font-bold text-primary mb-2">5★</div>
-                    <div className="text-neutral-600">Patient Reviews</div>
+                    <div className="text-neutral-800">Patient Reviews</div>
                   </div>
                 </div>
               </div>
@@ -396,7 +396,7 @@ const TreatmentsPage = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Dental Emergency?
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Don't suffer in pain. Our emergency dental treatments are available when you need them most. Call us ASAP, we will try to accommodate a same day appointment.
               </p>
               <div className="bg-white rounded-2xl p-8 shadow-soft mb-8">
@@ -459,7 +459,7 @@ const TreatmentsPage = () => {
                   <h4 className="text-xl font-bold text-neutral-800 mb-3">
                     {item.title}
                   </h4>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
+                  <p className="text-neutral-800 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -476,7 +476,7 @@ const TreatmentsPage = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Ready to Experience the Y3 Smiles Dental Difference?
               </h2> */}
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Our experienced team is here to help you achieve the healthy, beautiful smile you deserve.
                 Book your consultation today and discover personalized dental treatments.
               </p>

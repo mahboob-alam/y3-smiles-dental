@@ -85,7 +85,7 @@ const OurTeamPage = () => {
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Our Team
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Meet the dedicated professionals who make Y3 Smiles Dental a place where exceptional care
                                 meets genuine compassion. Our experienced team is committed to your comfort and oral health.
                             </p>
@@ -115,7 +115,7 @@ const OurTeamPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     What Drives Our Team
                                 </h2>
-                                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                                     Our shared values guide everything we do and ensure every patient receives the best possible care
                                 </p>
                             </div>
@@ -132,7 +132,7 @@ const OurTeamPage = () => {
                                                 <h3 className="text-xl font-bold text-neutral-800 mb-4">
                                                     {value.title}
                                                 </h3>
-                                                <p className="text-neutral-600 leading-relaxed">
+                                                <p className="text-neutral-800 leading-relaxed">
                                                     {value.description}
                                                 </p>
                                             </CardContent>
@@ -152,7 +152,7 @@ const OurTeamPage = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     Meet Our Professionals
                                 </h2>
-                                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 max-w-3xl mx-auto">
                                     Our experienced team brings together clinical expertise, genuine care, and a commitment to your wellbeing
                                 </p>
                             </div>
@@ -190,7 +190,7 @@ const OurTeamPage = () => {
                                                         </span>
                                                     </div>
 
-                                                    <p className="text-neutral-600 leading-relaxed mb-6">
+                                                    <p className="text-neutral-800 leading-relaxed mb-6">
                                                         {member.description}
                                                     </p>
 
@@ -202,7 +202,7 @@ const OurTeamPage = () => {
                                                         </h4>
                                                         <ul className="space-y-1">
                                                             {member.qualifications.map((qual, qualIndex) => (
-                                                                <li key={qualIndex} className="text-sm text-neutral-600 flex items-center">
+                                                                <li key={qualIndex} className="text-sm text-neutral-800 flex items-center">
                                                                     <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                                                                     {qual}
                                                                 </li>
@@ -237,7 +237,7 @@ const OurTeamPage = () => {
                                     <h3 className="text-xl font-semibold text-neutral-800 mb-2">
                                         Expanding Our Team
                                     </h3>
-                                    <p className="text-neutral-600 mb-4">
+                                    <p className="text-neutral-800 mb-4">
                                         We're always looking for passionate dental professionals to join our team.
                                         Explore career opportunities with us!
                                     </p>
@@ -261,7 +261,7 @@ const OurTeamPage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Experience Our Team's Expert Care
                             </h2>
-                            <p className="text-lg text-neutral-600 mb-8">
+                            <p className="text-lg text-neutral-800 mb-8">
                                 Our dedicated professionals are ready to help you achieve optimal oral health.
                                 Book your appointment and experience the Y3 Smiles difference.
                             </p>

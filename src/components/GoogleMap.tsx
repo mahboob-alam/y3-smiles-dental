@@ -97,7 +97,7 @@ const GoogleMap = ({
                 ? `Y3 Smiles Dental serves residents of ${locationName}`
                 : "Conveniently Located in Broadmeadows"}
             </h3> */}
-            <p className="text-xl text-neutral-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-neutral-800 leading-relaxed max-w-3xl mx-auto">
               Our modern, comfortable clinic is easily accessible and thoughtfully designed to create a calming and relaxing experience for every patient.
             </p>
           </div>
@@ -142,7 +142,7 @@ const GoogleMap = ({
                         <h5 className="font-semibold text-neutral-800 mb-1 text-sm">
                           {transport.title}
                         </h5>
-                        <p className="text-xs text-neutral-600 mb-1">
+                        <p className="text-xs text-neutral-800 mb-1">
                           {transport.description}
                         </p>
                         <p className="text-xs text-neutral-500">

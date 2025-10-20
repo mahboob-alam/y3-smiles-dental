@@ -161,7 +161,7 @@ const FluorideTreatments = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Fluoride Treatments
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Professional fluoride treatments provide superior cavity protection by strengthening
                 tooth enamel and reversing early stages of tooth decay. Safe, effective prevention for all ages.
               </p>
@@ -187,7 +187,7 @@ const FluorideTreatments = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Types of Fluoride Treatments
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 We offer various fluoride treatment options to meet different needs and preferences.
               </p>
             </div>
@@ -203,7 +203,7 @@ const FluorideTreatments = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {type.description}
                       </p>
                       <div className="grid grid-cols-2 gap-2 text-sm mb-4">
@@ -221,7 +221,7 @@ const FluorideTreatments = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -230,7 +230,7 @@ const FluorideTreatments = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{type.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{type.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -262,7 +262,7 @@ const FluorideTreatments = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-neutral-600 text-sm leading-relaxed">
+                      <p className="text-neutral-800 text-sm leading-relaxed">
                         {group.description}
                       </p>
                     </CardContent>
@@ -281,7 +281,7 @@ const FluorideTreatments = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about fluoride treatments.
                 </p>
               </div>
@@ -293,7 +293,7 @@ const FluorideTreatments = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -309,7 +309,7 @@ const FluorideTreatments = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Protect Your Smile Today
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Give your teeth the extra protection they deserve with professional fluoride treatments.
                 Safe, effective, and proven to prevent cavities.
               </p>

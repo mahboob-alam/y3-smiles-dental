@@ -163,7 +163,7 @@ const DentalFillings = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Dental Fillings
               </h1>
-              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                 Modern, tooth-coloured fillings that restore your teeth's function and appearance.
                 Mercury-free options that blend seamlessly with your natural smile.
               </p>
@@ -189,7 +189,7 @@ const DentalFillings = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                 Types of Dental Fillings
               </h2>
-              <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg text-neutral-800 max-w-3xl mx-auto">
                 We offer various filling materials to meet your specific needs and preferences.
               </p>
             </div>
@@ -205,7 +205,7 @@ const DentalFillings = () => {
                       <CardTitle className="text-xl font-bold text-neutral-800 mb-2">
                         {type.title}
                       </CardTitle>
-                      <p className="text-neutral-600 leading-relaxed mb-4">
+                      <p className="text-neutral-800 leading-relaxed mb-4">
                         {type.description}
                       </p>
                       <div className="flex items-center text-sm text-primary font-medium mb-4">
@@ -217,7 +217,7 @@ const DentalFillings = () => {
                       <div className="mb-4">
                         <ul className="space-y-2 mb-4">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                            <li key={featureIndex} className="flex items-center text-sm text-neutral-800">
                               <CheckCircle className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                               {feature}
                             </li>
@@ -226,7 +226,7 @@ const DentalFillings = () => {
                       </div>
                       <div className="bg-neutral-50 rounded-lg p-4">
                         <h4 className="font-semibold text-neutral-800 mb-2 text-sm">Best for:</h4>
-                        <p className="text-sm text-neutral-600">{type.suitableFor}</p>
+                        <p className="text-sm text-neutral-800">{type.suitableFor}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -258,7 +258,7 @@ const DentalFillings = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-neutral-600 text-sm leading-relaxed">
+                      <p className="text-neutral-800 text-sm leading-relaxed">
                         {sign.description}
                       </p>
                     </CardContent>
@@ -280,14 +280,14 @@ const DentalFillings = () => {
                     <CardTitle className="text-2xl font-bold text-neutral-800">
                       After Care Instructions
                     </CardTitle>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-800">
                       Follow these guidelines for optimal healing
                     </p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
                       {afterCare.map((instruction, index) => (
-                        <li key={index} className="flex items-center text-sm text-neutral-600">
+                        <li key={index} className="flex items-center text-sm text-neutral-800">
                           <CheckCircle className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" />
                           {instruction}
                         </li>
@@ -302,14 +302,14 @@ const DentalFillings = () => {
                     <CardTitle className="text-2xl font-bold text-neutral-800">
                       Prevention Tips
                     </CardTitle>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-800">
                       Prevent future cavities with these habits
                     </p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
                       {prevention.map((tip, index) => (
-                        <li key={index} className="flex items-center text-sm text-neutral-600">
+                        <li key={index} className="flex items-center text-sm text-neutral-800">
                           <CheckCircle className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" />
                           {tip}
                         </li>
@@ -330,7 +330,7 @@ const DentalFillings = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-lg text-neutral-800">
                   Get answers to common questions about dental fillings.
                 </p>
               </div>
@@ -342,7 +342,7 @@ const DentalFillings = () => {
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
-                      <p className="text-neutral-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-neutral-800 leading-relaxed">{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -358,7 +358,7 @@ const DentalFillings = () => {
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Don't Let Cavities Get Worse
               </h2>
-              <p className="text-lg text-neutral-600 mb-8">
+              <p className="text-lg text-neutral-800 mb-8">
                 Early treatment of cavities prevents more extensive and expensive procedures.
                 Schedule your appointment today for comfortable, effective treatment.
               </p>

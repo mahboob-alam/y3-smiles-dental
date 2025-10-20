@@ -61,7 +61,7 @@ const Contact = () => {
             <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
               Discover the Smile You Deserve.
             </h3>
-            <p className="text-lg text-neutral-600">
+            <p className="text-lg text-neutral-800">
               Book your appointment today and smile brighter with Y3 Smiles Dental.
             </p>
           </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-neutral-800 group-hover:text-primary transition-gentle">03 9022 4442</p>
-                      <p className="text-neutral-600 group-hover:text-primary/70 transition-gentle">Call us today</p>
+                      <p className="text-neutral-800 group-hover:text-primary/70 transition-gentle">Call us today</p>
                     </div>
                   </a>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-neutral-800 group-hover:text-primary transition-gentle">smile@y3smilesdental.com.au</p>
-                      <p className="text-neutral-600 group-hover:text-primary/70 transition-gentle">Email us anytime</p>
+                      <p className="text-neutral-800 group-hover:text-primary/70 transition-gentle">Email us anytime</p>
                     </div>
                   </a>
 
@@ -119,7 +119,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-neutral-800 group-hover:text-primary transition-gentle">1/34 King William St</p>
-                      <p className="text-neutral-600 group-hover:text-primary/70 transition-gentle">Broadmeadows, VIC 3047</p>
+                      <p className="text-neutral-800 group-hover:text-primary/70 transition-gentle">Broadmeadows, VIC 3047</p>
                     </div>
                   </a>
                 </div>
@@ -128,15 +128,15 @@ const Contact = () => {
                   <h5 className="font-semibold text-neutral-800 mb-4">Opening Hours</h5>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
-                      <span className="text-neutral-600">Monday - Friday</span>
+                      <span className="text-neutral-800">Monday - Friday</span>
                       <span className="text-neutral-800">9:00 AM - 5:00 PM</span>
                     </div>
                     <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
-                      <span className="text-neutral-600">Saturday</span>
+                      <span className="text-neutral-800">Saturday</span>
                       <span className="text-neutral-800">9:00 AM - 1:00 PM</span>
                     </div>
                     <div className="flex justify-between hover:bg-primary/5 px-2 py-1 rounded transition-gentle">
-                      <span className="text-neutral-600">Sunday</span>
+                      <span className="text-neutral-800">Sunday</span>
                       <span className="text-neutral-800">Closed</span>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      <label className="block text-sm font-medium text-neutral-800 mb-2">
                         First Name
                       </label>
                       <input
@@ -166,7 +166,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-neutral-700 mb-2">
+                      <label className="block text-sm font-medium text-neutral-800 mb-2">
                         Last Name
                       </label>
                       <input
@@ -180,7 +180,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label className="block text-sm font-medium text-neutral-800 mb-2">
                       Email Address
                     </label>
                     <input
@@ -193,7 +193,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label className="block text-sm font-medium text-neutral-800 mb-2">
                       Phone Number
                     </label>
                     <input
@@ -206,7 +206,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label className="block text-sm font-medium text-neutral-800 mb-2">
                       Service Interest
                     </label>
                     <select
@@ -233,7 +233,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label className="block text-sm font-medium text-neutral-800 mb-2">
                       Message
                     </label>
                     <textarea

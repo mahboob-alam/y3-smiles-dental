@@ -86,7 +86,7 @@ const FawknerPage = () => {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
                                     Experience exceptional dental care at Fawkner Dental Clinic. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
@@ -135,12 +135,12 @@ const FawknerPage = () => {
                                     <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                         Caring for Fawkner Smiles
                                     </h2>
-                                    <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-6 leading-relaxed">
                                         Y3 Smiles Dental is proud to serve the diverse Fawkner community with
                                         compassionate, professional dental care. Our multilingual team understands
                                         the unique needs of our multicultural neighbourhood.
                                     </p>
-                                    <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                                    <p className="text-lg text-neutral-800 mb-8 leading-relaxed">
                                         We believe everyone deserves access to quality dental care. Our practice
                                         welcomes patients from all backgrounds and provides gentle, effective
                                         treatments in a comfortable environment.
@@ -174,7 +174,7 @@ const FawknerPage = () => {
                             <h2 className="text-4xl font-bold text-center text-neutral-800 mb-4">
                                 Embracing Fawkner's Community Spirit
                             </h2>
-                            <p className="text-xl text-neutral-600 text-center mb-12">
+                            <p className="text-xl text-neutral-800 text-center mb-12">
                                 We celebrate the diversity and strength of our local community
                             </p>
 
@@ -182,7 +182,7 @@ const FawknerPage = () => {
                                 <div className="bg-white p-8 rounded-xl shadow-soft text-center">
                                     <Users className="w-12 h-12 text-primary mx-auto mb-4" />
                                     <h3 className="text-xl font-bold text-neutral-800 mb-4">Cultural Sensitivity</h3>
-                                    <p className="text-neutral-600">
+                                    <p className="text-neutral-800">
                                         Our team respects and embraces cultural diversity. We understand different
                                         backgrounds may have varying perspectives on dental care and work to accommodate
                                         everyone's needs comfortably.
@@ -192,7 +192,7 @@ const FawknerPage = () => {
                                 <div className="bg-white p-8 rounded-xl shadow-soft text-center">
                                     <Heart className="w-12 h-12 text-primary mx-auto mb-4" />
                                     <h3 className="text-xl font-bold text-neutral-800 mb-4">Affordable Care</h3>
-                                    <p className="text-neutral-600">
+                                    <p className="text-neutral-800">
                                         We believe cost shouldn't be a barrier to good oral health. We offer flexible
                                         payment options and work with various insurance providers to make dental care
                                         accessible for all.
@@ -202,7 +202,7 @@ const FawknerPage = () => {
                                 <div className="bg-white p-8 rounded-xl shadow-soft text-center">
                                     <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
                                     <h3 className="text-xl font-bold text-neutral-800 mb-4">Community Focus</h3>
-                                    <p className="text-neutral-600">
+                                    <p className="text-neutral-800">
                                         As part of the Fawkner community, we're committed to supporting local health
                                         initiatives and providing educational resources to promote better oral health
                                         for everyone.

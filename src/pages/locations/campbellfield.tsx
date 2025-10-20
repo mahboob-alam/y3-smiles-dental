@@ -86,7 +86,7 @@ const CampbellfieldPage = () => {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-neutral-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
                                     Experience exceptional dental care at Campbellfield Dental Clinic. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
@@ -198,7 +198,7 @@ const CampbellfieldPage = () => {
                                     {/* <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-primary/10">
                                         <div className="text-center">
                                             <div className="text-3xl font-bold text-primary">600+</div>
-                                            <div className="text-sm text-neutral-600 font-medium">Happy Patients</div>
+                                            <div className="text-sm text-neutral-800 font-medium">Happy Patients</div>
                                         </div>
                                     </div> */}
                                 </div>
@@ -235,7 +235,7 @@ const CampbellfieldPage = () => {
                                     </span>
                                 </h2>
 
-                                <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
+                                <p className="text-xl text-neutral-800 max-w-4xl mx-auto leading-relaxed">
                                     Experience the difference that expert care, modern technology, and genuine compassion
                                     make for Campbellfield families. Here's what sets us apart.
                                 </p>
@@ -260,7 +260,7 @@ const CampbellfieldPage = () => {
                                                 <h3 className="text-xl font-bold text-neutral-800 mb-4 group-hover:text-primary transition-colors duration-300">
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-neutral-600 leading-relaxed text-lg">
+                                                <p className="text-neutral-800 leading-relaxed text-lg">
                                                     {item.description}
                                                 </p>
                                             </div>
@@ -301,7 +301,7 @@ const CampbellfieldPage = () => {
                                     <span className="block text-primary">Campbellfield</span>
                                 </h2>
 
-                                <p className="text-xl text-neutral-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+                                <p className="text-xl text-neutral-800 mb-8 max-w-4xl mx-auto leading-relaxed">
                                     From routine check-ups to advanced treatments, we provide comprehensive dental
                                     care for every member of your family in a comfortable, modern environment.
                                 </p>
@@ -327,7 +327,7 @@ const CampbellfieldPage = () => {
                                                     {title}
                                                 </h3>
 
-                                                <p className="text-neutral-600 leading-relaxed">
+                                                <p className="text-neutral-800 leading-relaxed">
                                                     {description}
                                                 </p>
                                             </div>
@@ -344,7 +344,7 @@ const CampbellfieldPage = () => {
                                 <h3 className="text-3xl font-bold text-neutral-800 mb-4">
                                     Ready to Transform Your Smile?
                                 </h3>
-                                <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
+                                <p className="text-lg text-neutral-800 mb-8 max-w-2xl mx-auto">
                                     Discover our complete range of dental treatments designed to give you
                                     the healthy, beautiful smile you deserve.
                                 </p>

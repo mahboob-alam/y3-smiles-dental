@@ -94,7 +94,7 @@ const YourFirstVisitPage = () => {
                                 Your First
                                 <span className="block text-primary">Visit</span>
                             </h1>
-                            <p className="text-xl text-neutral-600 mb-12 leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-12 leading-relaxed">
                                 Learn what to expect during your initial consultation and how to prepare for your first appointment.
                             </p>
                         </div>
@@ -112,7 +112,7 @@ const YourFirstVisitPage = () => {
                                 <h3 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                                     What to Expect
                                 </h3>
-                                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                                <p className="text-xl text-neutral-800 max-w-3xl mx-auto">
                                     Your first visit typically takes about 60 minutes. Here's what you can expect:
                                 </p>
                             </div>
@@ -134,7 +134,7 @@ const YourFirstVisitPage = () => {
                                                             {item.duration}
                                                         </span>
                                                     </div>
-                                                    <p className="text-neutral-600 leading-relaxed">
+                                                    <p className="text-neutral-800 leading-relaxed">
                                                         {item.description}
                                                     </p>
                                                 </div>
@@ -221,7 +221,7 @@ const YourFirstVisitPage = () => {
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Feeling Nervous? We Understand
                             </h2>
-                            <p className="text-xl text-neutral-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                            <p className="text-xl text-neutral-800 mb-8 max-w-3xl mx-auto leading-relaxed">
                                 Dental anxiety is completely normal. Our team is experienced in helping nervous patients
                                 feel comfortable and relaxed. We'll take things at your pace and explain everything
                                 we're doing.
@@ -231,17 +231,17 @@ const YourFirstVisitPage = () => {
                                 <div className="flex flex-col items-center p-4">
                                     <Clock className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Take Your Time</h4>
-                                    <p className="text-sm text-neutral-600 text-center">No rushing - we'll go at your pace</p>
+                                    <p className="text-sm text-neutral-800 text-center">No rushing - we'll go at your pace</p>
                                 </div>
                                 <div className="flex flex-col items-center p-4">
                                     <Users className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Gentle Team</h4>
-                                    <p className="text-sm text-neutral-600 text-center">Caring professionals who understand</p>
+                                    <p className="text-sm text-neutral-800 text-center">Caring professionals who understand</p>
                                 </div>
                                 <div className="flex flex-col items-center p-4">
                                     <Heart className="w-10 h-10 text-primary mb-3" />
                                     <h4 className="font-semibold text-neutral-800 mb-2">Comfort First</h4>
-                                    <p className="text-sm text-neutral-600 text-center">Your comfort is our priority</p>
+                                    <p className="text-sm text-neutral-800 text-center">Your comfort is our priority</p>
                                 </div>
                             </div>
 

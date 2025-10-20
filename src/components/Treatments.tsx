@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { CheckCircle } from "lucide-react";
 
 const Treatments = () => {
   const featuredTreatments = [
@@ -7,6 +8,7 @@ const Treatments = () => {
       title: "Comprehensive check-ups and hygiene",
       subheading: "General Dentistry",
       description: "Regular check ups mean early detection, personalised care, and peace of mind for every patient.",
+      additionalInfo: "Checkup and clean. Starts from $249",
       image: "https://images.pexels.com/photos/3845746/pexels-photo-3845746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/examination-hygiene"
     },
@@ -14,6 +16,7 @@ const Treatments = () => {
       title: "Emergency",
       subheading: "Immediate Care",
       description: "We understand emergencies are stressful — we'll endeavour to provide urgent care and comfort quickly.",
+      additionalInfo: "Same-day available",
       image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/emergency"
     },
@@ -28,6 +31,7 @@ const Treatments = () => {
       title: "Children Dentistry",
       subheading: "Early Age Dental Care",
       description: "At Y3 Smiles Dental, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
+      additionalInfo: "FREE with CDBS (Eligibility applies)",
       image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       link: "/treatments/childrens-dentistry"
     },
@@ -76,18 +80,27 @@ const Treatments = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
                 />
               </div>
-              <div className="p-8 flex-1 flex flex-col justify-between">
-                <div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="flex-1">
                   <h4 className="text-xl font-bold text-neutral-800 mb-2">
                     {treatment.title}
                   </h4>
-                  <p className="text-sm font-medium text-primary mb-4">
+                  <p className="text-sm font-semibold text-primary mb-4">
                     {treatment.subheading}
                   </p>
-                  <p className="text-neutral-800 mb-6 leading-relaxed">
+                  <p className="text-neutral-800 mb-4 leading-relaxed">
                     {treatment.description}
                   </p>
                 </div>
+
+                {/* Additional Info with CheckCircle Icon - Fixed Position */}
+                <div className="flex items-center space-x-2 mb-6">
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <p className="text-sm font-medium text-green-600">
+                    {treatment.additionalInfo}
+                  </p>
+                </div>
+
                 <Button variant="learn" className="w-full" asChild>
                   <Link to={treatment.link}>
                     LEARN MORE

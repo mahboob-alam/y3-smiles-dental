@@ -57,6 +57,10 @@ const navigationItems = [
     ]
   },
   {
+    title: "Specials",
+    path: "/specials"
+  },
+  {
     title: "For Patients",
     path: "/patients",
     subItems: [

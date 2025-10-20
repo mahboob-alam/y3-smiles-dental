@@ -14,29 +14,30 @@ const ServiceProcess = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {[
                         {
-                            step: "1",
+                            imageSrc: "/1.png",
                             title: "Initial Consultation",
                             description: "Comprehensive examination and discussion of your dental health goals"
                         },
                         {
-                            step: "2",
+                            imageSrc: "/2.png",
                             title: "Treatment Planning",
                             description: "Customised treatment plan tailored to your specific needs and budget"
                         },
                         {
-                            step: "3",
+                            imageSrc: "/3.png",
                             title: "Professional Treatment",
                             description: "Gentle, expert care using the latest techniques and technology"
                         },
                         {
-                            step: "4",
+                            imageSrc: "/4.png",
                             title: "Ongoing Care",
                             description: "Regular maintenance and preventive care to keep your smile healthy"
                         }
                     ].map((item, index) => (
                         <div key={index} className="text-center">
-                            <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                                {item.step}
+                            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <img src={item.imageSrc} alt={item.title} className="w-12 h-12" />
+                                {/* {item.step} */}
                             </div>
                             <h4 className="text-xl font-bold text-neutral-800 mb-3">
                                 {item.title}

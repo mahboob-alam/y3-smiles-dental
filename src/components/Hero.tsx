@@ -12,47 +12,66 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in-up">
             {/* Main Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-800 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight">
                 Modern Family
                 <span className="block text-primary">
                   Dental Care
                 </span>
-                <span className="block text-neutral-700 text-3xl md:text-4xl lg:text-5xl">
+                <span className="block text-neutral-700 text-2xl md:text-3xl lg:text-4xl">
                   in Broadmeadows
                 </span>
               </h1>
 
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-neutral-800 leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-lg text-neutral-800 leading-relaxed max-w-2xl">
                 Comprehensive dental services with same-day emergency appointments,
                 kids dental with Medicare CDBS, and flexible payment options for all ages
               </p>
             </div>
 
-            {/* Social Proof Badges */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
-                <Shield className="w-8 h-8 text-primary mb-2" />
-                <span className="text-sm font-medium text-neutral-800">All Major Health Funds</span>
-                <span className="text-xs text-neutral-600">Accepted</span>
-              </div>
+            {/* Social Proof Badges - Compact Design */}
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-neutral-100 shadow-soft">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    {/* <Shield className="w-5 h-5 text-primary" /> */}
+                    <img src="/health-insurance.png" alt="health insurance" className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-neutral-800">All Major Health Funds</p>
+                    <p className="text-sm text-neutral-600">Accepted</p>
+                  </div>
+                </div>
 
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
-                <Heart className="w-8 h-8 text-primary mb-2" />
-                <span className="text-sm font-medium text-neutral-800">Medicare CDBS</span>
-                <span className="text-xs text-neutral-600">Provider</span>
-              </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <img src="/medicare-logo.svg" alt="Medicare" className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-neutral-800">Medicare CDBS</p>
+                    <p className="text-sm text-neutral-600">Eligibility Applies</p>
+                  </div>
+                </div>
 
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
-                <CheckCircle className="w-8 h-8 text-primary mb-2" />
-                <span className="text-sm font-medium text-neutral-800">Payment Plans</span>
-                <span className="text-xs text-neutral-600">Available</span>
-              </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <img src="/payment-plan.png" alt="Payment Plan" className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-neutral-800">Payment Plans</p>
+                    <p className="text-sm text-neutral-600">Available</p>
+                  </div>
+                </div>
 
-              <div className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
-                <Clock className="w-8 h-8 text-primary mb-2" />
-                <span className="text-sm font-medium text-neutral-800">New Clinic</span>
-                <span className="text-xs text-neutral-600">Opening 2025</span>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <img src="/dental-clinic.png" alt="Dental Clinic" className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-neutral-800">New Clinic</p>
+                    <p className="text-sm text-neutral-600">Opening 2025</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -67,38 +86,38 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Credential/Logo Bar */}
-            <div className="pt-8">
-              <p className="text-sm font-medium text-neutral-600 mb-4 text-center lg:text-left">
-                Trusted Payment & Healthcare Partners
+            {/* Credential/Logo Bar - Compact Design */}
+            <div className="pt-6">
+              <p className="text-xs font-medium text-neutral-500 mb-3 text-center lg:text-left uppercase tracking-wide">
+                Trusted Partners
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 md:gap-8">
-                <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/afterpay-logo.png"
                     alt="Afterpay"
-                    className="h-8 w-auto opacity-70 hover:opacity-100 transition-gentle"
+                    className="h-6 w-auto opacity-100  transition-gentle"
                   />
                 </div>
-                <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
+                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/hicaps-logo.svg"
                     alt="HiCaps"
-                    className="h-8 w-auto opacity-70 hover:opacity-100 transition-gentle"
+                    className="h-6 w-auto opacity-100  transition-gentle"
                   />
                 </div>
-                <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
+                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/humm-logo.svg"
                     alt="Humm"
-                    className="h-8 w-auto opacity-70 hover:opacity-100 transition-gentle"
+                    className="h-6 w-auto opacity-100  transition-gentle"
                   />
                 </div>
-                <div className="flex items-center justify-center p-3 bg-white rounded-xl shadow-soft border border-neutral-100 hover:shadow-md transition-gentle">
+                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/medicare-logo.svg"
                     alt="Medicare"
-                    className="h-8 w-auto opacity-70 hover:opacity-100 transition-gentle"
+                    className="h-6 w-auto opacity-100  transition-gentle"
                   />
                 </div>
               </div>
@@ -117,10 +136,10 @@ const Hero = () => {
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div> */}
 
                 {/* Floating Stats Card */}
-                <div className="absolute bottom-6 left-6 right-6">
+                {/* <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
@@ -137,7 +156,7 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Decorative Elements */}

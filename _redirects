@@ -1,0 +1,10 @@
+# Redirects for Cloudflare Pages
+
+# Redirect www to non-www (or vice versa)
+# https://www.yourdomain.com.au/* https://yourdomain.com.au/:splat 301
+
+# Redirect old URLs if needed
+# /old-page /new-page 301
+
+# Fallback to index.html for Gatsby client-side routing
+/* /index.html 200

@@ -107,7 +107,7 @@ const OurTeamPage = () => {
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="xl" asChild>
-                                    <Link to="/about">
+                                    <Link to="/about/y3-smiles-dental">
                                         <ArrowRight className="w-5 h-5 mr-2" />
                                         Back to About
                                     </Link>

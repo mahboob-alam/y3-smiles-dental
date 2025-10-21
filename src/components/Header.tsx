@@ -27,7 +27,7 @@ const Header = () => {
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center space-x-6">
               <Link
-                to="/about"
+                to="/about/y3-smiles-dental"
                 className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg"
               >
                 About

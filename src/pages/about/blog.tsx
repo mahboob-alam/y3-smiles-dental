@@ -46,7 +46,7 @@ const BlogPage = () => {
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="max-w-4xl mx-auto text-center">
                             <Button variant="outline" asChild className="mb-8 group">
-                                <Link to="/about">
+                                <Link to="/about/y3-smiles-dental">
                                     <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
                                     Back to About
                                 </Link>

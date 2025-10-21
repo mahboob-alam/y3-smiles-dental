@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "gatsby";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
@@ -23,6 +25,14 @@ import {
 } from "lucide-react";
 import { locationConfigs } from "@/data/locationData";
 import GoogleMap from "@/components/GoogleMap";
+
+
+export const Head = () => (
+  <SEO 
+    title="Y3 smiles dental | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
 
 const Y3SmilesDentalPage = () => {
     useScrollAnimation();

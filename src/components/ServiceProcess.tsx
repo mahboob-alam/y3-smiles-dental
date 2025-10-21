@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ServiceProcess = () => {
     return (
         <section className="py-24 bg-background">

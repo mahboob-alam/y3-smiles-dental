@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from "gatsby";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -284,7 +285,7 @@ const ToothExtraction = () => {
                 </p>
               </div>
 
-              <Accordion type="single" collapsible className="w-full space-y-4">
+              <Accordion className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-soft border-0">
                     <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">

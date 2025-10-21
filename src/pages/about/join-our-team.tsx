@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "gatsby";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
@@ -19,6 +21,14 @@ import {
     Star,
     CheckCircle
 } from "lucide-react";
+
+
+export const Head = () => (
+  <SEO 
+    title="Join our team | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
 
 const JoinOurTeamPage = () => {
     useScrollAnimation();

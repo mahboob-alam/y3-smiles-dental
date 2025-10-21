@@ -1,7 +1,18 @@
-import { useLocation } from "react-router-dom";
+import React from "react";
+import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
+import SEO from "@/components/SEO";
 import { useEffect } from "react";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+
+
+export const Head = () => (
+  <SEO 
+    title="NotFound | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
 
 const NotFound = () => {
   const location = useLocation();

@@ -1,9 +1,5 @@
-import * as CollapsiblePrimitive from "@radix-ui/react-collapsible"
+import SSRSafeCollapsible from "../SSRSafeCollapsible"
 
-const Collapsible = CollapsiblePrimitive.Root
-
-const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger
-
-const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent
-
-export { Collapsible, CollapsibleTrigger, CollapsibleContent }
+export const Collapsible = SSRSafeCollapsible;
+export const CollapsibleContent = SSRSafeCollapsible.Content;
+export const CollapsibleTrigger = SSRSafeCollapsible.Trigger;

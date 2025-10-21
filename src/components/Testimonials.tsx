@@ -1,7 +1,7 @@
+import React, { useCallback, useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Star, Quote, Users, Heart, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
-import { useCallback, useEffect, useState } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const Testimonials = () => {

@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "gatsby";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -7,8 +9,7 @@ import GoogleMap from "@/components/GoogleMap";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import { useState } from "react";
-import emailjs from '@emailjs/browser';
-import { useToast } from "@/hooks/use-toast";
+import EmailJSForm from "@/components/EmailJSForm";
 import {
     Phone,
     Mail,
@@ -22,50 +23,25 @@ import {
 } from "lucide-react";
 import Contact from "@/components/Contact";
 
+
+export const Head = () => (
+  <SEO 
+    title="Contact Us - Y3 Smiles Dental"
+    description="Get in touch with Y3 Smiles Dental. Call us, email us, or visit our clinic in Broadmeadows. We're here to answer your questions and book your next appointment."
+  />
+);
+
 const ContactUs = () => {
     useScrollAnimation();
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const { toast } = useToast();
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    // Form submission state handlers
+    const handleSubmitStart = () => {
         setIsSubmitting(true);
+    };
 
-        try {
-            const formData = new FormData(e.currentTarget);
-            const templateParams = {
-                from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
-                from_email: formData.get('email'),
-                phone: formData.get('phone'),
-                service: formData.get('service'),
-                message: formData.get('message'),
-                to_name: 'Y3 Smiles Dental',
-            };
-
-            // Replace these with your actual EmailJS credentials
-            await emailjs.send(
-                'service_xbm50e4', // YOUR_SERVICE_ID  Replace with your EmailJS service ID
-                'template_nfwl5um', // YOUR_TEMPLATE_ID Replace with your EmailJS template ID
-                templateParams,
-                '69eRgUdIdFe9Hq-4C' // YOUR_PUBLIC_KEY Replace with your EmailJS public key
-            );
-
-            toast({
-                title: "Message Sent Successfully!",
-                description: "Thank you for contacting Y3 Smiles Dental. We'll get back to you soon.",
-            });
-
-            // Reset form
-            (e.target as HTMLFormElement).reset();
-        } catch (error) {
-            toast({
-                title: "Error Sending Message",
-                description: "Please try again or call us directly at your convenience.",
-                variant: "destructive",
-            });
-        } finally {
-            setIsSubmitting(false);
-        }
+    const handleSubmitComplete = () => {
+        setIsSubmitting(false);
     };
 
     const contactMethods = [
@@ -112,6 +88,7 @@ const ContactUs = () => {
 
     return (
         <div className="min-h-screen flex flex-col">
+
             <Header />
             <main className="flex-grow">
                 {/* Hero Section */}

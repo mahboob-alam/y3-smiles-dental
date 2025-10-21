@@ -1,11 +1,11 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-dental-clinic.jpg";
-import logo from "@/assets/logo.svg";
+import { StaticImage } from "gatsby-plugin-image";
 import { CheckCircle, Clock, Heart, Shield } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-neutral-50 to-white py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-neutral-50 to-white pt-32 pb-24 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
@@ -89,35 +89,28 @@ const Hero = () => {
             {/* Credential/Logo Bar - Compact Design */}
             <div className="pt-6">
               <p className="text-xs font-medium text-neutral-500 mb-3 text-center lg:text-left uppercase tracking-wide">
-                Trusted Partners
+                Payments we accept
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+                <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/afterpay-logo.png"
                     alt="Afterpay"
-                    className="h-6 w-auto opacity-100  transition-gentle"
+                    className="h-8 w-auto opacity-100  transition-gentle"
                   />
                 </div>
-                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
-                  <img
-                    src="/hicaps-logo.svg"
-                    alt="HiCaps"
-                    className="h-6 w-auto opacity-100  transition-gentle"
-                  />
-                </div>
-                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+                <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/humm-logo.svg"
                     alt="Humm"
-                    className="h-6 w-auto opacity-100  transition-gentle"
+                    className="h-8 w-auto opacity-100  transition-gentle"
                   />
                 </div>
-                <div className="flex items-center justify-center px-4 py-2 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+                <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
                   <img
                     src="/medicare-logo.svg"
                     alt="Medicare"
-                    className="h-6 w-auto opacity-100  transition-gentle"
+                    className="h-8 w-auto opacity-100  transition-gentle"
                   />
                 </div>
               </div>
@@ -129,10 +122,13 @@ const Hero = () => {
             <div className="relative">
               {/* Main Image with Rounded Border */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img
-                  src={heroImage}
+                <StaticImage
+                  src="../assets/hero-dental-clinic.jpg"
                   alt="Modern Dental Clinic in Broadmeadows - Y3 Smiles Dental"
-                  className="w-full h-[600px] lg:h-[700px] object-cover"
+                  className="w-full h-[600px] lg:h-[700px]"
+                  placeholder="blurred"
+                  layout="fullWidth"
+                  objectFit="cover"
                 />
 
                 {/* Gradient Overlay */}

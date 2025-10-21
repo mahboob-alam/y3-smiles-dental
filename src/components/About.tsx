@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
+import { CheckCircle } from "lucide-react";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const shortText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment.";
 
-  const fullText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment.\n\nOur services cover all stages of dental care, including:\n\nComprehensive check-ups\n - Preventative treatments\n\nChildren's dentistry\n\naesthetic options such as teeth whitening, \nveneers, and clear aligners\n\nemergency and surgical procedures\n\nWhatever your needs, our experienced team is here to support you and your family.\n\n Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.";
+  const fullText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment.";
 
   const additionalText = fullText.substring(shortText.length);
+
+  const bullets = [
+    "Comprehensive check-ups",
+    "Preventative treatments",
+    "Children's dentistry",
+    "Aesthetic options such as teeth whitening, veneers, and clear aligners",
+    "Emergency and surgical procedures",
+  ];
 
   return (
     <section id="about" className="py-16 bg-gradient-hero fade-in-section">
@@ -43,8 +52,22 @@ const About = () => {
                     : 'opacity-0 max-h-0 overflow-hidden -translate-y-4'
                   }`}
               >
-                {/* Render additionalText with basic formatting for newlines */}
-                <div className="mt-4 space-y-3 whitespace-pre-line">{additionalText}</div>
+                <div className="mt-4 space-y-4 text-lg text-neutral-800">
+                  <p>Our services cover all stages of dental care, including:</p>
+                  <ul className="space-y-2">
+                    {bullets.map((item, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p>Whatever your needs, our experienced team is here to support you and your family.</p>
+                  <p>
+                    Patient comfort is our priority — we create a calm, supportive environment so every visit
+                    feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.
+                  </p>
+                </div>
                 <button
                   onClick={() => setIsExpanded(false)}
                   className="text-primary hover:text-primary/80 font-medium underline transition-all duration-300 mt-2 inline-block hover:scale-105 transform"

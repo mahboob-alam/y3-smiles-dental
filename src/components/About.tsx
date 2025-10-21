@@ -5,7 +5,7 @@ const About = () => {
 
   const shortText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment.";
 
-  const fullText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: healthy smiles, healthy lives — it begins with you. Our services cover all stages of dental care, including routine check-ups, preventative treatments, children's dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family. What makes us different is our patient-centred approach. We take the time to listen, explain, and personalise every treatment plan. Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.";
+  const fullText = "At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment.\n\nOur services cover all stages of dental care, including:\n\nComprehensive check-ups\n - Preventative treatments\n\nChildren's dentistry\n\naesthetic options such as teeth whitening, \nveneers, and clear aligners\n\nemergency and surgical procedures\n\nWhatever your needs, our experienced team is here to support you and your family.\n\n Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.";
 
   const additionalText = fullText.substring(shortText.length);
 
@@ -43,7 +43,8 @@ const About = () => {
                     : 'opacity-0 max-h-0 overflow-hidden -translate-y-4'
                   }`}
               >
-                <p className="mt-4">{additionalText}</p>
+                {/* Render additionalText with basic formatting for newlines */}
+                <div className="mt-4 space-y-3 whitespace-pre-line">{additionalText}</div>
                 <button
                   onClick={() => setIsExpanded(false)}
                   className="text-primary hover:text-primary/80 font-medium underline transition-all duration-300 mt-2 inline-block hover:scale-105 transform"

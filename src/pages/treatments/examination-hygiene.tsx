@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from "gatsby";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -379,7 +380,7 @@ const ExaminationHygiene = () => {
                 </p>
               </div>
 
-              <Accordion type="single" collapsible className="w-full space-y-4">
+              <Accordion className="w-full space-y-4">
                 {[
                   {
                     question: "How often should I have a dental examination and cleaning?",

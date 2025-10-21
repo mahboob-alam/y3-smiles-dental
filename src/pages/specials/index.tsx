@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "gatsby";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
@@ -23,6 +25,14 @@ import {
 } from "lucide-react";
 import OfferBanner from "@/components/OfferBanner";
 
+
+export const Head = () => (
+  <SEO 
+    title="Index | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
+
 const SpecialsPage = () => {
   useScrollAnimation();
 
@@ -43,10 +53,10 @@ const SpecialsPage = () => {
       description: "Comprehensive examination, professional clean & necessary X-rays",
       eligibility: "Eligibility Applies",
       icon: Star,
-      bgGradient: "from-blue-50 to-indigo-50",
-      borderColor: "border-blue-200",
-      iconColor: "text-blue-600",
-      badgeColor: "bg-blue-600",
+      bgGradient: "from-primary/5 to-primary/10",
+      borderColor: "border-primary/20",
+      iconColor: "text-primary",
+      badgeColor: "bg-primary",
       features: ["Full oral examination", "Professional cleaning", "Digital X-rays", "Treatment plan discussion"]
     },
     {
@@ -59,10 +69,10 @@ const SpecialsPage = () => {
       description: "Comprehensive dental care for eligible children aged 0-17 years",
       eligibility: "Medicare Eligibility Required",
       icon: Gift,
-      bgGradient: "from-green-50 to-emerald-50",
-      borderColor: "border-green-200",
-      iconColor: "text-green-600",
-      badgeColor: "bg-green-600",
+      bgGradient: "from-primary/5 to-primary/10",
+      borderColor: "border-primary/20",
+      iconColor: "text-primary",
+      badgeColor: "bg-primary",
       features: ["Check-ups & cleans", "Fluoride treatments", "Fissure sealants", "Minor dental work"]
     }
   ];
@@ -165,7 +175,7 @@ const SpecialsPage = () => {
                     <div className="text-center mb-6 h-48">
                       {/* Savings Badge */}
                       <div className="inline-block mb-4">
-                        <span className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
                           {offer.savings}
                         </span>
                       </div>

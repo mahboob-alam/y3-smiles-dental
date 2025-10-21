@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from "gatsby";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -18,11 +20,22 @@ import {
   Award,
   Heart,
   Zap,
-  ArrowRight
+  ArrowRight,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react";
+
+
+export const Head = () => (
+  <SEO 
+    title="Dental fillings | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
 
 const DentalFillings = () => {
   useScrollAnimation();
+  const [allExpanded, setAllExpanded] = useState(false);
 
   const benefits = [
     "Natural tooth appearance",
@@ -326,18 +339,39 @@ const DentalFillings = () => {
         <section className="py-24 bg-neutral-50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-neutral-800">
+                <p className="text-lg text-neutral-800 mb-8">
                   Get answers to common questions about dental fillings.
                 </p>
+                <button
+                  onClick={() => setAllExpanded(!allExpanded)}
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  {allExpanded ? (
+                    <>
+                      <ChevronUp className="w-4 h-4" />
+                      Collapse All
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="w-4 h-4" />
+                      Expand All
+                    </>
+                  )}
+                </button>
               </div>
 
-              <Accordion type="single" collapsible className="w-full space-y-4">
+              <Accordion 
+                type="multiple"
+                className="w-full space-y-4"
+                defaultValue={allExpanded ? faqs.map((_, idx) => `faq-${idx}`) : []}
+                key={`accordion-${allExpanded}`}
+              >
                 {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-soft border-0">
+                  <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg shadow-soft border-0">
                     <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
                       <span className="text-lg font-semibold text-neutral-800">{faq.question}</span>
                     </AccordionTrigger>

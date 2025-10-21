@@ -1,9 +1,11 @@
+import React from 'react';
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 type NavigationProps = React.HTMLAttributes<HTMLDivElement>;
 
@@ -34,6 +36,7 @@ const navigationItems = [
     subItems: [
       {
         title: "View All Treatments",
+        path: "/treatments",
         items: [
           { title: "Children's Dentistry (CDBS)", path: "/treatments/childrens-dentistry" },
           { title: "Comprehensive Examination & Dental Hygiene", path: "/treatments/examination-hygiene" },
@@ -122,9 +125,18 @@ const NavItem = ({ item, isSubmenu = false }) => {
   if (item.items) {
     return (
       <div className="space-y-2">
-        <div className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          {item.title}
-        </div>
+        {item.path ? (
+          <Link
+            to={item.path}
+            className="block px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary hover:text-primary/80 transition-colors"
+          >
+            {item.title}
+          </Link>
+        ) : (
+          <div className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            {item.title}
+          </div>
+        )}
         <div className="space-y-1">
           {item.items.map((subItem, index) => (
             <Link

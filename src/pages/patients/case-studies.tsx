@@ -1,10 +1,20 @@
+import React from "react";
 import Contact from "@/components/Contact";
+import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { FileText, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
+
+
+export const Head = () => (
+  <SEO 
+    title="Case studies | Y3 Smiles Dental"
+    description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
+  />
+);
 
 const CaseStudiesPage = () => {
   return (

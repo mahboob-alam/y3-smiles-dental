@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Star, Gift, Clock } from "lucide-react";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
@@ -14,10 +15,10 @@ const OfferBanner = () => {
             description: "Comprehensive examination, professional clean & necessary X-rays",
             eligibility: "Eligibility Applies",
             icon: Star,
-            bgGradient: "from-blue-50 to-indigo-50",
-            borderColor: "border-blue-200",
-            iconColor: "text-blue-600",
-            badgeColor: "bg-blue-600"
+            bgGradient: "from-primary/5 to-primary/10",
+            borderColor: "border-primary/20",
+            iconColor: "text-primary",
+            badgeColor: "bg-primary"
         },
         {
             id: 2,
@@ -29,10 +30,10 @@ const OfferBanner = () => {
             description: "Comprehensive dental care for eligible children aged 0-17 years",
             eligibility: "Medicare Eligibility Required",
             icon: Gift,
-            bgGradient: "from-green-50 to-emerald-50",
-            borderColor: "border-green-200",
-            iconColor: "text-green-600",
-            badgeColor: "bg-green-600"
+            bgGradient: "from-primary/5 to-primary/10",
+            borderColor: "border-primary/20",
+            iconColor: "text-primary",
+            badgeColor: "bg-primary"
         }
     ];
 
@@ -40,16 +41,17 @@ const OfferBanner = () => {
         <section className="py-16 bg-neutral-50">
             <div className="container mx-auto px-6">
                 {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
-                        Special Offers
-                    </h2>
-                    <p className="text-lg text-neutral-800 max-w-2xl mx-auto">
-                        Take advantage of our current promotions designed to make quality dental care more accessible for you and your family.
-                    </p>
-                </div>
-
-                {/* Offer Cards Grid */}
+            <div className="text-center mb-12">
+                <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
+                    Special Offers
+                </h2>
+                <h3 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">
+                    Limited Time Promotions
+                </h3>
+                <p className="text-lg text-neutral-800 max-w-2xl mx-auto">
+                    Take advantage of our current promotions designed to make quality dental care more accessible for you and your family.
+                </p>
+            </div>                {/* Offer Cards Grid */}
                 <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     {offers.map((offer) => {
                         const IconComponent = offer.icon;
@@ -82,7 +84,7 @@ const OfferBanner = () => {
                                     <div className="text-center mb-6 h-48">
                                         {/* Savings Badge */}
                                         <div className="inline-block mb-4">
-                                            <span className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                                            <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">
                                                 {offer.savings}
                                             </span>
                                         </div>

@@ -1,8 +1,11 @@
-import { Phone, Calendar } from "lucide-react";
+import React, { useState } from 'react';
+import { Phone, Calendar, ChevronDown, ChevronUp } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BOOKING_URL } from "@/lib/config";
 
 const FAQ = () => {
+    const [expandedSections, setExpandedSections] = useState<{ [key: number]: boolean }>({});
+
     const faqSections = [
         {
             title: "Booking & Payment",
@@ -69,35 +72,68 @@ const FAQ = () => {
 
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        {faqSections.map((section, sectionIndex) => (
-                            <div key={sectionIndex} className="space-y-4">
-                                <div className="flex items-center space-x-3 mb-8">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                                        <img src={section.imageSrc} alt={section.title} className="w-6 h-6" />
-                                    </div>
-                                    <h4 className="text-2xl font-bold text-neutral-800">{section.title} FAQs</h4>
-                                </div>
-                                <Accordion type="single" collapsible className="w-full space-y-4">
-                                    {section.faqs.map((faq, index) => (
-                                        <AccordionItem
-                                            key={index}
-                                            value={`section-${sectionIndex}-item-${index}`}
-                                            className="bg-white rounded-lg shadow-soft border-0"
+                        {faqSections.map((section, sectionIndex) => {
+                            const allExpanded = expandedSections[sectionIndex] || false;
+                            const toggleAll = () => {
+                                setExpandedSections(prev => ({
+                                    ...prev,
+                                    [sectionIndex]: !allExpanded
+                                }));
+                            };
+
+                            return (
+                                <div key={sectionIndex} className="space-y-4">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex items-center space-x-3">
+                                            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                                <img src={section.imageSrc} alt={section.title} className="w-6 h-6" />
+                                            </div>
+                                            <h4 className="text-2xl font-bold text-neutral-800">{section.title} FAQs</h4>
+                                        </div>
+                                        <button
+                                            onClick={toggleAll}
+                                            className="flex items-center gap-1 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
                                         >
-                                            <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
-                                                <span className="text-lg text-neutral-800">{faq.question}</span>
-                                            </AccordionTrigger>
-                                            <AccordionContent className="px-6 pb-4">
-                                                <div
-                                                    className="text-neutral-800 leading-relaxed"
-                                                    dangerouslySetInnerHTML={{ __html: faq.answer }}
-                                                />
-                                            </AccordionContent>
-                                        </AccordionItem>
-                                    ))}
-                                </Accordion>
-                            </div>
-                        ))}
+                                            {allExpanded ? (
+                                                <>
+                                                    <ChevronUp className="w-4 h-4" />
+                                                    Collapse All
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <ChevronDown className="w-4 h-4" />
+                                                    Expand All
+                                                </>
+                                            )}
+                                        </button>
+                                    </div>
+                                    <Accordion
+                                        type="multiple"
+                                        className="w-full space-y-4"
+                                        defaultValue={allExpanded ? section.faqs.map((_, idx) => `${sectionIndex}-${idx}`) : []}
+                                        key={`accordion-${sectionIndex}-${allExpanded}`}
+                                    >
+                                        {section.faqs.map((faq, index) => (
+                                            <AccordionItem
+                                                key={index}
+                                                value={`${sectionIndex}-${index}`}
+                                                className="bg-white rounded-lg shadow-soft border-0"
+                                            >
+                                                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                                                    <span className="text-lg text-neutral-800">{faq.question}</span>
+                                                </AccordionTrigger>
+                                                <AccordionContent className="px-6 pb-4">
+                                                    <div
+                                                        className="text-neutral-800 leading-relaxed"
+                                                        dangerouslySetInnerHTML={{ __html: faq.answer }}
+                                                    />
+                                                </AccordionContent>
+                                            </AccordionItem>
+                                        ))}
+                                    </Accordion>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 

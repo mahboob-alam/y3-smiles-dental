@@ -363,11 +363,50 @@
     color: #B59682;
   }
 
+  
   .border-booking-gold {
     border-color: #B59682;
   }
 
   .hover\:bg-booking-gold:hover {
     background-color: #B59682;
+  }
+}
+
+/* Health Insurance Ticker Animation */
+.ticker-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-content {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  will-change: transform;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .ticker-content {
+    animation-duration: 15s;
   }
 }

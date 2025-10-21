@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -76,7 +77,7 @@ const GoogleMap = ({
     { day: "Wednesday", hours: "9:00 AM - 5:00 PM" },
     { day: "Thursday", hours: "9:00 AM - 5:00 PM" },
     { day: "Friday", hours: "9:00 AM - 5:00 PM" },
-    { day: "Saturday", hours: "By appointment only" },
+  { day: "Saturday", hours: "9:00 AM - 1:00 PM" },
     { day: "Sunday", hours: "Closed" }
   ];
 

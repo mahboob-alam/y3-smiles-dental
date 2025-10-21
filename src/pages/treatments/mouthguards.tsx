@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from "gatsby";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Contact from "@/components/Contact";
@@ -6,6 +7,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
+import SEO from "@/components/SEO";
 import {
     ShieldCheck,
     Activity,
@@ -17,6 +19,13 @@ import {
     Shield,
     TriangleAlert
 } from "lucide-react";
+
+export const Head = () => (
+    <SEO 
+        title="Custom Mouthguards & Night Guards | Y3 Smiles Dental"
+        description="Protect your teeth with our custom-fitted mouthguards for sports and night guards for teeth grinding. Professional dental protection in Melbourne's northern suburbs."
+    />
+);
 
 const Mouthguards = () => {
     useScrollAnimation();

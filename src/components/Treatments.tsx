@@ -1,5 +1,6 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import { CheckCircle } from "lucide-react";
 
 const Treatments = () => {

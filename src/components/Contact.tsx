@@ -1,53 +1,17 @@
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useState } from "react";
-import emailjs from '@emailjs/browser';
-import { useToast } from "@/hooks/use-toast";
+import EmailJSForm from "./EmailJSForm";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  
+  const handleSubmitStart = () => {
     setIsSubmitting(true);
+  };
 
-    try {
-      const formData = new FormData(e.currentTarget);
-      const templateParams = {
-        from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
-        from_email: formData.get('email'),
-        phone: formData.get('phone'),
-        service: formData.get('service'),
-        message: formData.get('message'),
-        to_name: 'Y3 Smiles Dental',
-      };
-
-      // Replace these with your actual EmailJS credentials
-      await emailjs.send(
-        'service_x3bjiqh', // YOUR_SERVICE_ID  Replace with your EmailJS service ID
-        'template_mp48lhw', // YOUR_TEMPLATE_ID Replace with your EmailJS template ID
-        templateParams,
-        'y-pjxJyECduLtqR5O' // YOUR_PUBLIC_KEY Replace with your EmailJS public key
-      );
-
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for contacting Y3 Smiles Dental. We'll get back to you soon.",
-      });
-
-      // Reset form
-      (e.target as HTMLFormElement).reset();
-    } catch (error) {
-      console.error("Error sending email:", error);
-      toast({
-        title: "Error Sending Message",
-        description: "Please try again or call us directly at your convenience.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+  const handleSubmitComplete = () => {
+    setIsSubmitting(false);
   };
 
   return (
@@ -69,7 +33,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <Card className="shadow-medium hover-lift transition-gentle slide-in-left">
-              <CardContent className="p-8">
+              <CardContent className="pt-10 px-8 pb-8">
                 <h4 className="text-2xl font-bold text-neutral-800 mb-6">
                   Get in Touch
                 </h4>
@@ -146,115 +110,16 @@ const Contact = () => {
 
             {/* Booking Form */}
             <Card className="shadow-medium hover-lift transition-gentle slide-in-right">
-              <CardContent className="p-8">
+              <CardContent className="pt-10 px-8 pb-8">
                 <h4 className="text-2xl font-bold text-neutral-800 mb-6">
                   Submit An Enquiry
                 </h4>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-neutral-800 mb-2">
-                        First Name
-                      </label>
-                      <input
-                        name="firstName"
-                        type="text"
-                        required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                        placeholder="Your first name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-neutral-800 mb-2">
-                        Last Name
-                      </label>
-                      <input
-                        name="lastName"
-                        type="text"
-                        required
-                        className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                        placeholder="Your last name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-800 mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      name="email"
-                      type="email"
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-800 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      name="phone"
-                      type="tel"
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                      placeholder="(03) 9000 0000"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-800 mb-2">
-                      Service Interest
-                    </label>
-                    <select
-                      name="service"
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                    >
-                      <option value="">Select a service</option>
-                      <option value="Children's Dentistry (CDBS)">Children's Dentistry (CDBS)</option>
-                      <option value="Comprehensive Examination & Dental Hygiene">Comprehensive Examination & Dental Hygiene</option>
-                      <option value="Dental Fillings">Dental Fillings</option>
-                      <option value="Dentures">Dentures</option>
-                      <option value="Emergency Dentistry">Emergency Dentistry</option>
-                      <option value="Fluoride Treatments">Fluoride Treatments</option>
-                      <option value="Fresh Breath Treatment">Fresh Breath Treatment</option>
-                      <option value="Periodontal Care">Periodontal Care</option>
-                      <option value="Pits and Fissure Sealants">Pits and Fissure Sealants</option>
-                      <option value="Root Canal Therapy">Root Canal Therapy</option>
-                      <option value="TMD and Bruxism Treatment">TMD and Bruxism Treatment</option>
-                      <option value="Tooth Extraction">Tooth Extraction</option>
-                      <option value="Wisdom Teeth Removal">Wisdom Teeth Removal</option>
-                      <option value="General Consultation">General Consultation</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-800 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      rows={4}
-                      required
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-gentle hover:border-primary/50"
-                      placeholder="Tell us about your needs or any questions you have..."
-                    ></textarea>
-                  </div>
-
-                  <Button
-                    variant="booking"
-                    size="lg"
-                    className="w-full"
-                    type="submit"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? "SENDING..." : "Send Enquiry"}
-                  </Button>
-                </form>
+                <EmailJSForm
+                  onSubmitStart={handleSubmitStart}
+                  onSubmitComplete={handleSubmitComplete}
+                  className="space-y-6"
+                />
               </CardContent>
             </Card>
           </div>

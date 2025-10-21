@@ -1,6 +1,7 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Navigation } from "./Navigation";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import logo from "@/assets/logo.svg";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 

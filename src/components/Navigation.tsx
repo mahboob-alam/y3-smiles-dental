@@ -16,12 +16,12 @@ const navigationItems = [
   },
   {
     title: "About",
-    path: "/about",
+    path: "/about/y3-smiles-dental",
     subItems: [
       {
         title: "About Y3 Smiles Dental",
         items: [
-          { title: "Y3 Smiles Dental", path: "/about" },
+          { title: "Y3 Smiles Dental", path: "/about/y3-smiles-dental" },
           // Commented for future use. [Under development]
           // { title: "Our Team", path: "/about/our-team" },
           // { title: "Join Our Team", path: "/about/join-our-team" },

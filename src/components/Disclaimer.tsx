@@ -12,7 +12,7 @@ const Disclaimer = () => {
                             Disclaimer
                         </h3>
                         <p className="text-yellow-700 text-sm leading-relaxed">
-                            Please note that any outcome shown in images is only relevant for that patient and does not necessarily reflect the results other patients may experience. Results, risks, complications, and recovery times vary by person and procedure. Treatment suitability can only be determined after an in-person consultation with a dentist, where your individual needs and circumstances can be assessed. Nothing on this website constitutes medical or financial advice. Please talk to your medical practitioner before acting on any information found on this website.
+                            Please note that any outcome shown in images is only relevant for that patient and does not necessarily reflect the results other patients may experience. Results, risks, complications, and recovery times vary by person and procedure. Treatment suitability can only be determined after an in-person consultation with a dentist, where your individual needs and circumstances can be assessed. Nothing on this website constitutes medical or financial advice. Please talk to your dental practitioner before acting on any information found on this website.
                         </p>
                     </div>
                 </div>

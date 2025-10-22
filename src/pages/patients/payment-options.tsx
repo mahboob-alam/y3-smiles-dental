@@ -199,14 +199,8 @@ const PaymentOptions = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
-                                        <div className="text-center">
-                                            <Shield className="w-16 h-16 text-primary mx-auto mb-4" />
-                                            <p className="text-neutral-800 font-medium">Insurance Provider Logos</p>
-                                            <p className="text-sm text-neutral-500 mt-2">Image of insurer list to be added</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden flex items-center justify-center p-8">
+                                    <img src="/hicaps-logo.svg" alt="HICAPS instant rebates" className="w-full h-auto max-w-md object-contain" />
                                 </div>
                             </div>
                         </div>
@@ -218,14 +212,8 @@ const PaymentOptions = () => {
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                                <div className="aspect-video bg-purple-50 rounded-2xl overflow-hidden">
-                                    <div className="w-full h-full flex items-center justify-center">
-                                        <div className="text-center">
-                                            <Clock className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                                            <p className="text-purple-700 font-medium">Afterpay Integration</p>
-                                            <p className="text-sm text-purple-600 mt-2">Afterpay details to be added</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-video bg-purple-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
+                                    <img src="/afterpay-logo.png" alt="Afterpay payment option" className="w-full h-auto max-w-md object-contain" />
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
@@ -305,14 +293,8 @@ const PaymentOptions = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="aspect-video bg-orange-50 rounded-2xl overflow-hidden">
-                                    <div className="w-full h-full flex items-center justify-center">
-                                        <div className="text-center">
-                                            <DollarSign className="w-16 h-16 text-orange-600 mx-auto mb-4" />
-                                            <p className="text-orange-700 font-medium">Humm Integration</p>
-                                            <p className="text-sm text-orange-600 mt-2">Humm details to be added</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-video bg-orange-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
+                                    <img src="/humm-logo.svg" alt="Humm payment plans" className="w-full h-auto max-w-md object-contain" />
                                 </div>
                             </div>
                         </div>
@@ -324,14 +306,8 @@ const PaymentOptions = () => {
                     <div className="container mx-auto px-6">
                         <div className="max-w-6xl mx-auto">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                                <div className="aspect-video bg-pink-50 rounded-2xl overflow-hidden">
-                                    <div className="w-full h-full flex items-center justify-center">
-                                        <div className="text-center">
-                                            <Heart className="w-16 h-16 text-pink-600 mx-auto mb-4" />
-                                            <p className="text-pink-700 font-medium">Australian Government</p>
-                                            <p className="text-sm text-pink-600 mt-2">Child Dental Benefits Schedule</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-video bg-pink-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
+                                    <img src="/cdbs.png" alt="Child Dental Benefits Schedule" className="w-full h-auto max-w-md object-contain" />
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
@@ -439,14 +415,8 @@ const PaymentOptions = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="aspect-video bg-indigo-50 rounded-2xl overflow-hidden">
-                                    <div className="w-full h-full flex items-center justify-center">
-                                        <div className="text-center">
-                                            <Banknote className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
-                                            <p className="text-indigo-700 font-medium">Australian Taxation Office</p>
-                                            <p className="text-sm text-indigo-600 mt-2">Compassionate Release Program</p>
-                                        </div>
-                                    </div>
+                                <div className="aspect-video bg-indigo-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
+                                    <img src="/health-insurance.png" alt="Superannuation early release" className="w-full h-auto max-w-sm object-contain" />
                                 </div>
                             </div>
                         </div>

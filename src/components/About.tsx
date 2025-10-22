@@ -52,11 +52,11 @@ const About = () => {
                     : 'opacity-0 max-h-0 overflow-hidden -translate-y-4'
                   }`}
               >
-                <div className="mt-4 space-y-4 text-lg text-neutral-800">
+                <div className="mt-4 space-y-4 text-lg text-neutral-800 text-center">
                   <p>Our services cover all stages of dental care, including:</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 max-w-2xl mx-auto">
                     {bullets.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
+                      <li key={idx} className="flex items-start text-left">
                         <CheckCircle className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                         <span className="leading-relaxed">{item}</span>
                       </li>

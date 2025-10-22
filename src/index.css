@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global font imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Raleway:wght@600;700&display=swap');
+
 /* Y3 Smiles Dental Design System - Luxurious dental clinic aesthetic */
 
 @layer base {
   :root {
     /* Brand Colors - Professional dental luxury */
     --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    /* Use #222 (hsl 0 0% 13%) for default text for better legibility and to avoid pure black */
+    --foreground: 0 0% 13%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 13% 18%;
@@ -147,6 +151,9 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    /* Global typography rhythm */
+    line-height: 1.7; /* comfortable reading */
+    letter-spacing: 0.4px; /* subtle tracking for body */
   }
 
   h1,
@@ -155,7 +162,11 @@
   h4,
   h5,
   h6 {
-    @apply tracking-tight;
+    /* Headings use Raleway 600 with slightly more tracking for elegance */
+    @apply font-display font-semibold;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #222;
   }
 
   /* Scroll behavior */

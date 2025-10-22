@@ -18,7 +18,18 @@ const OfferBanner = () => {
             bgGradient: "from-primary/5 to-primary/10",
             borderColor: "border-primary/20",
             iconColor: "text-primary",
-            badgeColor: "bg-primary"
+            badgeColor: "bg-primary",
+            features: [
+                "Comprehensive oral examination",
+                "Oral cancer and pathology screening",
+                "Gum assessment",
+                "Intraoral photos",
+                "Intraoral x-rays (as necessary)",
+                "Full mouth x-ray (as necessary)",
+                "Professional scale and clean",
+                "Fluoride treatment",
+                "Personalised quote and treatment plan"
+            ]
         },
         {
             id: 2,
@@ -33,7 +44,15 @@ const OfferBanner = () => {
             bgGradient: "from-primary/5 to-primary/10",
             borderColor: "border-primary/20",
             iconColor: "text-primary",
-            badgeColor: "bg-primary"
+            badgeColor: "bg-primary",
+            features: [
+                "💳 No out-of-pocket costs — we bulk bill directly to Medicare",
+                "🦷 Covers check-ups, cleans, X-rays, fissure seals, fillings, and extractions",
+                "📅 Easy appointment booking — just bring your Medicare card",
+                "💬 We can check your child’s eligibility instantly in-clinic",
+                "😊 Friendly, gentle care designed to make dental visits positive for kids",
+                "📍 Available now at Y3 Smiles Dental, Melbourne’s northern suburbs"
+            ]
         }
     ];
 
@@ -124,19 +143,13 @@ const OfferBanner = () => {
                                     </div>
 
                                     {/* Features */}
-                                    <div className="space-y-2 mb-6 h-20">
-                                        <div className="flex items-center text-neutral-800">
-                                            <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                                            <span className="text-sm">Professional dental care</span>
-                                        </div>
-                                        <div className="flex items-center text-neutral-800">
-                                            <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                                            <span className="text-sm">Modern equipment & techniques</span>
-                                        </div>
-                                        <div className="flex items-center text-neutral-800">
-                                            <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                                            <span className="text-sm">Experienced dental team</span>
-                                        </div>
+                                    <div className="space-y-2 mb-6">
+                                        {offer.features?.slice(0, 6).map((feat, idx) => (
+                                            <div key={idx} className="flex items-start text-neutral-800">
+                                                <CheckCircle className="w-4 h-4 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                                                <span className="text-sm text-left">{feat}</span>
+                                            </div>
+                                        ))}
                                     </div>
 
                                     {/* Eligibility */}

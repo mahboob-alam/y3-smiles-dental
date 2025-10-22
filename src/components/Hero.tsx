@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { StaticImage } from "gatsby-plugin-image";
-import { CheckCircle, Clock, Heart, Shield } from "lucide-react";
+import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const Hero = () => {
   return (
@@ -29,44 +29,38 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Social Proof Badges - Compact Design */}
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-neutral-100 shadow-soft">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    {/* <Shield className="w-5 h-5 text-primary" /> */}
-                    <img src="/health-insurance.png" alt="health insurance" className="w-6 h-6" />
-                  </div>
+            {/* Key Highlights - 4 Boxed Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
+                <div className="flex items-center gap-4">
+                  <img src="/health-insurance.png" alt="All Major Health Funds" className="w-10 h-10" />
                   <div>
                     <p className="font-semibold text-neutral-800">All Major Health Funds</p>
                     <p className="text-sm text-neutral-600">Accepted</p>
                   </div>
                 </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <img src="/medicare-logo.svg" alt="Medicare" className="w-6 h-6" />
-                  </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
+                <div className="flex items-center gap-4">
+                  <img src="/medicare-logo.svg" alt="Medicare CDBS" className="w-10 h-10" />
                   <div>
                     <p className="font-semibold text-neutral-800">Medicare CDBS</p>
                     <p className="text-sm text-neutral-600">Eligibility Applies</p>
                   </div>
                 </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <img src="/payment-plan.png" alt="Payment Plan" className="w-6 h-6" />
-                  </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
+                <div className="flex items-center gap-4">
+                  <img src="/payment-plan.png" alt="Payment Plans Available" className="w-10 h-10" />
                   <div>
                     <p className="font-semibold text-neutral-800">Payment Plans</p>
                     <p className="text-sm text-neutral-600">Available</p>
                   </div>
                 </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <img src="/dental-clinic.png" alt="Dental Clinic" className="w-6 h-6" />
-                  </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
+                <div className="flex items-center gap-4">
+                  <img src="/dental-clinic.png" alt="New Clinic Opening 2025" className="w-10 h-10" />
                   <div>
                     <p className="font-semibold text-neutral-800">New Clinic</p>
                     <p className="text-sm text-neutral-600">Opening 2025</p>
@@ -78,7 +72,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="booking" size="xl" asChild className="text-lg px-8 py-6">
-                <a href="#contact">Book Your Appointment</a>
+                <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>Book Your Appointment</a>
               </Button>
 
               <Button variant="outline" size="xl" asChild className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-white">

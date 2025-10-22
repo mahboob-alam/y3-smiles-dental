@@ -66,10 +66,12 @@ const HealthInsuranceTicker = () => {
           <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
             We Accept All Major Health Funds
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4 inline-flex items-center gap-3">
-            <span>Claim on the spot with</span>
-            <img src="/hicaps-logo.svg" alt="HICAPS" className="h-8 w-auto align-middle" />
+          <h3 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-2">
+            Claim on the spot with
           </h3>
+          <div className="flex justify-center mb-4">
+            <img src="/hicaps-logo.svg" alt="HICAPS" className="h-10 w-auto" />
+          </div>
           <p className="text-neutral-800 max-w-2xl mx-auto">We work with 100% of Australia's private health insurers.</p>
         </div>
         

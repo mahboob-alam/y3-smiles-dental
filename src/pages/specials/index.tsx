@@ -232,19 +232,13 @@ const SpecialsPage = () => {
                     </div>
 
                     {/* Features */}
-                    <div className="space-y-2 mb-6 h-20">
-                      <div className="flex items-center text-neutral-800">
-                        <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                        <span className="text-sm">Professional dental care</span>
-                      </div>
-                      <div className="flex items-center text-neutral-800">
-                        <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                        <span className="text-sm">Modern equipment & techniques</span>
-                      </div>
-                      <div className="flex items-center text-neutral-800">
-                        <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                        <span className="text-sm">Experienced dental team</span>
-                      </div>
+                    <div className="space-y-2 mb-6">
+                      {offer.features?.map((feat, idx) => (
+                        <div key={idx} className="flex items-start text-neutral-800">
+                          <CheckCircle className="w-4 h-4 text-primary mr-3 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-left">{feat}</span>
+                        </div>
+                      ))}
                     </div>
 
                     {/* Eligibility */}

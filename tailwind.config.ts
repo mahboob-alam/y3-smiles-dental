@@ -19,6 +19,13 @@ const config: Config = {
 			}
 		},
 		extend: {
+			letterSpacing: {
+				heading: '1px',
+				body: '0.4px'
+			},
+			lineHeight: {
+				body: '1.7'
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -112,8 +119,8 @@ const config: Config = {
 				'hover': 'var(--shadow-hover)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Playfair Display', 'serif']
+				sans: ['Lato', 'system-ui', 'sans-serif'],
+				display: ['Raleway', 'ui-sans-serif', 'system-ui', 'sans-serif']
 			},
 			transitionTimingFunction: {
 				'gentle': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',

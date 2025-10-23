@@ -94,26 +94,40 @@ const Y3SmilesDentalPage = () => {
         <div className="min-h-screen flex flex-col">
             <Header />
             <main className="flex-grow">
-                {/* Hero Section */}
-                <section className="bg-gradient-hero py-24">
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center">
-                            <img src="/dental-care.png" alt="Dental Care" className="w-20 h-20 mx-auto mb-6" />
-                            <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
-                                Y3 Smiles Dental
+                {/* Hero Section with Video Background */}
+                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+                    {/* Video Background */}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover"
+                    >
+                        <source src="/hero-video.mp4" type="video/mp4" />
+                    </video>
+
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/20 to-secondary/30"></div>
+
+                    {/* Content */}
+                    <div className="relative z-10 container mx-auto px-6 text-center">
+                        <div className="max-w-4xl mx-auto">
+                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                                About Y3 Smiles Dental
                             </h1>
-                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
+                            <p className="text-xl text-white/95 mb-8 leading-relaxed drop-shadow-md">
                                 Your trusted dental care partner in Melbourne's northern suburbs. We're committed to creating healthy smiles
                                 and positive dental experiences for every member of your family.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="booking" size="xl" asChild className="group">
+                                <Button variant="booking" size="xl" asChild className="group bg-white text-primary hover:bg-white/90">
                                     <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                         <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                         BOOK APPOINTMENT
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="xl" asChild>
+                                <Button variant="outline" size="xl" asChild className="border-white text-white hover:bg-white/10">
                                     <Link to="/treatments">
                                         <ArrowRight className="w-5 h-5 mr-2" />
                                         View Our Treatments
@@ -124,38 +138,32 @@ const Y3SmilesDentalPage = () => {
                     </div>
                 </section>
 
-                {/* Our Story */}
+
+                {/* Our Story - Expanded Content */}
                 <section className="py-24 bg-background">
                     <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto">
-                            {/* <div className="text-center mb-16">
-                                <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                        <div className="max-w-5xl mx-auto">
+                            <div className="text-center mb-12">
+                                <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
                                     Our Story
                                 </h2>
-                                <p className="text-lg text-neutral-800">
-                                    Building a practice focused on quality care, patient comfort, and community health
+                            </div>
+
+                            <div className="space-y-6 text-lg leading-relaxed">
+                                <p className="text-neutral-800">
+                                    At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne's northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: <strong>healthy smiles, healthy lives — it begins with you</strong>.
                                 </p>
-                            </div> */}
-
-                            <div className="space-y-8 text-lg leading-relaxed text-center">
-                                <h2 className="text-2xl font-semibold text-primary uppercase tracking-widest mb-4">
-                                    About
-                                </h2>
-                                <p className="text-lg text-neutral-800 leading-relaxed max-w-6xl mx-auto">
-                                    At Y3 Smiles Dental, we believe a healthy smile is the foundation of confidence, wellbeing, and quality of life. Located in Melbourne’s northern suburbs, our family-focused clinic provides high-quality dental care in a welcoming and modern environment. We also recognise that a healthy mouth supports a healthy body — which is why we say: healthy smiles, healthy lives — it begins with you.
-
-                                    Our services cover all stages of dental care, including routine check-ups, preventative treatments, children’s dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family.
-
+                                <p className="text-neutral-800">
+                                    Our services cover all stages of dental care, including routine check-ups, preventative treatments, children's dentistry, aesthetic options such as teeth whitening, veneers, and clear aligners, as well as emergency and surgical procedures. Whatever your needs, our experienced team is here to support you and your family.
+                                </p>
+                                <p className="text-neutral-800">
                                     What makes us different is our patient-centred approach. We take the time to listen, explain, and personalise every treatment plan. Patient comfort is our priority — we create a calm, supportive environment so every visit feels comfortable and positive. At Y3 Smiles Dental, your health and your smile always come first.
                                 </p>
-
-
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Learn More About Us */}
                 {/* commented for FUTURE implementation */}
                 {/* <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6">

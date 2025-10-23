@@ -406,7 +406,6 @@ const TreatmentsPage = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               {/* <AlertTriangle className="w-16 h-16 text-red-600 mx-auto mb-6" /> */}
-              <img src="/emergency.png" alt="Emergency Dental Care" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 Dental Emergency?
               </h2>

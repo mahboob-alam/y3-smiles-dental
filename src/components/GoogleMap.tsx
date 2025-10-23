@@ -49,28 +49,6 @@ const GoogleMap = ({
     directionsUrl: "https://maps.app.goo.gl/XCeiAYziTDqGdJpc8"
   };
 
-  const transportOptions = [
-    {
-      icon: Car,
-      title: "By Car",
-      // description: "Free parking available on-site",
-      description: "",
-      details: "Easy access from major roads"
-    },
-    {
-      icon: Train,
-      title: "By Train",
-      description: "Broadmeadows Station nearby",
-      details: "Short walk from station"
-    },
-    {
-      icon: Bus,
-      title: "By Bus",
-      description: "Multiple bus routes available",
-      details: "Convenient public transport"
-    }
-  ];
-
   const defaultOpeningHours = [
     { day: "Monday", hours: "9:00 AM - 5:00 PM" },
     { day: "Tuesday", hours: "9:00 AM - 5:00 PM" },
@@ -83,6 +61,30 @@ const GoogleMap = ({
 
   const location = locationData || defaultLocation;
   const hours = openingHours || defaultOpeningHours;
+
+  const transportOptions = [
+    {
+      icon: Car,
+      title: "By Car",
+      description: "",
+      details: "Easy access from major roads",
+      mapsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}&travelmode=driving`
+    },
+    {
+      icon: Train,
+      title: "By Train",
+      description: "Broadmeadows Station nearby",
+      details: "Short walk from station",
+      mapsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}&travelmode=transit`
+    },
+    {
+      icon: Bus,
+      title: "By Bus",
+      description: "Multiple bus routes available",
+      details: "Convenient public transport",
+      mapsUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}&travelmode=walking`
+    }
+  ];
 
   return (
     <section className={`py-24 bg-background fade-in-section ${className}`}>
@@ -135,22 +137,30 @@ const GoogleMap = ({
                 {transportOptions.map((transport, index) => {
                   const IconComponent = transport.icon;
                   return (
-                    <Card key={index} className="border-0 shadow-soft text-center hover-lift transition-gentle" style={{ animationDelay: `${index * 0.1}s` }}>
-                      <CardContent className="p-4">
-                        <div className="w-10 h-10 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 hover:gradient-primary hover:text-primary-foreground transition-gentle">
-                          <IconComponent className="w-5 h-5" />
-                        </div>
-                        <h5 className="font-semibold text-neutral-800 mb-1 text-sm">
-                          {transport.title}
-                        </h5>
-                        <p className="text-xs text-neutral-800 mb-1">
-                          {transport.description}
-                        </p>
-                        <p className="text-xs text-neutral-500">
-                          {transport.details}
-                        </p>
-                      </CardContent>
-                    </Card>
+                    <a
+                      key={index}
+                      href={transport.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Card className="border-0 shadow-soft text-center hover-lift transition-gentle cursor-pointer hover:shadow-lg" style={{ animationDelay: `${index * 0.1}s` }}>
+                        <CardContent className="p-4">
+                          <div className="w-10 h-10 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 hover:gradient-primary hover:text-primary-foreground transition-gentle">
+                            <IconComponent className="w-5 h-5" />
+                          </div>
+                          <h5 className="font-semibold text-neutral-800 mb-1 text-sm">
+                            {transport.title}
+                          </h5>
+                          <p className="text-xs text-neutral-800 mb-1">
+                            {transport.description}
+                          </p>
+                          <p className="text-xs text-neutral-500">
+                            {transport.details}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </a>
                   );
                 })}
               </div>
@@ -158,43 +168,50 @@ const GoogleMap = ({
 
             {/* Contact Information */}
             <div className="space-y-6 slide-in-right">
-              {/* Opening Hours */}
-              <Card className="border-0 shadow-soft hover-lift transition-gentle">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-neutral-800 flex items-center">
-                    <Clock className="w-6 h-6 text-primary mr-3" />
-                    Opening Hours
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {hours.map((schedule, index) => (
-                      <div key={index} className="flex justify-between items-center py-2 border-b border-neutral-100 last:border-b-0 hover:bg-primary/5 px-2 rounded transition-gentle">
-                        <span className="font-medium text-neutral-800">
-                          {schedule.day}
-                        </span>
-                        <span className={`text-sm ${schedule.hours === "Closed"
-                          ? "text-red-600"
-                          : schedule.hours.includes("appointment")
-                            ? "text-amber-600"
-                            : "text-green-600"
-                          } font-medium`}>
-                          {schedule.hours}
+              {/* Opening Hours - Clickable */}
+              <a
+                href="https://www.google.com/maps/place/Y3+Smiles+Dental/@-37.6790611,144.8419854,17z/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="border-0 shadow-soft hover-lift transition-gentle cursor-pointer hover:shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-neutral-800 flex items-center">
+                      <Clock className="w-6 h-6 text-primary mr-3" />
+                      Opening Hours
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      {hours.map((schedule, index) => (
+                        <div key={index} className="flex justify-between items-center py-2 border-b border-neutral-100 last:border-b-0 hover:bg-primary/5 px-2 rounded transition-gentle">
+                          <span className="font-medium text-neutral-800">
+                            {schedule.day}
+                          </span>
+                          <span className={`text-sm ${schedule.hours === "Closed"
+                            ? "text-red-600"
+                            : schedule.hours.includes("appointment")
+                              ? "text-amber-600"
+                              : "text-green-600"
+                            } font-medium`}>
+                            {schedule.hours}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mt-6 p-4 bg-green-50 rounded-lg hover-scale transition-gentle">
+                      <div className="flex items-center text-green-700">
+                        <Clock className="w-5 h-5 mr-2" />
+                        <span className="font-medium text-sm">
+                          Same day emergency appointments available
                         </span>
                       </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-6 p-4 bg-green-50 rounded-lg hover-scale transition-gentle">
-                    <div className="flex items-center text-green-700">
-                      <Clock className="w-5 h-5 mr-2" />
-                      <span className="font-medium text-sm">
-                        Same day emergency appointments available
-                      </span>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </a>
 
               {/* Quick Actions */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

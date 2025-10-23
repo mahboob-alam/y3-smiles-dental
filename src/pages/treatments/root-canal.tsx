@@ -155,7 +155,6 @@ const RootCanalTherapy = () => {
         <section className="bg-gradient-hero py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <img src="/root-canal.png" alt="Root Canal Therapy" className="w-20 h-20 mx-auto mb-6" />
               <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                 Root Canal Therapy
               </h1>
@@ -227,7 +226,7 @@ const RootCanalTherapy = () => {
               <div className="space-y-6">
                 {myths.map((item, index) => (
                   <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
-                    <CardContent className="p-6">
+                    <CardContent className="pt-8 pb-6 px-6">
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div className="bg-red-50 rounded-lg p-4">
                           <h4 className="font-semibold text-red-700 mb-2 flex items-center">

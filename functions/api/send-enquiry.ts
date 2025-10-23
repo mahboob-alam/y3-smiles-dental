@@ -49,7 +49,7 @@ export const onRequest = async (context: any) => {
       },
       body: JSON.stringify({
         from: 'Y3 Smiles Dental <onboarding@resend.dev>',
-        to: ['smile@enquiries.y3smilesdental.com.au'],
+        to: ['smile@y3smilesdental.com.au'],
         reply_to: from_email,
         subject,
         html,

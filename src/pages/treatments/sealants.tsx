@@ -222,7 +222,7 @@ const PitsAndFissureSealants = () => {
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                    src="/pits-fissure-sealants.jpg"
                     alt="Dental sealant application showing protective coating on back teeth"
                     className="w-full h-full object-cover"
                   />

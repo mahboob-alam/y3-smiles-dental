@@ -50,7 +50,7 @@ const Hero = () => {
                   playsInline
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
                 >
-                  <source src="/Hero video.mov" type="video/mp4" />
+                  <source src="/hero-video.mov" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

@@ -122,13 +122,13 @@ const PeriodontalTherapy = () => {
                     </div>
                   </div>
                 </div>
-                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                  <img
-                    src="/periodontal-therapy.png"
-                    alt="Professional periodontal treatment and gum care"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                                                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/periodontal-therapy.jpg"
+                                        alt="Periodontal therapy treatment"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
               </div>
             </div>
           </div>

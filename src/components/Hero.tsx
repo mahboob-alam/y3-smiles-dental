@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { StaticImage } from "gatsby-plugin-image";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
 
@@ -44,13 +43,10 @@ const Hero = () => {
             <div className="relative">
               {/* Main Image with Rounded Border */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <StaticImage
-                  src="../assets/hero-dental-clinic.jpg"
+                <img
+                  src="/hero-video.mov"
                   alt="Modern Dental Clinic in Broadmeadows - Y3 Smiles Dental"
-                  className="w-full h-[400px] md:h-[500px] lg:h-[600px]"
-                  placeholder="blurred"
-                  layout="fullWidth"
-                  objectFit="cover"
+                  className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
                 />
               </div>
 

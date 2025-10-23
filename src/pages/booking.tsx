@@ -18,7 +18,7 @@ const BookingPage = () => {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-hero py-16">
+        <section className="bg-gradient-hero py-16 pt-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-4">

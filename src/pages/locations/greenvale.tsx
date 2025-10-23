@@ -92,9 +92,9 @@ const GreenvalePage = () => {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Discover exceptional dental care at Greenvale Dental Clinic focused on your family's oral health
-                                    and wellbeing. Modern technology meets compassionate treatment.
+                                <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
+                                    Discover exceptional dental care near Greenvale focused on your family's oral health
+                                    and well-being. Our experienced team is dedicated to providing exceptional care in a welcoming environment.
                                 </p>
                             </div>
 

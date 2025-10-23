@@ -44,28 +44,50 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up">
-            <Button variant="booking" size="xl" asChild className="text-lg px-8 py-6">
-              <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>Book Your Appointment</a>
-            </Button>
+          {/* Grid wrapper: 4 highlight cards + booking form - side-by-side desktop, stacked mobile */}
+          <div className="grid lg:grid-cols-3 gap-6 animate-fade-in-up">
+            {/* Key Highlights - 4 cards (2 cols on left, full stack on mobile) */}
+            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Shield className="w-6 h-6 text-primary drop-shadow-lg" />
+                </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">All Major Health Funds</p>
+                <p className="text-sm text-neutral-700 drop-shadow">Accepted</p>
+              </div>
+              <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <CreditCard className="w-6 h-6 text-primary drop-shadow-lg" />
+                </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">Medicare CDBS</p>
+                <p className="text-sm text-neutral-700 drop-shadow">Eligibility Applies</p>
+              </div>
+              <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Calendar className="w-6 h-6 text-primary drop-shadow-lg" />
+                </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">Payment Plans</p>
+                <p className="text-sm text-neutral-700 drop-shadow">Available</p>
+              </div>
+              <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Building2 className="w-6 h-6 text-primary drop-shadow-lg" />
+                </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">New Clinic</p>
+                <p className="text-sm text-neutral-700 drop-shadow">Opening 2025</p>
+              </div>
+            </div>
 
-            <Button variant="outline" size="xl" asChild className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-white">
-              <a href="tel:03 9022 4442">Call (03) 9022 4442</a>
-            </Button>
-          </div>
-
-          {/* Embedded Booking Form - visible without much scrolling */}
-          <div className="animate-fade-in-up">
-            <div className="bg-white/75 backdrop-blur-sm rounded-2xl border border-white/50 shadow-lg p-4 md:p-6 max-w-5xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-4 items-stretch">
-                {/* Intro copy (hidden on small for compactness) */}
-                <div className="hidden lg:flex flex-col justify-center p-4">
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-2">Book online in under 1 minute</h3>
-                  <p className="text-neutral-700">Prefer not to call? Use our secure online booking form to pick a time that works for you.</p>
+            {/* Embedded Booking Form - beside cards on desktop, below on mobile */}
+            <div className="lg:col-span-1">
+              <div className="bg-white/75 backdrop-blur-sm rounded-2xl border border-white/50 shadow-lg p-4 h-full flex flex-col">
+                {/* Intro copy - now visible on all screens */}
+                <div className="flex flex-col justify-center p-2 mb-3">
+                  <h3 className="text-lg md:text-xl font-bold text-neutral-800 mb-1">Book online in under 1 minute</h3>
+                  <p className="text-sm text-neutral-700">Prefer not to call? Use our secure online booking form to pick a time that works for you.</p>
                 </div>
                 {/* Booking iframe */}
-                <div className="min-h-[60vh] lg:min-h-[70vh] rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                <div className="flex-1 min-h-[50vh] lg:min-h-[60vh] rounded-xl overflow-hidden border border-neutral-200 bg-white">
                   <iframe
                     title="Online booking"
                     src="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im"
@@ -73,42 +95,10 @@ const Hero = () => {
                     loading="lazy"
                   />
                 </div>
+                <div className="text-center mt-2 text-xs text-neutral-600">
+                  If the form doesn't load, <a className="text-primary font-semibold" href="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im" target="_blank" rel="noopener noreferrer">open the booking portal</a>.
+                </div>
               </div>
-              <div className="text-center mt-3 text-sm text-neutral-600">
-                If the form doesn’t load, <a className="text-primary font-semibold" href="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im" target="_blank" rel="noopener noreferrer">open the booking portal</a>.
-              </div>
-            </div>
-          </div>
-
-          {/* Key Highlights - with icons and center-aligned */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up">
-            <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Shield className="w-6 h-6 text-primary drop-shadow-lg" />
-              </div>
-              <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">All Major Health Funds</p>
-              <p className="text-sm text-neutral-700 drop-shadow">Accepted</p>
-            </div>
-            <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <CreditCard className="w-6 h-6 text-primary drop-shadow-lg" />
-              </div>
-              <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">Medicare CDBS</p>
-              <p className="text-sm text-neutral-700 drop-shadow">Eligibility Applies</p>
-            </div>
-            <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Calendar className="w-6 h-6 text-primary drop-shadow-lg" />
-              </div>
-              <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">Payment Plans</p>
-              <p className="text-sm text-neutral-700 drop-shadow">Available</p>
-            </div>
-            <div className="group bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg hover:shadow-2xl hover:border-primary/50 hover:bg-white/30 transition-all duration-300 hover:-translate-y-1 text-center">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Building2 className="w-6 h-6 text-primary drop-shadow-lg" />
-              </div>
-              <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors drop-shadow-md">New Clinic</p>
-              <p className="text-sm text-neutral-700 drop-shadow">Opening 2025</p>
             </div>
           </div>
 
@@ -120,7 +110,7 @@ const Hero = () => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
                 <img
-                  src="/afterpay-logo.png"
+                  src="/Afterpay.jpg"
                   alt="Afterpay"
                   className="h-8 w-auto opacity-100 transition-gentle"
                 />

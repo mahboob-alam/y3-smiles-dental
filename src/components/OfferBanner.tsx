@@ -175,8 +175,18 @@ const OfferBanner = () => {
                     })}
                 </div>
 
+                {/* CTA Buttons below cards */}
+                <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <Button variant="booking" size="xl" asChild className="text-lg px-8 py-6">
+                        <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>Book Your Appointment</a>
+                    </Button>
+                    <Button variant="outline" size="xl" asChild className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-white">
+                        <a href="tel:03 9022 4442">Call (03) 9022 4442</a>
+                    </Button>
+                </div>
+
                 {/* Additional Info */}
-                <div className="mt-12 text-center">
+                <div className="mt-8 text-center">
                     <p className="text-sm text-neutral-600">
                         Offers valid for new and existing patients. Terms and conditions apply.
                         Contact us for full details and to check your eligibility.

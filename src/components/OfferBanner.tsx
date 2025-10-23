@@ -57,7 +57,7 @@ const OfferBanner = () => {
     ];
 
     return (
-        <section className="py-16 bg-neutral-50">
+        <section id="specials" className="py-16 bg-neutral-50">
             <div className="container mx-auto px-6">
                 {/* Section Header */}
             <div className="text-center mb-12">
@@ -140,7 +140,7 @@ const OfferBanner = () => {
 
                                     {/* Features */}
                                     <div className="space-y-2 mb-6">
-                                        {offer.features?.slice(0, 6).map((feat, idx) => (
+                                        {offer.features?.map((feat, idx) => (
                                             <div key={idx} className="flex items-start text-neutral-800">
                                                 <CheckCircle className="w-4 h-4 text-primary mr-3 mt-0.5 flex-shrink-0" />
                                                 <span className="text-sm text-left">{feat}</span>

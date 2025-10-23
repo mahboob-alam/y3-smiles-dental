@@ -23,8 +23,8 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 relative z-10 py-32">
-        <div className="space-y-8 lg:space-y-12 max-w-7xl mx-auto">
+      <div className="container mx-auto px-6 relative z-10 py-24 lg:py-32">
+        <div className="space-y-10 lg:space-y-12 max-w-7xl mx-auto">
           {/* Main Headline */}
           <div className="space-y-4 text-center lg:text-left animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight">
@@ -53,6 +53,31 @@ const Hero = () => {
             <Button variant="outline" size="xl" asChild className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-white">
               <a href="tel:03 9022 4442">Call (03) 9022 4442</a>
             </Button>
+          </div>
+
+          {/* Embedded Booking Form - visible without much scrolling */}
+          <div className="animate-fade-in-up">
+            <div className="bg-white/75 backdrop-blur-sm rounded-2xl border border-white/50 shadow-lg p-4 md:p-6 max-w-5xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-4 items-stretch">
+                {/* Intro copy (hidden on small for compactness) */}
+                <div className="hidden lg:flex flex-col justify-center p-4">
+                  <h3 className="text-2xl font-bold text-neutral-800 mb-2">Book online in under 1 minute</h3>
+                  <p className="text-neutral-700">Prefer not to call? Use our secure online booking form to pick a time that works for you.</p>
+                </div>
+                {/* Booking iframe */}
+                <div className="min-h-[60vh] lg:min-h-[70vh] rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                  <iframe
+                    title="Online booking"
+                    src="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im"
+                    className="w-full h-full"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className="text-center mt-3 text-sm text-neutral-600">
+                If the form doesn’t load, <a className="text-primary font-semibold" href="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im" target="_blank" rel="noopener noreferrer">open the booking portal</a>.
+              </div>
+            </div>
           </div>
 
           {/* Key Highlights - with icons and center-aligned */}
@@ -95,9 +120,9 @@ const Hero = () => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
                 <img
-                  src="/Afterpay.jpg"
+                  src="/afterpay-logo.png"
                   alt="Afterpay"
-                  className="h-8 w-auto opacity-100  transition-gentle"
+                  className="h-8 w-auto opacity-100 transition-gentle"
                 />
               </div>
               <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">

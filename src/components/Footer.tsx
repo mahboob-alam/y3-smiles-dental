@@ -152,9 +152,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center text-xs">
-          COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.
+        {/* Footer Credits */}
+        <div className="text-center text-xs space-y-1">
+          <div>COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.</div>
+          <div className="text-zinc-500">Powered by PSEI Australia</div>
         </div>
 
         {/* Scroll to Top */}

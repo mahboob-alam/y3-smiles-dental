@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
@@ -87,34 +87,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Credential/Logo Bar - Compact Design */}
+          {/* Credential/Logo Bar - Compact Design with drag-scroll */}
           <div className="pt-4 animate-fade-in-up">
             <p className="text-xs font-medium text-neutral-600 mb-3 text-center lg:text-left uppercase tracking-wide drop-shadow">
               Payments we accept
             </p>
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
-                <img
-                  src="/Afterpay.jpg"
-                  alt="Afterpay"
-                  className="h-8 w-auto opacity-100  transition-gentle"
-                />
-              </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
-                <img
-                  src="/humm-logo.svg"
-                  alt="Humm"
-                  className="h-8 w-auto opacity-100  transition-gentle"
-                />
-              </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
-                <img
-                  src="/medicare-logo.svg"
-                  alt="Medicare"
-                  className="h-8 w-auto opacity-100  transition-gentle"
-                />
-              </div>
-            </div>
+            <DragScrollLogos />
           </div>
         </div>
       </div>
@@ -123,3 +101,71 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// Lightweight drag-to-scroll for the insurer/payment logos bar
+const DragScrollLogos: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [isDown, setIsDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const onMouseDown: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    if (!containerRef.current) return;
+    setIsDown(true);
+    containerRef.current.classList.add('cursor-grabbing');
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+
+  const onMouseLeave: React.MouseEventHandler<HTMLDivElement> = () => {
+    if (!containerRef.current) return;
+    setIsDown(false);
+    containerRef.current.classList.remove('cursor-grabbing');
+  };
+
+  const onMouseUp: React.MouseEventHandler<HTMLDivElement> = () => {
+    if (!containerRef.current) return;
+    setIsDown(false);
+    containerRef.current.classList.remove('cursor-grabbing');
+  };
+
+  const onMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    if (!isDown || !containerRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 1.2; // scroll-fast factor
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const LogoCard: React.FC<{ src: string; alt: string }> = ({ src, alt }) => (
+    <div className="shrink-0 inline-flex items-center justify-center px-5 py-3 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 hover:shadow-lg transition-all duration-200">
+      <img
+        src={src}
+        alt={alt}
+        height={32}
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+        className="h-8 w-auto object-contain select-none"
+      />
+    </div>
+  );
+
+  return (
+    <div
+      ref={containerRef}
+      role="region"
+      aria-label="Payment methods and insurers logos"
+      className="flex items-center gap-4 overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar cursor-grab select-none px-1"
+      onMouseDown={onMouseDown}
+      onMouseLeave={onMouseLeave}
+      onMouseUp={onMouseUp}
+      onMouseMove={onMouseMove}
+    >
+      <LogoCard src="/afterpay-logo.png" alt="Afterpay" />
+      <LogoCard src="/humm-logo.svg" alt="Humm" />
+      <LogoCard src="/medicare-logo.svg" alt="Medicare" />
+      <LogoCard src="/hicaps.png" alt="HICAPS" />
+    </div>
+  );
+};

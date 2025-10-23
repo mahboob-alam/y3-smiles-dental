@@ -10,7 +10,7 @@ const Treatments = () => {
       subheading: "General Dentistry",
       description: "Regular check ups mean early detection, personalised care, and peace of mind for every patient.",
       additionalInfo: "Checkup and clean. Starts from $249",
-      image: "https://images.pexels.com/photos/3845746/pexels-photo-3845746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "/comprehensive-checkups-hygiene.jpg",
       link: "/treatments/examination-hygiene"
     },
     {
@@ -18,7 +18,7 @@ const Treatments = () => {
       subheading: "Immediate Care",
       description: "We understand emergencies are stressful — we'll endeavour to provide urgent care and comfort quickly.",
       additionalInfo: "Same-day available",
-      image: "https://images.pexels.com/photos/14624608/pexels-photo-14624608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "/emergency-dentistry.jpg",
       link: "/treatments/emergency"
     },
     /* {
@@ -33,7 +33,7 @@ const Treatments = () => {
       subheading: "Early Age Dental Care",
       description: "At Y3 Smiles Dental, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
       additionalInfo: "FREE with CDBS (Eligibility applies)",
-      image: "https://images.pexels.com/photos/52527/dentist-pain-borowac-cure-52527.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      image: "/kids-dentistry.jpg",
       link: "/treatments/childrens-dentistry"
     },
     /* {

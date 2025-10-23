@@ -381,6 +381,15 @@
   .hover\:bg-booking-gold:hover {
     background-color: #B59682;
   }
+
+  /* Hide scrollbars on supported browsers */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 /* Health Insurance Ticker Animation */

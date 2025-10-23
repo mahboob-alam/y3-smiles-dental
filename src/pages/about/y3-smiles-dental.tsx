@@ -258,12 +258,12 @@ const Y3SmilesDentalPage = () => {
                                     const IconComponent = value.icon;
                                     return (
                                         <Card key={index} className="group bg-white hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
-                                            <CardContent className="p-8">
+                                            <CardContent className="pt-8 pb-8 px-8">
                                                 <div className="flex items-start space-x-4">
-                                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform mt-1">
                                                         <IconComponent className="w-8 h-8 text-primary" />
                                                     </div>
-                                                    <div className="flex-1 pt-2">
+                                                    <div className="flex-1 pt-3">
                                                         <h4 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                                             {value.title}
                                                         </h4>
@@ -331,7 +331,7 @@ const Y3SmilesDentalPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {facilities.map((facility, index) => (
                                     <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-primary/5 hover:border-primary/20 fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
-                                        <CardContent className="p-8 text-center">
+                                        <CardContent className="pt-10 pb-8 px-8 text-center">
                                             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                                                 <Award className="w-8 h-8 text-primary" />
                                             </div>

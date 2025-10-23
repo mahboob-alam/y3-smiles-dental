@@ -218,17 +218,6 @@ const BroadmeadowsPage = () => {
 
                 {/* Enhanced Why Choose Us Section */}
                 <section className="py-32 bg-gradient-to-br from-neutral-50 to-primary/5 relative overflow-hidden">
-                    {/* Background Pattern */}
-                    <div className="absolute inset-0 opacity-10">
-                        <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
-                            <defs>
-                                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                                </pattern>
-                            </defs>
-                            <rect width="100" height="100" fill="url(#grid)" className="text-primary" />
-                        </svg>
-                    </div>
 
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="max-w-7xl mx-auto">

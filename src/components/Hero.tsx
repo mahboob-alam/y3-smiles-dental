@@ -29,7 +29,33 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Key Highlights removed per request */}
+            {/* Key Highlights - text only (no icons) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
+                <div>
+                  <p className="font-semibold text-neutral-800">All Major Health Funds</p>
+                  <p className="text-sm text-neutral-600">Accepted</p>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
+                <div>
+                  <p className="font-semibold text-neutral-800">Medicare CDBS</p>
+                  <p className="text-sm text-neutral-600">Eligibility Applies</p>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
+                <div>
+                  <p className="font-semibold text-neutral-800">Payment Plans</p>
+                  <p className="text-sm text-neutral-600">Available</p>
+                </div>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
+                <div>
+                  <p className="font-semibold text-neutral-800">New Clinic</p>
+                  <p className="text-sm text-neutral-600">Opening 2025</p>
+                </div>
+              </div>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

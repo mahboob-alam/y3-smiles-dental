@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { StaticImage } from "gatsby-plugin-image";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
+import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
                 <span className="block text-primary">
                   Dental Care
                 </span>
-                <span className="block text-neutral-700 text-2xl md:text-3xl lg:text-4xl">
+                <span className="block text-3xl md:text-4xl lg:text-5xl">
                   in Broadmeadows
                 </span>
               </h1>
@@ -29,31 +30,35 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Key Highlights - text only (no icons) */}
+            {/* Key Highlights - with icons and center-aligned */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
-                <div>
-                  <p className="font-semibold text-neutral-800">All Major Health Funds</p>
-                  <p className="text-sm text-neutral-600">Accepted</p>
+              <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Shield className="w-6 h-6 text-primary" />
                 </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">All Major Health Funds</p>
+                <p className="text-sm text-neutral-600">Accepted</p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
-                <div>
-                  <p className="font-semibold text-neutral-800">Medicare CDBS</p>
-                  <p className="text-sm text-neutral-600">Eligibility Applies</p>
+              <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <CreditCard className="w-6 h-6 text-primary" />
                 </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Medicare CDBS</p>
+                <p className="text-sm text-neutral-600">Eligibility Applies</p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
-                <div>
-                  <p className="font-semibold text-neutral-800">Payment Plans</p>
-                  <p className="text-sm text-neutral-600">Available</p>
+              <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Calendar className="w-6 h-6 text-primary" />
                 </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Payment Plans</p>
+                <p className="text-sm text-neutral-600">Available</p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft">
-                <div>
-                  <p className="font-semibold text-neutral-800">New Clinic</p>
-                  <p className="text-sm text-neutral-600">Opening 2025</p>
+              <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Building2 className="w-6 h-6 text-primary" />
                 </div>
+                <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">New Clinic</p>
+                <p className="text-sm text-neutral-600">Opening 2025</p>
               </div>
             </div>
 

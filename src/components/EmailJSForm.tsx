@@ -36,12 +36,47 @@ const EmailJSForm: React.FC<EmailJSFormProps> = ({
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        const templateParams = {
+            from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+            from_email: formData.get('email'),
+            phone: formData.get('phone'),
+            service: formData.get('service'),
+            message: formData.get('message'),
+            to_name: 'Y3 Smiles Dental',
+        } as Record<string, any>;
+
+        const sendViaApi = async () => {
+            try {
+                const resp = await fetch('/api/send-enquiry', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(templateParams)
+                });
+                if (!resp.ok) throw new Error('API send failed');
+                return true;
+            } catch (err) {
+                console.error('Fallback API send failed:', err);
+                return false;
+            }
+        };
+
         if (!emailjs) {
+            // Fallback: use serverless API (Resend) when EmailJS isn't available
+            const ok = await sendViaApi();
+            if (!ok) {
+                toast({
+                    title: "Error",
+                    description: "We couldn't send your message right now. Please try again or call us.",
+                    variant: "destructive",
+                });
+                return;
+            }
             toast({
-                title: "Error",
-                description: "Email service not loaded. Please try again.",
-                variant: "destructive",
+                title: "Message Sent Successfully!",
+                description: "Thank you for contacting Y3 Smiles Dental. We'll get back to you soon.",
             });
+            (e.target as HTMLFormElement).reset();
             return;
         }
 
@@ -49,16 +84,6 @@ const EmailJSForm: React.FC<EmailJSFormProps> = ({
         setSubmitting(true);
 
         try {
-            const formData = new FormData(e.currentTarget);
-            const templateParams = {
-                from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
-                from_email: formData.get('email'),
-                phone: formData.get('phone'),
-                service: formData.get('service'),
-                message: formData.get('message'),
-                to_name: 'Y3 Smiles Dental',
-            };
-
             await emailjs.send(
                 'service_xbm50e4',
                 'template_nfwl5um',
@@ -74,12 +99,21 @@ const EmailJSForm: React.FC<EmailJSFormProps> = ({
             // Reset form
             (e.target as HTMLFormElement).reset();
         } catch (error) {
-            console.error('Failed to send email:', error);
-            toast({
-                title: "Error Sending Message",
-                description: "Please try again or call us directly at your convenience.",
-                variant: "destructive",
-            });
+            console.error('EmailJS send failed, attempting API fallback:', error);
+            const ok = await sendViaApi();
+            if (ok) {
+                toast({
+                    title: "Message Sent Successfully!",
+                    description: "Thank you for contacting Y3 Smiles Dental. We'll get back to you soon.",
+                });
+                (e.target as HTMLFormElement).reset();
+            } else {
+                toast({
+                    title: "Error Sending Message",
+                    description: "Please try again or call us directly at your convenience.",
+                    variant: "destructive",
+                });
+            }
         } finally {
             onSubmitComplete?.();
             setSubmitting(false);

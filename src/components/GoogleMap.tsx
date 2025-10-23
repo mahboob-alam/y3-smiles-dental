@@ -145,7 +145,7 @@ const GoogleMap = ({
                       className="block"
                     >
                       <Card className="border-0 shadow-soft text-center hover-lift transition-gentle cursor-pointer hover:shadow-lg h-full" style={{ animationDelay: `${index * 0.1}s` }}>
-                        <CardContent className="p-6 flex flex-col h-full">
+                        <CardContent className="p-6 pt-8 flex flex-col h-full">
                           <div className="w-10 h-10 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 hover:gradient-primary hover:text-primary-foreground transition-gentle">
                             <IconComponent className="w-5 h-5" />
                           </div>

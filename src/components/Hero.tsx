@@ -41,13 +41,18 @@ const Hero = () => {
           {/* Hero Image/Video */}
           <div className="relative animate-fade-in-up">
             <div className="relative">
-              {/* Main Image with Rounded Border */}
+              {/* Main Video with Rounded Border */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img
-                  src="/hero-video.mov"
-                  alt="Modern Dental Clinic in Broadmeadows - Y3 Smiles Dental"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
-                />
+                >
+                  <source src="/hero-video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
               {/* Decorative Elements */}

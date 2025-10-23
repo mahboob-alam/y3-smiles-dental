@@ -5,8 +5,25 @@ import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-neutral-50 to-white pt-32 pb-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Gradient Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/80"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-6 relative z-10 py-32">
         <div className="space-y-8 lg:space-y-12 max-w-7xl mx-auto">
           {/* Main Headline */}
           <div className="space-y-4 text-center lg:text-left animate-fade-in-up">
@@ -38,53 +55,30 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Hero Image/Video */}
-          <div className="relative animate-fade-in-up">
-            <div className="relative">
-              {/* Main Video with Rounded Border */}
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
-                >
-                  <source src="/hero-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-primary/5 rounded-full blur-lg"></div>
-            </div>
-          </div>
-
           {/* Key Highlights - with icons and center-aligned */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up">
-            <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">All Major Health Funds</p>
               <p className="text-sm text-neutral-600">Accepted</p>
             </div>
-            <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <CreditCard className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Medicare CDBS</p>
               <p className="text-sm text-neutral-600">Eligibility Applies</p>
             </div>
-            <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Calendar className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Payment Plans</p>
               <p className="text-sm text-neutral-600">Available</p>
             </div>
-            <div className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-neutral-100 shadow-soft hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Building2 className="w-6 h-6 text-primary" />
               </div>
@@ -99,21 +93,21 @@ const Hero = () => {
               Payments we accept
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
                   src="/afterpay-logo.png"
                   alt="Afterpay"
                   className="h-8 w-auto opacity-100  transition-gentle"
                 />
               </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
                   src="/humm-logo.svg"
                   alt="Humm"
                   className="h-8 w-auto opacity-100  transition-gentle"
                 />
               </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/80 rounded-lg border border-neutral-100 hover:bg-white transition-gentle">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
                   src="/medicare-logo.svg"
                   alt="Medicare"
@@ -124,11 +118,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Background Decorative Elements */}
-      <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-      <div className="absolute top-40 right-20 w-3 h-3 bg-primary/30 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-      <div className="absolute bottom-40 left-20 w-1 h-1 bg-primary rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
     </section>
   );
 };

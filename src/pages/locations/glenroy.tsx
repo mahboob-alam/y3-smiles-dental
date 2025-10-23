@@ -163,7 +163,7 @@ const GlenroyPage = () => {
 
                                         <div className="bg-primary/10 p-6 rounded-2xl border border-primary/20">
                                             <p className="text-lg text-primary font-semibold leading-relaxed">
-                                                ✨ Experience dental care that puts your family's comfort and health first.
+                                                Experience dental care that puts your family's comfort and health first.
                                             </p>
                                         </div>
                                     </div>

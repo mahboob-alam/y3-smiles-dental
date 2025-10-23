@@ -29,45 +29,7 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Key Highlights - 4 Boxed Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
-                <div className="flex items-center gap-4">
-                  <img src="/health-insurance.png" alt="All Major Health Funds" className="w-10 h-10" />
-                  <div>
-                    <p className="font-semibold text-neutral-800">All Major Health Funds</p>
-                    <p className="text-sm text-neutral-600">Accepted</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
-                <div className="flex items-center gap-4">
-                  <img src="/medicare-logo.svg" alt="Medicare CDBS" className="w-10 h-10" />
-                  <div>
-                    <p className="font-semibold text-neutral-800">Medicare CDBS</p>
-                    <p className="text-sm text-neutral-600">Eligibility Applies</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
-                <div className="flex items-center gap-4">
-                  <img src="/payment-plan.png" alt="Payment Plans Available" className="w-10 h-10" />
-                  <div>
-                    <p className="font-semibold text-neutral-800">Payment Plans</p>
-                    <p className="text-sm text-neutral-600">Available</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-neutral-100 shadow-soft hover:shadow-hover hover-lift">
-                <div className="flex items-center gap-4">
-                  <img src="/dental-clinic.png" alt="New Clinic Opening 2025" className="w-10 h-10" />
-                  <div>
-                    <p className="font-semibold text-neutral-800">New Clinic</p>
-                    <p className="text-sm text-neutral-600">Opening 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Key Highlights removed per request */}
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

@@ -263,7 +263,7 @@ const Y3SmilesDentalPage = () => {
                                                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                                                         <IconComponent className="w-8 h-8 text-primary" />
                                                     </div>
-                                                    <div className="flex-1">
+                                                    <div className="flex-1 pt-2">
                                                         <h4 className="text-xl font-bold text-neutral-800 mb-3 group-hover:text-primary transition-colors">
                                                             {value.title}
                                                         </h4>

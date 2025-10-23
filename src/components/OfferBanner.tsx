@@ -65,7 +65,7 @@ const OfferBanner = () => {
                     Special Offers
                 </h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">
-                    Limited Time Promotions
+                    Current Promotions
                 </h3>
                 <p className="text-lg text-neutral-800 max-w-2xl mx-auto">
                     Take advantage of our current promotions designed to make quality dental care more accessible for you and your family.
@@ -87,16 +87,12 @@ const OfferBanner = () => {
                                 </div>
 
                                 <div className="relative p-6 md:p-8 flex flex-col flex-grow">
-                                    {/* Badge & Limited Time */}
+                                    {/* Badge */}
                                     <div className="flex items-center justify-between mb-6 h-10">
                                         <span className={`inline-flex items-center px-3 py-2 rounded-full text-sm font-semibold text-white ${offer.badgeColor}`}>
                                             <IconComponent className="w-4 h-4 mr-2" />
                                             {offer.badge}
                                         </span>
-                                        <div className="flex items-center text-sm text-neutral-600">
-                                            <Clock className="w-4 h-4 mr-1" />
-                                            Limited Time
-                                        </div>
                                     </div>
 
                                     {/* Price Section */}

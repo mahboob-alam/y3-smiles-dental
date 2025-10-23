@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "gatsby";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -21,8 +21,7 @@ import {
   AlertTriangle,
   Zap,
   ArrowRight,
-  ChevronDown,
-  ChevronUp
+  ChevronDown
 } from "lucide-react";
 
 
@@ -35,7 +34,6 @@ export const Head = () => (
 
 const RootCanalTherapy = () => {
   useScrollAnimation();
-  const [allExpanded, setAllExpanded] = useState(false);
 
   const benefits = [
     "Save your natural tooth",
@@ -262,29 +260,11 @@ const RootCanalTherapy = () => {
                 <p className="text-lg text-neutral-800 mb-8">
                   Get answers to common questions about root canal therapy.
                 </p>
-                <button
-                  onClick={() => setAllExpanded(!allExpanded)}
-                  className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
-                >
-                  {allExpanded ? (
-                    <>
-                      <ChevronUp className="w-4 h-4" />
-                      Collapse All
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="w-4 h-4" />
-                      Expand All
-                    </>
-                  )}
-                </button>
               </div>
 
               <Accordion 
-                type="multiple"
+                type="single"
                 className="w-full space-y-4"
-                defaultValue={allExpanded ? faqs.map((_, idx) => `faq-${idx}`) : []}
-                key={`accordion-${allExpanded}`}
               >
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg shadow-soft border-0">

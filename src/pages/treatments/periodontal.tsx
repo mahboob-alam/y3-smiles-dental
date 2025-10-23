@@ -124,7 +124,7 @@ const PeriodontalTherapy = () => {
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
-                    src="/periodontal-therapy.jpg"
+                    src="/periodontal-therapy.png"
                     alt="Professional periodontal treatment and gum care"
                     className="w-full h-full object-cover"
                   />

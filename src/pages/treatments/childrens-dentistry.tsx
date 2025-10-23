@@ -227,7 +227,7 @@ const ChildrensDentistry = () => {
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
-                    src="/kids-dentistry.jpg"
+                    src="/cdbs.png"
                     alt="Child receiving gentle dental care in a friendly, comfortable environment"
                     className="w-full h-full object-cover"
                   />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { StaticImage } from "gatsby-plugin-image";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
 
@@ -38,21 +39,19 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Hero Video */}
+          {/* Hero Image/Video */}
           <div className="relative animate-fade-in-up">
             <div className="relative">
-              {/* Main Video with Rounded Border */}
+              {/* Main Image with Rounded Border */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
-                >
-                  <source src="/hero-video.mov" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <StaticImage
+                  src="../assets/hero-dental-clinic.jpg"
+                  alt="Modern Dental Clinic in Broadmeadows - Y3 Smiles Dental"
+                  className="w-full h-[400px] md:h-[500px] lg:h-[600px]"
+                  placeholder="blurred"
+                  layout="fullWidth"
+                  objectFit="cover"
+                />
               </div>
 
               {/* Decorative Elements */}

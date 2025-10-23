@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 
 interface InsuranceProvider {
   name: string;
@@ -37,6 +37,7 @@ const ProviderLogo: React.FC<{ name: string; url: string; logoUrl?: string }>= (
     const arr = [
       logoUrl,
       hostname ? `https://logo.clearbit.com/${hostname}` : undefined,
+      hostname ? `https://www.google.com/s2/favicons?sz=64&domain=${hostname}` : undefined,
       `/logos/${slug}.svg`,
       `/logos/${slug}.png`,
     ].filter(Boolean) as string[];
@@ -48,7 +49,10 @@ const ProviderLogo: React.FC<{ name: string; url: string; logoUrl?: string }>= (
         <img
           src={sources[idx]}
           alt={name}
-          className="h-8 w-auto"
+          className="h-8 w-auto object-contain select-none"
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
           onError={() => setIdx((prev) => prev + 1)}
         />
       ) : (
@@ -59,6 +63,36 @@ const ProviderLogo: React.FC<{ name: string; url: string; logoUrl?: string }>= (
 };
 
 const HealthInsuranceTicker = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [isDown, setIsDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const onMouseDown: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    if (!containerRef.current) return;
+    setIsDown(true);
+    containerRef.current.classList.add("cursor-grabbing");
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+  const onMouseLeave: React.MouseEventHandler<HTMLDivElement> = () => {
+    if (!containerRef.current) return;
+    setIsDown(false);
+    containerRef.current.classList.remove("cursor-grabbing");
+  };
+  const onMouseUp: React.MouseEventHandler<HTMLDivElement> = () => {
+    if (!containerRef.current) return;
+    setIsDown(false);
+    containerRef.current.classList.remove("cursor-grabbing");
+  };
+  const onMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    if (!isDown || !containerRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 1.2;
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <section className="bg-gradient-to-r from-neutral-50 via-white to-neutral-50 py-16 overflow-hidden border-y border-neutral-100">
       <div className="container mx-auto px-6">
@@ -74,43 +108,36 @@ const HealthInsuranceTicker = () => {
           </div>
           <p className="text-neutral-800 max-w-2xl mx-auto">We work with 100% of Australia's private health insurers.</p>
         </div>
-        
-        {/* Ticker Container */}
+
+        {/* Drag-scrollable ticker */}
         <div className="relative">
           {/* Gradient overlays for fade effect */}
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-          
-          {/* Scrolling ticker */}
-          <div className="ticker-wrapper">
-            <div className="ticker-content" aria-label="Health funds logos ticker">
-              {/* First set of logos */}
-              {insuranceProviders.map((provider, index) => (
-                <a
-                  key={`first-${index}`}
-                  href={provider.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ticker-item group"
-                  aria-label={provider.name}
-                >
-                  <ProviderLogo name={provider.name} url={provider.url} logoUrl={provider.logoUrl} />
-                </a>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {insuranceProviders.map((provider, index) => (
-                <a
-                  key={`second-${index}`}
-                  href={provider.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ticker-item group"
-                  aria-label={provider.name}
-                >
-                  <ProviderLogo name={provider.name} url={provider.url} logoUrl={provider.logoUrl} />
-                </a>
-              ))}
-            </div>
+
+          <div
+            ref={containerRef}
+            role="region"
+            aria-label="Health funds logos ticker"
+            className="flex items-center gap-6 overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar cursor-grab select-none px-1 py-2"
+            onMouseDown={onMouseDown}
+            onMouseLeave={onMouseLeave}
+            onMouseUp={onMouseUp}
+            onMouseMove={onMouseMove}
+          >
+            {[...insuranceProviders, ...insuranceProviders].map((provider, index) => (
+              <a
+                key={`${provider.name}-${index}`}
+                href={provider.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex ticker-item group"
+                aria-label={provider.name}
+                draggable={false}
+              >
+                <ProviderLogo name={provider.name} url={provider.url} logoUrl={provider.logoUrl} />
+              </a>
+            ))}
           </div>
         </div>
       </div>

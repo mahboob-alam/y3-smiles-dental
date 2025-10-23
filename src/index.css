@@ -162,7 +162,7 @@
   h4,
   h5,
   h6 {
-    @apply font-display font-semibold;
+    @apply font-display font-semibold uppercase tracking-widest;
     line-height: 1.3;
     color: hsl(var(--neutral-800));
   }
@@ -172,7 +172,7 @@
   }
 
   h2 {
-    @apply text-2xl md:text-3xl uppercase tracking-widest;
+    @apply text-2xl md:text-3xl;
   }
 
   h3 {

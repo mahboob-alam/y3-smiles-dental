@@ -95,7 +95,7 @@ const Y3SmilesDentalPage = () => {
             <Header />
             <main className="flex-grow">
                 {/* Hero Section with Video Background */}
-                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
                     {/* Video Background */}
                     <video
                         autoPlay
@@ -107,27 +107,27 @@ const Y3SmilesDentalPage = () => {
                         <source src="/hero-video.mp4" type="video/mp4" />
                     </video>
 
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/20 to-secondary/30"></div>
+                    {/* Gradient Overlay - Matched to homepage */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-white/75 to-white/70"></div>
 
                     {/* Content */}
-                    <div className="relative z-10 container mx-auto px-6 text-center">
+                    <div className="relative z-10 container mx-auto px-6 text-center py-12">
                         <div className="max-w-4xl mx-auto">
-                            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-800 mb-6">
                                 About Y3 Smiles Dental
                             </h1>
-                            <p className="text-xl text-white/95 mb-8 leading-relaxed drop-shadow-md">
+                            <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Your trusted dental care partner in Melbourne's northern suburbs. We're committed to creating healthy smiles
                                 and positive dental experiences for every member of your family.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="booking" size="xl" asChild className="group bg-white text-primary hover:bg-white/90">
+                                <Button variant="booking" size="xl" asChild className="group">
                                     <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
                                         <Phone className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
                                         BOOK APPOINTMENT
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="xl" asChild className="border-white text-white hover:bg-white/10">
+                                <Button variant="outline" size="xl" asChild>
                                     <Link to="/treatments">
                                         <ArrowRight className="w-5 h-5 mr-2" />
                                         View Our Treatments

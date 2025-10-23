@@ -18,15 +18,26 @@ export const onClientEntry = () => {
   
   window.__emailjs_initialized = false;
   
-  // Wait for DOM to be ready
-  window.addEventListener('DOMContentLoaded', () => {
-    import('@emailjs/browser').then(emailjs => {
-      emailjs.default.init({
+  // Function to initialize EmailJS
+  const initializeEmailJS = () => {
+    import('@emailjs/browser').then(module => {
+      const emailjs = module.default;
+      emailjs.init({
         publicKey: '69eRgUdIdFe9Hq-4C',
       });
+      window.emailjs = emailjs;
       window.__emailjs_initialized = true;
+      console.log('EmailJS initialized successfully');
     }).catch(error => {
       console.error('Error loading emailjs:', error);
     });
-  });
+  };
+  
+  // Check if DOM is already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeEmailJS);
+  } else {
+    // DOM is already loaded, initialize immediately
+    initializeEmailJS();
+  }
 };

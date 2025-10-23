@@ -25,12 +25,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto">
-          {/* Desktop: 2-column layout (left content, right booking). Mobile: stacked */}
+          {/* Desktop: 2-column layout (left content, right booking). Mobile: stacked with reordering */}
           <div className="grid lg:grid-cols-5 gap-8 animate-fade-in-up">
-            {/* Left column: headline, cards, payments */}
-            <div className="lg:col-span-3 space-y-8">
-              {/* Main Headline */}
-              <div className="space-y-4 text-center lg:text-left">
+            {/* Left column: headline, cards, payments (order changed on mobile) */}
+            <div className="lg:col-span-3 space-y-8 flex flex-col lg:justify-between lg:min-h-[800px]">
+              {/* Main Headline - order-1 on mobile */}
+              <div className="order-1 space-y-4 text-center lg:text-left">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight">
                   Modern Family
                   <span className="block text-primary">
@@ -48,8 +48,8 @@ const Hero = () => {
                 </p>
               </div>
 
-              {/* Key Highlights - 4 compact cards */}
-              <div className="grid grid-cols-2 gap-3">
+              {/* Key Highlights - 4 compact cards - order-2 on mobile */}
+              <div className="order-2 grid grid-cols-2 gap-3">
                 <div className="group bg-white/20 backdrop-blur-sm rounded-lg p-4 border border-white/30 shadow-md hover:shadow-lg hover:border-primary/50 hover:bg-white/30 transition-all duration-300 text-center">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
                     <Shield className="w-5 h-5 text-primary drop-shadow-lg" />
@@ -80,8 +80,8 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Credential/Logo Bar */}
-              <div>
+              {/* Credential/Logo Bar - order-4 on mobile (after booking form) */}
+              <div className="order-4 lg:order-3">
                 <p className="text-xs font-medium text-neutral-600 mb-3 text-center lg:text-left uppercase tracking-wide drop-shadow">
                   Payments we accept
                 </p>
@@ -111,9 +111,9 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right column: Embedded Booking Form */}
-            <div className="lg:col-span-2">
-              <div className="bg-white/75 backdrop-blur-sm rounded-2xl border border-white/50 shadow-lg p-4 h-full flex flex-col sticky top-24">
+            {/* Right column: Embedded Booking Form - order-3 on mobile */}
+            <div className="lg:col-span-2 order-3 lg:order-4">
+              <div className="bg-white/75 backdrop-blur-sm rounded-2xl border border-white/50 shadow-lg p-4 h-full flex flex-col lg:sticky lg:top-24">
                 {/* Intro copy */}
                 <div className="flex flex-col justify-center p-2 mb-3">
                   <h3 className="text-lg font-bold text-neutral-800 mb-1">Book online in under 1 minute</h3>

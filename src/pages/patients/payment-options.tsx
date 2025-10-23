@@ -54,35 +54,40 @@ const PaymentOptions = () => {
             description: "Maximize your benefits with HICAPS instant rebates",
             imageSrc: "/health-insurance.png",
             features: ["Instant rebates", "All major funds", "Gap payments", "Claim processing"],
-            color: "bg-green-50 text-green-600"
+            color: "bg-green-50 text-green-600",
+            link: "https://www.hicaps.com.au/"
         },
         {
             title: "Afterpay",
             description: "Buy now, pay later with Afterpay's flexible payment solution",
             imageSrc: "/afterpay-logo.png",
             features: ["4 interest-free payments", "Instant approval", "No hidden fees", "Easy setup"],
-            color: "bg-purple-50 text-purple-600"
+            color: "bg-purple-50 text-purple-600",
+            link: "https://www.afterpay.com/en-AU"
         },
         {
             title: "Humm",
             description: "Longer payment terms with Humm for larger treatments",
             imageSrc: "/humm-logo.svg",
             features: ["Up to 72 months", "Interest-free", "Quick approval", "Flexible terms"],
-            color: "bg-orange-50 text-orange-600"
+            color: "bg-orange-50 text-orange-600",
+            link: "https://www.shophumm.com/au/"
         },
         {
             title: "Child Dental Benefits Schedule",
             description: "Australian Government program covering dental care for eligible children",
             imageSrc: "/medicare-logo.svg",
             features: ["Ages 0-17 years", "Medicare eligible", "Government funded", "Basic dental services"],
-            color: "bg-pink-50 text-pink-600"
+            color: "bg-pink-50 text-pink-600",
+            link: "https://www.servicesaustralia.gov.au/child-dental-benefits-schedule"
         },
         {
             title: "Superannuation - Early Release",
             description: "Access your super early on compassionate grounds for medical expenses",
             imageSrc: "/health-insurance.png",
-            features: ["Medical treatment", "Compassionate grounds", "ATO approved", "Government regulated"],
-            color: "bg-indigo-50 text-indigo-600"
+            features: ["Medical treatment", "Compassionate grounds", "ATO approval required", "Government regulated"],
+            color: "bg-indigo-50 text-indigo-600",
+            link: "https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/super-on-compassionate-grounds"
         }
     ];
 
@@ -94,7 +99,7 @@ const PaymentOptions = () => {
                 <section className="bg-gradient-hero py-24">
                     <div className="container mx-auto px-6">
                         <div className="max-w-4xl mx-auto text-center">
-                            <img src="/atm-card.png" alt="Payment Options" className="w-24 h-24 mx-auto mb-10" />
+                            {/* Removed credit card image per request */}
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
                                 Payment Options
                             </h1>
@@ -134,7 +139,13 @@ const PaymentOptions = () => {
                                     <Card key={index} className="border-0 shadow-soft hover:shadow-medium hover:scale-[1.02] hover:-translate-y-1 transition-smooth fade-in-section" style={{ transitionDelay: `${index * 150}ms` }}>
                                         <CardHeader>
                                             <div className={`w-16 h-16 rounded-2xl ${method.color} flex items-center justify-center mb-4`}>
-                                                <img src={method.imageSrc} alt={method.title} className="w-8 h-8" />
+                                                {method.link ? (
+                                                    <a href={method.link} target="_blank" rel="noopener noreferrer">
+                                                        <img src={method.imageSrc} alt={method.title} className="w-8 h-8" />
+                                                    </a>
+                                                ) : (
+                                                    <img src={method.imageSrc} alt={method.title} className="w-8 h-8" />
+                                                )}
                                             </div>
                                             <CardTitle className="text-2xl font-bold text-neutral-800 mb-2">
                                                 {method.title}
@@ -200,7 +211,9 @@ const PaymentOptions = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                                    <img src="/hicaps-logo.svg" alt="HICAPS instant rebates" className="w-full h-auto max-w-md object-contain" />
+                                    <a href="https://www.hicaps.com.au/" target="_blank" rel="noopener noreferrer">
+                                        <img src="/hicaps-logo.svg" alt="HICAPS instant rebates" className="w-full h-auto max-w-md object-contain" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +226,9 @@ const PaymentOptions = () => {
                         <div className="max-w-6xl mx-auto">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                                 <div className="aspect-video bg-purple-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                                    <img src="/afterpay-logo.png" alt="Afterpay payment option" className="w-full h-auto max-w-md object-contain" />
+                                    <a href="https://www.afterpay.com/en-AU" target="_blank" rel="noopener noreferrer">
+                                        <img src="/afterpay-logo.png" alt="Afterpay payment option" className="w-full h-auto max-w-md object-contain" />
+                                    </a>
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
@@ -294,7 +309,9 @@ const PaymentOptions = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-orange-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                                    <img src="/humm-logo.svg" alt="Humm payment plans" className="w-full h-auto max-w-md object-contain" />
+                                    <a href="https://www.shophumm.com/au/" target="_blank" rel="noopener noreferrer">
+                                        <img src="/humm-logo.svg" alt="Humm payment plans" className="w-full h-auto max-w-md object-contain" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +324,9 @@ const PaymentOptions = () => {
                         <div className="max-w-6xl mx-auto">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                                 <div className="aspect-video bg-pink-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                                    <img src="/cdbs.png" alt="Child Dental Benefits Schedule" className="w-full h-auto max-w-md object-contain" />
+                                    <a href="https://www.servicesaustralia.gov.au/child-dental-benefits-schedule" target="_blank" rel="noopener noreferrer">
+                                        <img src="/medicare-logo.svg" alt="Child Dental Benefits Schedule" className="w-full h-auto max-w-md object-contain" />
+                                    </a>
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
@@ -381,43 +400,54 @@ const PaymentOptions = () => {
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
-                                                <h4 className="font-semibold text-neutral-800 mb-1">Medical Treatment</h4>
-                                                <p className="text-neutral-800 text-sm">Dental, medical, or surgical treatment for you or your dependant</p>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Eligible Dental Treatments</h4>
+                                                <p className="text-neutral-800 text-sm">Includes oral surgery, dental implants, dentures, and treatment for severe pain or infection</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
-                                                <h4 className="font-semibold text-neutral-800 mb-1">Medical Transport</h4>
-                                                <p className="text-neutral-800 text-sm">Transport costs for essential medical treatment</p>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">For You or Your Dependant</h4>
+                                                <p className="text-neutral-800 text-sm">Requires medical evidence (e.g., specialist or GP letter) to support the application</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
-                                                <h4 className="font-semibold text-neutral-800 mb-1">Home Modifications</h4>
-                                                <p className="text-neutral-800 text-sm">Modifications to accommodate severe disability</p>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Costs That May Be Covered</h4>
+                                                <p className="text-neutral-800 text-sm">Treatment fees, hospital/day surgery, anaesthetist, and medically necessary travel related to treatment</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start">
                                             <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
                                             <div>
-                                                <h4 className="font-semibold text-neutral-800 mb-1">Palliative Care</h4>
-                                                <p className="text-neutral-800 text-sm">Care for terminal illness and related expenses</p>
-                                            </div>
-                                        </div>
-                                        <div className="flex items-start">
-                                            <CheckCircle className="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" />
-                                            <div>
-                                                <h4 className="font-semibold text-neutral-800 mb-1">Preventing Foreclosure</h4>
-                                                <p className="text-neutral-800 text-sm">Prevent forced sale of your primary residence</p>
+                                                <h4 className="font-semibold text-neutral-800 mb-1">Apply Directly via ATO</h4>
+                                                <p className="text-neutral-800 text-sm">No third-party required—submit your application through ATO online services</p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="mt-6">
+                                        <a
+                                            href="https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/super-on-compassionate-grounds"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition"
+                                        >
+                                            Apply via ATO
+                                            <ArrowRight className="w-4 h-4 ml-2" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="aspect-video bg-indigo-50 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                                    <img src="/health-insurance.png" alt="Superannuation early release" className="w-full h-auto max-w-sm object-contain" />
-                                </div>
+                                <a
+                                    href="https://www.ato.gov.au/individuals/super/withdrawing-and-using-your-super/early-access-to-your-super/super-on-compassionate-grounds"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="aspect-video bg-indigo-50 rounded-2xl overflow-hidden flex items-center justify-center p-8"
+                                >
+                                    <div className="w-full h-full flex items-center justify-center">
+                                        <div className="text-indigo-700 font-bold text-3xl tracking-widest">ATO</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -444,7 +474,7 @@ const PaymentOptions = () => {
                 <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6 text-center">
                         <div className="max-w-3xl mx-auto">
-                            <img src="/atm-card.png" alt="Ready to Get Started?" className="w-24 h-24 mx-auto mb-6" />
+                            {/* Removed duplicate credit card image above CTA per request */}
                             <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                                 Ready to Get Started?
                             </h2>

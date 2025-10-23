@@ -8,7 +8,7 @@ interface InsuranceProvider {
 
 const insuranceProviders: InsuranceProvider[] = [
   { name: "Medibank", url: "https://www.medibank.com.au/" },
-  { name: "Bupa", url: "https://www.bupa.com.au/" },
+  { name: "Bupa", url: "https://www.bupa.com.au/", logoUrl: "https://logo.clearbit.com/bupa.com.au" },
   { name: "HBF", url: "https://www.hbf.com.au/" },
   { name: "HCF", url: "https://www.hcf.com.au/" },
   { name: "Australian Unity", url: "https://www.australianunity.com.au/" },

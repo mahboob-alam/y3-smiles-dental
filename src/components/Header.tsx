@@ -4,8 +4,11 @@ import { Navigation } from "./Navigation";
 import { Link } from "gatsby";
 import logo from "@/assets/logo.svg";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
+import { useLocation } from "@reach/router";
 
 const Header = () => {
+  const location = useLocation();
+  const isHome = location?.pathname === "/";
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-gentle">
       <div className="container mx-auto px-6 py-4">
@@ -38,6 +41,21 @@ const Header = () => {
               >
                 Treatments
               </Link>
+              {isHome ? (
+                <a
+                  href="#specials"
+                  className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg"
+                >
+                  Special Offers
+                </a>
+              ) : (
+                <Link
+                  to="/specials"
+                  className="text-neutral-700 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg"
+                >
+                  Special Offers
+                </Link>
+              )}
             </nav>
 
             {/* Phone & CTA Buttons */}

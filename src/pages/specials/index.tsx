@@ -37,7 +37,7 @@ const SpecialsPage = () => {
   useScrollAnimation();
 
   const benefits = [
-    "Limited Time Offers",
+    "Current Offers",
     "Quality Dental Care",
     "Family-Friendly Pricing"
   ];
@@ -176,16 +176,12 @@ const SpecialsPage = () => {
                   </div>
 
                   <div className="relative p-6 md:p-8 flex flex-col flex-grow">
-                    {/* Badge & Limited Time */}
+                    {/* Badge */}
                     <div className="flex items-center justify-between mb-6 h-10">
                       <span className={`inline-flex items-center px-3 py-2 rounded-full text-sm font-semibold text-white ${offer.badgeColor}`}>
                         <IconComponent className="w-4 h-4 mr-2" />
                         {offer.badge}
                       </span>
-                      <div className="flex items-center text-sm text-neutral-600">
-                        <Clock className="w-4 h-4 mr-1" />
-                        Limited Time
-                      </div>
                     </div>
 
                     {/* Price Section */}

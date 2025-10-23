@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Phone, Calendar, ChevronDown, ChevronUp } from "lucide-react";
+import React from 'react';
+import { Phone, Calendar, ChevronDown } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BOOKING_URL } from "@/lib/config";
 
 const FAQ = () => {
-    const [expandedSections, setExpandedSections] = useState<{ [key: number]: boolean }>({});
 
     const faqSections = [
         {
@@ -73,14 +72,6 @@ const FAQ = () => {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {faqSections.map((section, sectionIndex) => {
-                            const allExpanded = expandedSections[sectionIndex] || false;
-                            const toggleAll = () => {
-                                setExpandedSections(prev => ({
-                                    ...prev,
-                                    [sectionIndex]: !allExpanded
-                                }));
-                            };
-
                             return (
                                 <div key={sectionIndex} className="space-y-4">
                                     <div className="flex items-center justify-between mb-4">
@@ -90,28 +81,10 @@ const FAQ = () => {
                                             </div>
                                             <h4 className="text-2xl font-bold text-neutral-800">{section.title} FAQs</h4>
                                         </div>
-                                        <button
-                                            onClick={toggleAll}
-                                            className="flex items-center gap-1 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
-                                        >
-                                            {allExpanded ? (
-                                                <>
-                                                    <ChevronUp className="w-4 h-4" />
-                                                    Collapse All
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <ChevronDown className="w-4 h-4" />
-                                                    Expand All
-                                                </>
-                                            )}
-                                        </button>
                                     </div>
                                     <Accordion
-                                        type="multiple"
+                                        type="single"
                                         className="w-full space-y-4"
-                                        defaultValue={allExpanded ? section.faqs.map((_, idx) => `${sectionIndex}-${idx}`) : []}
-                                        key={`accordion-${sectionIndex}-${allExpanded}`}
                                     >
                                         {section.faqs.map((faq, index) => (
                                             <AccordionItem

@@ -19,7 +19,7 @@ const Hero = () => {
           Your browser does not support the video tag.
         </video>
         {/* Gradient Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-white/75 to-white/70"></div>
       </div>
 
       {/* Content */}
@@ -57,28 +57,28 @@ const Hero = () => {
 
           {/* Key Highlights - with icons and center-aligned */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up">
-            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/95 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">All Major Health Funds</p>
               <p className="text-sm text-neutral-600">Accepted</p>
             </div>
-            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/95 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <CreditCard className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Medicare CDBS</p>
               <p className="text-sm text-neutral-600">Eligibility Applies</p>
             </div>
-            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/95 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Calendar className="w-6 h-6 text-primary" />
               </div>
               <p className="font-semibold text-neutral-800 group-hover:text-primary transition-colors">Payment Plans</p>
               <p className="text-sm text-neutral-600">Available</p>
             </div>
-            <div className="group bg-white/90 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
+            <div className="group bg-white/95 backdrop-blur-md rounded-xl p-6 border border-white/50 shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Building2 className="w-6 h-6 text-primary" />
               </div>
@@ -93,21 +93,21 @@ const Hero = () => {
               Payments we accept
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/95 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
-                  src="/afterpay-logo.png"
+                  src="/Afterpay.jpg"
                   alt="Afterpay"
                   className="h-8 w-auto opacity-100  transition-gentle"
                 />
               </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/95 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
                   src="/humm-logo.svg"
                   alt="Humm"
                   className="h-8 w-auto opacity-100  transition-gentle"
                 />
               </div>
-              <div className="flex items-center justify-center px-5 py-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
+              <div className="flex items-center justify-center px-5 py-3 bg-white/95 backdrop-blur-md rounded-lg border border-white/50 hover:bg-white transition-gentle shadow-md">
                 <img
                   src="/medicare-logo.svg"
                   alt="Medicare"

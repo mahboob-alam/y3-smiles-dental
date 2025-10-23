@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "gatsby";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,15 +18,13 @@ import {
   Gamepad2,
   ArrowRight,
   Smile,
-  ChevronDown,
-  ChevronUp
+  ChevronDown
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 
 const ChildrensDentistry = () => {
   useScrollAnimation();
-  const [allExpanded, setAllExpanded] = useState(false);
 
   const benefits = [
     "Child-friendly environment",
@@ -406,29 +404,11 @@ const ChildrensDentistry = () => {
                 <p className="text-lg text-neutral-800 mb-8">
                   Get answers to common questions about children's dental care.
                 </p>
-                <button
-                  onClick={() => setAllExpanded(!allExpanded)}
-                  className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
-                >
-                  {allExpanded ? (
-                    <>
-                      <ChevronUp className="w-4 h-4" />
-                      Collapse All
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="w-4 h-4" />
-                      Expand All
-                    </>
-                  )}
-                </button>
               </div>
 
               <Accordion 
-                type="multiple"
+                type="single"
                 className="w-full space-y-4"
-                defaultValue={allExpanded ? faqs.map((_, idx) => `item-${idx}`) : []}
-                key={`accordion-${allExpanded}`}
               >
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-soft border-0">

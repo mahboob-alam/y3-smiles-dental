@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import logo from "@/assets/logo.svg";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import { useLocation } from "@reach/router";
+import { Phone } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -59,13 +60,20 @@ const Header = () => {
             </nav>
 
             {/* Phone & CTA Buttons */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3">
+              {/* Phone number - full on desktop, icon on mobile */}
               <a href="tel:03 9022 4442" className="hidden md:block text-neutral-800 hover:text-primary transition-gentle font-medium hover:scale-105 text-lg">
                 03 9022 4442
               </a>
+              <Button variant="ghost" size="icon" asChild className="md:hidden text-neutral-800 hover:text-primary">
+                <a href="tel:03 9022 4442" aria-label="Call us">
+                  <Phone className="h-5 w-5" />
+                </a>
+              </Button>
+              {/* Booking button - shortened text */}
               <Button variant="booking" size="lg" asChild>
                 <a href={BOOKING_URL} {...LINK_ATTRIBUTES}>
-                  BOOK ONLINE
+                  BOOK
                 </a>
               </Button>
             </div>

@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useRef, useState, useEffect } from "react";
 
 interface InsuranceProvider {
   name: string;
@@ -67,10 +67,32 @@ const HealthInsuranceTicker = () => {
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  // Auto-scroll animation
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || isPaused) return;
+
+    let animationId: number;
+    const scroll = () => {
+      if (container && !isPaused) {
+        container.scrollLeft += 0.5; // Gentle auto-scroll speed
+        // Reset to start when reaching the end (seamless loop)
+        if (container.scrollLeft >= container.scrollWidth / 2) {
+          container.scrollLeft = 0;
+        }
+      }
+      animationId = requestAnimationFrame(scroll);
+    };
+    animationId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationId);
+  }, [isPaused]);
 
   const onMouseDown: React.MouseEventHandler<HTMLDivElement> = (e) => {
     if (!containerRef.current) return;
     setIsDown(true);
+    setIsPaused(true);
     containerRef.current.classList.add("cursor-grabbing");
     setStartX(e.pageX - containerRef.current.offsetLeft);
     setScrollLeft(containerRef.current.scrollLeft);
@@ -84,6 +106,8 @@ const HealthInsuranceTicker = () => {
     if (!containerRef.current) return;
     setIsDown(false);
     containerRef.current.classList.remove("cursor-grabbing");
+    // Resume auto-scroll after a short delay
+    setTimeout(() => setIsPaused(false), 1000);
   };
   const onMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
     if (!isDown || !containerRef.current) return;
@@ -91,6 +115,14 @@ const HealthInsuranceTicker = () => {
     const x = e.pageX - containerRef.current.offsetLeft;
     const walk = (x - startX) * 1.2;
     containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+  const onMouseEnter = () => setIsPaused(true);
+  const onMouseLeaveContainer = () => {
+    setIsDown(false);
+    if (containerRef.current) {
+      containerRef.current.classList.remove("cursor-grabbing");
+    }
+    setTimeout(() => setIsPaused(false), 500);
   };
 
   return (
@@ -121,7 +153,8 @@ const HealthInsuranceTicker = () => {
             aria-label="Health funds logos ticker"
             className="flex items-center gap-6 overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar cursor-grab select-none px-1 py-2"
             onMouseDown={onMouseDown}
-            onMouseLeave={onMouseLeave}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeaveContainer}
             onMouseUp={onMouseUp}
             onMouseMove={onMouseMove}
           >

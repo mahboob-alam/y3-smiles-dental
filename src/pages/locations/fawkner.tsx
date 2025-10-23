@@ -97,7 +97,7 @@ const FawknerPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience exceptional dental care at Fawkner Dental Clinic. Our state-of-the-art clinic
+                                    Experience exceptional dental care near Fawkner. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
                             </div>

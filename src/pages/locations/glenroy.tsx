@@ -88,7 +88,7 @@ const GlenroyPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience family-focused dental care at Glenroy Dental Clinic where everyone feels welcome.
+                                    Experience family-focused dental care near Glenroy where everyone feels welcome.
                                     Our comprehensive approach ensures comfortable visits for all ages.
                                 </p>
                             </div>

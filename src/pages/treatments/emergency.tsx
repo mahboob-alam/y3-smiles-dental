@@ -350,7 +350,6 @@ const EmergencyDentistry = () => {
         <section className="py-24 bg-red-50">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <img src="/emergency.png" alt="Emergency Dentistry" className="w-16 h-16 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-neutral-800 mb-6">
                 <a href="tel:03 9022 4442" className="hover:text-primary transition-colors">03 9022 4442</a>
               </h2>

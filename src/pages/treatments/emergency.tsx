@@ -210,7 +210,7 @@ const EmergencyDentistry = () => {
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/11999476/pexels-photo-11999476.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                    src="/emergency-dentistry.jpg"
                     alt="Emergency dental care and pain relief"
                     className="w-full h-full object-cover"
                   />

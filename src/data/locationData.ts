@@ -103,8 +103,19 @@ export const locationConfigs: Record<string, LocationConfig> = {
 
     "roxbury-park": {
         locationData: {
-            name: "Y3 Smiles Dental - Roxbury Park Area",
-            address: "Serving Roxbury Park and surrounding areas",
+            name: "Y3 Smiles Dental - Roxburgh Park Area",
+            address: "Serving Roxburgh Park and surrounding areas",
+            phone: "03 9022 4442",
+            email: "smile@y3smilesdental.com.au",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.123456789!2d144.765!3d-37.628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRoxburgh+Park+VIC+3064!5e0!3m2!1sen!2sau!4v1234567890128",
+            directionsUrl: "https://maps.google.com/?q=Roxburgh+Park,+VIC+3064"
+        },
+        openingHours: extendedOpeningHours
+    },
+    "roxburgh-park": {
+        locationData: {
+            name: "Y3 Smiles Dental - Roxburgh Park Area",
+            address: "Serving Roxburgh Park and surrounding areas",
             phone: "03 9022 4442",
             email: "smile@y3smilesdental.com.au",
             mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.123456789!2d144.765!3d-37.628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRoxburgh+Park+VIC+3064!5e0!3m2!1sen!2sau!4v1234567890128",

@@ -22,12 +22,12 @@ import {
 
 export const Head = () => (
   <SEO 
-    title="Gladstone park | Y3 Smiles Dental"
+    title="Roxburgh park | Y3 Smiles Dental"
     description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
   />
 );
 
-const GladstoneParkPage = () => {
+const RoxburghParkPage = () => {
     useScrollAnimation();
 
     const services = [
@@ -82,8 +82,8 @@ const GladstoneParkPage = () => {
                                 <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
                                     <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                     <div className="text-left">
-                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Gladstone Park Dentists</p>
-                                        <p className="text-lg font-bold text-neutral-800">Gladstone Park</p>
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Roxburgh Park Dentists</p>
+                                        <p className="text-lg font-bold text-neutral-800">Roxburgh Park</p>
                                     </div>
                                 </div>
 
@@ -95,7 +95,7 @@ const GladstoneParkPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience exceptional dental care at Gladstone Park Dental Clinic. Our state-of-the-art clinic
+                                    Experience exceptional dental care at Roxburgh Park Dental Clinic. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
                             </div>
@@ -104,7 +104,7 @@ const GladstoneParkPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
                                 <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
                                     <CheckCircle className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
-                                    <span className="font-semibold text-neutral-800">Local Gladstone Park Clinic</span>
+                                    <span className="font-semibold text-neutral-800">Local Roxburgh Park Clinic</span>
                                 </div>
                                 <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
                                     <Award className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
@@ -156,7 +156,7 @@ const GladstoneParkPage = () => {
                                     <div className="space-y-6">
                                         <div className="bg-white p-6 rounded-2xl shadow-soft border-l-4 border-primary">
                                             <p className="text-lg text-neutral-700 leading-relaxed">
-                                                At Y3 Smiles Dental near Gladstone Park, we believe good dental care is more than just brushing
+                                                At Y3 Smiles Dental near Roxburgh Park, we believe good dental care is more than just brushing
                                                 and flossing. Regular check-ups are essential for maintaining healthy teeth and gums.
                                             </p>
                                         </div>
@@ -195,8 +195,8 @@ const GladstoneParkPage = () => {
                                     <div className="relative bg-white p-2 rounded-3xl shadow-2xl">
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
-                                                src="/gladstone-park.png"
-                                                alt="Modern dental office in Gladstone Park"
+                                                src="/roxburgh.png"
+                                                alt="Modern dental office in Roxburgh Park"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
@@ -245,7 +245,7 @@ const GladstoneParkPage = () => {
 
                                 <p className="text-xl text-neutral-800 max-w-4xl mx-auto leading-relaxed">
                                     Experience the difference that expert care, modern technology, and genuine compassion
-                                    make for Gladstone Park families. Here's what sets us apart.
+                                    make for Roxburgh Park families. Here's what sets us apart.
                                 </p>
                             </div>
 
@@ -306,7 +306,7 @@ const GladstoneParkPage = () => {
 
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 leading-tight">
                                     Our Dental Services in
-                                    <span className="block text-primary">Gladstone Park</span>
+                                    <span className="block text-primary">Roxburgh Park</span>
                                 </h2>
 
                                 <p className="text-xl text-neutral-800 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -377,9 +377,9 @@ const GladstoneParkPage = () => {
                 </section>
 
                 <GoogleMap
-                    locationName="Gladstone Park"
-                    locationData={locationConfigs["gladstone-park"].locationData}
-                    openingHours={locationConfigs["gladstone-park"].openingHours}
+                    locationName="Roxburgh Park"
+                    locationData={locationConfigs["roxburgh-park"].locationData}
+                    openingHours={locationConfigs["roxburgh-park"].openingHours}
                     className="bg-primary/5"
                 />
 
@@ -390,4 +390,4 @@ const GladstoneParkPage = () => {
     );
 };
 
-export default GladstoneParkPage;
+export default RoxburghParkPage;

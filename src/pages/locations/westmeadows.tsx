@@ -170,7 +170,7 @@ const WestmeadowsPage = () => {
 
                                         <div className="bg-primary/10 p-6 rounded-2xl border border-primary/20">
                                             <p className="text-lg text-primary font-semibold leading-relaxed">
-                                                ✨ Book your appointment today — whether you need a check-up, restorative care,
+                                                Book your appointment today — whether you need a check-up, restorative care,
                                                 or want to enhance your smile, we're here to help.
                                             </p>
                                         </div>

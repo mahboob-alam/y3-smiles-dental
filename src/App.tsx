@@ -57,7 +57,7 @@ const GlenroyPage = lazy(() => import("./pages/locations/glenroy"));
 const GreenvalePage = lazy(() => import("./pages/locations/greenvale"));
 const CampbellfieldPage = lazy(() => import("./pages/locations/campbellfield"));
 const MeadowHeightsPage = lazy(() => import("./pages/locations/meadow-heights"));
-const RoxburyParkPage = lazy(() => import("./pages/locations/roxbury-park"));
+const RoxburghParkPage = lazy(() => import("./pages/locations/roxburgh-park"));
 const CraigieburnPage = lazy(() => import("./pages/locations/craigieburn"));
 const WestmeadowsPage = lazy(() => import("./pages/locations/westmeadows"));
 const MicklehamPage = lazy(() => import("./pages/locations/mickleham"));
@@ -277,9 +277,9 @@ const App = () => {
               <MeadowHeightsPage />
             </Suspense>
           } />
-          <Route path="/locations/roxbury-park" element={
+          <Route path="/locations/roxburgh-park" element={
             <Suspense fallback={<LoadingSpinner />}>
-              <RoxburyParkPage />
+              <RoxburghParkPage />
             </Suspense>
           } />
           <Route path="/locations/craigieburn" element={

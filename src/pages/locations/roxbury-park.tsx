@@ -21,8 +21,8 @@ import {
 
 
 export const Head = () => (
-  <SEO 
-    title="Roxbury park | Y3 Smiles Dental"
+    <SEO 
+        title="Roxburgh park | Y3 Smiles Dental"
     description="Professional dental care services in Melbourne's northern suburbs. Visit Y3 Smiles Dental for comprehensive dental treatments."
   />
 );
@@ -82,8 +82,8 @@ const RoxburyParkPage = () => {
                                 <div className="inline-flex items-center justify-center mb-8 p-4 bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft">
                                     <img src="/location.png" alt="Location" className="w-10 h-10 mr-4" />
                                     <div className="text-left">
-                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Roxbury Park Dentists</p>
-                                        <p className="text-lg font-bold text-neutral-800">Roxbury Park</p>
+                                        <p className="text-sm font-medium text-primary uppercase tracking-wider">Roxburgh Park Dentists</p>
+                                        <p className="text-lg font-bold text-neutral-800">Roxburgh Park</p>
                                     </div>
                                 </div>
 
@@ -95,7 +95,7 @@ const RoxburyParkPage = () => {
                                 </h1>
 
                                 <p className="text-xl text-neutral-800 mb-12 leading-relaxed max-w-3xl mx-auto">
-                                    Experience exceptional dental care at Roxbury Park Dental Clinic. Our state-of-the-art clinic
+                                    Experience exceptional dental care at Roxburgh Park Dental Clinic. Our state-of-the-art clinic
                                     combines advanced technology with gentle, personalised treatment for the whole family.
                                 </p>
                             </div>
@@ -104,7 +104,7 @@ const RoxburyParkPage = () => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
                                 <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
                                     <CheckCircle className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
-                                    <span className="font-semibold text-neutral-800">Local Roxbury Park Clinic</span>
+                                    <span className="font-semibold text-neutral-800">Local Roxburgh Park Clinic</span>
                                 </div>
                                 <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-soft hover:shadow-medium transition-all duration-300 group">
                                     <Award className="w-6 h-6 text-primary mr-3 group-hover:scale-110 transition-transform" />
@@ -156,7 +156,7 @@ const RoxburyParkPage = () => {
                                     <div className="space-y-6">
                                         <div className="bg-white p-6 rounded-2xl shadow-soft border-l-4 border-primary">
                                             <p className="text-lg text-neutral-700 leading-relaxed">
-                                                At Y3 Smiles Dental near Roxbury Park, we believe good dental care is more than just brushing
+                                                At Y3 Smiles Dental near Roxburgh Park, we believe good dental care is more than just brushing
                                                 and flossing. Regular check-ups are essential for maintaining healthy teeth and gums.
                                             </p>
                                         </div>
@@ -170,7 +170,7 @@ const RoxburyParkPage = () => {
 
                                         <div className="bg-primary/10 p-6 rounded-2xl border border-primary/20">
                                             <p className="text-lg text-primary font-semibold leading-relaxed">
-                                                ✨ Book your appointment today — whether you need a check-up, restorative care,
+                                                Book your appointment today — whether you need a check-up, restorative care,
                                                 or want to enhance your smile, we're here to help.
                                             </p>
                                         </div>
@@ -196,7 +196,7 @@ const RoxburyParkPage = () => {
                                         <div className="aspect-[4/3] bg-neutral-100 rounded-2xl overflow-hidden">
                                             <img
                                                 src="/roxburgh.png"
-                                                alt="Modern dental office in Roxbury Park"
+                                                alt="Modern dental office in Roxburgh Park"
                                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
@@ -245,7 +245,7 @@ const RoxburyParkPage = () => {
 
                                 <p className="text-xl text-neutral-800 max-w-4xl mx-auto leading-relaxed">
                                     Experience the difference that expert care, modern technology, and genuine compassion
-                                    make for Roxbury Park families. Here's what sets us apart.
+                                    make for Roxburgh Park families. Here's what sets us apart.
                                 </p>
                             </div>
 
@@ -306,7 +306,7 @@ const RoxburyParkPage = () => {
 
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6 leading-tight">
                                     Our Dental Services in
-                                    <span className="block text-primary">Roxbury Park</span>
+                                    <span className="block text-primary">Roxburgh Park</span>
                                 </h2>
 
                                 <p className="text-xl text-neutral-800 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -377,9 +377,9 @@ const RoxburyParkPage = () => {
                 </section>
 
                 <GoogleMap
-                    locationName="Roxbury Park"
-                    locationData={locationConfigs["roxbury-park"].locationData}
-                    openingHours={locationConfigs["roxbury-park"].openingHours}
+                    locationName="Roxburgh Park"
+                    locationData={locationConfigs["roxburgh-park"].locationData}
+                    openingHours={locationConfigs["roxburgh-park"].openingHours}
                     className="bg-primary/5"
                 />
 

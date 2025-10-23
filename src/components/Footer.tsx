@@ -92,7 +92,7 @@ const Footer = () => {
               <Link to="/locations/greenvale" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">GREENVALE</Link>
               <Link to="/locations/campbellfield" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">CAMPBELLFIELD</Link>
               <Link to="/locations/meadow-heights" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">MEADOW HEIGHTS</Link>
-              <Link to="/locations/roxbury-park" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">ROXBURY PARK</Link>
+              <Link to="/locations/roxburgh-park" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">ROXBURGH PARK</Link>
               <Link to="/locations/craigieburn" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">CRAIGIEBURN</Link>
               <Link to="/locations/westmeadows" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">WESTMEADOWS</Link>
               <Link to="/locations/mickleham" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">MICKLEHAM</Link>

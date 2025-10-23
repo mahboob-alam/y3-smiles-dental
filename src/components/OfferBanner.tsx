@@ -46,12 +46,12 @@ const OfferBanner = () => {
             iconColor: "text-primary",
             badgeColor: "bg-primary",
             features: [
-                "💳 No out-of-pocket costs — we bulk bill directly to Medicare",
-                "🦷 Covers check-ups, cleans, X-rays, fissure seals, fillings, and extractions",
-                "📅 Easy appointment booking — just bring your Medicare card",
-                "💬 We can check your child’s eligibility instantly in-clinic",
-                "😊 Friendly, gentle care designed to make dental visits positive for kids",
-                "📍 Available now at Y3 Smiles Dental, Melbourne’s northern suburbs"
+                "No out-of-pocket costs — we bulk bill directly to Medicare",
+                "Covers check-ups, cleans, X-rays, fissure seals, fillings, and extractions",
+                "Easy appointment booking — just bring your Medicare card",
+                "We can check your child’s eligibility instantly in-clinic",
+                "Friendly, gentle care designed to make dental visits positive for kids",
+                "Available now at Y3 Smiles Dental, Melbourne’s northern suburbs"
             ]
         }
     ];

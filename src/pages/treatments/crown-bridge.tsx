@@ -81,10 +81,9 @@ const CrownAndBridge = () => {
                 {/* Hero Section */}
                 <section className="bg-gradient-hero py-24">
                     <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center">
-                            <img src="/crown-and-bridge.png" alt="Crown and Bridge" className="w-20 h-20 mx-auto mb-6" />
+                    <div className="max-w-4xl mx-auto text-center">
                             <h1 className="text-5xl md:text-6xl font-bold text-neutral-800 mb-6">
-                                Crown and Bridge
+                                Crown & Bridge
                             </h1>
                             <p className="text-xl text-neutral-800 mb-8 leading-relaxed">
                                 Crowns and bridges are common treatments used to repair or replace teeth that are damaged, worn, or missing. They not only restore your smile's appearance but also improve chewing, speaking, and overall dental health.

@@ -14,7 +14,7 @@ const Treatments = () => {
       link: "/treatments/examination-hygiene"
     },
     {
-      title: "Emergency",
+      title: "Emergency Dentistry",
       subheading: "Immediate Care",
       description: "We understand emergencies are stressful — we'll endeavour to provide urgent care and comfort quickly.",
       additionalInfo: "Same-day available",

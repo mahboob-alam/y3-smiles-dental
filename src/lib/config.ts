@@ -10,10 +10,13 @@ export const BOOKING_CONFIG = {
     // Primary booking portal URL for Principle Dental
     PORTAL_URL: 'https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im',
 
-    // Default link attributes for external booking links
+    // Internal booking page route
+    BOOKING_PAGE: '/booking',
+
+    // Default link attributes for external booking links (no longer needed for internal booking page)
     LINK_ATTRIBUTES: {
-        target: '_blank',
-        rel: 'noopener noreferrer'
+        target: '_self',
+        rel: ''
     }
 } as const;
 
@@ -37,5 +40,5 @@ export const NAV_CONFIG = {
 } as const;
 
 // Export individual constants for convenience
-export const { PORTAL_URL, LINK_ATTRIBUTES } = BOOKING_CONFIG;
-export const BOOKING_URL = BOOKING_CONFIG.PORTAL_URL;
+export const { PORTAL_URL, BOOKING_PAGE, LINK_ATTRIBUTES } = BOOKING_CONFIG;
+export const BOOKING_URL = BOOKING_CONFIG.BOOKING_PAGE;

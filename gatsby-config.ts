@@ -35,14 +35,15 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: '/',
-        createLinkInHead: true,
-        excludes: [],
-      },
-    },
+    // Sitemap plugin temporarily disabled - using static robots.txt with manual sitemap
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     output: '/',
+    //     createLinkInHead: true,
+    //     excludes: [],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {

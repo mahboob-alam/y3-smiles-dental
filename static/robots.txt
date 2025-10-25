@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.y3smilesdental.com.au/sitemap-index.xml

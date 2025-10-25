@@ -1,11 +1,8 @@
 const path = require('path');
-const { JSDOM } = require('jsdom');
 
-// Mock browser globals for SSR
-global.window = new JSDOM('').window;
-global.document = window.document;
-global.HTMLElement = window.HTMLElement;
-global.navigator = window.navigator;
+// Browser globals are now handled by Gatsby's built-in polyfills
+// Removed JSDOM mock setup as it's not needed for modern Gatsby SSR
+
 
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({

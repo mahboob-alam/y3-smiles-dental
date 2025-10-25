@@ -56,9 +56,25 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 exports.onPostBuild = async ({ store }) => {
   const { program } = store.getState();
   const fs = require('fs-extra');
-  const { globSync } = require('glob');
+  const path = require('path');
   
-  const htmlFiles = globSync(`${program.directory}/public/**/*.html`);
+  // Recursively find all HTML files using built-in fs
+  const findHtmlFiles = (dir) => {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach((file) => {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      if (stat && stat.isDirectory()) {
+        results = results.concat(findHtmlFiles(filePath));
+      } else if (file.endsWith('.html')) {
+        results.push(filePath);
+      }
+    });
+    return results;
+  };
+  
+  const htmlFiles = findHtmlFiles(path.join(program.directory, 'public'));
   
   // Simple HTML formatter function
   const formatHTML = (html) => {

@@ -56,6 +56,7 @@ const Contact = () => {
 
                   <a
                     href="mailto:smile@y3smilesdental.com.au"
+                    rel="nofollow noreferrer"
                     className="flex items-start space-x-4 hover-scale transition-gentle group cursor-pointer"
                   >
                     <div className="w-5 h-5 text-primary mt-1 group-hover:text-primary/80">

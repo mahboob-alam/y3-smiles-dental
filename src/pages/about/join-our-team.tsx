@@ -130,8 +130,8 @@ const JoinOurTeamPage = () => {
                                 If you're compassionate, curious, and committed to great care, we'd love to hear from you.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="booking" size="xl" asChild className="group">
-                                    <a href="mailto:smile@y3smilesdental.com.au?subject=EOI - [Your Role] - [Your Name]">
+                                                                <Button variant="booking" size="xl" asChild className="group">
+                                    <a href="mailto:smile@y3smilesdental.com.au?subject=EOI - [Your Role] - [Your Name]" rel="nofollow noreferrer">
                                         <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                                         APPLY TODAY
                                     </a>
@@ -347,7 +347,7 @@ const JoinOurTeamPage = () => {
                                     </div>
 
                                     <Button variant="booking" size="xl" asChild className="group">
-                                        <a href="mailto:smile@y3smilesdental.com.au?subject=EOI - [Your Role] - [Your Name]">
+                                        <a href="mailto:smile@y3smilesdental.com.au?subject=EOI - [Your Role] - [Your Name]" rel="nofollow noreferrer">
                                             <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                                             Send Your Application
                                         </a>

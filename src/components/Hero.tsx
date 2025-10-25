@@ -32,7 +32,9 @@ const Hero = () => {
               {/* Main Headline - order-1 on mobile */}
               <div className="order-1 space-y-4 text-center lg:text-left">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 leading-tight">
-                  Modern Family Dental Care in Broadmeadows
+                  <span className="block">Modern Family</span>
+                  <span className="block text-primary">Dental Care</span>
+                  <span className="block">in Broadmeadows</span>
                 </h1>
 
                 {/* Subheadline */}

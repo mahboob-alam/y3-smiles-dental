@@ -1,8 +1,14 @@
 import React from 'react';
 import './src/index.css';
 import { wrapRootElement as wrap } from './src/wrap-root-element';
+import { SeoLayout } from './src/layouts/SeoLayout';
 
 export const wrapRootElement = wrap;
+
+// Inject default SEO tags on every page in Gatsby v3
+export const wrapPageElement = ({ element, props }) => (
+  <SeoLayout pageProps={props}>{element}</SeoLayout>
+);
 
 // Gatsby browser APIs to handle client-side functionality
 export const onRouteUpdate = () => {

@@ -56,7 +56,9 @@ const config: GatsbyConfig = {
       options: {
         host: `https://y3smilesdental.com.au`,
         sitemap: `https://y3smilesdental.com.au/sitemap.xml`,
-        policy: [{ userAgent: '*', allow: '/' }],
+        policy: [
+          { userAgent: '*', allow: '/', disallow: ['/cdn-cgi/'] },
+        ],
       },
     },
     {

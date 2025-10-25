@@ -29,7 +29,7 @@ const Footer = () => {
               </p>
               <p>
                 <span className="uppercase text-[#B59682]">Email:</span>{" "}
-                <a href="mailto:smile@y3smilesdental.com.au" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
+                <a href="mailto:smile@y3smilesdental.com.au" rel="nofollow noreferrer" className="hover:text-[#B59682] transition-gentle hover:scale-105 inline-block">
                   smile@y3smilesdental.com.au
                 </a>
               </p>

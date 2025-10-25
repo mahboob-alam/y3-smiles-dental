@@ -55,6 +55,4 @@ Disallow: /
 
 # END Cloudflare Managed Content
 
-User-agent: *
-Allow: /
 Sitemap: https://y3smilesdental.com.au/sitemap.xml

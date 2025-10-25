@@ -4,7 +4,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Y3 Smiles Dental`,
-    siteUrl: `https://www.y3smilesdental.com.au`
+    siteUrl: `https://y3smilesdental.com.au`
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -47,15 +47,15 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.y3smilesdental.com.au`,
+        siteUrl: `https://y3smilesdental.com.au`,
         stripQueryString: true,
       },
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://www.y3smilesdental.com.au`,
-        sitemap: `https://www.y3smilesdental.com.au/sitemap-index.xml`,
+        host: `https://y3smilesdental.com.au`,
+        sitemap: `https://y3smilesdental.com.au/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

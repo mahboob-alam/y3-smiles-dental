@@ -1,0 +1,20 @@
+name: Deploy via Cloudflare Pages Hook
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages deploy hook
+        env:
+          CF_PAGES_DEPLOY_HOOK_URL: ${{ secrets.CF_PAGES_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$CF_PAGES_DEPLOY_HOOK_URL" ]; then
+            echo "CF_PAGES_DEPLOY_HOOK_URL is not set" >&2
+            exit 1
+          fi
+          curl -fsS -X POST "$CF_PAGES_DEPLOY_HOOK_URL"

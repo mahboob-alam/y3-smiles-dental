@@ -13,8 +13,8 @@ export type PrincipalDentistProfile = {
 export const principalDentist: PrincipalDentistProfile = {
   name: "Dr Fatima Kurnaz",
   role: "Principal Dentist & Founder",
-  // Portrait extracted from the PDF profile
-  image: "/dr-fatima-kurnaz.png",
+  // Official portrait of Dr. Fatima Kurnaz
+  image: "/dr-fatima-portrait.png",
   // No formal degree list provided in the source document; update when available
   qualifications: [],
   // Broad areas of focus reflected across the site; adjust if needed

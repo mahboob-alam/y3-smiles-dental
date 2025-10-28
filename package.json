@@ -7,8 +7,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint .",
-    "deploy:pages": "curl -fsS -X POST \"$CF_PAGES_DEPLOY_HOOK_URL\""
+    "lint": "eslint ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

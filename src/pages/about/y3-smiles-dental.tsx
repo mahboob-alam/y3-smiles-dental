@@ -165,6 +165,13 @@ const Y3SmilesDentalPage = () => {
                     </div>
                 </section>
 
+                {/* Principal Dentist Feature (placed elegantly after Our Story) */}
+                <PrincipalDentist
+                  variant="full"
+                  className="bg-neutral-50"
+                  secondaryCta={{ to: "/about/principal-dentist", label: "Learn more" }}
+                />
+
                 {/* commented for FUTURE implementation */}
                 {/* <section className="py-24 bg-neutral-50">
                     <div className="container mx-auto px-6">

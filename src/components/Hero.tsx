@@ -6,18 +6,13 @@ import { Shield, CreditCard, Calendar, Building2 } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Video */}
+      {/* Background Image (fallback from previous video that doesn't exist in build) */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src={require("@/assets/hero-dental-clinic.jpg").default}
+          alt="Y3 Smiles Dental clinic"
           className="w-full h-full object-cover"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
         {/* Gradient Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-white/75 to-white/70"></div>
       </div>
@@ -84,7 +79,7 @@ const Hero = () => {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   <div className="flex items-center justify-center px-4 py-2 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
                     <img
-                      src="/Afterpay.jpg"
+                      src="/afterpay-logo.png"
                       alt="Afterpay"
                       className="h-6 w-auto opacity-100 transition-gentle"
                     />

@@ -36,12 +36,22 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, sec
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="md:w-64 flex-shrink-0">
-                    <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md">
-                      <img
-                        src={p.image}
-                        alt={p.name}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md bg-white">
+                      {p.image.toLowerCase().endsWith('.pdf') ? (
+                        <object
+                          data={p.image}
+                          type="application/pdf"
+                          className="w-full h-full"
+                        >
+                          <a href={p.image} target="_blank" rel="noopener noreferrer">View profile PDF</a>
+                        </object>
+                      ) : (
+                        <img
+                          src={p.image}
+                          alt={p.name}
+                          className="w-full h-full object-cover"
+                        />
+                      )}
                     </div>
                   </div>
                   <div className="flex-1">
@@ -54,35 +64,7 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, sec
 
                     <p className="text-neutral-800 leading-relaxed mb-6">{p.bio}</p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <h4 className="font-semibold text-neutral-800 mb-2 flex items-center">
-                          <GraduationCap className="w-4 h-4 mr-2 text-primary" />
-                          Qualifications
-                        </h4>
-                        <ul className="space-y-1">
-                          {p.qualifications.map((q, i) => (
-                            <li key={i} className="text-sm text-neutral-800 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0" />
-                              {q}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-neutral-800 mb-2 flex items-center">
-                          <Award className="w-4 h-4 mr-2 text-primary" />
-                          Clinical Interests
-                        </h4>
-                        <div className="flex flex-wrap gap-2">
-                          {p.specialties.map((s, i) => (
-                            <span key={i} className="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">
-                              {s}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                    {/* Qualifications and Clinical Interests removed as requested */}
 
                     <div className="mt-8 flex flex-wrap gap-4">
                       <Button variant="booking" asChild className="group">

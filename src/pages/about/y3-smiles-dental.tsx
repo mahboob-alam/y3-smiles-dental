@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PrincipalDentist from "@/components/PrincipalDentist";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
 import {
@@ -170,6 +171,12 @@ const Y3SmilesDentalPage = () => {
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-16">
                                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+                        <PrincipalDentist
+                          variant="full"
+                          className="bg-neutral-50"
+                          secondaryCta={{ to: "/about/principal-dentist", label: "Learn more" }}
+                        />
+
                                     Learn More About Us
                                 </h2>
                                 <p className="text-xl text-neutral-800 max-w-3xl mx-auto">

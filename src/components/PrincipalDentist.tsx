@@ -9,10 +9,14 @@ import { principalDentist } from "@/data/principalDentist";
 type Props = {
   variant?: "full" | "summary";
   className?: string;
+  // Optional secondary CTA for page-specific navigation; pass null to hide
+  secondaryCta?: { to: string; label: string } | null;
 };
 
-const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className }) => {
+const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, secondaryCta }) => {
   const p = principalDentist;
+  const defaultSecondary = { to: "/about/principal-dentist", label: "Learn more" };
+  const cta = secondaryCta === undefined ? defaultSecondary : secondaryCta;
 
   if (variant === "full") {
     return (
@@ -87,12 +91,14 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className }) =
                           {p.bookingCta || "Book Appointment"}
                         </a>
                       </Button>
-                      <Button variant="outline" asChild>
-                        <Link to="/about/our-team">
-                          Meet the team
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Link>
-                      </Button>
+                      {cta && (
+                        <Button variant="outline" asChild>
+                          <Link to={cta.to}>
+                            {cta.label}
+                            <ArrowRight className="w-4 h-4 ml-2" />
+                          </Link>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -130,12 +136,14 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className }) =
                         {p.bookingCta || "Book Appointment"}
                       </a>
                     </Button>
-                    <Button variant="outline" asChild>
-                      <Link to="/about/our-team">
-                        Learn more
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </Button>
+                    {cta && (
+                      <Button variant="outline" asChild>
+                        <Link to={cta.to}>
+                          {cta.label}
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>

@@ -47,11 +47,11 @@ const AboutPage = () => {
         },
         {
             icon: Users,
-            title: "Our Team",
-            description: "Meet our dedicated dental professionals who are committed to providing compassionate, high-quality care.",
-            link: "/about/our-team",
+            title: "Principal Dentist",
+            description: "Meet our Principal Dentist and learn about her experience, philosophy of care, and clinical interests.",
+            link: "/about/principal-dentist",
             color: "bg-blue-50 text-blue-600",
-            features: ["Experienced Dentists", "Friendly Staff", "Professional Qualifications"]
+            features: ["Experience", "Qualifications", "Clinical Interests"]
         },
         {
             icon: Briefcase,

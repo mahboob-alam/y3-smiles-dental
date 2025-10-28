@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
+import PrincipalDentist from "@/components/PrincipalDentist";
 import Header from "@/components/Header";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { BOOKING_URL, LINK_ATTRIBUTES } from "@/lib/config";
@@ -31,14 +32,6 @@ const OurTeamPage = () => {
     useScrollAnimation();
 
     const teamMembers = [
-        {
-            name: "Dr. Sarah Johnson",
-            role: "Principal Dentist",
-            image: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-            description: "Dr. Johnson is passionate about providing gentle, comprehensive dental care for the whole family. With over 10 years of experience, she specializes in family dentistry and cosmetic treatments.",
-            qualifications: ["Bachelor of Dental Science", "Member of Australian Dental Association", "Advanced Training in Cosmetic Dentistry"],
-            specialties: ["Family Dentistry", "Cosmetic Treatments", "Preventive Care"]
-        },
         {
             name: "Emma Thompson",
             role: "Oral Health Therapist",
@@ -153,6 +146,9 @@ const OurTeamPage = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Principal Dentist */}
+                <PrincipalDentist variant="full" />
 
                 {/* Team Members */}
                 <section className="py-24 bg-neutral-50">

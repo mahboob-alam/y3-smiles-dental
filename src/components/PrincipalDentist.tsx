@@ -36,22 +36,12 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, sec
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="md:w-64 flex-shrink-0">
-                    <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md bg-white">
-                      {p.image.toLowerCase().endsWith('.pdf') ? (
-                        <object
-                          data={p.image}
-                          type="application/pdf"
-                          className="w-full h-full"
-                        >
-                          <a href={p.image} target="_blank" rel="noopener noreferrer">View profile PDF</a>
-                        </object>
-                      ) : (
-                        <img
-                          src={p.image}
-                          alt={p.name}
-                          className="w-full h-full object-cover"
-                        />
-                      )}
+                    <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-md">
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="flex-1">

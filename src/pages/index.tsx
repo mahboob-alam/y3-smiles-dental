@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HealthInsuranceTicker from "@/components/HealthInsuranceTicker";
 import About from "@/components/About";
+import PrincipalDentist from "@/components/PrincipalDentist";
 import Treatments from "@/components/Treatments";
 import OfferBanner from "@/components/OfferBanner";
 import ServiceProcess from "@/components/ServiceProcess";
@@ -30,6 +31,7 @@ const IndexPage = () => {
         <Hero />
         <HealthInsuranceTicker />
         <About />
+  <PrincipalDentist variant="summary" />
         <Treatments />
         <OfferBanner />
         <ServiceProcess />

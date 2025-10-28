@@ -11,24 +11,17 @@ export type PrincipalDentistProfile = {
 
 // NOTE: Update these details with the real Principal Dentist info when available.
 export const principalDentist: PrincipalDentistProfile = {
-  name: "Dr. Sarah Johnson",
-  role: "Principal Dentist",
-  // Replace with a real clinic photo when available
-  image:
-    "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-  qualifications: [
-    "BDSc (Melb)",
-    "Member, Australian Dental Association",
-    "Advanced Training in Cosmetic & Restorative Dentistry",
-  ],
-  specialties: [
-    "Family Dentistry",
-    "Cosmetic Dentistry",
-    "Preventive Care",
-  ],
+  name: "Dr Fatima Kurnaz",
+  role: "Principal Dentist & Founder",
+  // TODO: Replace with Dr Kurnaz's official portrait when available
+  image: "/placeholder.svg",
+  // No formal degree list provided in the source document; update when available
+  qualifications: [],
+  // Broad areas of focus reflected across the site; adjust if needed
+  specialties: ["Family Dentistry", "Preventive Care", "Cosmetic Dentistry"],
   bio:
-    "Dr. Johnson leads Y3 Smiles Dental with a gentle, patient-first approach. She enjoys helping families feel confident about their oral health, with a focus on prevention, minimally invasive treatments, and natural-looking results. Dr. Johnson is committed to clear communication and personalised care for every patient.",
+    "Dr Fatima Kurnaz is passionate about creating positive dental experiences and building long-term relationships with her patients. After completing her dental training, she gained valuable experience across regional and metropolitan clinics, shaping a philosophy that dentistry should be as much about compassion and understanding as it is about clinical excellence. Now, as the Principal Dentist and Founder of Y3 Smiles Dental, Dr Fatima is proud to care for families in her own community of Hume — the place she grew up and still calls home. She provides modern, gentle and ethical dentistry where every patient feels heard, respected and supported. Her calm, friendly approach helps even the most anxious patients feel at ease, and she takes the time to explain each step and tailor care to individual needs. Outside the clinic, Dr Fatima loves to bake, spend quality time with her family and explore the outdoors.",
   shortBio:
-    "Gentle, preventative family dentistry with a focus on natural, long-lasting results.",
-  bookingCta: "Book with the Principal Dentist",
+    "Principal Dentist & Founder caring for the Hume community with gentle, modern and compassionate dentistry.",
+  bookingCta: "Book with Dr Kurnaz",
 };

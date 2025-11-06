@@ -1,3 +1,5 @@
+# Ignore backup ZIP files
+BAK-Y3-Dental-2025-10-28.zip
 # Logs
 logs
 *.log

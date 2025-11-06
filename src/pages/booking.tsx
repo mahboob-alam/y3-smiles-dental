@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Calendar, Clock, Phone } from "lucide-react";
+import { Link } from "gatsby";
 
 export const Head = () => (
   <SEO 
@@ -81,6 +82,13 @@ const BookingPage = () => {
                     >
                       open the booking portal in a new window
                     </a>
+                    .
+                  </p>
+                  <p className="text-xs text-neutral-500 text-center mt-2">
+                    By booking an appointment, you agree to our{" "}
+                    <Link to="/privacy-policy" className="text-primary hover:underline">
+                      Privacy Policy
+                    </Link>
                     .
                   </p>
                 </CardContent>

@@ -1,0 +1,9 @@
+name = "y3-dental"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+cwd = "."
+
+[build.environment_variables]
+NODE_VERSION = "18"

@@ -32,9 +32,27 @@ const config: GatsbyConfig = {
         },
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Y3 Smiles Dental`,
+        short_name: `Y3 Dental`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#2563eb`,
+        display: `minimal-ui`,
+        icon: `static/favicon.svg`,
+        icons: [
+          {
+            src: `favicon.svg`,
+            sizes: `any`,
+            type: `image/svg+xml`,
+          },
+        ],
+      },
+    },
     // Sitemap plugin temporarily disabled - using static robots.txt with manual sitemap
     // {
     //   resolve: `gatsby-plugin-sitemap`,

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 import { useToast } from "@/hooks/use-toast";
 
 interface EmailJSFormProps {
@@ -218,6 +219,38 @@ const EmailJSForm: React.FC<EmailJSFormProps> = ({
                     rows={4}
                     className="w-full p-2 border border-gray-300 rounded-md shadow-sm"
                 ></textarea>
+            </div>
+
+            {/* Privacy Policy and Consent */}
+            <div className="mt-4 space-y-3">
+                <div className="flex items-start space-x-2">
+                    <input
+                        type="checkbox"
+                        id="privacy-consent"
+                        name="privacyConsent"
+                        required
+                        className="mt-1 h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary"
+                    />
+                    <label htmlFor="privacy-consent" className="text-sm text-gray-700">
+                        I agree to the{" "}
+                        <Link to="/privacy-policy" className="text-primary hover:underline" target="_blank">
+                            Privacy Policy
+                        </Link>{" "}
+                        and consent to the collection and use of my personal information for the purpose of responding to my enquiry.
+                    </label>
+                </div>
+
+                <div className="flex items-start space-x-2">
+                    <input
+                        type="checkbox"
+                        id="marketing-consent"
+                        name="marketingConsent"
+                        className="mt-1 h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary"
+                    />
+                    <label htmlFor="marketing-consent" className="text-sm text-gray-700">
+                        I would like to receive information about dental services, promotions, and health tips from Y3 Smiles Dental (optional).
+                    </label>
+                </div>
             </div>
 
             <div className="mt-6">

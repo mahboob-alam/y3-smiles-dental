@@ -84,6 +84,9 @@ export const SEO: React.FC<PageProps> = ({ title, description, children, canonic
       <meta property="og:locale" content="en_AU" />
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {/* Favicon */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="apple-touch-icon" href="/favicon.svg" />
       {/* LocalBusiness JSON-LD */}
       <script type="application/ld+json">{JSON.stringify(orgJsonLd)}</script>
       {children}

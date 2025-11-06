@@ -155,6 +155,9 @@ const Footer = () => {
         {/* Footer Credits */}
         <div className="text-center text-xs space-y-1">
           <div>COPYRIGHT © 2025 Y3 SMILES DENTAL. ALL RIGHTS RESERVED.</div>
+          <div className="flex justify-center gap-6 text-zinc-500">
+            <Link to="/privacy-policy" className="hover:text-[#B59682] transition-gentle">Privacy Policy</Link>
+          </div>
           <div className="text-zinc-500">Powered by PSEI Australia</div>
         </div>
 

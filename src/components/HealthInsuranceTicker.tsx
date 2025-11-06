@@ -68,13 +68,13 @@ const HealthInsuranceTicker = () => {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const animationIdRef = useRef<number | null>(null);
 
   // Auto-scroll animation
   useEffect(() => {
     const container = containerRef.current;
-    if (!container || isPaused) return;
+    if (!container) return;
 
-    let animationId: number;
     const scroll = () => {
       if (container && !isPaused) {
         container.scrollLeft += 0.5; // Gentle auto-scroll speed
@@ -83,10 +83,20 @@ const HealthInsuranceTicker = () => {
           container.scrollLeft = 0;
         }
       }
-      animationId = requestAnimationFrame(scroll);
+      animationIdRef.current = requestAnimationFrame(scroll);
     };
-    animationId = requestAnimationFrame(scroll);
-    return () => cancelAnimationFrame(animationId);
+
+    // Start animation
+    if (!isPaused) {
+      animationIdRef.current = requestAnimationFrame(scroll);
+    }
+
+    // Cleanup
+    return () => {
+      if (animationIdRef.current !== null) {
+        cancelAnimationFrame(animationIdRef.current);
+      }
+    };
   }, [isPaused]);
 
   const onMouseDown: React.MouseEventHandler<HTMLDivElement> = (e) => {

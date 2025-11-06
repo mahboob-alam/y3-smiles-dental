@@ -136,8 +136,8 @@ const DentalImplants = () => {
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/dental-implants.png"
-                                        alt="Dental implant procedure and results"
+                                        src="/dental-implants.jpg"
+                                        alt="Dental implant procedure and restoration"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>

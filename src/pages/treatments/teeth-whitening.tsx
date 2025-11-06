@@ -135,8 +135,8 @@ const TeethWhitening = () => {
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/teeth-whitening.png"
-                                        alt="Professional teeth whitening process"
+                                        src="/teeth-whitening.jpg"
+                                        alt="Professional teeth whitening results"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>

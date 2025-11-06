@@ -131,7 +131,7 @@ const SedationDentistry = () => {
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/sedation.png"
+                                        src="/sedation-dentistry.jpg"
                                         alt="Calm and comfortable dental sedation environment"
                                         className="w-full h-full object-cover"
                                     />

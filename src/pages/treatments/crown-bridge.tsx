@@ -142,7 +142,7 @@ const CrownAndBridge = () => {
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/crown-and-bridge.png"
+                                        src="/crown-and-bridge.jpg"
                                         alt="Dental crown and bridge treatment in progress"
                                         className="w-full h-full object-cover"
                                     />

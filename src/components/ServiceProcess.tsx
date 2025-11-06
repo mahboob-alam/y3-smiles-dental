@@ -16,22 +16,22 @@ const ServiceProcess = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {[
                         {
-                            imageSrc: "/dental-consultation.png",
+                            imageSrc: "/Initial consultation.jpg",
                             title: "Initial Consultation",
                             description: "Comprehensive examination and discussion of your dental health goals"
                         },
                         {
-                            imageSrc: "/dental-care.png",
+                            imageSrc: "/Treatment Planning.jpg",
                             title: "Treatment Planning",
                             description: "Customised treatment plan tailored to your specific needs and budget"
                         },
                         {
-                            imageSrc: "/dental-clinic.png",
+                            imageSrc: "/Professional Treatment.jpg",
                             title: "Professional Treatment",
                             description: "Gentle, expert care using the latest techniques and technology"
                         },
                         {
-                            imageSrc: "/dental-home.png",
+                            imageSrc: "/Ongoing Care.jpg",
                             title: "Ongoing Care",
                             description: "Regular maintenance and preventive care to keep your smile healthy"
                         }

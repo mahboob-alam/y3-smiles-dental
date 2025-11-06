@@ -158,7 +158,9 @@ const Footer = () => {
           <div className="flex justify-center gap-6 text-zinc-500">
             <Link to="/privacy-policy" className="hover:text-[#B59682] transition-gentle">Privacy Policy</Link>
           </div>
-          <div className="text-zinc-500">Powered by PSEI Australia</div>
+          <div className="text-zinc-500">
+            Powered by <a href="https://psei.com.au" target="_blank" rel="noopener noreferrer" className="hover:text-[#B59682] transition-gentle">PSEI Australia</a>
+          </div>
         </div>
 
         {/* Scroll to Top */}

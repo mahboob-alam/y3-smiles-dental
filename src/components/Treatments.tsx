@@ -10,7 +10,7 @@ const Treatments = () => {
       subheading: "General Dentistry",
       description: "Regular check ups mean early detection, personalised care, and peace of mind for every patient.",
       additionalInfo: "Checkup and clean. Starts from $249",
-      image: "/general-dentistry.jpg",
+      image: "/dental-checkup.png",
       link: "/treatments/examination-hygiene"
     },
     {
@@ -18,7 +18,7 @@ const Treatments = () => {
       subheading: "Immediate Care",
       description: "We understand emergencies are stressful — we'll endeavour to provide urgent care and comfort quickly.",
       additionalInfo: "Same-day available",
-      image: "/cosmetic-dentistry.jpg",
+      image: "/emergency.png",
       link: "/treatments/emergency"
     },
     /* {
@@ -33,7 +33,7 @@ const Treatments = () => {
       subheading: "Early Age Dental Care",
       description: "At Y3 Smiles Dental, we create positive early dental experiences through gentle check-ups, preventative care, and fun education — helping children build strong habits and healthy smiles for life.",
       additionalInfo: "FREE with CDBS (Eligibility applies)",
-      image: "/sedation-dentistry.jpg",
+      image: "/cdbs.png",
       link: "/treatments/childrens-dentistry"
     },
     /* {

@@ -41,6 +41,8 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, sec
                         src={p.image}
                         alt={p.name}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -91,7 +93,7 @@ const PrincipalDentist: React.FC<Props> = ({ variant = "summary", className, sec
             <CardContent className="p-6 md:p-8">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="w-28 h-28 rounded-2xl overflow-hidden shadow-md flex-shrink-0">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <div className="text-sm text-primary font-semibold uppercase tracking-wider mb-1">

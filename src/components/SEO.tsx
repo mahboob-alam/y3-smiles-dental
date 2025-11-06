@@ -73,6 +73,11 @@ export const SEO: React.FC<PageProps> = ({ title, description, children, canonic
       <meta name="description" content={description || defaultDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="index, follow" />
+      
+      {/* Performance optimizations */}
+      <link rel="preconnect" href="https://app.principle.dental" />
+      <link rel="dns-prefetch" href="https://app.principle.dental" />
+      
       <meta name="geo.region" content="AU-VIC" />
       <meta name="geo.placename" content="Broadmeadows" />
       <meta name="geo.position" content="-37.6790611;144.8419854" />
@@ -85,8 +90,8 @@ export const SEO: React.FC<PageProps> = ({ title, description, children, canonic
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       {/* Favicon */}
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="apple-touch-icon" href="/favicon.svg" />
+      <link rel="icon" type="image/png" href="/favicon.png" sizes="500x500" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
       {/* LocalBusiness JSON-LD */}
       <script type="application/ld+json">{JSON.stringify(orgJsonLd)}</script>
       {children}

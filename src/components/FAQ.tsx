@@ -77,7 +77,7 @@ const FAQ = () => {
                                     <div className="flex items-center justify-between mb-4">
                                         <div className="flex items-center space-x-3">
                                             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                                                <img src={section.imageSrc} alt={section.title} className="w-6 h-6" />
+                                                <img src={section.imageSrc} alt={section.title} className="w-6 h-6" loading="lazy" decoding="async" />
                                             </div>
                                             <h4 className="text-2xl font-bold text-neutral-800">{section.title} FAQs</h4>
                                         </div>

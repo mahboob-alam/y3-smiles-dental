@@ -127,6 +127,9 @@ const Hero = () => {
                 <div className="text-center mt-2 text-xs text-neutral-600">
                   If the form doesn't load, <a className="text-primary font-semibold" href="https://app.principle.dental/portal/booking/X0bZkaby3TQEzje3C0Im" target="_blank" rel="noopener noreferrer">open the booking portal</a>.
                 </div>
+                <div className="text-center mt-2 text-xs text-neutral-500">
+                  By booking, you agree to our <a href="/privacy-policy" className="text-primary underline hover:text-primary/80">Privacy Policy</a>.
+                </div>
               </div>
             </div>
           </div>

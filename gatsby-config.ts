@@ -43,12 +43,12 @@ const config: GatsbyConfig = {
         background_color: `#ffffff`,
         theme_color: `#2563eb`,
         display: `minimal-ui`,
-        icon: `static/favicon.svg`,
+        icon: `static/favicon.png`,
         icons: [
           {
-            src: `favicon.svg`,
-            sizes: `any`,
-            type: `image/svg+xml`,
+            src: `favicon.png`,
+            sizes: `500x500`,
+            type: `image/png`,
           },
         ],
       },

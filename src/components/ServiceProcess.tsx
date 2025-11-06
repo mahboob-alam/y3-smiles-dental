@@ -38,7 +38,7 @@ const ServiceProcess = () => {
                     ].map((item, index) => (
                         <div key={index} className="text-center">
                             <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-5 shadow-md border border-white/50">
-                                <img src={item.imageSrc} alt={item.title} className="w-full h-full object-cover" />
+                                <img src={item.imageSrc} alt={item.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                             </div>
                             <h4 className="text-xl font-bold text-neutral-800 mb-3">
                                 {item.title}

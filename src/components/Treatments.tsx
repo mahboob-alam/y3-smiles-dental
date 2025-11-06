@@ -79,6 +79,8 @@ const Treatments = () => {
                   src={treatment.image}
                   alt={treatment.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col">

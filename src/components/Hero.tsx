@@ -84,7 +84,7 @@ const Hero = () => {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   <div className="flex items-center justify-center px-4 py-2 bg-white/25 backdrop-blur-sm rounded-lg border border-white/30 hover:bg-white/40 transition-gentle shadow-md">
                     <img
-                      src="/Afterpay.jpg"
+                      src="/afterpay-logo.png"
                       alt="Afterpay"
                       className="h-6 w-auto opacity-100 transition-gentle"
                     />

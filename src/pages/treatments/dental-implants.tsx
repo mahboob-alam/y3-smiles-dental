@@ -135,11 +135,16 @@ const DentalImplants = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/dental-implants.jpg"
-                                        alt="Dental implant procedure and restoration"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <picture>
+                                        <source type="image/webp" srcSet="/optimized/dental-implants-800w.webp 800w, /optimized/dental-implants-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                                        <img
+                                            src="/dental-implants.jpg"
+                                            alt="Dental implant procedure and restoration"
+                                            className="w-full h-full object-cover"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                         </div>

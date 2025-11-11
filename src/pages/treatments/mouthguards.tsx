@@ -121,11 +121,10 @@ const Mouthguards = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/custom-mouthguards.jpg"
-                                        alt="Custom mouthguard protection for sports and sleep"
-                                        className="w-full h-full object-cover"
-                                    />
+                                        <picture>
+                                            <source type="image/webp" srcSet="/optimized/custom-mouthguards-800w.webp 800w, /optimized/custom-mouthguards-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                                            <img src="/custom-mouthguards.jpg" alt="Custom sports mouthguards and night guards" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                                        </picture>
                                 </div>
                             </div>
                         </div>

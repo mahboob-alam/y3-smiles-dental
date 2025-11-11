@@ -30,12 +30,11 @@ const PeriodontalTherapy = () => {
   useScrollAnimation();
 
   const benefits = [
-    "Prevent tooth loss",
-    "Reduce inflammation",
-    "Professional care",
-    "Long-term health"
+    "Prevents gum disease progression",
+    "Supports long-term oral health",
+    "Reduces inflammation & discomfort",
+    "Helps preserve natural teeth"
   ];
-
   const treatmentTypes = [
     {
       title: "Gingivitis Treatment",
@@ -122,13 +121,18 @@ const PeriodontalTherapy = () => {
                     </div>
                   </div>
                 </div>
-                                                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/periodontal-therapy.jpg"
-                                        alt="Periodontal therapy and gum treatment"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
+                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
+                  <picture>
+                    <source type="image/webp" srcSet="/optimized/periodontal-therapy-800w.webp 800w, /optimized/periodontal-therapy-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                    <img
+                      src="/periodontal-therapy.jpg"
+                      alt="Periodontal therapy and gum treatment"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>

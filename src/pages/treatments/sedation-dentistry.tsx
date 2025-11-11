@@ -130,11 +130,16 @@ const SedationDentistry = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/sedation-dentistry.jpg"
-                                        alt="Calm and comfortable dental sedation environment"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <picture>
+                                        <source type="image/webp" srcSet="/optimized/sedation-dentistry-800w.webp 800w, /optimized/sedation-dentistry-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                                        <img
+                                            src="/sedation-dentistry.jpg"
+                                            alt="Calm and comfortable dental sedation environment"
+                                            className="w-full h-full object-cover"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                         </div>

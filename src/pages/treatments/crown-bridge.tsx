@@ -141,15 +141,17 @@ const CrownAndBridge = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/crown-and-bridge.jpg"
-                                        alt="Dental crown and bridge treatment in progress"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <picture>
+                                        <source type="image/webp" srcSet="/optimized/crown-and-bridge-800w.webp 800w, /optimized/crown-and-bridge-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                                        <img
+                                            src="/crown-and-bridge.jpg"
+                                            alt="Dental crown and bridge restorations"
+                                            className="w-full h-full object-cover"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </picture>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 {/* Treatment Process */}

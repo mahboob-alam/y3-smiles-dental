@@ -75,13 +75,20 @@ const Treatments = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={treatment.image}
-                  alt={treatment.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`/optimized/${treatment.image.replace('/', '').replace('.jpg','')}-800w.webp 800w, /optimized/${treatment.image.replace('/', '').replace('.jpg','')}-1600w.webp 1600w`}
+                    sizes="(max-width: 1024px) 100vw, 400px"
+                  />
+                  <img
+                    src={treatment.image}
+                    alt={treatment.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-gentle"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex-1">

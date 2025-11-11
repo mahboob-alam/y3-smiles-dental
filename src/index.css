@@ -465,6 +465,21 @@
   }
 }
 
+/* Health insurance ticker animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-33.333%, 0, 0);
+  }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 30s linear infinite;
+  will-change: transform;
+}
+
 @media (max-width: 640px) {
   .ticker-content {
     animation-duration: 15s;

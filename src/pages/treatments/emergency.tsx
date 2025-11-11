@@ -209,11 +209,16 @@ const EmergencyDentistry = () => {
                   </p>
                 </div>
                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                  <img
-                    src="/emergency-dentistry.jpg"
-                    alt="Emergency dental care and pain relief"
-                    className="w-full h-full object-cover"
-                  />
+                  <picture>
+                    <source type="image/webp" srcSet="/optimized/emergency-dentistry-800w.webp 800w, /optimized/emergency-dentistry-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                    <img
+                      src="/emergency-dentistry.jpg"
+                      alt="Emergency dental care and pain relief"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>

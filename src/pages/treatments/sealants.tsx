@@ -220,13 +220,18 @@ const PitsAndFissureSealants = () => {
                     </div>
                   </div>
                 </div>
-                <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
+                              <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
+                <picture>
+                  <source type="image/webp" srcSet="/optimized/pits-fissure-sealants-800w.webp 800w, /optimized/pits-fissure-sealants-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
                   <img
                     src="/pits-fissure-sealants.jpg"
-                    alt="Dental sealant application showing protective coating on back teeth"
+                    alt="Preventive dental sealants application"
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </div>
+                </picture>
+              </div>
               </div>
             </div>
           </div>

@@ -134,11 +134,16 @@ const TeethWhitening = () => {
                                     </div>
                                 </div>
                                 <div className="aspect-video bg-neutral-100 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/teeth-whitening.jpg"
-                                        alt="Professional teeth whitening results"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <picture>
+                                        <source type="image/webp" srcSet="/optimized/teeth-whitening-800w.webp 800w, /optimized/teeth-whitening-1600w.webp 1600w" sizes="(max-width: 1024px) 100vw, 640px" />
+                                        <img
+                                            src="/teeth-whitening.jpg"
+                                            alt="Professional teeth whitening results"
+                                            className="w-full h-full object-cover"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </picture>
                                 </div>
                             </div>
                         </div>

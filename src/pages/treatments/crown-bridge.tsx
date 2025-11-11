@@ -152,6 +152,9 @@ const CrownAndBridge = () => {
                                         />
                                     </picture>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Treatment Process */}

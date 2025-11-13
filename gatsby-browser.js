@@ -13,6 +13,13 @@ export const wrapPageElement = ({ element, props }) => (
 // Gatsby browser APIs to handle client-side functionality
 export const onRouteUpdate = () => {
   if (typeof window !== 'undefined') {
+    // Track page views with Google Analytics
+    if (window.gtag) {
+      window.gtag('config', 'G-5LLSTRZWS9', {
+        page_path: window.location.pathname + window.location.search,
+      });
+    }
+    
     // Initialize any client-side services here
     window.__emailjs_initialized = false;
   }

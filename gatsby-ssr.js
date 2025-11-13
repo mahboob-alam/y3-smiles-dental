@@ -10,6 +10,23 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents, setPreBodyC
   // Initialize client-side variables safely
   if (process.env.NODE_ENV === 'production') {
     setHeadComponents([
+      // Google Analytics (gtag.js) - G-5LLSTRZWS9
+      <script
+        key="gtag-js"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5LLSTRZWS9"
+      />,
+      <script
+        key="gtag-config"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5LLSTRZWS9');
+          `,
+        }}
+      />,
       // Google Tag Manager - as high as possible in <head>
       <script
         key="gtm-head"
